@@ -1,0 +1,19 @@
+{
+  "case": "dataset/reentrancy/simple_dao.sol",
+  "runs": 2,
+  "variants": 4,
+  "scenarios_per_variant_per_run": 3,
+  "both_runs_identical": true,
+  "normal_workflow_passes_all_variants": true,
+  "baseline_nested_callback_overpays": true,
+  "V1_CEI_prevents_measured_overpayment": true,
+  "V2_mutex_prevents_measured_overpayment": true,
+  "V3_combination_prevents_measured_overpayment": true,
+  "V3_better_than_V1_or_V2_on_measured_scenario": false,
+  "unchecked_failed_send_persists_in_all_variants": true,
+  "limitations": "One benchmark and one bounded callback pattern; deterministic local behavior only. No static-detector or production claim.",
+  "evidence_sha256": {
+    "behavioral_results_r1.json": "cc64dfd5cd28ac3b8534ea4e1f6e6ddbe5b2212e7d3aa156e12e316cda3bc1ba",
+    "behavioral_results_r2.json": "99b72e8cd099e0c2e0acca4b6659f36ed83f188c9816e525f7439df6fa34afc7"
+  }
+}

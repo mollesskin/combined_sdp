@@ -1,0 +1,10 @@
+{
+  "original_sources": 143,
+  "status_counts": {
+    "compiled": 143
+  },
+  "missing_compiler_sources": [],
+  "failed_or_timed_out_sources": [],
+  "treatment_variants_compiled": 0,
+  "security_outcomes_measured": 0
+}

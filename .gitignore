@@ -1,0 +1,25 @@
+# Local dependencies and downloaded compilers.
+**/node_modules/
+**/node_modules
+**/toolchain/
+!next_experiments/all_contracts_v1/toolchain/
+next_experiments/all_contracts_v1/toolchain/*
+!next_experiments/all_contracts_v1/toolchain/*.provenance.json
+**/.venv/
+**/venv/
+
+# Local build and editor state.
+**/__pycache__/
+*.py[cod]
+**/cache/
+**/coverage/
+.vscode/
+.DS_Store
+next_experiments/all_contracts_v1/compile_raw/
+next_experiments/all_contracts_v1/simple_dao_v1/variants/*.patch
+
+# Credentials must be reviewed before any public commit.
+.env
+.env.*
+*.pem
+*.key

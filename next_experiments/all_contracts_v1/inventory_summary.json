@@ -1,0 +1,30 @@
+{
+  "total_original_solidity_files": 143,
+  "families": {
+    "access_control": 18,
+    "arithmetic": 15,
+    "bad_randomness": 8,
+    "denial_of_service": 6,
+    "front_running": 4,
+    "other": 3,
+    "reentrancy": 31,
+    "short_addresses": 1,
+    "time_manipulation": 5,
+    "unchecked_low_level_calls": 52
+  },
+  "previous_evaluation_types": {
+    "alternative-workflow comparison": 1,
+    "exploratory full comparison": 6,
+    "full V0-V1-V2-V3 comparison": 17,
+    "not_selected_previously": 103,
+    "single-fix comparison": 13,
+    "unresolved/excluded": 3
+  },
+  "existing_full_comparisons": 23,
+  "new_full_comparisons": 1,
+  "total_full_comparisons_historical_plus_new": 24,
+  "need_pair_qualification": 119,
+  "missing_local_compiler_versions": [],
+  "new_treatment_sources_generated": 3,
+  "new_security_outcomes_measured": 1
+}

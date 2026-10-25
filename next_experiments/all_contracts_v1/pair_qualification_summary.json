@@ -1,0 +1,11 @@
+{
+  "total_sources": 143,
+  "baseline_compiled": 143,
+  "strict_pair_statuses": {
+    "N/A_current_strict_pair_design": 32,
+    "completed_new_pair": 1,
+    "historical_full_pair_audit_pending": 9,
+    "source_specific_review_pending": 101
+  },
+  "note": "N/A means no justified second pattern in the current design, not that no future defense can exist. Pending is not counted as N/A or a completed comparison."
+}

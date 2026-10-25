@@ -1,0 +1,9 @@
+{
+  "name": "simple-dao-behavioral-comparison",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "hardhat": "2.22.5"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "source_path": "dataset/reentrancy/simple_dao.sol",
+  "source_sha256": "40ffea56c722280688eba923676992d20be7623dcf724393c1c7ca1ef24e0ae5",
+  "solc_path": "experiments/multi_vulnerability/design_v1/toolchain/solc-0.4.2",
+  "solc_version": "solc, the solidity compiler commandline interface\nVersion: 0.4.2+commit.af6afb04.Darwin.appleclang",
+  "variants": {
+    "V0": {
+      "sha256": "40ffea56c722280688eba923676992d20be7623dcf724393c1c7ca1ef24e0ae5",
+      "compile_exit_code": 0,
+      "bytecode_bytes": 591
+    },
+    "V1": {
+      "sha256": "f93c3d51268f4b76b9a0ff21d05313a54cf2204b0a7aa970c2921390eb36fb7a",
+      "compile_exit_code": 0,
+      "bytecode_bytes": 591
+    },
+    "V2": {
+      "sha256": "d2e79effce06f4fe7c85471f48531eb0921cc82eda53fb4f52af3a6f8f8b47ec",
+      "compile_exit_code": 0,
+      "bytecode_bytes": 668
+    },
+    "V3": {
+      "sha256": "daeb24205c9a0c0c19ab1908462af3e5db03c1a8d1ac68a766bb58829d451f17",
+      "compile_exit_code": 0,
+      "bytecode_bytes": 668
+    }
+  },
+  "attacker_sha256": "90d2fdd04cac46ebe11e64802a22ea86cf617131e4e04401f437f89621964696"
+}
