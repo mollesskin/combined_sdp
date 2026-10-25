@@ -2,6 +2,8 @@
 
 These are English reading copies of the current result reports. They do not replace the locked source reports, scripts, protocols, registries, or raw evidence under `experiments/`. The saved experimental findings and numbers are unchanged.
 
+The [tested contract catalog](tested_contracts_catalog.md) gives a source-specific description, applied pattern variants, and measured result for all 38 original files with completed behavioral comparisons, including the new SimpleDAO case.
+
 | Study | English report | Original report |
 |---|---|---|
 | UC01 token-call behavior | [UC01](reports/uc01_behavioral.md) | `experiments/behavioral_pilot_v1/generated_results.md` |
