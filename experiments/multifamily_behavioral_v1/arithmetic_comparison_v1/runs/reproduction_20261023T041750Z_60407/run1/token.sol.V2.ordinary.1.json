@@ -1,0 +1,97 @@
+{
+  "row": {
+    "file": "token.sol",
+    "group": "token.sol",
+    "variant": "V2",
+    "scenario": "ordinary",
+    "step": 1,
+    "method": "transfer",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "allowed",
+    "inputs": {
+      "sender": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "args": [
+        "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "7"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "0",
+      "slot1": "10",
+      "contract_wei": "0",
+      "a": "3",
+      "b": "7",
+      "supply": "10"
+    },
+    "expected": {
+      "slot0": "0",
+      "slot1": "10",
+      "contract_wei": "0",
+      "a": "10",
+      "b": "0",
+      "supply": "10"
+    },
+    "mathematical_expected": null,
+    "unsafe_mathematical_state": null,
+    "actual": {
+      "slot0": "0",
+      "slot1": "10",
+      "contract_wei": "0",
+      "a": "10",
+      "b": "0",
+      "supply": "10"
+    },
+    "discrepancy": null,
+    "field_discrepancies": {},
+    "arithmetic_trace": [
+      {
+        "label": "require/debit",
+        "left": "7",
+        "right": "7",
+        "type": "sub",
+        "mathematical_result": "0",
+        "in_uint256_range": true,
+        "modular_result": "0"
+      },
+      {
+        "label": "credit_after_debit",
+        "left": "3",
+        "right": "7",
+        "type": "add",
+        "mathematical_result": "10",
+        "in_uint256_range": true,
+        "modular_result": "10"
+      }
+    ],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": null,
+    "allowed_operation_passed": true,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "28007",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/reproduction_20261023T041750Z_60407/run1/token.sol.V2.ordinary.1.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x3c0c203767e1de7b94dab3ed7159a3a443b5132483bcf6aab0b20601a38b3ea1",
+    "blockNumber": 3,
+    "contractAddress": null,
+    "cumulativeGasUsed": "28007",
+    "from": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "gasPrice": "1671610679",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "28007",
+    "hash": "0xdfef00b612b27ef98e5ba122295dbef044468b3a10fab2a37bcc61e80944a169",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

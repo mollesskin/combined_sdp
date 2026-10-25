@@ -1,0 +1,13 @@
+group,files,all_members_complete,V0_any_unsafe_failure,protected_all_members_unsafe_rejected,protected_all_allowed_pass
+AR_ADDER_CLONE,"[""integer_overflow_add.sol"", ""overflow_simple_add.sol""]",True,True,True,True
+BECToken.sol,"[""BECToken.sol""]",True,True,True,True
+integer_overflow_1.sol,"[""integer_overflow_1.sol""]",True,True,True,True
+integer_overflow_mapping_sym_1.sol,"[""integer_overflow_mapping_sym_1.sol""]",True,True,True,True
+integer_overflow_minimal.sol,"[""integer_overflow_minimal.sol""]",True,True,True,True
+integer_overflow_mul.sol,"[""integer_overflow_mul.sol""]",True,True,True,True
+integer_overflow_multitx_multifunc_feasible.sol,"[""integer_overflow_multitx_multifunc_feasible.sol""]",True,True,True,True
+integer_overflow_multitx_onefunc_feasible.sol,"[""integer_overflow_multitx_onefunc_feasible.sol""]",True,True,True,True
+overflow_single_tx.sol,"[""overflow_single_tx.sol""]",True,True,True,True
+timelock.sol,"[""timelock.sol""]",True,True,True,True
+token.sol,"[""token.sol""]",True,True,True,True
+tokensalechallenge.sol,"[""tokensalechallenge.sol""]",True,True,True,True

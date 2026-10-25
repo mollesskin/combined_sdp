@@ -1,0 +1,12 @@
+--- AR01/V0/BECToken.sol
++++ AR01/V3/BECToken.sol
+@@ -261,7 +261,8 @@
+   function batchTransfer(address[] _receivers, uint256 _value) public whenNotPaused returns (bool) {
+     uint cnt = _receivers.length;
+     // <yes> <report> ARITHMETIC
+-    uint256 amount = uint256(cnt) * _value;
++    require(_value == 0 || uint256(cnt) <= uint256(-1) / _value);
++    uint256 amount = SafeMath.mul(uint256(cnt), _value);
+     require(cnt > 0 && cnt <= 20);
+     require(_value > 0 && balances[msg.sender] >= amount);
+ 

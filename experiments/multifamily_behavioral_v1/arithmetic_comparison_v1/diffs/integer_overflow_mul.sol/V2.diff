@@ -1,0 +1,11 @@
+--- V0/integer_overflow_mul.sol
++++ V2/integer_overflow_mul.sol
+@@ -14,6 +14,7 @@
+ 
+     function run(uint256 input) public {
+         // <yes> <report> ARITHMETIC
+-        count *= input;
++        require(count == 0 || input <= uint256(-1) / count);
++        count = count * input;
+     }
+ }

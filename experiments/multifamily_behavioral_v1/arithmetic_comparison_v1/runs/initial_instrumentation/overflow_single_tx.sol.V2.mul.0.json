@@ -1,0 +1,68 @@
+{
+  "row": {
+    "file": "overflow_single_tx.sol",
+    "group": "overflow_single_tx.sol",
+    "variant": "V2",
+    "scenario": "mul",
+    "step": 0,
+    "method": "overflowmultostate",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "allowed",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "2"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "1",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "expected": {
+      "slot0": "2",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "2"
+    },
+    "mathematical_expected": "2",
+    "unsafe_mathematical_state": null,
+    "actual": {
+      "slot0": "2",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "2"
+    },
+    "discrepancy": "0",
+    "wraparound": false,
+    "full_observed_rollback": null,
+    "allowed_operation_passed": true,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "26717",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/run1/overflow_single_tx.sol.V2.mul.0.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0xabb4c2f5042d67c6a990c96e8a636af8372250cd0a4b9adbfd58a31f98f29a69",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "26717",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1766855156",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "26717",
+    "hash": "0xebcc1e4091495ae820c4bdc1f903b9bf42b4033241d3c405057ddf0f11035be2",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

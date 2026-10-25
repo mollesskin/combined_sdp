@@ -1,0 +1,91 @@
+{
+  "row": {
+    "file": "integer_overflow_mapping_sym_1.sol",
+    "group": "integer_overflow_mapping_sym_1.sol",
+    "variant": "V0",
+    "scenario": "underflow",
+    "step": 0,
+    "method": "init",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "unsafe",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "7",
+        "1"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "0"
+    },
+    "expected": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "0"
+    },
+    "mathematical_expected": "-1",
+    "unsafe_mathematical_state": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "-1"
+    },
+    "actual": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+    },
+    "discrepancy": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+    "field_discrepancies": {
+      "value": "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+    },
+    "arithmetic_trace": [
+      {
+        "label": "value",
+        "left": "0",
+        "right": "1",
+        "type": "sub",
+        "mathematical_result": "-1",
+        "in_uint256_range": false,
+        "modular_result": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    ],
+    "wraparound": true,
+    "wraparound_evidence": "observed_modular_state",
+    "full_observed_rollback": null,
+    "allowed_operation_passed": null,
+    "correct": false,
+    "violated_properties": [
+      "safe_rejection_and_rollback"
+    ],
+    "gas_used": "43679",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/reproduction_20261023T041750Z_60407/run2/integer_overflow_mapping_sym_1.sol.V0.underflow.0.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x30c8bf9aa3d707817deaafa23086c4507e7d1ae2bc5ff992cb719261220f79ca",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "43679",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1766267331",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "43679",
+    "hash": "0x3716f6c038e7485d922354167dc00681b778f4b29370134b4782cd681239ca04",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

@@ -1,0 +1,19 @@
+--- V0/integer_overflow_multitx_onefunc_feasible.sol
++++ V3/integer_overflow_multitx_onefunc_feasible.sol
+@@ -19,6 +19,15 @@
+             return;
+         }
+         // <yes> <report> ARITHMETIC
+-        count -= input;
++        require(input <= count);
++        count = ResearchChecked.sub(count, input);
+     }
+ }
++
++// AI-assisted experimental checked arithmetic; not an original SafeMath release.
++// Post-result add/mul checks follow the idiom in this dataset's BECToken SafeMath.
++library ResearchChecked {
++ function add(uint a,uint b) internal pure returns(uint) { uint c=a+b; require(c>=a); return c; }
++ function sub(uint a,uint b) internal pure returns(uint) { require(b<=a); return a-b; }
++ function mul(uint a,uint b) internal pure returns(uint) { uint c=a*b; require(a==0 || c/a==b); return c; }
++}

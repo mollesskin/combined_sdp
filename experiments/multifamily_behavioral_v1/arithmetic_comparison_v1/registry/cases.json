@@ -1,0 +1,262 @@
+[
+  {
+    "id": "AR01",
+    "file": "BECToken.sol",
+    "contract": "BecToken",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/BECToken.sol",
+    "source_sha256": "5765dccd66c76ce39da689c314364dc380e0b6a984ad351c5f81eb8e35e749b9",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/BECToken_test.js",
+    "published_test_sha256": "48bbde3b3c9357cf411ecf99b250472c0e139ffb2d73f032b3940687c7e0a0ff",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_BECToken",
+    "review_caveat": "Использовать уже имеющийся SafeMath.mul именно в raw multiplication; существующие другие SafeMath/paused guards не удалять. Учитывать повторяющихся и self-получателей. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR02",
+    "file": "integer_overflow_1.sol",
+    "contract": "Overflow",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/integer_overflow_1.sol",
+    "source_sha256": "0ca34ef4d8e14c6ce859a5fe0a9f1fce3a66ad687a13774945066ed56a6dc34e",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/integer_overflow_1_test.js",
+    "published_test_sha256": "139076ca8bae73ddad99a6028d8f29330d532aa571a624c8c70018eba0494fb3",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_integer_overflow_1",
+    "review_caveat": "Измерять private storage как BigInt; исходный bool return фактически не задаётся — не менять несвязанную семантику. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR03",
+    "file": "integer_overflow_add.sol",
+    "contract": "IntegerOverflowAdd",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/integer_overflow_add.sol",
+    "source_sha256": "a552367197068e110bdad903a28cb28b7762f8f68ffafde02a58286b89650466",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/integer_overflow_add_test.js",
+    "published_test_sha256": "c2d51eb019f9039747f6ec584ddf32fac8222cf5b4a107ce0bc0f3e5c7c2ba3b",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_ADDER_CLONE",
+    "review_caveat": "Одна нормализованная схема с overflow_simple_add; отмечать зависимость примеров. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR04",
+    "file": "integer_overflow_mapping_sym_1.sol",
+    "contract": "IntegerOverflowMappingSym1",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/integer_overflow_mapping_sym_1.sol",
+    "source_sha256": "abecfbc6b745841cfa4d27227dca7dbd0967e0a7198880c1fc3f30f92f2abe3b",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/integer_overflow_mapping_sym_1_test.js",
+    "published_test_sha256": "b7c1511057e633cc342b096807943e1f892e2975d670dfaa5e304e073a359c8a",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_integer_overflow_mapping_sym_1",
+    "review_caveat": "Отрицательная математическая величина — underflow, несмотря на название overflow. Все записи начинаются с нуля и нет funding/increment: положительное вычитание не имеет допустимого обычного случая без изменения модели. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR05",
+    "file": "integer_overflow_minimal.sol",
+    "contract": "IntegerOverflowMinimal",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/integer_overflow_minimal.sol",
+    "source_sha256": "ca539303822841840452b2aa1bf8607dc7b46d32de7261e11861da1bc9c6e915",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/integer_overflow_minimal_test.js",
+    "published_test_sha256": "9876d9935cdf6f3f071c321ac9fa81f1ecfde9f796e5ab69ef152979236f0c70",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_integer_overflow_minimal",
+    "review_caveat": "Исправить только ссылку в названии functional test в новой копии; проверять ноль и полное допустимое списание. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR06",
+    "file": "integer_overflow_mul.sol",
+    "contract": "IntegerOverflowMul",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/integer_overflow_mul.sol",
+    "source_sha256": "487adeb218dc1ef816c31808b81e31d4b4d4b2154ba6560d96140999a139f241",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/integer_overflow_mul_test.js",
+    "published_test_sha256": "05452868c94e51747ca604323220aee26f150b0ea93dc2c42f60887206e71e9b",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_integer_overflow_mul",
+    "review_caveat": "Проверять нулевой множитель; range guard не должен делить на ноль. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR07",
+    "file": "integer_overflow_multitx_multifunc_feasible.sol",
+    "contract": "IntegerOverflowMultiTxMultiFuncFeasible",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/integer_overflow_multitx_multifunc_feasible.sol",
+    "source_sha256": "b4751ff85a668932e084d03b08992f62b85f3a62dea2224d7f93eafe5628188f",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/integer_overflow_multitx_multifunc_feasible_test.js",
+    "published_test_sha256": "b2d127c8b5781653b026d5586fd2fe2b7da70282258a7d729a99ec31535d29c8",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_integer_overflow_multitx_multifunc_feasible",
+    "review_caveat": "Сохранить порядок разрешённых init/run, initial early return и состояние initialized. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR08",
+    "file": "integer_overflow_multitx_onefunc_feasible.sol",
+    "contract": "IntegerOverflowMultiTxOneFuncFeasible",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/integer_overflow_multitx_onefunc_feasible.sol",
+    "source_sha256": "2467c66a24f705b43c93495ffe8c065659507d2f2ff00d6affb9a72344606869",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/integer_overflow_multitx_onefunc_feasible_test.js",
+    "published_test_sha256": "2a4690aa6eddebb204ead2c2ad585d9e8ed7c9015e37d2033c84c269e8dfc57d",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_integer_overflow_multitx_onefunc_feasible",
+    "review_caveat": "Первый run только устанавливает initialized; не добавлять арифметическую проверку до этой ветки. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR09",
+    "file": "overflow_simple_add.sol",
+    "contract": "Overflow_Add",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/overflow_simple_add.sol",
+    "source_sha256": "641f6d9e0a4ff8f91c6340a38af72f4ab48749635f5ebb9815123c8ae2e0a46e",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/overflow_simple_add_test.js",
+    "published_test_sha256": "f00ea8dbedfb81b135317e0d3439c594d01d20b97b35c6480a50f64dee2f8519",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_ADDER_CLONE",
+    "review_caveat": "Семантически тот же прямой adder, что integer_overflow_add, при нормализации имён и pragma. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR10",
+    "file": "overflow_single_tx.sol",
+    "contract": "IntegerOverflowSingleTransaction",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/overflow_single_tx.sol",
+    "source_sha256": "ebeff1cc498b96abded07057158ec078e8eb1abe610eefdcbc7d6dbcaa497d63",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/overflow_single_tx_test.js",
+    "published_test_sha256": "9b34a81de3fc6bec16f9133f0cc52f23e6b179c33f7a9d2b61ce919420928d15",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_overflow_single_tx",
+    "review_caveat": "Авторские тесты охватывают только три state-changing функции. Local-only операции отдельно указывать как непокрытые, а не объявлять все шесть проверенными. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR11",
+    "file": "timelock.sol",
+    "contract": "TimeLock",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/timelock.sol",
+    "source_sha256": "1f079a3b8bb6ce973d62d93e1872f96bc3be4db53a9102230fa8c59b70ab0bb4",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/timelock_test.js",
+    "published_test_sha256": "37c3565b1c3aa6bddc44e58cb7ef4864366ed5124ceb3005a8d75502911f744e",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_timelock",
+    "review_caveat": "Первичный target — increaseLockTime. Не расширять незаметно treatment на deposit или другие арифметические места. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR12",
+    "file": "token.sol",
+    "contract": "Token",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/token.sol",
+    "source_sha256": "3de6aef9e9108cf274a94dc7472e2ad5b05fa391804eb2343db87b67236b3922",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/token_test.js",
+    "published_test_sha256": "01cdb8c6be496c2c5582f1cba4d5c92ae021df4b21af64b212693fc64c306675",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_token",
+    "review_caveat": "SafeMath должна применяться и к арифметике в предусловии/дебете согласно заранее заданному target set. Проверять self-transfer, zero transfer и сохранение supply; bounds учитывать актуальный промежуточный state. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  },
+  {
+    "id": "AR13",
+    "file": "tokensalechallenge.sol",
+    "contract": "TokenSaleChallenge",
+    "baseline_source": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/contracts/dataset/arithmetic/tokensalechallenge.sol",
+    "source_sha256": "2d5ef1bfd7cb877614fa2c00656fc7a9a536e25081bdec494b09ae6be6e6bd58",
+    "published_test": "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/test/arithmetic/tokensalechallenge_test.js",
+    "published_test_sha256": "c510ef0ca3da132662db9876a5681489c75df41b6412fc3b6b92a76f62847d41",
+    "compiler_version": "0.4.25",
+    "compiler_long_version": "0.4.25+commit.59dbf8f1",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "compiler_default",
+    "similarity_group": "AR_CASE_tokensalechallenge",
+    "review_caveat": "Обе стороны buy/sell и последовательность обновлений должны иметь определённый общий target set. Нельзя сравнивать A на всех операциях, а B только в buy. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+    "prior_baseline_status": "known published assertion run; not protected-variant evidence",
+    "selection_status": "registered_for_precise_comparison"
+  }
+]

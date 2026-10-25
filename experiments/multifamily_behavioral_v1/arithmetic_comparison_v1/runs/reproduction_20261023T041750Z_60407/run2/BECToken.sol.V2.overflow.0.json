@@ -1,0 +1,102 @@
+{
+  "row": {
+    "file": "BECToken.sol",
+    "group": "BECToken.sol",
+    "variant": "V2",
+    "scenario": "overflow",
+    "step": 0,
+    "method": "batchTransfer",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "reverted",
+    "kind": "unsafe",
+    "inputs": {
+      "sender": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "args": [
+        [
+          "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "57896044618658097711785492504343953926634992332820282019728792003956564819968"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "7000000000000000000000000000",
+      "slot1": "0",
+      "contract_wei": "0",
+      "a": "7000000000000000000000000000",
+      "b": "0",
+      "supply": "7000000000000000000000000000"
+    },
+    "expected": {
+      "slot0": "7000000000000000000000000000",
+      "slot1": "0",
+      "contract_wei": "0",
+      "a": "7000000000000000000000000000",
+      "b": "0",
+      "supply": "7000000000000000000000000000"
+    },
+    "mathematical_expected": null,
+    "unsafe_mathematical_state": {
+      "slot0": "7000000000000000000000000000",
+      "slot1": "0",
+      "contract_wei": "0",
+      "a": "57896044618658097711785492504343953926634992332827282019728792003956564819968",
+      "b": "-57896044618658097711785492504343953926634992332820282019728792003956564819968",
+      "supply": "7000000000000000000000000000"
+    },
+    "actual": {
+      "slot0": "7000000000000000000000000000",
+      "slot1": "0",
+      "contract_wei": "0",
+      "a": "7000000000000000000000000000",
+      "b": "0",
+      "supply": "7000000000000000000000000000"
+    },
+    "discrepancy": null,
+    "field_discrepancies": null,
+    "arithmetic_trace": [
+      {
+        "label": "batch_amount",
+        "left": "2",
+        "right": "57896044618658097711785492504343953926634992332820282019728792003956564819968",
+        "type": "mul",
+        "mathematical_result": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "in_uint256_range": false,
+        "modular_result": "0"
+      }
+    ],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": true,
+    "allowed_operation_passed": null,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "25067",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/reproduction_20261023T041750Z_60407/run2/BECToken.sol.V2.overflow.0.json",
+    "error": {
+      "message": "Transaction reverted without a reason string",
+      "data": "0x",
+      "transactionHash": "0x6354fb6d984caef23cb22d2952420131b5c6644dc517eae5cf8b34bdc6eda837"
+    }
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x9c2bc3e8c79cf2b75a64fa6be29ee0be687845adf338eae167402c9a57afb3df",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "25067",
+    "from": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "gasPrice": "1772191387",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "25067",
+    "hash": "0x6354fb6d984caef23cb22d2952420131b5c6644dc517eae5cf8b34bdc6eda837",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 0,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

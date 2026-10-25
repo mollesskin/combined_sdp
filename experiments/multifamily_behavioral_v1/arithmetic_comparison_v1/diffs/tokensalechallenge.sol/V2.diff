@@ -1,0 +1,25 @@
+--- V0/tokensalechallenge.sol
++++ V2/tokensalechallenge.sol
+@@ -20,16 +20,20 @@
+ 
+     function buy(uint256 numTokens) public payable {
+         // <yes> <report> ARITHMETIC
++        require(numTokens == 0 || PRICE_PER_TOKEN <= uint256(-1) / numTokens);
+         require(msg.value == numTokens * PRICE_PER_TOKEN);
+         // <yes> <report> ARITHMETIC
+-        balanceOf[msg.sender] += numTokens;
++        require(numTokens <= uint256(-1) - balanceOf[msg.sender]);
++        balanceOf[msg.sender] = balanceOf[msg.sender] + numTokens;
+     }
+ 
+     function sell(uint256 numTokens) public {
+         require(balanceOf[msg.sender] >= numTokens);
+ 
+-        balanceOf[msg.sender] -= numTokens;
++        require(numTokens <= balanceOf[msg.sender]);
++        balanceOf[msg.sender] = balanceOf[msg.sender] - numTokens;
+         // <yes> <report> ARITHMETIC
++        require(numTokens == 0 || PRICE_PER_TOKEN <= uint256(-1) / numTokens);
+         msg.sender.transfer(numTokens * PRICE_PER_TOKEN);
+     }
+ }

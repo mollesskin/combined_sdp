@@ -1,0 +1,133 @@
+{
+  "row": {
+    "file": "BECToken.sol",
+    "group": "BECToken.sol",
+    "variant": "V0",
+    "scenario": "overflow",
+    "step": 0,
+    "method": "batchTransfer",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "unsafe",
+    "inputs": {
+      "sender": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "args": [
+        [
+          "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "57896044618658097711785492504343953926634992332820282019728792003956564819968"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "7000000000000000000000000000",
+      "slot1": "0",
+      "contract_wei": "0",
+      "a": "7000000000000000000000000000",
+      "b": "0",
+      "supply": "7000000000000000000000000000"
+    },
+    "expected": {
+      "slot0": "7000000000000000000000000000",
+      "slot1": "0",
+      "contract_wei": "0",
+      "a": "7000000000000000000000000000",
+      "b": "0",
+      "supply": "7000000000000000000000000000"
+    },
+    "mathematical_expected": null,
+    "unsafe_mathematical_state": {
+      "slot0": "7000000000000000000000000000",
+      "slot1": "0",
+      "contract_wei": "0",
+      "a": "57896044618658097711785492504343953926634992332827282019728792003956564819968",
+      "b": "-57896044618658097711785492504343953926634992332820282019728792003956564819968",
+      "supply": "7000000000000000000000000000"
+    },
+    "actual": {
+      "slot0": "7000000000000000000000000000",
+      "slot1": "0",
+      "contract_wei": "0",
+      "a": "57896044618658097711785492504343953926634992332827282019728792003956564819968",
+      "b": "57896044618658097711785492504343953926634992332820282019728792003956564819968",
+      "supply": "7000000000000000000000000000"
+    },
+    "discrepancy": null,
+    "field_discrepancies": {
+      "b": "115792089237316195423570985008687907853269984665640564039457584007913129639936"
+    },
+    "arithmetic_trace": [
+      {
+        "label": "batch_amount",
+        "left": "2",
+        "right": "57896044618658097711785492504343953926634992332820282019728792003956564819968",
+        "type": "mul",
+        "mathematical_result": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+        "in_uint256_range": false,
+        "modular_result": "0"
+      }
+    ],
+    "wraparound": true,
+    "wraparound_evidence": "inferred_from_executed_source_and_operands",
+    "full_observed_rollback": null,
+    "allowed_operation_passed": null,
+    "correct": false,
+    "violated_properties": [
+      "safe_rejection_and_rollback"
+    ],
+    "gas_used": "58137",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/run1/BECToken.sol.V0.overflow.0.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x5b1f081f841d444d5843171da602e2e3958c59b2f01d9a3af62a8ccf60cfd6ff",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "58137",
+    "from": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "gasPrice": "1772133214",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "58137",
+    "hash": "0x07fe67654e5dc372b34933b13e7278ec75457d7f79fd9139cd7ccf94f89ec2d9",
+    "index": 0,
+    "logs": [
+      {
+        "_type": "log",
+        "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+        "blockHash": "0x5b1f081f841d444d5843171da602e2e3958c59b2f01d9a3af62a8ccf60cfd6ff",
+        "blockNumber": 2,
+        "data": "0x8000000000000000000000000000000000000000000000000000000000000000",
+        "index": 0,
+        "topics": [
+          "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+          "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8",
+          "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+        ],
+        "transactionHash": "0x07fe67654e5dc372b34933b13e7278ec75457d7f79fd9139cd7ccf94f89ec2d9",
+        "transactionIndex": 0
+      },
+      {
+        "_type": "log",
+        "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+        "blockHash": "0x5b1f081f841d444d5843171da602e2e3958c59b2f01d9a3af62a8ccf60cfd6ff",
+        "blockNumber": 2,
+        "data": "0x8000000000000000000000000000000000000000000000000000000000000000",
+        "index": 1,
+        "topics": [
+          "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+          "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8",
+          "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+        ],
+        "transactionHash": "0x07fe67654e5dc372b34933b13e7278ec75457d7f79fd9139cd7ccf94f89ec2d9",
+        "transactionIndex": 0
+      }
+    ],
+    "logsBloom": "0x00000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000840000000000000000100000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000042000000200000000000000000000000002000000000000000000000000000000000000000000000000000000001000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

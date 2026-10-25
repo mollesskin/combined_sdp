@@ -1,0 +1,63 @@
+name: Test Suite
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Smart Contract Tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+    
+    - name: Environment
+      uses: actions/setup-node@v4
+
+    - name: Install Dependencies
+      run: |
+        cd smartbugs-curated/0.4.x
+        npm ci
+    - name: Run Tests
+      run: |
+        cd smartbugs-curated/0.4.x
+        npx hardhat test
+  test-evaluator:
+    name: Evaluator Tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Install Dependencies
+      run: |
+        cd evaluator
+        python -m venv .venv
+        source .venv/bin/activate
+        pip install -e ".[dev]"
+
+    - name: Run Tests
+      run: |
+        cd evaluator
+        source .venv/bin/activate
+        pytest
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+          
+      - name: Install dependencies
+        working-directory: smartbugs-curated/0.4.x
+        run: npm ci
+        
+      - name: Run lint
+        working-directory: smartbugs-curated/0.4.x
+        run: npm run lint

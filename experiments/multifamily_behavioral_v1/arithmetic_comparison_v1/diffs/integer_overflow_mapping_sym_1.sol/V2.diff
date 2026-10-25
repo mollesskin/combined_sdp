@@ -1,0 +1,11 @@
+--- V0/integer_overflow_mapping_sym_1.sol
++++ V2/integer_overflow_mapping_sym_1.sol
+@@ -13,6 +13,7 @@
+ 
+     function init(uint256 k, uint256 v) public {
+         // <yes> <report> ARITHMETIC
+-        map[k] -= v;
++        require(v <= map[k]);
++        map[k] = map[k] - v;
+     }
+ }

@@ -1,0 +1,11 @@
+--- V0/integer_overflow_multitx_onefunc_feasible.sol
++++ V2/integer_overflow_multitx_onefunc_feasible.sol
+@@ -19,6 +19,7 @@
+             return;
+         }
+         // <yes> <report> ARITHMETIC
+-        count -= input;
++        require(input <= count);
++        count = count - input;
+     }
+ }

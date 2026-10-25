@@ -1,0 +1,81 @@
+{
+  "row": {
+    "file": "integer_overflow_add.sol",
+    "group": "AR_ADDER_CLONE",
+    "variant": "V2",
+    "scenario": "ordinary",
+    "step": 0,
+    "method": "run",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "allowed",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "0"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "1",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "expected": {
+      "slot0": "1",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "mathematical_expected": "1",
+    "unsafe_mathematical_state": null,
+    "actual": {
+      "slot0": "1",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "discrepancy": "0",
+    "field_discrepancies": {},
+    "arithmetic_trace": [
+      {
+        "label": "value",
+        "left": "1",
+        "right": "0",
+        "type": "add",
+        "mathematical_result": "1",
+        "in_uint256_range": true,
+        "modular_result": "1"
+      }
+    ],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": null,
+    "allowed_operation_passed": true,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "23703",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/reproduction_20261023T041750Z_60407/run1/integer_overflow_add.sol.V2.ordinary.0.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x6a63059499442329618c4ffd6c0379a656237f2af75cbbea222faa7be2e8e044",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "23703",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1766512156",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "23703",
+    "hash": "0xf24b79de2a99ca26f4af498dc5f42b88378821ae709cc8d5ee118552753f78c9",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

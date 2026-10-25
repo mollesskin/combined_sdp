@@ -1,0 +1,48 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IntegerOverflowMultiTxMultiFuncFeasible",
+  "sourceName": "contracts/V1/integer_overflow_multitx_multifunc_feasible.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "count",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "uint256"
+        }
+      ],
+      "name": "run",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "init",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052600080556001805534801561001857600080fd5b5061010e806100286000396000f30060806040526004361060525763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306661abd81146057578063a444f5e914607b578063e1c7392a146092575b600080fd5b348015606257600080fd5b50606960a4565b60408051918252519081900360200190f35b348015608657600080fd5b50609060043560aa565b005b348015609d57600080fd5b50609060c7565b60015481565b600054151560b65760c4565b60c06001548260ce565b6001555b50565b6001600055565b60008282111560dc57600080fd5b509003905600a165627a7a723058203f1fbba45dd3c2766af34dc92b4a7bbd208abaa5569fcc3dafbbc76b0b6a7f240029",
+  "deployedBytecode": "0x60806040526004361060525763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306661abd81146057578063a444f5e914607b578063e1c7392a146092575b600080fd5b348015606257600080fd5b50606960a4565b60408051918252519081900360200190f35b348015608657600080fd5b50609060043560aa565b005b348015609d57600080fd5b50609060c7565b60015481565b600054151560b65760c4565b60c06001548260ce565b6001555b50565b6001600055565b60008282111560dc57600080fd5b509003905600a165627a7a723058203f1fbba45dd3c2766af34dc92b4a7bbd208abaa5569fcc3dafbbc76b0b6a7f240029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

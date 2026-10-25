@@ -1,0 +1,39 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Overflow_Add",
+  "sourceName": "contracts/V0/overflow_simple_add.sol",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "deposit",
+          "type": "uint256"
+        }
+      ],
+      "name": "add",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "balance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052600160005534801561001557600080fd5b5060c5806100246000396000f30060806040526004361060485763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631003e2d28114604d578063b69ef8a8146064575b600080fd5b348015605857600080fd5b5060626004356088565b005b348015606f57600080fd5b5060766093565b60408051918252519081900360200190f35b600080549091019055565b600054815600a165627a7a723058200d5ce9d7cf960ebfc0f242ac48555858de7d6fe0f2be44900f38bbd78ffa0a310029",
+  "deployedBytecode": "0x60806040526004361060485763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631003e2d28114604d578063b69ef8a8146064575b600080fd5b348015605857600080fd5b5060626004356088565b005b348015606f57600080fd5b5060766093565b60408051918252519081900360200190f35b600080549091019055565b600054815600a165627a7a723058200d5ce9d7cf960ebfc0f242ac48555858de7d6fe0f2be44900f38bbd78ffa0a310029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

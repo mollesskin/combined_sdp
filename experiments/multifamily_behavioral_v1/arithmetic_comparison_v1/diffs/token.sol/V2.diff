@@ -1,0 +1,19 @@
+--- V0/token.sol
++++ V2/token.sol
+@@ -17,10 +17,13 @@
+ 
+    function transfer(address _to, uint _value) public returns (bool) {
+      // <yes> <report> ARITHMETIC
+-     require(balances[msg.sender] - _value >= 0);
++     require(_value <= balances[msg.sender]);
++        require(balances[msg.sender] - _value >= 0);
+      // <yes> <report> ARITHMETIC
+-     balances[msg.sender] -= _value;
+-     balances[_to] += _value;
++     require(_value <= balances[msg.sender]);
++        balances[msg.sender] = balances[msg.sender] - _value;
++     require(_value <= uint256(-1) - balances[_to]);
++        balances[_to] = balances[_to] + _value;
+      return true;
+    }
+ 

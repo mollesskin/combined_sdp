@@ -1,0 +1,21 @@
+[
+  {
+    "id": "AC_INIT_CLONE",
+    "files": [
+      "access_control/incorrect_constructor_name1.sol",
+      "access_control/incorrect_constructor_name2.sol",
+      "access_control/incorrect_constructor_name3.sol"
+    ],
+    "basis": "Полное совпадение после удаления комментариев/pragma/пробелов и замены только имени initializer.",
+    "interpretation": "Близкие варианты одного исходного примера, не три независимых дизайна."
+  },
+  {
+    "id": "AR_ADDER_CLONE",
+    "files": [
+      "arithmetic/integer_overflow_add.sol",
+      "arithmetic/overflow_simple_add.sol"
+    ],
+    "basis": "Полное совпадение после удаления комментариев/pragma/пробелов и нормализации имён contract/state/function/argument.",
+    "interpretation": "Простая одинаковая схема сложения. Compiler pins остаются отдельным измерением, не доказательством разнообразия кода."
+  }
+]

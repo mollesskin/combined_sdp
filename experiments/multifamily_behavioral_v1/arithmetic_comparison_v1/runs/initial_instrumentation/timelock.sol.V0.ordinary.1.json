@@ -1,0 +1,71 @@
+{
+  "row": {
+    "file": "timelock.sol",
+    "group": "timelock.sol",
+    "variant": "V0",
+    "scenario": "ordinary",
+    "step": 1,
+    "method": "increaseLockTime",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "allowed",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "1"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "1",
+      "lock": "1546883942",
+      "credit": "1"
+    },
+    "expected": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "1",
+      "lock": "1546883943",
+      "credit": "1"
+    },
+    "mathematical_expected": "1546883943",
+    "unsafe_mathematical_state": null,
+    "actual": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "1",
+      "lock": "1546883943",
+      "credit": "1"
+    },
+    "discrepancy": "0",
+    "wraparound": false,
+    "full_observed_rollback": null,
+    "allowed_operation_passed": true,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "26470",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/run1/timelock.sol.V0.ordinary.1.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0xa2282573279d416382327e77d116cfef35b79e1c2ee3bd1f486cf3e4e23be812",
+    "blockNumber": 3,
+    "contractAddress": null,
+    "cumulativeGasUsed": "26470",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1671429734",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "26470",
+    "hash": "0x21f69c5fd3066b7b0a3a9cf084d0e71e192d5ae8ac2ee78550fe869098edbf3b",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

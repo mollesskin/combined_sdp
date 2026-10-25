@@ -1,0 +1,709 @@
+contracts/V0/integer_overflow_1.sol:12:6: Warning: No visibility specified. Defaulting to "public". 
+     function add(uint value) returns (bool){
+     ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/integer_overflow_multitx_multifunc_feasible.sol:20:5: Warning: No visibility specified. Defaulting to "public". 
+    function run(uint256 input) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:171:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:297:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:72:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+
+contracts/V0/BECToken.sol:124:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+
+contracts/V0/BECToken.sol:140:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+
+contracts/V0/BECToken.sol:191:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+
+contracts/V0/BECToken.sol:229:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+
+contracts/V0/BECToken.sol:237:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+
+contracts/V0/BECToken.sol:271:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _receivers[i], _value);
+        ^-----------------------------------------^
+
+contracts/V0/BECToken.sol:171:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:297:5: Warning: No visibility specified. Defaulting to "public". 
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:302:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:20:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:27:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/BECToken.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/integer_overflow_1.sol:12:6: Warning: No visibility specified. Defaulting to "public". 
+     function add(uint value) returns (bool){
+     ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/overflow_single_tx.sol:36:9: Warning: Unused local variable.
+        uint res = count + input;
+        ^------^
+
+contracts/V0/overflow_single_tx.sol:42:9: Warning: Unused local variable.
+        uint res = count * input;
+        ^------^
+
+contracts/V0/overflow_single_tx.sol:48:9: Warning: Unused local variable.
+       	uint res = count - input;
+       	^------^
+
+contracts/V0/overflow_single_tx.sol:34:5: Warning: Function state mutability can be restricted to view
+    function overflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/overflow_single_tx.sol:40:5: Warning: Function state mutability can be restricted to view
+    function overflowmulocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/overflow_single_tx.sol:46:5: Warning: Function state mutability can be restricted to view
+    function underflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:171:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:297:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:72:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+
+contracts/V1/BECToken.sol:124:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+
+contracts/V1/BECToken.sol:140:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+
+contracts/V1/BECToken.sol:191:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+
+contracts/V1/BECToken.sol:229:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+
+contracts/V1/BECToken.sol:237:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+
+contracts/V1/BECToken.sol:271:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _receivers[i], _value);
+        ^-----------------------------------------^
+
+contracts/V1/BECToken.sol:171:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:297:5: Warning: No visibility specified. Defaulting to "public". 
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:302:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:20:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:27:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/BECToken.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/token.sol:14:4: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+   function Token(uint _initialSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/token.sol:14:4: Warning: No visibility specified. Defaulting to "public". 
+   function Token(uint _initialSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/overflow_single_tx.sol:36:9: Warning: Unused local variable.
+        uint res = count + input;
+        ^------^
+
+contracts/V1/overflow_single_tx.sol:42:9: Warning: Unused local variable.
+        uint res = count * input;
+        ^------^
+
+contracts/V1/overflow_single_tx.sol:48:9: Warning: Unused local variable.
+       	uint res = count - input;
+       	^------^
+
+contracts/V1/overflow_single_tx.sol:34:5: Warning: Function state mutability can be restricted to view
+    function overflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/overflow_single_tx.sol:40:5: Warning: Function state mutability can be restricted to view
+    function overflowmulocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/overflow_single_tx.sol:46:5: Warning: Function state mutability can be restricted to view
+    function underflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/token.sol:14:4: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+   function Token(uint _initialSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/token.sol:14:4: Warning: No visibility specified. Defaulting to "public". 
+   function Token(uint _initialSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/tokensalechallenge.sol:13:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenSaleChallenge(address _player) public payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V0/tokensalechallenge.sol:13:33: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function TokenSaleChallenge(address _player) public payable {
+                                ^-------------^
+
+contracts/V1/integer_overflow_multitx_multifunc_feasible.sol:20:5: Warning: No visibility specified. Defaulting to "public". 
+    function run(uint256 input) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/tokensalechallenge.sol:13:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenSaleChallenge(address _player) public payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V1/tokensalechallenge.sol:13:33: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function TokenSaleChallenge(address _player) public payable {
+                                ^-------------^
+
+contracts/V2/integer_overflow_1.sol:12:6: Warning: No visibility specified. Defaulting to "public". 
+     function add(uint value) returns (bool){
+     ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/integer_overflow_multitx_multifunc_feasible.sol:20:5: Warning: No visibility specified. Defaulting to "public". 
+    function run(uint256 input) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/overflow_single_tx.sol:39:9: Warning: Unused local variable.
+        uint res = count + input;
+        ^------^
+
+contracts/V2/overflow_single_tx.sol:45:9: Warning: Unused local variable.
+        uint res = count * input;
+        ^------^
+
+contracts/V2/overflow_single_tx.sol:51:9: Warning: Unused local variable.
+       	uint res = count - input;
+       	^------^
+
+contracts/V2/overflow_single_tx.sol:37:5: Warning: Function state mutability can be restricted to view
+    function overflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/overflow_single_tx.sol:43:5: Warning: Function state mutability can be restricted to view
+    function overflowmulocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/overflow_single_tx.sol:49:5: Warning: Function state mutability can be restricted to view
+    function underflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/token.sol:14:4: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+   function Token(uint _initialSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/token.sol:14:4: Warning: No visibility specified. Defaulting to "public". 
+   function Token(uint _initialSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/integer_overflow_1.sol:12:6: Warning: No visibility specified. Defaulting to "public". 
+     function add(uint value) returns (bool){
+     ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/tokensalechallenge.sol:13:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenSaleChallenge(address _player) public payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/tokensalechallenge.sol:13:33: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function TokenSaleChallenge(address _player) public payable {
+                                ^-------------^
+
+contracts/V2/BECToken.sol:171:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/BECToken.sol:298:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/BECToken.sol:72:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+
+contracts/V2/BECToken.sol:124:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+
+contracts/V2/BECToken.sol:140:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+
+contracts/V2/BECToken.sol:191:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+
+contracts/V2/BECToken.sol:229:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+
+contracts/V2/BECToken.sol:237:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+
+contracts/V2/BECToken.sol:272:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _receivers[i], _value);
+        ^-----------------------------------------^
+
+contracts/V2/BECToken.sol:171:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/BECToken.sol:298:5: Warning: No visibility specified. Defaulting to "public". 
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/BECToken.sol:303:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/BECToken.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/BECToken.sol:20:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/BECToken.sol:27:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V2/BECToken.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/integer_overflow_multitx_multifunc_feasible.sol:20:5: Warning: No visibility specified. Defaulting to "public". 
+    function run(uint256 input) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/token.sol:14:4: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+   function Token(uint _initialSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/token.sol:14:4: Warning: No visibility specified. Defaulting to "public". 
+   function Token(uint _initialSupply) {
+   ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/integer_overflow_1.sol:12:6: Warning: No visibility specified. Defaulting to "public". 
+     function add(uint value) returns (bool){
+     ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/overflow_single_tx.sol:39:9: Warning: Unused local variable.
+        uint res = count + input;
+        ^------^
+
+contracts/V3/overflow_single_tx.sol:45:9: Warning: Unused local variable.
+        uint res = count * input;
+        ^------^
+
+contracts/V3/overflow_single_tx.sol:51:9: Warning: Unused local variable.
+       	uint res = count - input;
+       	^------^
+
+contracts/V3/overflow_single_tx.sol:37:5: Warning: Function state mutability can be restricted to view
+    function overflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/overflow_single_tx.sol:43:5: Warning: Function state mutability can be restricted to view
+    function overflowmulocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/overflow_single_tx.sol:49:5: Warning: Function state mutability can be restricted to view
+    function underflowlocalonly(uint256 input) public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/tokensalechallenge.sol:13:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function TokenSaleChallenge(address _player) public payable {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/tokensalechallenge.sol:13:33: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function TokenSaleChallenge(address _player) public payable {
+                                ^-------------^
+
+contracts/V3/BECToken.sol:171:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/BECToken.sol:298:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/BECToken.sol:72:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+
+contracts/V3/BECToken.sol:124:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+
+contracts/V3/BECToken.sol:140:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+
+contracts/V3/BECToken.sol:191:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+
+contracts/V3/BECToken.sol:229:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+
+contracts/V3/BECToken.sol:237:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+
+contracts/V3/BECToken.sol:272:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _receivers[i], _value);
+        ^-----------------------------------------^
+
+contracts/V3/BECToken.sol:171:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/BECToken.sol:298:5: Warning: No visibility specified. Defaulting to "public". 
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/BECToken.sol:303:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/BECToken.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/BECToken.sol:20:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/BECToken.sol:27:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/V3/BECToken.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:171:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:297:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:72:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+
+contracts/conditions/V0/BECToken.sol:124:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+
+contracts/conditions/V0/BECToken.sol:140:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+
+contracts/conditions/V0/BECToken.sol:191:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+
+contracts/conditions/V0/BECToken.sol:229:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+
+contracts/conditions/V0/BECToken.sol:237:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+
+contracts/conditions/V0/BECToken.sol:271:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _receivers[i], _value);
+        ^-----------------------------------------^
+
+contracts/conditions/V0/BECToken.sol:171:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:297:5: Warning: No visibility specified. Defaulting to "public". 
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:302:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:20:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:27:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V0/BECToken.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:171:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:297:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:72:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+
+contracts/conditions/V1/BECToken.sol:124:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+
+contracts/conditions/V1/BECToken.sol:140:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+
+contracts/conditions/V1/BECToken.sol:191:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+
+contracts/conditions/V1/BECToken.sol:229:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+
+contracts/conditions/V1/BECToken.sol:237:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+
+contracts/conditions/V1/BECToken.sol:271:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _receivers[i], _value);
+        ^-----------------------------------------^
+
+contracts/conditions/V1/BECToken.sol:171:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:297:5: Warning: No visibility specified. Defaulting to "public". 
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:302:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:20:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:27:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V1/BECToken.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:171:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:298:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:72:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+
+contracts/conditions/V2/BECToken.sol:124:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+
+contracts/conditions/V2/BECToken.sol:140:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+
+contracts/conditions/V2/BECToken.sol:191:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+
+contracts/conditions/V2/BECToken.sol:229:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+
+contracts/conditions/V2/BECToken.sol:237:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+
+contracts/conditions/V2/BECToken.sol:272:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _receivers[i], _value);
+        ^-----------------------------------------^
+
+contracts/conditions/V2/BECToken.sol:171:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:298:5: Warning: No visibility specified. Defaulting to "public". 
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:303:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:20:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:27:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V2/BECToken.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:171:3: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:298:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:72:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(msg.sender, _to, _value);
+    ^-------------------------------^
+
+contracts/conditions/V3/BECToken.sol:124:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Transfer(_from, _to, _value);
+    ^--------------------------^
+
+contracts/conditions/V3/BECToken.sol:140:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Approval(msg.sender, _spender, _value);
+    ^------------------------------------^
+
+contracts/conditions/V3/BECToken.sol:191:5: Warning: Invoking events without "emit" prefix is deprecated.
+    OwnershipTransferred(owner, newOwner);
+    ^-----------------------------------^
+
+contracts/conditions/V3/BECToken.sol:229:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Pause();
+    ^-----^
+
+contracts/conditions/V3/BECToken.sol:237:5: Warning: Invoking events without "emit" prefix is deprecated.
+    Unpause();
+    ^-------^
+
+contracts/conditions/V3/BECToken.sol:272:9: Warning: Invoking events without "emit" prefix is deprecated.
+        Transfer(msg.sender, _receivers[i], _value);
+        ^-----------------------------------------^
+
+contracts/conditions/V3/BECToken.sol:171:3: Warning: No visibility specified. Defaulting to "public". 
+  function Ownable() {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:298:5: Warning: No visibility specified. Defaulting to "public". 
+    function BecToken() {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:303:5: Warning: No visibility specified. Defaulting to "public". 
+    function () {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:14:3: Warning: Function state mutability can be restricted to pure
+  function mul(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:20:3: Warning: Function state mutability can be restricted to pure
+  function div(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:27:3: Warning: Function state mutability can be restricted to pure
+  function sub(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/conditions/V3/BECToken.sol:32:3: Warning: Function state mutability can be restricted to pure
+  function add(uint256 a, uint256 b) internal constant returns (uint256) {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+Compiled 57 Solidity files successfully (evm target: unknown evm version for solc version 0.4.25).

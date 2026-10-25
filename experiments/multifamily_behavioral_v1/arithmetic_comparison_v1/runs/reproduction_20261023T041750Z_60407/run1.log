@@ -1,0 +1,118 @@
+{
+  "rows": 244,
+  "incorrect": [
+    {
+      "file": "BECToken.sol",
+      "v": "V0",
+      "s": "overflow",
+      "step": 0,
+      "status": "success"
+    },
+    {
+      "file": "integer_overflow_1.sol",
+      "v": "V0",
+      "s": "boundary",
+      "step": 1,
+      "status": "success"
+    },
+    {
+      "file": "integer_overflow_add.sol",
+      "v": "V0",
+      "s": "boundary",
+      "step": 1,
+      "status": "success"
+    },
+    {
+      "file": "integer_overflow_mapping_sym_1.sol",
+      "v": "V0",
+      "s": "underflow",
+      "step": 0,
+      "status": "success"
+    },
+    {
+      "file": "integer_overflow_minimal.sol",
+      "v": "V0",
+      "s": "underflow",
+      "step": 0,
+      "status": "success"
+    },
+    {
+      "file": "integer_overflow_mul.sol",
+      "v": "V0",
+      "s": "boundary",
+      "step": 1,
+      "status": "success"
+    },
+    {
+      "file": "integer_overflow_multitx_multifunc_feasible.sol",
+      "v": "V0",
+      "s": "underflow",
+      "step": 2,
+      "status": "success"
+    },
+    {
+      "file": "integer_overflow_multitx_onefunc_feasible.sol",
+      "v": "V0",
+      "s": "underflow",
+      "step": 1,
+      "status": "success"
+    },
+    {
+      "file": "overflow_simple_add.sol",
+      "v": "V0",
+      "s": "boundary",
+      "step": 1,
+      "status": "success"
+    },
+    {
+      "file": "overflow_single_tx.sol",
+      "v": "V0",
+      "s": "add",
+      "step": 1,
+      "status": "success"
+    },
+    {
+      "file": "overflow_single_tx.sol",
+      "v": "V0",
+      "s": "sub",
+      "step": 1,
+      "status": "success"
+    },
+    {
+      "file": "overflow_single_tx.sol",
+      "v": "V0",
+      "s": "mul",
+      "step": 2,
+      "status": "success"
+    },
+    {
+      "file": "timelock.sol",
+      "v": "V0",
+      "s": "overflow",
+      "step": 1,
+      "status": "success"
+    },
+    {
+      "file": "token.sol",
+      "v": "V0",
+      "s": "underflow",
+      "step": 0,
+      "status": "success"
+    },
+    {
+      "file": "token.sol",
+      "v": "V0",
+      "s": "self_insufficient",
+      "step": 0,
+      "status": "success"
+    },
+    {
+      "file": "tokensalechallenge.sol",
+      "v": "V0",
+      "s": "overflow",
+      "step": 0,
+      "status": "success"
+    }
+  ],
+  "infrastructure": 0
+}

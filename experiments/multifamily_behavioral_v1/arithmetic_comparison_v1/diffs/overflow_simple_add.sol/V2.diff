@@ -1,0 +1,11 @@
+--- V0/overflow_simple_add.sol
++++ V2/overflow_simple_add.sol
+@@ -11,6 +11,7 @@
+ 
+     function add(uint256 deposit) public {
+         // <yes> <report> ARITHMETIC
+-        balance += deposit;
++        require(deposit <= uint256(-1) - balance);
++        balance = balance + deposit;
+     }
+ }

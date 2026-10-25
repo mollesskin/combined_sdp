@@ -1,0 +1,71 @@
+{
+  "row": {
+    "file": "integer_overflow_multitx_multifunc_feasible.sol",
+    "group": "integer_overflow_multitx_multifunc_feasible.sol",
+    "variant": "V0",
+    "scenario": "underflow",
+    "step": 0,
+    "method": "run",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "allowed",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "0",
+      "slot1": "1",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "expected": {
+      "slot0": "0",
+      "slot1": "1",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "mathematical_expected": null,
+    "unsafe_mathematical_state": null,
+    "actual": {
+      "slot0": "0",
+      "slot1": "1",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "discrepancy": null,
+    "field_discrepancies": {},
+    "arithmetic_trace": [],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": null,
+    "allowed_operation_passed": true,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "23870",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/reproduction_20261023T041750Z_60407/run2/integer_overflow_multitx_multifunc_feasible.sol.V0.underflow.0.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0xe1897014ec2124fba2f4c14b0fd0777956a13e3306eda5a9d5c83d385dad6d68",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "23870",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1766577649",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "23870",
+    "hash": "0x942c8d10da18d90696b8a9a256e83a5a25a3545e19d7bab5b8e126364b54d10a",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

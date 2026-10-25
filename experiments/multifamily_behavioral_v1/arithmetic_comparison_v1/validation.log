@@ -1,0 +1,14 @@
+{
+  "files": 13,
+  "full_four_variant_comparisons": 13,
+  "groups": 12,
+  "rows_per_run": 244,
+  "repeats": 2,
+  "V3_vs_V1": {
+    "tie": 61
+  },
+  "V3_vs_V2": {
+    "tie": 61
+  }
+}
+85 evidence checks passed

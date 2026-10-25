@@ -1,0 +1,1080 @@
+{
+  "RQ": true,
+  "clone_groups": [
+    {
+      "id": "AC_INIT_CLONE",
+      "files": [
+        "access_control/incorrect_constructor_name1.sol",
+        "access_control/incorrect_constructor_name2.sol",
+        "access_control/incorrect_constructor_name3.sol"
+      ],
+      "basis": "Полное совпадение после удаления комментариев/pragma/пробелов и замены только имени initializer.",
+      "interpretation": "Близкие варианты одного исходного примера, не три независимых дизайна."
+    },
+    {
+      "id": "AR_ADDER_CLONE",
+      "files": [
+        "arithmetic/integer_overflow_add.sol",
+        "arithmetic/overflow_simple_add.sol"
+      ],
+      "basis": "Полное совпадение после удаления комментариев/pragma/пробелов и нормализации имён contract/state/function/argument.",
+      "interpretation": "Простая одинаковая схема сложения. Compiler pins остаются отдельным измерением, не доказательством разнообразия кода."
+    }
+  ],
+  "cases": [
+    {
+      "source_path": "contracts/dataset/arithmetic/BECToken.sol",
+      "test_path": "test/arithmetic/BECToken_test.js",
+      "source_sha256": "5765dccd66c76ce39da689c314364dc380e0b6a984ad351c5f81eb8e35e749b9",
+      "test_sha256": "48bbde3b3c9357cf411ecf99b250472c0e139ffb2d73f032b3940687c7e0a0ff",
+      "benchmark_category": "arithmetic",
+      "file": "BECToken.sol",
+      "pragma": "^0.4.16",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Умножение количества получателей на сумму до проверок",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Использовать уже имеющийся SafeMath.mul именно в raw multiplication; существующие другие SafeMath/paused guards не удалять. Учитывать повторяющихся и self-получателей. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/BECToken.sol",
+          "start": 263,
+          "end": 265
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "uint256 amount = uint256(cnt) * _value;",
+          "left": "uint256(cnt)",
+          "right": "_value",
+          "operator": "mul"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/BECToken.sol",
+          "sha256": "5765dccd66c76ce39da689c314364dc380e0b6a984ad351c5f81eb8e35e749b9"
+        },
+        "V1": {
+          "path": "project/contracts/V1/BECToken.sol",
+          "sha256": "beda2b50846699b743f6d0320fb43f94ee33b692f83a9952987cf87adf589ed1"
+        },
+        "V2": {
+          "path": "project/contracts/V2/BECToken.sol",
+          "sha256": "ee00416a2b81dd2a25d431109ce0e55888ba7565a9316156812d51e6e46e38e5"
+        },
+        "V3": {
+          "path": "project/contracts/V3/BECToken.sol",
+          "sha256": "322abab6564b5bdfb19a233d1df0f21cea7167c0bae63374a56ef426d3f0b44f"
+        }
+      },
+      "group": "BECToken.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "batch product must fit uint256; retain existing positive value, count 1..20 and balance/SafeMath checks. Normal/self/duplicate receiver batches preserve observed total supply.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_1.sol",
+      "test_path": "test/arithmetic/integer_overflow_1_test.js",
+      "source_sha256": "0ca34ef4d8e14c6ce859a5fe0a9f1fce3a66ad687a13774945066ed56a6dc34e",
+      "test_sha256": "139076ca8bae73ddad99a6028d8f29330d532aa571a624c8c70018eba0494fb3",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_1.sol",
+      "pragma": "^0.4.15",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Сложение private sellerBalance",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Измерять private storage как BigInt; исходный bool return фактически не задаётся — не менять несвязанную семантику. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_1.sol",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "sellerBalance += value;",
+          "left": "sellerBalance",
+          "right": "value",
+          "operator": "add"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/integer_overflow_1.sol",
+          "sha256": "0ca34ef4d8e14c6ce859a5fe0a9f1fce3a66ad687a13774945066ed56a6dc34e"
+        },
+        "V1": {
+          "path": "project/contracts/V1/integer_overflow_1.sol",
+          "sha256": "0cea3e6316c7a46168c4e3c1eca695cf1e68dd0e37cf8b3415f26aba33685e1c"
+        },
+        "V2": {
+          "path": "project/contracts/V2/integer_overflow_1.sol",
+          "sha256": "b73bea91d9ba4b2b8704046b9a26a7cde2f663cd11c7534e57c576ad51a8df54"
+        },
+        "V3": {
+          "path": "project/contracts/V3/integer_overflow_1.sol",
+          "sha256": "b514e48e1b801170de9fc05112f2b480d7c2023f66be9c713423f3f6379dca78"
+        }
+      },
+      "group": "integer_overflow_1.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "sellerBalance+value <= MAX; exact private slot0; bool return unspecified remains unchanged.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_add.sol",
+      "test_path": "test/arithmetic/integer_overflow_add_test.js",
+      "source_sha256": "a552367197068e110bdad903a28cb28b7762f8f68ffafde02a58286b89650466",
+      "test_sha256": "c2d51eb019f9039747f6ec584ddf32fac8222cf5b4a107ce0bc0f3e5c7c2ba3b",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_add.sol",
+      "pragma": "^0.4.19",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Сложение публичного count",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Одна нормализованная схема с overflow_simple_add; отмечать зависимость примеров. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_add.sol",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "count += input;",
+          "left": "count",
+          "right": "input",
+          "operator": "add"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/integer_overflow_add.sol",
+          "sha256": "a552367197068e110bdad903a28cb28b7762f8f68ffafde02a58286b89650466"
+        },
+        "V1": {
+          "path": "project/contracts/V1/integer_overflow_add.sol",
+          "sha256": "655fe38b7d71cf46b86c8ff21afbf94540d84d331f50d3a27a34dffe435aa045"
+        },
+        "V2": {
+          "path": "project/contracts/V2/integer_overflow_add.sol",
+          "sha256": "360a95ab83f98fef48a1caee23f0990617b6b276df515c920e6b5d7a2e724c84"
+        },
+        "V3": {
+          "path": "project/contracts/V3/integer_overflow_add.sol",
+          "sha256": "100fabe46e467f13fa3edf7a7846a9d4b100afd3f2abd3d5c9aa5e411bbac594"
+        }
+      },
+      "group": "AR_ADDER_CLONE",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "count+input <= MAX; exact count; zero and MAX boundary valid.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_mapping_sym_1.sol",
+      "test_path": "test/arithmetic/integer_overflow_mapping_sym_1_test.js",
+      "source_sha256": "abecfbc6b745841cfa4d27227dca7dbd0967e0a7198880c1fc3f30f92f2abe3b",
+      "test_sha256": "b7c1511057e633cc342b096807943e1f892e2975d670dfaa5e304e073a359c8a",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_mapping_sym_1.sol",
+      "pragma": "^0.4.11",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Вычитание из private map[k]",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Отрицательная математическая величина — underflow, несмотря на название overflow. Все записи начинаются с нуля и нет funding/increment: положительное вычитание не имеет допустимого обычного случая без изменения модели. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_mapping_sym_1.sol",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "map[k] -= v;",
+          "left": "map[k]",
+          "right": "v",
+          "operator": "sub"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/integer_overflow_mapping_sym_1.sol",
+          "sha256": "abecfbc6b745841cfa4d27227dca7dbd0967e0a7198880c1fc3f30f92f2abe3b"
+        },
+        "V1": {
+          "path": "project/contracts/V1/integer_overflow_mapping_sym_1.sol",
+          "sha256": "ecb4599626d43bda3b1d56a246773fc91b3130f775d385e622b2c7881042253b"
+        },
+        "V2": {
+          "path": "project/contracts/V2/integer_overflow_mapping_sym_1.sol",
+          "sha256": "71cd58b3efcf504ce487ca6c3f45559621af669c270afaadafbe84808978bb14"
+        },
+        "V3": {
+          "path": "project/contracts/V3/integer_overflow_mapping_sym_1.sol",
+          "sha256": "d24c48424bdf2314244be2d747fca8529fc9ad4dae1033f72a80ef3456c15bf9"
+        }
+      },
+      "group": "integer_overflow_mapping_sym_1.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "v<=map[k]; only zero debit is admissible from reachable initial zero; k=7; no invented funding/storage injection.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_minimal.sol",
+      "test_path": "test/arithmetic/integer_overflow_minimal_test.js",
+      "source_sha256": "ca539303822841840452b2aa1bf8607dc7b46d32de7261e11861da1bc9c6e915",
+      "test_sha256": "9876d9935cdf6f3f071c321ac9fa81f1ecfde9f796e5ab69ef152979236f0c70",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_minimal.sol",
+      "pragma": "^0.4.19",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Вычитание count",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Исправить только ссылку в названии functional test в новой копии; проверять ноль и полное допустимое списание. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_minimal.sol",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "count -= input;",
+          "left": "count",
+          "right": "input",
+          "operator": "sub"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/integer_overflow_minimal.sol",
+          "sha256": "ca539303822841840452b2aa1bf8607dc7b46d32de7261e11861da1bc9c6e915"
+        },
+        "V1": {
+          "path": "project/contracts/V1/integer_overflow_minimal.sol",
+          "sha256": "4f0aecf1344e13e3cc5dabf03f39ac96f7bba0192292ac4c6f7e894f7f3e0d14"
+        },
+        "V2": {
+          "path": "project/contracts/V2/integer_overflow_minimal.sol",
+          "sha256": "424512494bcba194d68cf702ac8dfd5a41added97d1aa2328ac9aafb96afcdf4"
+        },
+        "V3": {
+          "path": "project/contracts/V3/integer_overflow_minimal.sol",
+          "sha256": "51d7fbc6d235837a1502d7e5dd660b5c72f1d0f9807d1b6b0bb744e14d36c325"
+        }
+      },
+      "group": "integer_overflow_minimal.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "input <= count; exact debit; zero and full debit valid.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_mul.sol",
+      "test_path": "test/arithmetic/integer_overflow_mul_test.js",
+      "source_sha256": "487adeb218dc1ef816c31808b81e31d4b4d4b2154ba6560d96140999a139f241",
+      "test_sha256": "05452868c94e51747ca604323220aee26f150b0ea93dc2c42f60887206e71e9b",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_mul.sol",
+      "pragma": "^0.4.19",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Умножение count",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Проверять нулевой множитель; range guard не должен делить на ноль. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_mul.sol",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "count *= input;",
+          "left": "count",
+          "right": "input",
+          "operator": "mul"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/integer_overflow_mul.sol",
+          "sha256": "487adeb218dc1ef816c31808b81e31d4b4d4b2154ba6560d96140999a139f241"
+        },
+        "V1": {
+          "path": "project/contracts/V1/integer_overflow_mul.sol",
+          "sha256": "eb26f71cbd01ec44b88748eab39c53d33487c14530eaa423a46bf944e752fd29"
+        },
+        "V2": {
+          "path": "project/contracts/V2/integer_overflow_mul.sol",
+          "sha256": "cc148cc856a7af3aef513bc41a0628b1fb5d4cbac04a0b28d05c18bd4df64572"
+        },
+        "V3": {
+          "path": "project/contracts/V3/integer_overflow_mul.sol",
+          "sha256": "42f6c471192b358f0412532e4e8d46d2d062948e57d30b8a3024fa65c2d056c3"
+        }
+      },
+      "group": "integer_overflow_mul.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "count==0 or input<=MAX/count; exact product; zero and floor(MAX/count) valid.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_multitx_multifunc_feasible.sol",
+      "test_path": "test/arithmetic/integer_overflow_multitx_multifunc_feasible_test.js",
+      "source_sha256": "b4751ff85a668932e084d03b08992f62b85f3a62dea2224d7f93eafe5628188f",
+      "test_sha256": "b2d127c8b5781653b026d5586fd2fe2b7da70282258a7d729a99ec31535d29c8",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_multitx_multifunc_feasible.sol",
+      "pragma": "^0.4.23",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Вычитание после отдельной init()",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Сохранить порядок разрешённых init/run, initial early return и состояние initialized. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_multitx_multifunc_feasible.sol",
+          "start": 24,
+          "end": 26
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "count -= input;",
+          "left": "count",
+          "right": "input",
+          "operator": "sub"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/integer_overflow_multitx_multifunc_feasible.sol",
+          "sha256": "b4751ff85a668932e084d03b08992f62b85f3a62dea2224d7f93eafe5628188f"
+        },
+        "V1": {
+          "path": "project/contracts/V1/integer_overflow_multitx_multifunc_feasible.sol",
+          "sha256": "9615d7918bd2dcb72af749484186b6ac958166b6c42e50a38fa626116a52233b"
+        },
+        "V2": {
+          "path": "project/contracts/V2/integer_overflow_multitx_multifunc_feasible.sol",
+          "sha256": "64c6aa863c464e3e5c986ef6c4307a0db99a1b5fdc331c52c89cf1b799d2e841"
+        },
+        "V3": {
+          "path": "project/contracts/V3/integer_overflow_multitx_multifunc_feasible.sol",
+          "sha256": "cc98469acf9d66c999b81ee343fd512a9dc8f1e85ae6a3b3201630bcf3ab771c"
+        }
+      },
+      "group": "integer_overflow_multitx_multifunc_feasible.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "run before init preserves count; after init input<=count; initialized flag unchanged by arithmetic failure.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_multitx_onefunc_feasible.sol",
+      "test_path": "test/arithmetic/integer_overflow_multitx_onefunc_feasible_test.js",
+      "source_sha256": "2467c66a24f705b43c93495ffe8c065659507d2f2ff00d6affb9a72344606869",
+      "test_sha256": "2a4690aa6eddebb204ead2c2ad585d9e8ed7c9015e37d2033c84c269e8dfc57d",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_multitx_onefunc_feasible.sol",
+      "pragma": "^0.4.23",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Вычитание после первого run()",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Первый run только устанавливает initialized; не добавлять арифметическую проверку до этой ветки. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_multitx_onefunc_feasible.sol",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "count -= input;",
+          "left": "count",
+          "right": "input",
+          "operator": "sub"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/integer_overflow_multitx_onefunc_feasible.sol",
+          "sha256": "2467c66a24f705b43c93495ffe8c065659507d2f2ff00d6affb9a72344606869"
+        },
+        "V1": {
+          "path": "project/contracts/V1/integer_overflow_multitx_onefunc_feasible.sol",
+          "sha256": "62b9ad2645180c9633e9eb1511f8a4dcd257eb2a4cd638261df50451376a1ba6"
+        },
+        "V2": {
+          "path": "project/contracts/V2/integer_overflow_multitx_onefunc_feasible.sol",
+          "sha256": "1fe84b255c03d242faef4a6cb0f1563144f0beeb40f92d1d49ec9bd20ea36e38"
+        },
+        "V3": {
+          "path": "project/contracts/V3/integer_overflow_multitx_onefunc_feasible.sol",
+          "sha256": "298304abb670a147fab6444868ad71d5f42724ecfaecfea01c39bb694b801ef1"
+        }
+      },
+      "group": "integer_overflow_multitx_onefunc_feasible.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "first run only initializes regardless of input; later input<=count; initialized flag unchanged by arithmetic failure.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/overflow_simple_add.sol",
+      "test_path": "test/arithmetic/overflow_simple_add_test.js",
+      "source_sha256": "641f6d9e0a4ff8f91c6340a38af72f4ab48749635f5ebb9815123c8ae2e0a46e",
+      "test_sha256": "f00ea8dbedfb81b135317e0d3439c594d01d20b97b35c6480a50f64dee2f8519",
+      "benchmark_category": "arithmetic",
+      "file": "overflow_simple_add.sol",
+      "pragma": "0.4.25",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Сложение balance",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Семантически тот же прямой adder, что integer_overflow_add, при нормализации имён и pragma. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/overflow_simple_add.sol",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "balance += deposit;",
+          "left": "balance",
+          "right": "deposit",
+          "operator": "add"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/overflow_simple_add.sol",
+          "sha256": "641f6d9e0a4ff8f91c6340a38af72f4ab48749635f5ebb9815123c8ae2e0a46e"
+        },
+        "V1": {
+          "path": "project/contracts/V1/overflow_simple_add.sol",
+          "sha256": "110c7a1a81e7a5d0aec7f4cdb622bfe9df27a8f13525f77707cc8446fd97d16c"
+        },
+        "V2": {
+          "path": "project/contracts/V2/overflow_simple_add.sol",
+          "sha256": "3710b08d780f0309a58e5f76ba3ceb3ff64cb3908aad2abbd314846124f03198"
+        },
+        "V3": {
+          "path": "project/contracts/V3/overflow_simple_add.sol",
+          "sha256": "809445c30f143140e009cab084485b44dc6526cd46496600cf1bed10a4138ecf"
+        }
+      },
+      "group": "AR_ADDER_CLONE",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "balance+deposit <= MAX; exact balance; zero and MAX boundary valid.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+      "test_path": "test/arithmetic/overflow_single_tx_test.js",
+      "source_sha256": "ebeff1cc498b96abded07057158ec078e8eb1abe610eefdcbc7d6dbcaa497d63",
+      "test_sha256": "9b34a81de3fc6bec16f9133f0cc52f23e6b179c33f7a9d2b61ce919420928d15",
+      "benchmark_category": "arithmetic",
+      "file": "overflow_single_tx.sol",
+      "pragma": "^0.4.23",
+      "declared_test_count": 6,
+      "declared_functional_test_count": 3,
+      "declared_nonfunctional_test_count": 3,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Три сохраняемые операции и три local-only операции",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Авторские тесты охватывают только три state-changing функции. Local-only операции отдельно указывать как непокрытые, а не объявлять все шесть проверенными. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 47,
+          "end": 49
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "count += input;",
+          "left": "count",
+          "right": "input",
+          "operator": "add"
+        },
+        {
+          "statement": "count *= input;",
+          "left": "count",
+          "right": "input",
+          "operator": "mul"
+        },
+        {
+          "statement": "count -= input;",
+          "left": "count",
+          "right": "input",
+          "operator": "sub"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/overflow_single_tx.sol",
+          "sha256": "ebeff1cc498b96abded07057158ec078e8eb1abe610eefdcbc7d6dbcaa497d63"
+        },
+        "V1": {
+          "path": "project/contracts/V1/overflow_single_tx.sol",
+          "sha256": "2a959ec9db5c59b85baedb7524ba2f4b037be7db24de7c38c78870f146230e86"
+        },
+        "V2": {
+          "path": "project/contracts/V2/overflow_single_tx.sol",
+          "sha256": "ce83ac31664fceb341a618140b8b81fd5b2e102f40a01358df9b43827514fffb"
+        },
+        "V3": {
+          "path": "project/contracts/V3/overflow_single_tx.sol",
+          "sha256": "6ee7a3e9b380d70b1255e578030caab368d5c2987d5ec592d705c7b702ba7e02"
+        }
+      },
+      "group": "overflow_single_tx.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "state add/mul/sub fit uint256; exact count; local-only operations excluded as non-observable and untreated.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/timelock.sol",
+      "test_path": "test/arithmetic/timelock_test.js",
+      "source_sha256": "1f079a3b8bb6ce973d62d93e1872f96bc3be4db53a9102230fa8c59b70ab0bb4",
+      "test_sha256": "37c3565b1c3aa6bddc44e58cb7ef4864366ed5124ceb3005a8d75502911f744e",
+      "benchmark_category": "arithmetic",
+      "file": "timelock.sol",
+      "pragma": "^0.4.10",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Переполнение lockTime при продлении",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Первичный target — increaseLockTime. Не расширять незаметно treatment на deposit или другие арифметические места. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/timelock.sol",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "lockTime[msg.sender] += _secondsToIncrease;",
+          "left": "lockTime[msg.sender]",
+          "right": "_secondsToIncrease",
+          "operator": "add"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/timelock.sol",
+          "sha256": "1f079a3b8bb6ce973d62d93e1872f96bc3be4db53a9102230fa8c59b70ab0bb4"
+        },
+        "V1": {
+          "path": "project/contracts/V1/timelock.sol",
+          "sha256": "96e45c97a878b6ddac8b30ec8cb385d8c021abadba0def8d7425be2d5af2e72d"
+        },
+        "V2": {
+          "path": "project/contracts/V2/timelock.sol",
+          "sha256": "afbb9bf0e7cdafd5229456d696dd0515c18d905626b39071ab948253976aa67b"
+        },
+        "V3": {
+          "path": "project/contracts/V3/timelock.sol",
+          "sha256": "1b737df593119671b71f943367e3c2c9dbe0af03fec4a95b6aea594d2a853352"
+        }
+      },
+      "group": "timelock.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "increase <= MAX-current lock; exact seconds extension; deposit/early rejection/mature withdrawal retained; deposit arithmetic untreated.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/token.sol",
+      "test_path": "test/arithmetic/token_test.js",
+      "source_sha256": "3de6aef9e9108cf274a94dc7472e2ad5b05fa391804eb2343db87b67236b3922",
+      "test_sha256": "01cdb8c6be496c2c5582f1cba4d5c92ae021df4b21af64b212693fc64c306675",
+      "benchmark_category": "arithmetic",
+      "file": "token.sol",
+      "pragma": "^0.4.18",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Проверка/списание credit и увеличение receiver balance",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "SafeMath должна применяться и к арифметике в предусловии/дебете согласно заранее заданному target set. Проверять self-transfer, zero transfer и сохранение supply; bounds учитывать актуальный промежуточный state. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/token.sol",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "path": "contracts/dataset/arithmetic/token.sol",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "path": "contracts/dataset/arithmetic/token.sol",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "require(balances[msg.sender] - _value >= 0);",
+          "left": "balances[msg.sender]",
+          "right": "_value",
+          "operator": "sub"
+        },
+        {
+          "statement": "balances[msg.sender] -= _value;",
+          "left": "balances[msg.sender]",
+          "right": "_value",
+          "operator": "sub"
+        },
+        {
+          "statement": "balances[_to] += _value;",
+          "left": "balances[_to]",
+          "right": "_value",
+          "operator": "add"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/token.sol",
+          "sha256": "3de6aef9e9108cf274a94dc7472e2ad5b05fa391804eb2343db87b67236b3922"
+        },
+        "V1": {
+          "path": "project/contracts/V1/token.sol",
+          "sha256": "99d80e23ab18a9bb22b58cbacd503f06d5dc4c946674b5a7626d3358b1868e37"
+        },
+        "V2": {
+          "path": "project/contracts/V2/token.sol",
+          "sha256": "a34b650b8afc3830d032eae59b5d5905d23ca04c180e8e6252bad5d1c16880b3"
+        },
+        "V3": {
+          "path": "project/contracts/V3/token.sol",
+          "sha256": "a4287de798a1d543473edbea61987b019078dc2be3f7e3b5753a6eccd51a8bf1"
+        }
+      },
+      "group": "token.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "debit including require expression must not underflow; credit fits after debit; zero, ordinary and self transfers preserve supply; insufficient self must reject even if final balances would match.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+      "test_path": "test/arithmetic/tokensalechallenge_test.js",
+      "source_sha256": "2d5ef1bfd7cb877614fa2c00656fc7a9a536e25081bdec494b09ae6be6e6bd58",
+      "test_sha256": "c510ef0ca3da132662db9876a5681489c75df41b6412fc3b6b92a76f62847d41",
+      "benchmark_category": "arithmetic",
+      "file": "tokensalechallenge.sol",
+      "pragma": "^0.4.21",
+      "declared_test_count": 3,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 2,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "four_variants_compiled_and_executed_twice",
+      "observed_subtype": "Стоимость покупки/продажи и credit",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Обе стороны buy/sell и последовательность обновлений должны иметь определённый общий target set. Нельзя сравнивать A на всех операциях, а B только в buy. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+          "start": 32,
+          "end": 34
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ],
+      "targets": [
+        {
+          "statement": "require(msg.value == numTokens * PRICE_PER_TOKEN);",
+          "left": "numTokens",
+          "right": "PRICE_PER_TOKEN",
+          "operator": "mul"
+        },
+        {
+          "statement": "balanceOf[msg.sender] += numTokens;",
+          "left": "balanceOf[msg.sender]",
+          "right": "numTokens",
+          "operator": "add"
+        },
+        {
+          "statement": "balanceOf[msg.sender] -= numTokens;",
+          "left": "balanceOf[msg.sender]",
+          "right": "numTokens",
+          "operator": "sub"
+        },
+        {
+          "statement": "msg.sender.transfer(numTokens * PRICE_PER_TOKEN);",
+          "left": "numTokens",
+          "right": "PRICE_PER_TOKEN",
+          "operator": "mul"
+        }
+      ],
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/tokensalechallenge.sol",
+          "sha256": "2d5ef1bfd7cb877614fa2c00656fc7a9a536e25081bdec494b09ae6be6e6bd58"
+        },
+        "V1": {
+          "path": "project/contracts/V1/tokensalechallenge.sol",
+          "sha256": "02696e6da92038d0963aaa1ccdc413fc7d5d09dc86f66e7980bac0d7619ee583"
+        },
+        "V2": {
+          "path": "project/contracts/V2/tokensalechallenge.sol",
+          "sha256": "ece619241cf838299136265ac9c4669915c05a4fa42c7ece38a27890c1131b7c"
+        },
+        "V3": {
+          "path": "project/contracts/V3/tokensalechallenge.sol",
+          "sha256": "dc12aa2bfb4b149a8b733ea885c300272f8d1a11bb4a08b9ec49ddbfb7a93c77"
+        }
+      },
+      "group": "tokensalechallenge.sol",
+      "review_proposed_status": "not_created_or_executed_in_this_review",
+      "measurement_policy": "buy/sell product numTokens*1e18 fits, buy credit fits, sell debit has sufficient credit; msg.value equals exact mathematical price. Zero and buy/sell one token valid; supply policy not added.",
+      "observed_compiler": "0.4.25+commit.59dbf8f1",
+      "outputs": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    }
+  ]
+}

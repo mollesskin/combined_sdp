@@ -1,0 +1,109 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IntegerOverflowSingleTransaction",
+  "sourceName": "contracts/V3/overflow_single_tx.sol",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "uint256"
+        }
+      ],
+      "name": "overflowlocalonly",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "count",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "uint256"
+        }
+      ],
+      "name": "underflowtostate",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "uint256"
+        }
+      ],
+      "name": "overflowmultostate",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "uint256"
+        }
+      ],
+      "name": "underflowlocalonly",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "uint256"
+        }
+      ],
+      "name": "overflowaddtostate",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "uint256"
+        }
+      ],
+      "name": "overflowmulocalonly",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052600160005534801561001557600080fd5b5061020f806100256000396000f3006080604052600436106100825763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630642f32a811461008757806306661abd146100a15780634c4f50f3146100c85780635c68bc06146100e057806369fb0f5d14610087578063def92d68146100f8578063e6dca5ea14610087575b600080fd5b34801561009357600080fd5b5061009f600435610110565b005b3480156100ad57600080fd5b506100b6610113565b60408051918252519081900360200190f35b3480156100d457600080fd5b5061009f600435610119565b3480156100ec57600080fd5b5061009f60043561013a565b34801561010457600080fd5b5061009f60043561016f565b50565b60005481565b60005481111561012857600080fd5b6101346000548261018e565b60005550565b6000541580610158575060005460001981151561015357fe5b048111155b151561016357600080fd5b610134600054826101a3565b6000546000190381111561018257600080fd5b610134600054826101d1565b60008282111561019d57600080fd5b50900390565b60008282028315806101bf57508284828115156101bc57fe5b04145b15156101ca57600080fd5b9392505050565b6000828201838110156101ca57600080fd00a165627a7a723058204c95efca73b5bb33caa78a7b163d20e9711673a1495f0b97616058706f27e6860029",
+  "deployedBytecode": "0x6080604052600436106100825763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630642f32a811461008757806306661abd146100a15780634c4f50f3146100c85780635c68bc06146100e057806369fb0f5d14610087578063def92d68146100f8578063e6dca5ea14610087575b600080fd5b34801561009357600080fd5b5061009f600435610110565b005b3480156100ad57600080fd5b506100b6610113565b60408051918252519081900360200190f35b3480156100d457600080fd5b5061009f600435610119565b3480156100ec57600080fd5b5061009f60043561013a565b34801561010457600080fd5b5061009f60043561016f565b50565b60005481565b60005481111561012857600080fd5b6101346000548261018e565b60005550565b6000541580610158575060005460001981151561015357fe5b048111155b151561016357600080fd5b610134600054826101a3565b6000546000190381111561018257600080fd5b610134600054826101d1565b60008282111561019d57600080fd5b50900390565b60008282028315806101bf57508284828115156101bc57fe5b04145b15156101ca57600080fd5b9392505050565b6000828201838110156101ca57600080fd00a165627a7a723058204c95efca73b5bb33caa78a7b163d20e9711673a1495f0b97616058706f27e6860029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

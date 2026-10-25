@@ -1,0 +1,108 @@
+{
+  "row": {
+    "file": "token.sol",
+    "group": "token.sol",
+    "variant": "V1",
+    "scenario": "underflow",
+    "step": 0,
+    "method": "transfer",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "reverted",
+    "kind": "unsafe",
+    "inputs": {
+      "sender": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "args": [
+        "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "1"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "0",
+      "slot1": "10",
+      "contract_wei": "0",
+      "a": "10",
+      "b": "0",
+      "supply": "10"
+    },
+    "expected": {
+      "slot0": "0",
+      "slot1": "10",
+      "contract_wei": "0",
+      "a": "10",
+      "b": "0",
+      "supply": "10"
+    },
+    "mathematical_expected": null,
+    "unsafe_mathematical_state": {
+      "slot0": "0",
+      "slot1": "10",
+      "contract_wei": "0",
+      "a": "11",
+      "b": "-1",
+      "supply": "10"
+    },
+    "actual": {
+      "slot0": "0",
+      "slot1": "10",
+      "contract_wei": "0",
+      "a": "10",
+      "b": "0",
+      "supply": "10"
+    },
+    "discrepancy": null,
+    "field_discrepancies": null,
+    "arithmetic_trace": [
+      {
+        "label": "require/debit",
+        "left": "0",
+        "right": "1",
+        "type": "sub",
+        "mathematical_result": "-1",
+        "in_uint256_range": false,
+        "modular_result": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      },
+      {
+        "label": "credit_after_debit",
+        "left": "10",
+        "right": "1",
+        "type": "add",
+        "mathematical_result": "11",
+        "in_uint256_range": true,
+        "modular_result": "11"
+      }
+    ],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": true,
+    "allowed_operation_passed": null,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "23990",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/run1/token.sol.V1.underflow.0.json",
+    "error": {
+      "message": "Transaction reverted without a reason string",
+      "data": "0x",
+      "transactionHash": "0xed0af39494b3428c335e97eb7b93f2f82678cfe0ea77dd9d5a09ccbc88dbd8a5"
+    }
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x5a8fcbc53a37ace40d171735a75800d58d307b1895aaa3e22b39839a61113e21",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "23990",
+    "from": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "gasPrice": "1767206381",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "23990",
+    "hash": "0xed0af39494b3428c335e97eb7b93f2f82678cfe0ea77dd9d5a09ccbc88dbd8a5",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 0,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

@@ -1,0 +1,12 @@
+--- V0/timelock.sol
++++ V2/timelock.sol
+@@ -19,7 +19,8 @@
+ 
+      function increaseLockTime(uint _secondsToIncrease) public {
+          // <yes> <report> ARITHMETIC
+-         lockTime[msg.sender] += _secondsToIncrease;
++         require(_secondsToIncrease <= uint256(-1) - lockTime[msg.sender]);
++        lockTime[msg.sender] = lockTime[msg.sender] + _secondsToIncrease;
+      }
+ 
+      function withdraw() public {

@@ -1,0 +1,18 @@
+{
+  "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/hardhat.config.js": {
+    "sha256": "1a788fb8ab1804f02863d2d46c51090de00d56cbfbba6ac791cb517cf486fd23",
+    "role": "baseline reference; not modified by this stage"
+  },
+  "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/package.json": {
+    "sha256": "3590390e23c7513a80aed84f09d729efe84261db33f111c6f34ff83bed29a339",
+    "role": "baseline reference; not modified by this stage"
+  },
+  "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/package-lock.json": {
+    "sha256": "3ddefd264a0fe7f57cdc37ca8e2742f1e2b33b9100f00bf30e5e528f790bb353",
+    "role": "baseline reference; not modified by this stage"
+  },
+  "experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/baseline-tests.log": {
+    "sha256": "068b485b4a963cef6febacc7828a9678bc9fb4fe3d8d931ce8aaaebe21c1c1e9",
+    "role": "baseline reference; not protected-variant measurements"
+  }
+}

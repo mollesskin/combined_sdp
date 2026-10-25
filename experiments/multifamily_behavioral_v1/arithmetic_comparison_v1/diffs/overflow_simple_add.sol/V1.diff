@@ -1,0 +1,18 @@
+--- V0/overflow_simple_add.sol
++++ V1/overflow_simple_add.sol
+@@ -11,6 +11,14 @@
+ 
+     function add(uint256 deposit) public {
+         // <yes> <report> ARITHMETIC
+-        balance += deposit;
++        balance = ResearchChecked.add(balance, deposit);
+     }
+ }
++
++// AI-assisted experimental checked arithmetic; not an original SafeMath release.
++// Post-result add/mul checks follow the idiom in this dataset's BECToken SafeMath.
++library ResearchChecked {
++ function add(uint a,uint b) internal pure returns(uint) { uint c=a+b; require(c>=a); return c; }
++ function sub(uint a,uint b) internal pure returns(uint) { require(b<=a); return a-b; }
++ function mul(uint a,uint b) internal pure returns(uint) { uint c=a*b; require(a==0 || c/a==b); return c; }
++}

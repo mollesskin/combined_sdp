@@ -1,0 +1,77 @@
+{
+  "row": {
+    "file": "integer_overflow_multitx_onefunc_feasible.sol",
+    "group": "integer_overflow_multitx_onefunc_feasible.sol",
+    "variant": "V3",
+    "scenario": "underflow",
+    "step": 1,
+    "method": "run",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "reverted",
+    "kind": "unsafe",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "2"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "1",
+      "slot1": "1",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "expected": {
+      "slot0": "1",
+      "slot1": "1",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "mathematical_expected": "-1",
+    "unsafe_mathematical_state": {
+      "slot0": "1",
+      "slot1": "-1",
+      "contract_wei": "0",
+      "value": "-1"
+    },
+    "actual": {
+      "slot0": "1",
+      "slot1": "1",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "discrepancy": null,
+    "wraparound": false,
+    "full_observed_rollback": true,
+    "allowed_operation_passed": null,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "25607",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/run1/integer_overflow_multitx_onefunc_feasible.sol.V3.underflow.1.json",
+    "error": {
+      "message": "Transaction reverted without a reason string",
+      "data": "0x",
+      "transactionHash": "0xfb06e6089c6cdeca2e714627ada672a10b61dd39305ba3c6230e928ba6b485eb"
+    }
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0xc5716ac4e44910aca8566e8c6614075b5ff7eaf03503cd3605a726a05c546868",
+    "blockNumber": 3,
+    "contractAddress": null,
+    "cumulativeGasUsed": "25607",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1671046619",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "25607",
+    "hash": "0xfb06e6089c6cdeca2e714627ada672a10b61dd39305ba3c6230e928ba6b485eb",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 0,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

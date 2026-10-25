@@ -1,0 +1,922 @@
+{
+  "files": 13,
+  "full_four_variant_comparisons": 13,
+  "groups": 12,
+  "rows_per_run": 244,
+  "repeats": 2,
+  "V3_vs_V1": {
+    "tie": 61
+  },
+  "V3_vs_V2": {
+    "tie": 61
+  },
+  "files_detail": [
+    {
+      "file": "BECToken.sol",
+      "group": "BECToken.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "integer_overflow_1.sol",
+      "group": "integer_overflow_1.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "integer_overflow_add.sol",
+      "group": "AR_ADDER_CLONE",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "integer_overflow_mapping_sym_1.sol",
+      "group": "integer_overflow_mapping_sym_1.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 1,
+        "allowed_total": 1,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 1,
+        "allowed_total": 1,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 1,
+        "allowed_total": 1,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 1,
+        "allowed_total": 1,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "integer_overflow_minimal.sol",
+      "group": "integer_overflow_minimal.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 2,
+        "allowed_total": 2,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 2,
+        "allowed_total": 2,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 2,
+        "allowed_total": 2,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 2,
+        "allowed_total": 2,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "integer_overflow_mul.sol",
+      "group": "integer_overflow_mul.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 2,
+        "allowed_total": 2,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 2,
+        "allowed_total": 2,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 2,
+        "allowed_total": 2,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 2,
+        "allowed_total": 2,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "integer_overflow_multitx_multifunc_feasible.sol",
+      "group": "integer_overflow_multitx_multifunc_feasible.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 6,
+        "allowed_total": 6,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 6,
+        "allowed_total": 6,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 6,
+        "allowed_total": 6,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 6,
+        "allowed_total": 6,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "integer_overflow_multitx_onefunc_feasible.sol",
+      "group": "integer_overflow_multitx_onefunc_feasible.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "overflow_simple_add.sol",
+      "group": "AR_ADDER_CLONE",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 3,
+        "allowed_total": 3,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "overflow_single_tx.sol",
+      "group": "overflow_single_tx.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 3,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 3,
+        "unsafe_total": 3,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 3,
+        "unsafe_total": 3,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 3,
+        "unsafe_total": 3,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "timelock.sol",
+      "group": "timelock.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 1
+      },
+      "V1": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 1
+      },
+      "V2": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 1
+      },
+      "V3": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 1
+      }
+    },
+    {
+      "file": "token.sol",
+      "group": "token.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 2,
+        "ordinary_rejection_pass": 0
+      },
+      "V1": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 2,
+        "unsafe_total": 2,
+        "ordinary_rejection_pass": 0
+      },
+      "V2": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 2,
+        "unsafe_total": 2,
+        "ordinary_rejection_pass": 0
+      },
+      "V3": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 2,
+        "unsafe_total": 2,
+        "ordinary_rejection_pass": 0
+      }
+    },
+    {
+      "file": "tokensalechallenge.sol",
+      "group": "tokensalechallenge.sol",
+      "status": "complete",
+      "missing_reason": null,
+      "V0": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 0,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 1
+      },
+      "V1": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 1
+      },
+      "V2": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 1
+      },
+      "V3": {
+        "allowed_pass": 4,
+        "allowed_total": 4,
+        "unsafe_safe_rejection": 1,
+        "unsafe_total": 1,
+        "ordinary_rejection_pass": 1
+      }
+    }
+  ],
+  "groups_detail": [
+    {
+      "group": "AR_ADDER_CLONE",
+      "files": [
+        "integer_overflow_add.sol",
+        "overflow_simple_add.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "BECToken.sol",
+      "files": [
+        "BECToken.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "integer_overflow_1.sol",
+      "files": [
+        "integer_overflow_1.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "integer_overflow_mapping_sym_1.sol",
+      "files": [
+        "integer_overflow_mapping_sym_1.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "integer_overflow_minimal.sol",
+      "files": [
+        "integer_overflow_minimal.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "integer_overflow_mul.sol",
+      "files": [
+        "integer_overflow_mul.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "integer_overflow_multitx_multifunc_feasible.sol",
+      "files": [
+        "integer_overflow_multitx_multifunc_feasible.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "integer_overflow_multitx_onefunc_feasible.sol",
+      "files": [
+        "integer_overflow_multitx_onefunc_feasible.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "overflow_single_tx.sol",
+      "files": [
+        "overflow_single_tx.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "timelock.sol",
+      "files": [
+        "timelock.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "token.sol",
+      "files": [
+        "token.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    },
+    {
+      "group": "tokensalechallenge.sol",
+      "files": [
+        "tokensalechallenge.sol"
+      ],
+      "all_members_complete": true,
+      "V0_any_unsafe_failure": true,
+      "protected_all_members_unsafe_rejected": true,
+      "protected_all_allowed_pass": true
+    }
+  ],
+  "checks": [
+    {
+      "check": "13 registered files, 52 variants",
+      "passed": true
+    },
+    {
+      "check": "source hash BECToken.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash BECToken.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash BECToken.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash BECToken.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline BECToken.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_1.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_1.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_1.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_1.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline integer_overflow_1.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_add.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_add.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_add.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_add.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline integer_overflow_add.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_mapping_sym_1.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_mapping_sym_1.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_mapping_sym_1.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_mapping_sym_1.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline integer_overflow_mapping_sym_1.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_minimal.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_minimal.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_minimal.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_minimal.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline integer_overflow_minimal.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_mul.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_mul.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_mul.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_mul.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline integer_overflow_mul.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_multitx_multifunc_feasible.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_multitx_multifunc_feasible.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_multitx_multifunc_feasible.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_multitx_multifunc_feasible.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline integer_overflow_multitx_multifunc_feasible.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_multitx_onefunc_feasible.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_multitx_onefunc_feasible.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_multitx_onefunc_feasible.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash integer_overflow_multitx_onefunc_feasible.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline integer_overflow_multitx_onefunc_feasible.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash overflow_simple_add.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash overflow_simple_add.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash overflow_simple_add.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash overflow_simple_add.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline overflow_simple_add.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash overflow_single_tx.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash overflow_single_tx.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash overflow_single_tx.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash overflow_single_tx.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline overflow_single_tx.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash timelock.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash timelock.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash timelock.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash timelock.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline timelock.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash token.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash token.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash token.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash token.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline token.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash tokensalechallenge.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash tokensalechallenge.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash tokensalechallenge.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash tokensalechallenge.sol V3",
+      "passed": true
+    },
+    {
+      "check": "V0 identical to reviewed baseline tokensalechallenge.sol",
+      "passed": true
+    },
+    {
+      "check": "run1 complete unique rows",
+      "passed": true
+    },
+    {
+      "check": "run1 infrastructure absent",
+      "passed": true
+    },
+    {
+      "check": "run1 raw evidence exists",
+      "passed": true
+    },
+    {
+      "check": "run1 allowed state exact",
+      "passed": true
+    },
+    {
+      "check": "run1 protected unsafe reverts rollback",
+      "passed": true
+    },
+    {
+      "check": "run1 baseline unsafe observed",
+      "passed": true
+    },
+    {
+      "check": "run1 ABI same (interface check only)",
+      "passed": true
+    },
+    {
+      "check": "run1 fixed compiler settings all variants",
+      "passed": true
+    },
+    {
+      "check": "run1 exact >2^53 value persisted",
+      "passed": true
+    },
+    {
+      "check": "run2 complete unique rows",
+      "passed": true
+    },
+    {
+      "check": "run2 infrastructure absent",
+      "passed": true
+    },
+    {
+      "check": "run2 raw evidence exists",
+      "passed": true
+    },
+    {
+      "check": "run2 allowed state exact",
+      "passed": true
+    },
+    {
+      "check": "run2 protected unsafe reverts rollback",
+      "passed": true
+    },
+    {
+      "check": "run2 baseline unsafe observed",
+      "passed": true
+    },
+    {
+      "check": "run2 ABI same (interface check only)",
+      "passed": true
+    },
+    {
+      "check": "run2 fixed compiler settings all variants",
+      "passed": true
+    },
+    {
+      "check": "run2 exact >2^53 value persisted",
+      "passed": true
+    },
+    {
+      "check": "two clean runs exact match except raw path",
+      "passed": true
+    }
+  ]
+}

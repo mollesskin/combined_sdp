@@ -1,0 +1,81 @@
+{
+  "row": {
+    "file": "integer_overflow_multitx_multifunc_feasible.sol",
+    "group": "integer_overflow_multitx_multifunc_feasible.sol",
+    "variant": "V3",
+    "scenario": "ordinary",
+    "step": 3,
+    "method": "run",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "allowed",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "1"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "1",
+      "slot1": "1",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "expected": {
+      "slot0": "1",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "0"
+    },
+    "mathematical_expected": "0",
+    "unsafe_mathematical_state": null,
+    "actual": {
+      "slot0": "1",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "0"
+    },
+    "discrepancy": "0",
+    "field_discrepancies": {},
+    "arithmetic_trace": [
+      {
+        "label": "value",
+        "left": "1",
+        "right": "1",
+        "type": "sub",
+        "mathematical_result": "0",
+        "in_uint256_range": true,
+        "modular_result": "0"
+      }
+    ],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": null,
+    "allowed_operation_passed": true,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "23887",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/run2/integer_overflow_multitx_multifunc_feasible.sol.V3.ordinary.3.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x92b339899ddcd1316a40d522f44307d00841f6c66dce5a376c4ecd6954cd3675",
+    "blockNumber": 5,
+    "contractAddress": null,
+    "cumulativeGasUsed": "23887",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1514042640",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "23887",
+    "hash": "0x476bfa4ea926f03b0e962520f9694228904c14905a8f6274b5c4c7f150ec4d5b",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

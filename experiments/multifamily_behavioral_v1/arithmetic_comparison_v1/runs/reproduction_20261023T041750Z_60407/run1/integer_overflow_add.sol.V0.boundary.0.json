@@ -1,0 +1,81 @@
+{
+  "row": {
+    "file": "integer_overflow_add.sol",
+    "group": "AR_ADDER_CLONE",
+    "variant": "V0",
+    "scenario": "boundary",
+    "step": 0,
+    "method": "run",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "allowed",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "115792089237316195423570985008687907853269984665640564039457584007913129639934"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "1",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "1"
+    },
+    "expected": {
+      "slot0": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+    },
+    "mathematical_expected": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+    "unsafe_mathematical_state": null,
+    "actual": {
+      "slot0": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+    },
+    "discrepancy": "0",
+    "field_discrepancies": {},
+    "arithmetic_trace": [
+      {
+        "label": "value",
+        "left": "1",
+        "right": "115792089237316195423570985008687907853269984665640564039457584007913129639934",
+        "type": "add",
+        "mathematical_result": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "in_uint256_range": true,
+        "modular_result": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+      }
+    ],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": null,
+    "allowed_operation_passed": true,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "26752",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/reproduction_20261023T041750Z_60407/run1/integer_overflow_add.sol.V0.boundary.0.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x62e99cbf6558a5c5ea76634d3e22f1ff3e381b15d4bae89bb5384b623804e52a",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "26752",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1766484068",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "26752",
+    "hash": "0x71f2db95348d2fe2027f8ce21def6690b86f220f6ecdc6d879cc106f88cec385",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

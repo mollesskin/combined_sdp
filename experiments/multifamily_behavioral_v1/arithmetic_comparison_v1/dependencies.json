@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "name": "smartbugs-curated-exploits",
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": {
+      "version": "5.0.0",
+      "resolved": "https://registry.npmjs.org/@nomicfoundation/hardhat-toolbox/-/hardhat-toolbox-5.0.0.tgz",
+      "overridden": false
+    },
+    "eslint": {
+      "version": "9.13.0",
+      "resolved": "https://registry.npmjs.org/eslint/-/eslint-9.13.0.tgz",
+      "overridden": false
+    },
+    "globals": {
+      "version": "15.11.0",
+      "resolved": "https://registry.npmjs.org/globals/-/globals-15.11.0.tgz",
+      "overridden": false
+    },
+    "hardhat": {
+      "version": "2.22.5",
+      "resolved": "https://registry.npmjs.org/hardhat/-/hardhat-2.22.5.tgz",
+      "overridden": false
+    },
+    "prettier-plugin-solidity": {
+      "version": "1.4.1",
+      "resolved": "https://registry.npmjs.org/prettier-plugin-solidity/-/prettier-plugin-solidity-1.4.1.tgz",
+      "overridden": false
+    },
+    "prettier": {
+      "version": "3.3.3",
+      "resolved": "https://registry.npmjs.org/prettier/-/prettier-3.3.3.tgz",
+      "overridden": false
+    },
+    "solhint": {
+      "version": "5.0.3",
+      "resolved": "https://registry.npmjs.org/solhint/-/solhint-5.0.3.tgz",
+      "overridden": false
+    }
+  }
+}

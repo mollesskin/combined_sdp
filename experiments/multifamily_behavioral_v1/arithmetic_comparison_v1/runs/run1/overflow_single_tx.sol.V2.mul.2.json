@@ -1,0 +1,90 @@
+{
+  "row": {
+    "file": "overflow_single_tx.sol",
+    "group": "overflow_single_tx.sol",
+    "variant": "V2",
+    "scenario": "mul",
+    "step": 2,
+    "method": "overflowmultostate",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "reverted",
+    "kind": "unsafe",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "2"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "115792089237316195423570985008687907853269984665640564039457584007913129639934",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "115792089237316195423570985008687907853269984665640564039457584007913129639934"
+    },
+    "expected": {
+      "slot0": "115792089237316195423570985008687907853269984665640564039457584007913129639934",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "115792089237316195423570985008687907853269984665640564039457584007913129639934"
+    },
+    "mathematical_expected": "231584178474632390847141970017375815706539969331281128078915168015826259279868",
+    "unsafe_mathematical_state": {
+      "slot0": "231584178474632390847141970017375815706539969331281128078915168015826259279868",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "231584178474632390847141970017375815706539969331281128078915168015826259279868"
+    },
+    "actual": {
+      "slot0": "115792089237316195423570985008687907853269984665640564039457584007913129639934",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "115792089237316195423570985008687907853269984665640564039457584007913129639934"
+    },
+    "discrepancy": null,
+    "field_discrepancies": null,
+    "arithmetic_trace": [
+      {
+        "label": "value",
+        "left": "115792089237316195423570985008687907853269984665640564039457584007913129639934",
+        "right": "2",
+        "type": "mul",
+        "mathematical_result": "231584178474632390847141970017375815706539969331281128078915168015826259279868",
+        "in_uint256_range": false,
+        "modular_result": "115792089237316195423570985008687907853269984665640564039457584007913129639932"
+      }
+    ],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": true,
+    "allowed_operation_passed": null,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "23693",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/run1/overflow_single_tx.sol.V2.mul.2.json",
+    "error": {
+      "message": "Transaction reverted without a reason string",
+      "data": "0x",
+      "transactionHash": "0x557a000126c41614d80cccbb8ccb1585ef939a28cf06a951d83865fb4204095e"
+    }
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x70c65eb7635d7c0a31c41b0ef0762397b45c29e1525553dc61a3b126a32d4bda",
+    "blockNumber": 4,
+    "contractAddress": null,
+    "cumulativeGasUsed": "23693",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1587424383",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "23693",
+    "hash": "0x557a000126c41614d80cccbb8ccb1585ef939a28cf06a951d83865fb4204095e",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 0,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

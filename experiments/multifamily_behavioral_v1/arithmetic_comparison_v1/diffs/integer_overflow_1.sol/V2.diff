@@ -1,0 +1,12 @@
+--- V0/integer_overflow_1.sol
++++ V2/integer_overflow_1.sol
+@@ -11,7 +11,8 @@
+ 
+      function add(uint value) returns (bool){
+          // <yes> <report> ARITHMETIC
+-         sellerBalance += value; // possible overflow
++         require(value <= uint256(-1) - sellerBalance);
++        sellerBalance = sellerBalance + value; // possible overflow
+ 
+          // possible auditor assert
+          // assert(sellerBalance >= value);

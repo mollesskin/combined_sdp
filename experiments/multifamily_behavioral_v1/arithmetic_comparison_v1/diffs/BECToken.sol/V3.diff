@@ -1,0 +1,24 @@
+--- V0/BECToken.sol
++++ V3/BECToken.sol
+@@ -261,7 +261,8 @@
+   function batchTransfer(address[] _receivers, uint256 _value) public whenNotPaused returns (bool) {
+     uint cnt = _receivers.length;
+     // <yes> <report> ARITHMETIC
+-    uint256 amount = uint256(cnt) * _value;
++    require(uint256(cnt) == 0 || _value <= uint256(-1) / uint256(cnt));
++        uint256 amount = ResearchChecked.mul(uint256(cnt), _value);
+     require(cnt > 0 && cnt <= 20);
+     require(_value > 0 && balances[msg.sender] >= amount);
+ 
+@@ -304,3 +305,11 @@
+         revert();
+     }
+ }
++
++// AI-assisted experimental checked arithmetic; not an original SafeMath release.
++// Post-result add/mul checks follow the idiom in this dataset's BECToken SafeMath.
++library ResearchChecked {
++ function add(uint a,uint b) internal pure returns(uint) { uint c=a+b; require(c>=a); return c; }
++ function sub(uint a,uint b) internal pure returns(uint) { require(b<=a); return a-b; }
++ function mul(uint a,uint b) internal pure returns(uint) { uint c=a*b; require(a==0 || c/a==b); return c; }
++}

@@ -1,0 +1,28 @@
+--- V0/token.sol
++++ V1/token.sol
+@@ -17,10 +17,10 @@
+ 
+    function transfer(address _to, uint _value) public returns (bool) {
+      // <yes> <report> ARITHMETIC
+-     require(balances[msg.sender] - _value >= 0);
++     require(ResearchChecked.sub(balances[msg.sender], _value) >= 0);
+      // <yes> <report> ARITHMETIC
+-     balances[msg.sender] -= _value;
+-     balances[_to] += _value;
++     balances[msg.sender] = ResearchChecked.sub(balances[msg.sender], _value);
++     balances[_to] = ResearchChecked.add(balances[_to], _value);
+      return true;
+    }
+ 
+@@ -28,3 +28,11 @@
+      return balances[_owner];
+    }
+  }
++
++// AI-assisted experimental checked arithmetic; not an original SafeMath release.
++// Post-result add/mul checks follow the idiom in this dataset's BECToken SafeMath.
++library ResearchChecked {
++ function add(uint a,uint b) internal pure returns(uint) { uint c=a+b; require(c>=a); return c; }
++ function sub(uint a,uint b) internal pure returns(uint) { require(b<=a); return a-b; }
++ function mul(uint a,uint b) internal pure returns(uint) { uint c=a*b; require(a==0 || c/a==b); return c; }
++}

@@ -1,0 +1,101 @@
+{
+  "sha": "ac0fbc21196e98f5f074a646e23b6d159a7451e3",
+  "node_id": "C_kwDOMAlzxdoAKGFjMGZiYzIxMTk2ZTk4ZjVmMDc0YTY0NmUyM2I2ZDE1OWE3NDUxZTM",
+  "commit": {
+    "author": {
+      "name": "Martin Monperrus",
+      "email": "martin.monperrus@gnieh.org",
+      "date": "2025-10-26T19:09:47Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2025-10-26T19:09:47Z"
+    },
+    "message": "Add BibTeX citation for research paper\n\nAdded BibTeX citation for the paper on automated fixes.",
+    "tree": {
+      "sha": "4518e7d0d70f480459bd2558e2ad6615f09ff0cc",
+      "url": "https://api.github.com/repos/ASSERT-KTH/sb-heists/git/trees/4518e7d0d70f480459bd2558e2ad6615f09ff0cc"
+    },
+    "url": "https://api.github.com/repos/ASSERT-KTH/sb-heists/git/commits/ac0fbc21196e98f5f074a646e23b6d159a7451e3",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJo/nH7CRC1aQ7uu5UhlAAAYkYQAJjNh+dyFqhh+wXCiBlW9OyD\nmr1rHdQpmmEFBGgESLSXRRLooJ4B6f+fCiXUKXuE/brnlNc7vH/drmhbtIYazR2r\nrIo9mQByYIgh2BqQthawZDVBECMnqOqfULll7fZNYMyYYOK0v7h4I8zi9QsQyzkt\nF0HGS5aj/tsm+N42OvmXi/Hr9pH6j7nrtmvYz2SBbKcB/PEdXWRaOmuvQt9jcWz1\nYtc4SbpTSBZqlrfu9h/DDVW8Jt3ma6TGKafhi2veG6D+kmYivLuSyL+eSmohdALF\n1qI8T9fYG+lET98zVgwOevSYzLgYeZd3A/Gy6KpxSbutdyJN0BeY+4soZXK4N5de\nAWTiUyX2nrQ3OtrTwX6QzGwDpWqV7kDJn4S6TSdu5Aso+6oukU9BF0Dj7aN2El72\nRcW4U+bOhbJfOSEz4uklTY4vUHq6WKzjEVK/YTr3Pkx3SebRky6Gv82aZmYuM11W\nlCn9/KHu0JiO0QEvUBLPBIzYs0G54TaNesCHczbLmjDC+dOxBSdTtUJ7Zff3ju3G\nYTMXiy6DLyEaroGElOlLXZlPmvrTRouKoJVr+QGZxBmNzrFPLVGXar4hTcslkPzx\nKfURYLjYes25a7CHk+qYMCc7J9FVG+y0pbN7U3tJ55gLax6HZT1zrCYc1l23yNE9\n8fRfBVeCZZK/0l9bU8n5\n=Ifgw\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 4518e7d0d70f480459bd2558e2ad6615f09ff0cc\nparent a118e3f6bdcc2215dea1e00ab78b034b16522608\nauthor Martin Monperrus <martin.monperrus@gnieh.org> 1761505787 +0100\ncommitter GitHub <noreply@github.com> 1761505787 +0100\n\nAdd BibTeX citation for research paper\n\nAdded BibTeX citation for the paper on automated fixes.",
+      "verified_at": "2025-10-26T19:09:48Z"
+    }
+  },
+  "url": "https://api.github.com/repos/ASSERT-KTH/sb-heists/commits/ac0fbc21196e98f5f074a646e23b6d159a7451e3",
+  "html_url": "https://github.com/ASSERT-KTH/sb-heists/commit/ac0fbc21196e98f5f074a646e23b6d159a7451e3",
+  "comments_url": "https://api.github.com/repos/ASSERT-KTH/sb-heists/commits/ac0fbc21196e98f5f074a646e23b6d159a7451e3/comments",
+  "author": {
+    "login": "monperrus",
+    "id": 803666,
+    "node_id": "MDQ6VXNlcjgwMzY2Ng==",
+    "avatar_url": "https://avatars.githubusercontent.com/u/803666?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/monperrus",
+    "html_url": "https://github.com/monperrus",
+    "followers_url": "https://api.github.com/users/monperrus/followers",
+    "following_url": "https://api.github.com/users/monperrus/following{/other_user}",
+    "gists_url": "https://api.github.com/users/monperrus/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/monperrus/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/monperrus/subscriptions",
+    "organizations_url": "https://api.github.com/users/monperrus/orgs",
+    "repos_url": "https://api.github.com/users/monperrus/repos",
+    "events_url": "https://api.github.com/users/monperrus/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/monperrus/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "a118e3f6bdcc2215dea1e00ab78b034b16522608",
+      "url": "https://api.github.com/repos/ASSERT-KTH/sb-heists/commits/a118e3f6bdcc2215dea1e00ab78b034b16522608",
+      "html_url": "https://github.com/ASSERT-KTH/sb-heists/commit/a118e3f6bdcc2215dea1e00ab78b034b16522608"
+    }
+  ],
+  "stats": {
+    "total": 11,
+    "additions": 11,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "feafb5bb4fe0d013c921fc2bed8905d549bc2e7c",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 11,
+      "deletions": 0,
+      "changes": 11,
+      "blob_url": "https://github.com/ASSERT-KTH/sb-heists/blob/ac0fbc21196e98f5f074a646e23b6d159a7451e3/README.md",
+      "raw_url": "https://github.com/ASSERT-KTH/sb-heists/raw/ac0fbc21196e98f5f074a646e23b6d159a7451e3/README.md",
+      "contents_url": "https://api.github.com/repos/ASSERT-KTH/sb-heists/contents/README.md?ref=ac0fbc21196e98f5f074a646e23b6d159a7451e3",
+      "patch": "@@ -9,6 +9,17 @@ A comprehensive framework for testing smart contract security patches against re\n See our paper [Do Automated Fixes Truly Mitigate Smart Contract Exploits?](https://arxiv.org/pdf/2501.04600).\n The paper's results and tool reproduction details are located [here](https://github.com/ASSERT-KTH/RepairComp).\n \n+```bibtex\n+@article{10.1109-tse.2025.3618123,\n+ title = {Do Automated Fixes Truly Mitigate Smart Contract Exploits?},\n+ year = {2025},\n+ author = {Sofia Bobadilla and Monica Jin and Martin Monperrus},\n+ url = {http://oadoi.org/10.1109/tse.2025.3618123},\n+ journal = {IEEE Transactions on Software Engineering},\n+ doi = {10.1109/tse.2025.3618123},\n+}\n+```\n+\n ## 🎯 Project Structure\n \n ```"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+--- V0/integer_overflow_1.sol
++++ V3/integer_overflow_1.sol
+@@ -11,7 +11,8 @@
+ 
+      function add(uint value) returns (bool){
+          // <yes> <report> ARITHMETIC
+-         sellerBalance += value; // possible overflow
++         require(value <= uint256(-1) - sellerBalance);
++        sellerBalance = ResearchChecked.add(sellerBalance, value); // possible overflow
+ 
+          // possible auditor assert
+          // assert(sellerBalance >= value);
+@@ -22,3 +23,11 @@
+   // sellerBalance += value;
+   // } 
+  }
++
++// AI-assisted experimental checked arithmetic; not an original SafeMath release.
++// Post-result add/mul checks follow the idiom in this dataset's BECToken SafeMath.
++library ResearchChecked {
++ function add(uint a,uint b) internal pure returns(uint) { uint c=a+b; require(c>=a); return c; }
++ function sub(uint a,uint b) internal pure returns(uint) { require(b<=a); return a-b; }
++ function mul(uint a,uint b) internal pure returns(uint) { uint c=a*b; require(a==0 || c/a==b); return c; }
++}

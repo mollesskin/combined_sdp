@@ -1,0 +1,28 @@
+--- V0/overflow_single_tx.sol
++++ V2/overflow_single_tx.sol
+@@ -15,19 +15,22 @@
+     // ADD overflow with result stored in state variable.
+     function overflowaddtostate(uint256 input) public {
+         // <yes> <report> ARITHMETIC
+-        count += input;
++        require(input <= uint256(-1) - count);
++        count = count + input;
+     }
+ 
+     // MUL overflow with result stored in state variable.
+     function overflowmultostate(uint256 input) public {
+         // <yes> <report> ARITHMETIC
+-        count *= input;
++        require(count == 0 || input <= uint256(-1) / count);
++        count = count * input;
+     }
+ 
+     // Underflow with result stored in state variable.
+     function underflowtostate(uint256 input) public {
+         // <yes> <report> ARITHMETIC
+-        count -= input;
++        require(input <= count);
++        count = count - input;
+     }
+ 
+     // ADD Overflow, no effect on state.

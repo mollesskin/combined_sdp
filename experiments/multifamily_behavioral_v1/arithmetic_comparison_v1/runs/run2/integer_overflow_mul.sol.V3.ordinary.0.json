@@ -1,0 +1,81 @@
+{
+  "row": {
+    "file": "integer_overflow_mul.sol",
+    "group": "integer_overflow_mul.sol",
+    "variant": "V3",
+    "scenario": "ordinary",
+    "step": 0,
+    "method": "run",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "kind": "allowed",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "0"
+      ],
+      "value_wei": "0"
+    },
+    "before": {
+      "slot0": "2",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "2"
+    },
+    "expected": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "0"
+    },
+    "mathematical_expected": "0",
+    "unsafe_mathematical_state": null,
+    "actual": {
+      "slot0": "0",
+      "slot1": "0",
+      "contract_wei": "0",
+      "value": "0"
+    },
+    "discrepancy": "0",
+    "field_discrepancies": {},
+    "arithmetic_trace": [
+      {
+        "label": "value",
+        "left": "2",
+        "right": "0",
+        "type": "mul",
+        "mathematical_result": "0",
+        "in_uint256_range": true,
+        "modular_result": "0"
+      }
+    ],
+    "wraparound": false,
+    "wraparound_evidence": null,
+    "full_observed_rollback": null,
+    "allowed_operation_passed": true,
+    "correct": true,
+    "violated_properties": [],
+    "gas_used": "21987",
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/arithmetic_comparison_v1/runs/run2/integer_overflow_mul.sol.V3.ordinary.0.json",
+    "error": null
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x4754e4a29cdf111dfd0b8808982455914c3650d8438e00be93e36cd4de3be655",
+    "blockNumber": 2,
+    "contractAddress": null,
+    "cumulativeGasUsed": "21987",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1766619139",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "21987",
+    "hash": "0x34a71de750ad478694de00e854c7fc2381f3c61c3ff9880893cc3c863b2087c5",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  }
+}

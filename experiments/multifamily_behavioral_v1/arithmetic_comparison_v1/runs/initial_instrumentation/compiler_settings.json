@@ -1,0 +1,1354 @@
+[
+  {
+    "file": "BECToken.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "BECToken.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "BECToken.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "BECToken.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_1.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_1.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_1.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_1.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_add.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_add.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_add.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_add.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_mapping_sym_1.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_mapping_sym_1.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_mapping_sym_1.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_mapping_sym_1.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_minimal.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_minimal.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_minimal.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_minimal.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_mul.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_mul.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_mul.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_mul.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_multitx_multifunc_feasible.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_multitx_multifunc_feasible.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_multitx_multifunc_feasible.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_multitx_multifunc_feasible.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_multitx_onefunc_feasible.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_multitx_onefunc_feasible.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_multitx_onefunc_feasible.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "integer_overflow_multitx_onefunc_feasible.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "overflow_simple_add.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "overflow_simple_add.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "overflow_simple_add.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "overflow_simple_add.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "overflow_single_tx.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "overflow_single_tx.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "overflow_single_tx.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "overflow_single_tx.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "timelock.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "timelock.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "timelock.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "timelock.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "token.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "token.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "token.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "token.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "tokensalechallenge.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "tokensalechallenge.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "tokensalechallenge.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "tokensalechallenge.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  }
+]
