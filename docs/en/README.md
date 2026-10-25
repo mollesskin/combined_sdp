@@ -4,6 +4,8 @@ These are English reading copies of the current result reports. They do not repl
 
 The [tested contract catalog](tested_contracts_catalog.md) gives a source-specific description, applied pattern variants, and measured result for all 38 original files with completed behavioral comparisons, including the new SimpleDAO case.
 
+The [T3 original-study summary](T3_original_study.md) maps the research question, design, sample, instruments, procedure, analysis method, and main result to the assignment's requested elements.
+
 | Study | English report | Original report |
 |---|---|---|
 | UC01 token-call behavior | [UC01](reports/uc01_behavioral.md) | `experiments/behavioral_pilot_v1/generated_results.md` |
