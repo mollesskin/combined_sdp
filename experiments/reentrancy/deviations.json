@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-22T08:56:14.654231+00:00",
+  "deviations": [
+    {
+      "id": "D01",
+      "description": "Initial pilot criteria were stated in chat before transformations, but the v1 protocol file was saved after initial variant generation. The expanded v2 criteria were saved before the current metadata extension and all compilation/analysis. No tools had produced sample findings at selection time. No claim of retrospective prospective registration is made."
+    },
+    {
+      "id": "D02",
+      "description": "V2 made Mythril optional, added independent compilation and full CSV missingness. Slither is never gated on Mythril availability."
+    },
+    {
+      "id": "D03",
+      "description": "Setup required network-enabled retries after restricted DNS, certifi CA trust after system CA failure, local caches after home-directory restrictions, and setuptools 80.9.0 for Mythril legacy dependencies. Raw setup logs retained."
+    },
+    {
+      "id": "D04",
+      "description": "V3 repeats the complete fixed sample after installed Mythril source review exposed implicit pragma compiler selection. Explicit --solv and verified local registrations replace reliance on SOLC fallback. V2 batch retained as diagnostic; not pooled with final batch."
+    },
+    {
+      "id": "D05",
+      "description": "No container runtime was available. Sequential local environments, package and executable hashes, exact compilers and same-host conditions are recorded; CPU/memory isolation and bit-identical solver results are not claimed."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.19",
+    "--combined-json",
+    "abi,bin",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V0/TokenBank.sol"
+  ],
+  "compiler_sha256": "ace5107a68fa75634e26848d6d208b808a76cc4f9262e53e8a3622bcefd4dcaf",
+  "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/runs/20261022T123234Z/raw/compile/V0",
+  "ended_utc": "2026-10-22T12:32:43.949271+00:00",
+  "exit_code": 0,
+  "source": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V0/TokenBank.sol",
+  "source_sha256": "db71d5e85c2a1b799885afdca80dfed9cfbe3f20b3e2851b8b1cc3c6a73913e7",
+  "started_utc": "2026-10-22T12:32:43.896083+00:00",
+  "status": "compiled",
+  "timeout_seconds": 60
+}

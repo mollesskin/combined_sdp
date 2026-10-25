@@ -1,0 +1,10 @@
+{
+  "PES_values": 0,
+  "ended_utc": "2026-10-22T13:41:25.290173+00:00",
+  "infrastructure_errors": 0,
+  "observed_withdrawal_steps": 60,
+  "scenario_trials": 36,
+  "source_contracts": 3,
+  "static_tool_runs": 0,
+  "variant_sources": 12
+}

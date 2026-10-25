@@ -1,0 +1,367 @@
+{
+  "schema": 2,
+  "dataset_commit": "230e649123477eff332742a59a1c7cc6dc286cab",
+  "selection": "protocol.md",
+  "inventory": [
+    {
+      "path": "dataset/reentrancy/0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol",
+      "lines": 96,
+      "sha256": "0196d033850b295690465d0f7d2baae8b3570df29c9d03d507496b45155a84e5",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4.sol",
+      "lines": 74,
+      "sha256": "bcd0fdfad9f6594fdbc940967321856490ed4bffbe8b6ab9c75c6b85072528a5",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1.sol",
+      "lines": 97,
+      "sha256": "97a35d9e594162b70c9b21ce2245863406e6a47ae979e25a9d32a6f3cc615ec4",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+      "lines": 96,
+      "sha256": "16b738d378a612c4a34c7482ce680dd1b40fabe3059fca8e2c37941c895f9716",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x561eac93c92360949ab1f1403323e6db345cbf31.sol",
+      "lines": 96,
+      "sha256": "7ba4aa075db5de2a1badbdd19dae1404a638f188cb5715abcc3fcafff0f8bb10",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol",
+      "lines": 100,
+      "sha256": "295dba1924e8d40f718aa97197ce45871ecae2cec07d13f1bc8ce4b887c06a19",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol",
+      "lines": 85,
+      "sha256": "5bb1f99cb610a037d71ed227b6ee68e9d76eaf4846e8c67952919ca11b0ec0ee",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x7a8721a9d64c74da899424c1b52acbf58ddc9782.sol",
+      "lines": 88,
+      "sha256": "abaee44880752eb3217f7744d09edec81cef9f6aa7efc8affbb058a79603b64c",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol",
+      "lines": 85,
+      "sha256": "df9a3f0d481d394c2d03d72853c6091be2acab93cd8f3512fbf7244dbb2d3118",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x8c7777c45481dba411450c228cb692ac3d550344.sol",
+      "lines": 77,
+      "sha256": "14de5808a50fc6b7efcebad0f9d5782e0523bdab13e8bedc1f328912cd4ef036",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol",
+      "lines": 85,
+      "sha256": "dafac629c62d76f7de74e28f3f782c284a630f0ea4ea6202be45370d1b25d618",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+      "lines": 80,
+      "sha256": "3f826e89f8ac48c86cef51681eb0d3fb05975d4764f38606e6f629dce68ab099",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+      "lines": 104,
+      "sha256": "810460102ccb2de081a2b63b4cf1fcaffe4f728b63b494fa6ae70d2a2769650c",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol",
+      "lines": 95,
+      "sha256": "cd74aa8fc17eef87d4a5688223044d10de89f9db012847f876aed9669d6d7c71",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol",
+      "lines": 76,
+      "sha256": "1e976e2c8b7bf8583650b3a92f69810efbe4967334a6f9f1d76abf0a682334e5",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol",
+      "lines": 74,
+      "sha256": "602cf4476affd918bbe3b97ffc41ddd8c553ac442a06cec8791beafa07c67baf",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+      "lines": 77,
+      "sha256": "59ebd4fa5520fb501e02a072751299037ef827a8efef1ca06dcb23ce1e862510",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol",
+      "lines": 104,
+      "sha256": "c759773107c63e839906f25004a8bd32eed314cf3aac8c7657f9326b9db94990",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+      "lines": 85,
+      "sha256": "de734bd2aa98a0c98d6310a90192d6a3f28594a93e31c70e024474ca022f1ad4",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol",
+      "lines": 85,
+      "sha256": "b7adb5de46b03947779a0432e2dcab14b579bb33a6348793028cda0f6eb06d09",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    },
+    {
+      "path": "dataset/reentrancy/etherbank.sol",
+      "lines": 24,
+      "sha256": "63d14a7dd1a1f2f6f5cdc04be0c509606012af3742dff18a671519c56a63ec36",
+      "selected": false,
+      "reason": "No explicit payable funding function (legacy implicit payable not normalized)."
+    },
+    {
+      "path": "dataset/reentrancy/etherstore.sol",
+      "lines": 31,
+      "sha256": "bffe7255c351724c3ab15f6c4c4909a3d756650791360e86cf2f71c48046aa79",
+      "selected": true,
+      "reason": "Included: meets criteria and frozen v1 whitelist."
+    },
+    {
+      "path": "dataset/reentrancy/modifier_reentrancy.sol",
+      "lines": 49,
+      "sha256": "5675bc25a679e6e3cae0252605b00ab569a66757e91fbcf8873b5994960cbef7",
+      "selected": false,
+      "reason": "Token/modifier callback scenario; no payable ETH funding/withdrawal path."
+    },
+    {
+      "path": "dataset/reentrancy/reentrance.sol",
+      "lines": 32,
+      "sha256": "78ebf8f92bb978386a96fb1b4bec2ad2aaa77916a6ed7e49c2ae74c92f466ea4",
+      "selected": false,
+      "reason": "External call failure is ignored instead of reverting."
+    },
+    {
+      "path": "dataset/reentrancy/reentrancy_bonus.sol",
+      "lines": 31,
+      "sha256": "32a61297b7da193126a3ffb5863305bc69433ee62fd3ee8c391df57c77fad3d0",
+      "selected": false,
+      "reason": "Bonus/cross-function scenario; no payable funding path."
+    },
+    {
+      "path": "dataset/reentrancy/reentrancy_cross_function.sol",
+      "lines": 28,
+      "sha256": "438fda72fcc67ddfe7d949357720537dd07915f90c147db44428d876f5d5f692",
+      "selected": false,
+      "reason": "No payable funding path; cross-function scenario."
+    },
+    {
+      "path": "dataset/reentrancy/reentrancy_dao.sol",
+      "lines": 28,
+      "sha256": "e507ae792671a38307734b38b8d35abf062a7e78889e0178f8647838a2527dd2",
+      "selected": true,
+      "reason": "Included: meets criteria and frozen v1 whitelist."
+    },
+    {
+      "path": "dataset/reentrancy/reentrancy_insecure.sol",
+      "lines": 21,
+      "sha256": "5569c2a65ebedead15a2eeb63e9185c79c3a30d4edad7948679b3ad009c50a36",
+      "selected": false,
+      "reason": "Solidity 0.5.x and no payable funding path."
+    },
+    {
+      "path": "dataset/reentrancy/reentrancy_simple.sol",
+      "lines": 29,
+      "sha256": "98b4c8b45c2e6711b1c58fb6991375f698a66f148799ca7aff6e27db8a9803e1",
+      "selected": true,
+      "reason": "Included: meets criteria and frozen v1 whitelist."
+    },
+    {
+      "path": "dataset/reentrancy/simple_dao.sol",
+      "lines": 27,
+      "sha256": "40ffea56c722280688eba923676992d20be7623dcf724393c1c7ca1ef24e0ae5",
+      "selected": false,
+      "reason": "External call failure is ignored instead of reverting."
+    },
+    {
+      "path": "dataset/reentrancy/spank_chain_payment.sol",
+      "lines": 896,
+      "sha256": "15724a9aecd227749e4e3441bf408892ead6639d7c2830b116014183fb537d09",
+      "selected": false,
+      "reason": "Excluded: exceeds 60 physical lines."
+    }
+  ],
+  "contracts": [
+    {
+      "contract_id": "R01",
+      "name": "etherstore.sol",
+      "source": "dataset/reentrancy/etherstore.sol",
+      "source_sha256": "bffe7255c351724c3ab15f6c4c4909a3d756650791360e86cf2f71c48046aa79",
+      "solc": "0.4.10",
+      "annotation": {
+        "name": "etherstore.sol",
+        "path": "dataset/reentrancy/etherstore.sol",
+        "pragma": "0.4.10",
+        "source": "https://github.com/sigp/solidity-security-blog",
+        "vulnerabilities": [
+          {
+            "lines": [
+              27
+            ],
+            "category": "reentrancy"
+          }
+        ]
+      },
+      "variants": {
+        "baseline": {
+          "variant": "V0",
+          "patterns": "none",
+          "path": "contracts/baseline/etherstore.sol",
+          "sha256": "bffe7255c351724c3ab15f6c4c4909a3d756650791360e86cf2f71c48046aa79"
+        },
+        "cei": {
+          "variant": "V1",
+          "patterns": "CEI",
+          "path": "contracts/cei/etherstore.sol",
+          "sha256": "d471efe1d8e94b69d35db688305e8e577f667edd165409d2dc84d95287e53f83"
+        },
+        "guard": {
+          "variant": "V2",
+          "patterns": "mutex",
+          "path": "contracts/guard/etherstore.sol",
+          "sha256": "25fcf0e8bd20a8e8f093fb842613d5ac4a7e4f5c0b50d7c995a12b88f36203c2"
+        },
+        "cei_guard": {
+          "variant": "V3",
+          "patterns": "CEI+mutex",
+          "path": "contracts/cei_guard/etherstore.sol",
+          "sha256": "104240cb5028fe66915697bac8e01fa9b6a726d5a8b0d3371e429cab33bc64b6"
+        }
+      }
+    },
+    {
+      "contract_id": "R02",
+      "name": "reentrancy_dao.sol",
+      "source": "dataset/reentrancy/reentrancy_dao.sol",
+      "source_sha256": "e507ae792671a38307734b38b8d35abf062a7e78889e0178f8647838a2527dd2",
+      "solc": "0.4.19",
+      "annotation": {
+        "name": "reentrancy_dao.sol",
+        "path": "dataset/reentrancy/reentrancy_dao.sol",
+        "pragma": "0.4.19",
+        "source": "https://github.com/ConsenSys/evm-analyzer-benchmark-suite",
+        "vulnerabilities": [
+          {
+            "lines": [
+              18
+            ],
+            "category": "reentrancy"
+          }
+        ]
+      },
+      "variants": {
+        "baseline": {
+          "variant": "V0",
+          "patterns": "none",
+          "path": "contracts/baseline/reentrancy_dao.sol",
+          "sha256": "e507ae792671a38307734b38b8d35abf062a7e78889e0178f8647838a2527dd2"
+        },
+        "cei": {
+          "variant": "V1",
+          "patterns": "CEI",
+          "path": "contracts/cei/reentrancy_dao.sol",
+          "sha256": "589c4acc618b4fa49723cec2708f3f063a62b5e927778968911978a81ce76df3"
+        },
+        "guard": {
+          "variant": "V2",
+          "patterns": "mutex",
+          "path": "contracts/guard/reentrancy_dao.sol",
+          "sha256": "0db4107a42ab33afdc0067e726d9e2a8b4de779e904d5613c4136d834f8bfd9a"
+        },
+        "cei_guard": {
+          "variant": "V3",
+          "patterns": "CEI+mutex",
+          "path": "contracts/cei_guard/reentrancy_dao.sol",
+          "sha256": "1e723339961ab59ca0fd4bcfea31bb1d8a11ced0cc710d9b9ca2438127ca5b59"
+        }
+      }
+    },
+    {
+      "contract_id": "R03",
+      "name": "reentrancy_simple.sol",
+      "source": "dataset/reentrancy/reentrancy_simple.sol",
+      "source_sha256": "98b4c8b45c2e6711b1c58fb6991375f698a66f148799ca7aff6e27db8a9803e1",
+      "solc": "0.4.15",
+      "annotation": {
+        "name": "reentrancy_simple.sol",
+        "path": "dataset/reentrancy/reentrancy_simple.sol",
+        "pragma": "0.4.15",
+        "source": "https://github.com/trailofbits/not-so-smart-contracts/blob/master/reentrancy/Reentrancy.sol",
+        "vulnerabilities": [
+          {
+            "lines": [
+              24
+            ],
+            "category": "reentrancy"
+          }
+        ]
+      },
+      "variants": {
+        "baseline": {
+          "variant": "V0",
+          "patterns": "none",
+          "path": "contracts/baseline/reentrancy_simple.sol",
+          "sha256": "98b4c8b45c2e6711b1c58fb6991375f698a66f148799ca7aff6e27db8a9803e1"
+        },
+        "cei": {
+          "variant": "V1",
+          "patterns": "CEI",
+          "path": "contracts/cei/reentrancy_simple.sol",
+          "sha256": "689238c83588ac916e6f9f46695ca964b600fd8b3b402f28d85275f1a5edaf63"
+        },
+        "guard": {
+          "variant": "V2",
+          "patterns": "mutex",
+          "path": "contracts/guard/reentrancy_simple.sol",
+          "sha256": "dbfa97ef9787b47582aecd5969bf06be45aa521e19d0a49eb4597ee41be8130f"
+        },
+        "cei_guard": {
+          "variant": "V3",
+          "patterns": "CEI+mutex",
+          "path": "contracts/cei_guard/reentrancy_simple.sol",
+          "sha256": "89332d562e06379f21a2c615b0897c94b9c05bc0673e8ade7bfb7169500d30fb"
+        }
+      }
+    }
+  ]
+}

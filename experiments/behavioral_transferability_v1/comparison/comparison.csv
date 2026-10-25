@@ -1,0 +1,5 @@
+contract_id,comparison,classification,all_legitimate_functionality_preserved,additional_benefit_over_both
+UC02,V3 vs V1,additional observed protection,True,False
+UC02,V3 vs V2,equal observed protection,True,False
+UC03,V3 vs V1,additional observed protection,True,False
+UC03,V3 vs V2,equal observed protection,True,False

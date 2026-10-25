@@ -1,0 +1,12 @@
+{
+  "access_control": 18,
+  "arithmetic": 15,
+  "bad_randomness": 8,
+  "denial_of_service": 6,
+  "front_running": 4,
+  "other": 3,
+  "reentrancy": 31,
+  "short_addresses": 1,
+  "time_manipulation": 5,
+  "unchecked_low_level_calls": 52
+}

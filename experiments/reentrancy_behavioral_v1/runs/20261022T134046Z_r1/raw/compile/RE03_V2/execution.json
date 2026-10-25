@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.15",
+    "--combined-json",
+    "abi,bin",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/guard/reentrancy_simple.sol"
+  ],
+  "compiler_sha256": "e449a4980db4ff18e7ffe704b40083cded96cccf33986bf6a6bb6fe925eb86c0",
+  "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy_behavioral_v1/runs/20261022T134046Z_r1/raw/compile/RE03_V2",
+  "ended_utc": "2026-10-22T13:40:58.640649+00:00",
+  "exit_code": 0,
+  "source": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/guard/reentrancy_simple.sol",
+  "source_sha256": "dbfa97ef9787b47582aecd5969bf06be45aa521e19d0a49eb4597ee41be8130f",
+  "started_utc": "2026-10-22T13:40:58.616157+00:00",
+  "status": "compiled",
+  "timeout_seconds": 60
+}

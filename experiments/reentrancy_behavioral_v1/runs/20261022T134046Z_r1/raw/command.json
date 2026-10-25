@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python",
+    "experiments/reentrancy_behavioral_v1/tests/run_reentrancy.py",
+    "--output",
+    "experiments/reentrancy_behavioral_v1/runs/20261022T134046Z_r1",
+    "--repetition",
+    "1"
+  ],
+  "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated",
+  "network": "in-process only; no static tools/PES",
+  "repetition": 1,
+  "started_utc": "2026-10-22T13:40:48.817116+00:00"
+}

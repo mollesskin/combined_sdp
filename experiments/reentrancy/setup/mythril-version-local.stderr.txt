@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/bin/myth", line 5, in <module>
+    from mythril.interfaces.cli import main
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/__init__.py", line 8, in <module>
+    from mythril.plugin.loader import MythrilPluginLoader
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/plugin/__init__.py", line 1, in <module>
+    from mythril.plugin.interface import MythrilPlugin, MythrilCLIPlugin
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/plugin/interface.py", line 2, in <module>
+    from mythril.laser.plugin.builder import PluginBuilder as LaserPluginBuilder
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/laser/plugin/builder.py", line 1, in <module>
+    from mythril.laser.plugin.interface import LaserPlugin
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/laser/plugin/interface.py", line 1, in <module>
+    from mythril.laser.ethereum.svm import LaserEVM
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/laser/ethereum/svm.py", line 10, in <module>
+    from mythril.analysis.potential_issues import check_potential_issues
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/analysis/potential_issues.py", line 3, in <module>
+    from mythril.analysis.solver import get_transaction_sequence
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/analysis/solver.py", line 16, in <module>
+    from mythril.laser.ethereum.state.global_state import GlobalState
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/laser/ethereum/state/global_state.py", line 10, in <module>
+    from mythril.laser.ethereum.state.machine_state import MachineState
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/laser/ethereum/state/machine_state.py", line 7, in <module>
+    from eth._utils.numeric import ceil32
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/eth/__init__.py", line 1, in <module>
+    import pkg_resources
+ModuleNotFoundError: No module named 'pkg_resources'

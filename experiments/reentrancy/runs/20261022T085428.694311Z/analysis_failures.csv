@@ -1,0 +1,77 @@
+contract_id,source_contract,variant,security_patterns,solidity_version,compilation_status,tool,vulnerability_detected,vulnerability_count,reentrancy_finding_count,execution_status,error_timeout_status,exit_code,elapsed_seconds,raw_output_directory,source_sha256
+R01,dataset/reentrancy/etherstore.sol,V0,none,0.4.10,success,mythril,,,,analysis_error,"Traceback (most recent call last):
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 967, in parse_args_and_execute
+    disassembler = MythrilDisassembler(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 61, in __init__
+    self.solc_binary = self._init_solc_binary(solc_version)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 93, in _init_solc_binary
+    solc_binary = util.solc_exists(version)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 140, in solc_exists
+    solcx.install_solc(""v"" + version)
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 430, in install_solc
+    version = _convert_and_validate_version(version)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 69, in _convert_and_validate_version
+    raise UnsupportedVersionError(""py-solc-x does not support solc versions <0.4.11"")
+solcx.exceptions.UnsupportedVersionError: py-solc-x does not support solc versions <0.4.11
+",0,1.936111,R01/V0/mythril,bffe7255c351724c3ab15f6c4c4909a3d756650791360e86cf2f71c48046aa79
+R01,dataset/reentrancy/etherstore.sol,V1,CEI,0.4.10,success,mythril,,,,analysis_error,"Traceback (most recent call last):
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 967, in parse_args_and_execute
+    disassembler = MythrilDisassembler(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 61, in __init__
+    self.solc_binary = self._init_solc_binary(solc_version)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 93, in _init_solc_binary
+    solc_binary = util.solc_exists(version)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 140, in solc_exists
+    solcx.install_solc(""v"" + version)
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 430, in install_solc
+    version = _convert_and_validate_version(version)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 69, in _convert_and_validate_version
+    raise UnsupportedVersionError(""py-solc-x does not support solc versions <0.4.11"")
+solcx.exceptions.UnsupportedVersionError: py-solc-x does not support solc versions <0.4.11
+",0,1.588754,R01/V1/mythril,d471efe1d8e94b69d35db688305e8e577f667edd165409d2dc84d95287e53f83
+R01,dataset/reentrancy/etherstore.sol,V2,mutex,0.4.10,success,mythril,,,,analysis_error,"Traceback (most recent call last):
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 967, in parse_args_and_execute
+    disassembler = MythrilDisassembler(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 61, in __init__
+    self.solc_binary = self._init_solc_binary(solc_version)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 93, in _init_solc_binary
+    solc_binary = util.solc_exists(version)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 140, in solc_exists
+    solcx.install_solc(""v"" + version)
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 430, in install_solc
+    version = _convert_and_validate_version(version)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 69, in _convert_and_validate_version
+    raise UnsupportedVersionError(""py-solc-x does not support solc versions <0.4.11"")
+solcx.exceptions.UnsupportedVersionError: py-solc-x does not support solc versions <0.4.11
+",0,2.047619,R01/V2/mythril,25fcf0e8bd20a8e8f093fb842613d5ac4a7e4f5c0b50d7c995a12b88f36203c2
+R01,dataset/reentrancy/etherstore.sol,V3,CEI+mutex,0.4.10,success,mythril,,,,analysis_error,"Traceback (most recent call last):
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 967, in parse_args_and_execute
+    disassembler = MythrilDisassembler(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 61, in __init__
+    self.solc_binary = self._init_solc_binary(solc_version)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 93, in _init_solc_binary
+    solc_binary = util.solc_exists(version)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 140, in solc_exists
+    solcx.install_solc(""v"" + version)
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 430, in install_solc
+    version = _convert_and_validate_version(version)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 69, in _convert_and_validate_version
+    raise UnsupportedVersionError(""py-solc-x does not support solc versions <0.4.11"")
+solcx.exceptions.UnsupportedVersionError: py-solc-x does not support solc versions <0.4.11
+",0,1.604483,R01/V3/mythril,104240cb5028fe66915697bac8e01fa9b6a726d5a8b0d3371e429cab33bc64b6

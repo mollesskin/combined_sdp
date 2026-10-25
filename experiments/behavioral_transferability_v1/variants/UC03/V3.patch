@@ -1,0 +1,22 @@
+--- UC03/V0
++++ UC03/V3
+@@ -14,7 +14,18 @@
+         uint _value = v * 10 ** _decimals;
+         for(uint i=0;i<_tos.length;i++){
+             // <yes> <report> UNCHECKED_LL_CALLS
+-            caddress.call(id,from,_tos[i],_value);
++            bool callSucceeded = caddress.call(id,from,_tos[i],_value);
++            require(callSucceeded);
++            uint256 returnSize;
++            uint256 returnWord;
++            assembly { returnSize := returndatasize }
++            require(returnSize == 32);
++            assembly {
++                let ptr := mload(0x40)
++                returndatacopy(ptr, 0, 32)
++                returnWord := mload(ptr)
++            }
++            require(returnWord == 1);
+         }
+         return true;
+     }

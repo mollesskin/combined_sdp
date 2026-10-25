@@ -1,0 +1,126 @@
+{
+  "recorded_utc": "2026-10-22T08:50:44.420965+00:00",
+  "note": "Retrospective setup index. Setup start/end timestamps were not captured; none are inferred here. Timed experiment execution events are in runs/*/events.jsonl.",
+  "commands": [
+    {
+      "command": "python3 -m venv experiments/reentrancy/toolchain/venv",
+      "note": "Isolated Python 3.13.1 environment."
+    },
+    {
+      "command": "experiments/reentrancy/toolchain/venv/bin/python -m pip install slither-analyzer",
+      "exit_code": 1,
+      "stdout": "slither-install.stdout.txt",
+      "stderr": "slither-install.stderr.txt",
+      "deviation": "Restricted DNS prevented initial download."
+    },
+    {
+      "command": "experiments/reentrancy/toolchain/venv/bin/python -m pip install --no-cache-dir slither-analyzer",
+      "exit_code": 0,
+      "stdout": "slither-install-network.stdout.txt",
+      "stderr": "slither-install-network.stderr.txt",
+      "deviation": "Network-enabled setup retry; package cache disabled."
+    },
+    {
+      "command": "python3 experiments/reentrancy/setup_compilers.py",
+      "exit_code": 0,
+      "details": "compilers.jsonl",
+      "deviation": "First index attempts failed (DNS, then system CA). Individual failure status is in JSONL despite helper exit 0."
+    },
+    {
+      "command": "experiments/reentrancy/toolchain/venv/bin/python experiments/reentrancy/setup_compilers.py",
+      "exit_code": 0,
+      "details": "compilers.jsonl",
+      "deviation": "Used certifi CA trust with TLS verification enabled. All three upstream SHA256 values checked."
+    },
+    {
+      "command": "/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 -m venv experiments/reentrancy/toolchain/mythril-venv"
+    },
+    {
+      "command": "experiments/reentrancy/toolchain/mythril-venv/bin/python -m pip install --no-cache-dir mythril",
+      "exit_code": 0,
+      "stdout": "mythril-install.stdout.txt",
+      "stderr": "mythril-install.stderr.txt"
+    },
+    {
+      "command": "experiments/reentrancy/toolchain/mythril-venv/bin/python -m pip install --no-cache-dir setuptools==80.9.0",
+      "exit_code": 0,
+      "stdout": "mythril-setuptools.stdout.txt",
+      "stderr": "mythril-setuptools.stderr.txt",
+      "deviation": "Legacy py-evm requires pkg_resources; Python 3.12 venv had no setuptools."
+    }
+  ],
+  "evidence": {
+    "compilers.jsonl": {
+      "sha256": "420d48908226f5cf21ee038afa9107a9b16ad7de720b23aad359598bf395182c",
+      "bytes": 1885
+    },
+    "mythril-install.stderr.txt": {
+      "sha256": "f8c30222b5cf1eef85d08832b25607877f8429c6c08599d4397b832d18c5a906",
+      "bytes": 220
+    },
+    "mythril-install.stdout.txt": {
+      "sha256": "59562fee37bae04d9a3af26af8cc49db2012abc7da26569be697996e281917f1",
+      "bytes": 102218
+    },
+    "mythril-setuptools.stderr.txt": {
+      "sha256": "f8c30222b5cf1eef85d08832b25607877f8429c6c08599d4397b832d18c5a906",
+      "bytes": 220
+    },
+    "mythril-setuptools.stdout.txt": {
+      "sha256": "649ddd951197b4c67e35b98e64bd01a79338995d60e1e67b091cc7a170ff162a",
+      "bytes": 606
+    },
+    "mythril-version-final.stderr.txt": {
+      "sha256": "a93a2e9376d981ac343e821b00cfb25920c7207512dae55824be4c5a8aaafe64",
+      "bytes": 935
+    },
+    "mythril-version-final.stdout.txt": {
+      "sha256": "fed8e8cde35b8488f5ac3d1e2b1bc702716156aafa65a4829c9316222e4bd864",
+      "bytes": 24
+    },
+    "mythril-version-local.stderr.txt": {
+      "sha256": "a641ee05854faa8064d5c70033384f7c145ba01326c37fe92b595be68c654146",
+      "bytes": 2951
+    },
+    "mythril-version-local.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "mythril-version.stderr.txt": {
+      "sha256": "eeae161a65a37530d46c2941c3f588cbd169ae7e8a81aed74d5759aa9282b2af",
+      "bytes": 5495
+    },
+    "mythril-version.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "slither-help.txt": {
+      "sha256": "4d9a35ac6777b13b2011ef3eacfb1f80bd8c6fef65ea29012af522eaf118c063",
+      "bytes": 14627
+    },
+    "slither-install-network.stderr.txt": {
+      "sha256": "17d47028131e7d87f26cad15081cc3deb62bd9a0aeb02a980ab171188ae46694",
+      "bytes": 212
+    },
+    "slither-install-network.stdout.txt": {
+      "sha256": "3e9f3214a1787d037d6a8e5ba3f22af586157edb7d9266ca31f8b08089902dd3",
+      "bytes": 12566
+    },
+    "slither-install.stderr.txt": {
+      "sha256": "2cdfa31d27b1674263f12a9555a6a0a4e0f97f5763ce0b2cea2ee67b9a8bde54",
+      "bytes": 2105
+    },
+    "slither-install.stdout.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "solc-0.4.10-help.txt": {
+      "sha256": "9acf132e5bd064a801f12f7024cd544b9767f462710da683031afb08b4e806f6",
+      "bytes": 3010
+    },
+    "solc-list.json": {
+      "sha256": "22e8ba1c7c8d0fc5eb60964083b238d267ea2c1afec9757521fea20c45b206af",
+      "bytes": 53429
+    }
+  }
+}

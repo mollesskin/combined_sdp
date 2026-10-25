@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-22T12:27:51.967292+00:00",
+  "type": "developmental freeze before treatment coding and comparative executions; earlier evidence already known",
+  "sha256": {
+    "protocol.md": "603261dd941afe82efb5509f39bd10f6c58afce4f8f724cc00cff13905924b6a",
+    "selection_decision.md": "97a5b2009ef596868524605efda936a756b0049a2cd0d091258eac39939d2e97",
+    "scenario_inputs.json": "fe2e8771c86a3a01fb27a59e63d88053583008c4bee7aa8867cb1164ed4b937f"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-22T13:08:22.842962+00:00",
+  "type": "developmental freeze before coding and comparative execution; earlier evidence known",
+  "sha256": {
+    "source_applicability.md": "6bbae5e7d0be8709deac98aa4419148ab5658a3e835fde4c1585633c0da9a7cc",
+    "protocol.md": "0ac6483e335a6b321a212827eb1a4dbb08a5be96d35dde5a513ad12319913b39",
+    "scenario_inputs.json": "a700c4570f27e1f7b9214f63e7279500f9ac24b55db9a1f5f9fac328424a7373"
+  }
+}

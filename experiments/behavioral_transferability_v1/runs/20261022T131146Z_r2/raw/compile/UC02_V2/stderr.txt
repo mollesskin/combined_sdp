@@ -1,0 +1,9 @@
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_transferability_v1/variants/UC02/V2/Contract.sol:31:13: Warning: Return value of low-level calls not used.
+            contract_address.call(id, msg.sender, tos[i], vs[i]);
+            ^--------------------------------------------------^
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_transferability_v1/variants/UC02/V2/Contract.sol:34:38: Warning: The "returndatasize" instruction is only available after the Metropolis hard fork. Before that it acts as an invalid instruction.
+            assembly { returnSize := returndatasize }
+                                     ^------------^
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_transferability_v1/variants/UC02/V2/Contract.sol:38:17: Warning: The "returndatacopy" instruction is only available after the Metropolis hard fork. Before that it acts as an invalid instruction.
+                returndatacopy(ptr, 0, 32)
+                ^------------^

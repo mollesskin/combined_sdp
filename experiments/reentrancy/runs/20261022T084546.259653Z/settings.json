@@ -1,0 +1,20 @@
+{
+  "protocol_version": 2,
+  "sample_size": 3,
+  "variant_order": ["baseline", "cei", "guard", "cei_guard"],
+  "compiler_output": "abi,bin",
+  "optimizer": false,
+  "compile_timeout_seconds": 60,
+  "slither_timeout_seconds": 180,
+  "slither_detectors": "all default detectors",
+  "mythril_policy": "optional; only if installed and version probe succeeds before any sample analysis",
+  "mythril_execution_timeout_seconds": 120,
+  "mythril_solver_timeout_ms": 10000,
+  "mythril_transaction_count": 3,
+  "mythril_wall_timeout_seconds": 180,
+  "execution": "sequential; one process group at a time",
+  "PYTHONHASHSEED": "0",
+  "TZ": "UTC",
+  "cpu_memory_limits": "none; same host; timing is descriptive only",
+  "network_policy": "no chain access; local source analysis only"
+}

@@ -1,0 +1,7 @@
+contract_id,comparison,classification,ordinary_and_permitted_functionality_preserved
+RE01,V3 vs V1,equal observed protection,True
+RE01,V3 vs V2,equal observed protection,True
+RE02,V3 vs V1,equal observed protection,True
+RE02,V3 vs V2,equal observed protection,True
+RE03,V3 vs V1,equal observed protection,True
+RE03,V3 vs V2,equal observed protection,True

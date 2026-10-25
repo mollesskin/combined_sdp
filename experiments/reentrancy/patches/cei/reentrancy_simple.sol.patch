@@ -1,0 +1,15 @@
+--- baseline/reentrancy_simple.sol
++++ cei/reentrancy_simple.sol
+@@ -21,9 +21,10 @@
+          // send userBalance[msg.sender] ethers to msg.sender
+          // if mgs.sender is a contract, it will call its fallback function
+          // <yes> <report> REENTRANCY
+-         if( ! (msg.sender.call.value(userBalance[msg.sender])() ) ){
++         uint amount = userBalance[msg.sender];
++         userBalance[msg.sender] = 0;
++         if( ! (msg.sender.call.value(amount)() ) ){
+              throw;
+          }
+-         userBalance[msg.sender] = 0;
+      }
+  }

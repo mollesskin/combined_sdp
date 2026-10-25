@@ -1,0 +1,6 @@
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_transferability_v1/variants/UC02/V3/Contract.sol:35:38: Warning: The "returndatasize" instruction is only available after the Metropolis hard fork. Before that it acts as an invalid instruction.
+            assembly { returnSize := returndatasize }
+                                     ^------------^
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_transferability_v1/variants/UC02/V3/Contract.sol:39:17: Warning: The "returndatacopy" instruction is only available after the Metropolis hard fork. Before that it acts as an invalid instruction.
+                returndatacopy(ptr, 0, 32)
+                ^------------^

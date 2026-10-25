@@ -1,0 +1,19 @@
+--- UC02/V0
++++ UC02/V2
+@@ -29,6 +29,16 @@
+         for(uint i = 0 ; i < tos.length; i++){
+             // <yes> <report> UNCHECKED_LL_CALLS
+             contract_address.call(id, msg.sender, tos[i], vs[i]);
++            uint256 returnSize;
++            uint256 returnWord;
++            assembly { returnSize := returndatasize }
++            require(returnSize == 32);
++            assembly {
++                let ptr := mload(0x40)
++                returndatacopy(ptr, 0, 32)
++                returnWord := mload(ptr)
++            }
++            require(returnWord == 1);
+         }
+         return true;
+     }

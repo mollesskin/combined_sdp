@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-10-22T13:40:40.559655+00:00",
+  "type": "developmental implementation freeze before new comparative runs",
+  "sha256": {
+    "protocol.lock.json": "494f7436246339a2b367b05d5ed46528f8432d6aaa09dca2756e7b63b6a7cb7d",
+    "fixture_provenance.json": "982612855f4c6bf30baec08a31bfedcdd5baa1d90b3072691f236cc834ad508b",
+    "fixtures/LocalRecipient.sol": "0eddfd3d5b6cf8ad32fb98c07cd5243aa4f081d8dc76ba3664b9687087aae206",
+    "tests/run_reentrancy.py": "656ad9e9d7500a3ec55935688f3f5f5b2affad4f57d7fbdb25c65af559ba6e07",
+    "tests/summarize.py": "a8696b1a0dd1c5a50d9a13a04cd25177d9309232743a36e9af46988f24b9ac98"
+  }
+}

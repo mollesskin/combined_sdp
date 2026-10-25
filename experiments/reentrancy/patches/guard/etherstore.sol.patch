@@ -1,0 +1,27 @@
+--- baseline/etherstore.sol
++++ guard/etherstore.sol
+@@ -8,6 +8,15 @@
+ pragma solidity ^0.4.10;
+ 
+ contract EtherStore {
++    // Experiment guard: Solidity 0.4-compatible, shared contract lock.
++    bool private experimentEntered;
++    modifier nonReentrant() {
++        require(!experimentEntered);
++        experimentEntered = true;
++        _;
++        experimentEntered = false;
++    }
++
+ 
+     uint256 public withdrawalLimit = 1 ether;
+     mapping(address => uint256) public lastWithdrawTime;
+@@ -17,7 +26,7 @@
+         balances[msg.sender] += msg.value;
+     }
+ 
+-    function withdrawFunds (uint256 _weiToWithdraw) public {
++    function withdrawFunds (uint256 _weiToWithdraw) public nonReentrant {
+         require(balances[msg.sender] >= _weiToWithdraw);
+         // limit the withdrawal
+         require(_weiToWithdraw <= withdrawalLimit);

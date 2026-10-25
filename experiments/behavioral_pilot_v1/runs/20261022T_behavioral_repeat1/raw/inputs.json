@@ -1,0 +1,64 @@
+{
+  "actors": {
+    "holder_recipient": 1,
+    "owner": 0
+  },
+  "amount": 5,
+  "compile_timeout_seconds": 60,
+  "compiler": "0.4.19",
+  "contract_id": "UC01",
+  "deposit_wei": 2000000000000000000,
+  "discrepancy_formula": "max(0, amount - delivered_delta) if outer_status == 1 else 0",
+  "entitlement_formula": "max(0, entitlement_before - entitlement_after) if delivered_delta != amount else 0",
+  "evm": "ByzantiumVM",
+  "genesis": {
+    "difficulty": 1,
+    "gas_limit": 30000000,
+    "timestamp": 2000000000
+  },
+  "initial_bank_tokens": 100,
+  "initial_holder_tokens": 0,
+  "invariants": {
+    "I1": "acknowledged_delivery",
+    "I2": "entitlement_preserved_on_nondelivery",
+    "I3": "token_conservation",
+    "I4": "atomic_failure_policy (negative only)",
+    "I5": "ether_frame",
+    "I6": "legitimate_operation (normal only)"
+  },
+  "negative_requirements": [
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5"
+  ],
+  "repetitions": 2,
+  "scenarios": [
+    {
+      "id": "S1",
+      "mode": 0,
+      "negative": false
+    },
+    {
+      "id": "S2",
+      "mode": 1,
+      "negative": true
+    },
+    {
+      "id": "S3",
+      "mode": 2,
+      "negative": true
+    }
+  ],
+  "tx": {
+    "gas": 12000000,
+    "gasPrice": 1
+  },
+  "variants": [
+    "V0",
+    "V1",
+    "V2",
+    "V3"
+  ]
+}

@@ -1,0 +1,897 @@
+Collecting mythril
+  Downloading mythril-0.24.8.tar.gz (4.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.6/4.6 MB 6.6 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting blake2b-py (from mythril)
+  Obtaining dependency information for blake2b-py from https://files.pythonhosted.org/packages/60/77/e9702cf57d318a10c265a1f75399eed99a7eae5081d4b90207f5e02afebe/blake2b_py-0.4.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading blake2b_py-0.4.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.6 kB)
+Collecting coloredlogs>=10.0 (from mythril)
+  Obtaining dependency information for coloredlogs>=10.0 from https://files.pythonhosted.org/packages/a7/06/3d6badcf13db419e25b07041d9c7b4a2c331d3f4e7134445ec5df57714cd/coloredlogs-15.0.1-py2.py3-none-any.whl.metadata
+  Downloading coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+Collecting coincurve>=13.0.0 (from mythril)
+  Obtaining dependency information for coincurve>=13.0.0 from https://files.pythonhosted.org/packages/24/5a/2da75ee00a722ef1fa068ada3bc34c564595ead86fef573434e2f0cb0a5c/coincurve-21.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coincurve-21.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (4.0 kB)
+Collecting cytoolz>=0.12.0 (from mythril)
+  Obtaining dependency information for cytoolz>=0.12.0 from https://files.pythonhosted.org/packages/02/cf/6efe33b9f75a8a2a6972d3b9b6e0611de0fb7c627f7edffff4e7eca08e9e/cytoolz-1.2.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading cytoolz-1.2.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (5.3 kB)
+Collecting asn1crypto>=0.22.0 (from mythril)
+  Obtaining dependency information for asn1crypto>=0.22.0 from https://files.pythonhosted.org/packages/c9/7f/09065fd9e27da0eda08b4d6897f1c13535066174cc023af248fc2a8d5e5a/asn1crypto-1.5.1-py2.py3-none-any.whl.metadata
+  Downloading asn1crypto-1.5.1-py2.py3-none-any.whl.metadata (13 kB)
+Collecting configparser>=3.5.0 (from mythril)
+  Obtaining dependency information for configparser>=3.5.0 from https://files.pythonhosted.org/packages/09/fe/f61e7129e9e689d9e40bbf8a36fb90f04eceb477f4617c02c6a18463e81f/configparser-7.2.0-py3-none-any.whl.metadata
+  Downloading configparser-7.2.0-py3-none-any.whl.metadata (5.5 kB)
+Collecting coverage<7.0,>6.0 (from mythril)
+  Downloading coverage-6.5.0.tar.gz (775 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 775.2/775.2 kB 34.4 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting py_ecc<5.0.0,>=1.4.7 (from mythril)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/ad/1c/2abba749f53b13c32f0b76d090d19583002b3a9fbaeff87d38308e607c9e/py_ecc-4.1.0-py3-none-any.whl.metadata
+  Downloading py_ecc-4.1.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting eth-abi<5.0.0,>=4.0.0 (from mythril)
+  Obtaining dependency information for eth-abi<5.0.0,>=4.0.0 from https://files.pythonhosted.org/packages/1f/2f/5c6903db2aec156320a6a11f4467c054b2e7007cc8378b1228041d2b49b1/eth_abi-4.2.1-py3-none-any.whl.metadata
+  Downloading eth_abi-4.2.1-py3-none-any.whl.metadata (5.2 kB)
+Collecting eth-account>=0.8.0 (from mythril)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/d3/9d/1e28b566ec2da18fd3d8410731b551518333cdf66b7fbeb1ad87c64b8145/eth_account-0.14.0-py3-none-any.whl.metadata
+  Downloading eth_account-0.14.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting ethereum-input-decoder>=0.2.2 (from mythril)
+  Downloading ethereum_input_decoder-0.2.2.tar.gz (5.5 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting eth-hash<0.4.0,>=0.3.1 (from mythril)
+  Obtaining dependency information for eth-hash<0.4.0,>=0.3.1 from https://files.pythonhosted.org/packages/84/a3/bffc46525b410bca7e885b46d4759995ab34d4257b465154ee0164327798/eth_hash-0.3.3-py3-none-any.whl.metadata
+  Downloading eth_hash-0.3.3-py3-none-any.whl.metadata (6.3 kB)
+Collecting eth-keyfile>=0.6.0 (from mythril)
+  Obtaining dependency information for eth-keyfile>=0.6.0 from https://files.pythonhosted.org/packages/5c/8d/3a4b86db08c99d0b43b2e4e37ddd658252fb8794e447eb64c9c84d2960dc/eth_keyfile-0.10.0-py3-none-any.whl.metadata
+  Downloading eth_keyfile-0.10.0-py3-none-any.whl.metadata (9.8 kB)
+Collecting eth-rlp<0.4.0,>=0.3.0 (from mythril)
+  Obtaining dependency information for eth-rlp<0.4.0,>=0.3.0 from https://files.pythonhosted.org/packages/0a/d8/cbebd54c9cac411a1aec9c5f57a759b18b788b0a1c3b0db6e0b8529969e2/eth_rlp-0.3.0-py3-none-any.whl.metadata
+  Downloading eth_rlp-0.3.0-py3-none-any.whl.metadata (5.4 kB)
+Collecting eth-utils>=2 (from mythril)
+  Obtaining dependency information for eth-utils>=2 from https://files.pythonhosted.org/packages/53/45/a20b907227b9d1aea2e36f7b12818d055629ca9bc65fc282b45738f28ca3/eth_utils-6.0.0-py3-none-any.whl.metadata
+  Downloading eth_utils-6.0.0-py3-none-any.whl.metadata (5.6 kB)
+Collecting hexbytes<0.3.0 (from mythril)
+  Obtaining dependency information for hexbytes<0.3.0 from https://files.pythonhosted.org/packages/af/4f/ffeeee26a2adc8374c02a3a4ffa22521faa1b9052a2b2fde41a8787b4d87/hexbytes-0.2.3-py3-none-any.whl.metadata
+  Downloading hexbytes-0.2.3-py3-none-any.whl.metadata (6.6 kB)
+Collecting jinja2>=2.9 (from mythril)
+  Obtaining dependency information for jinja2>=2.9 from https://files.pythonhosted.org/packages/62/a1/3d680cbfd5f4b8f15abc1d571870c5fc3e594bb582bc3b64ea099db13e56/jinja2-3.1.6-py3-none-any.whl.metadata
+  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting MarkupSafe<2.1.0 (from mythril)
+  Downloading MarkupSafe-2.0.1.tar.gz (18 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting mock (from mythril)
+  Obtaining dependency information for mock from https://files.pythonhosted.org/packages/bd/d9/617e6af809bf3a1d468e0d58c3997b1dc219a9a9202e650d30c2fc85d481/mock-5.2.0-py3-none-any.whl.metadata
+  Downloading mock-5.2.0-py3-none-any.whl.metadata (3.1 kB)
+Collecting mypy-extensions<1.0.0 (from mythril)
+  Downloading mypy_extensions-0.4.4.tar.gz (4.2 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting numpy (from mythril)
+  Obtaining dependency information for numpy from https://files.pythonhosted.org/packages/31/2f/5ea3570fcb8ccd0882bea99436a513b2c85dad8f774a2057849130a8fb99/numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl.metadata
+  Downloading numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting persistent>=4.2.0 (from mythril)
+  Obtaining dependency information for persistent>=4.2.0 from https://files.pythonhosted.org/packages/ec/6b/c4e460340ef8f8d33adf23e1f7b1bd4be944db5b95f4b8baf119506219c0/persistent-6.8-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading persistent-6.8-cp312-cp312-macosx_11_0_arm64.whl.metadata (23 kB)
+Collecting py-flags (from mythril)
+  Obtaining dependency information for py-flags from https://files.pythonhosted.org/packages/6e/c1/6a4d763d2f9fb474e3ec99b6e4b8ffa886be398995cfd891c9e6123ec6db/py_flags-1.1.4-py3-none-any.whl.metadata
+  Downloading py_flags-1.1.4-py3-none-any.whl.metadata (30 kB)
+Collecting py-evm==0.7.0a1 (from mythril)
+  Obtaining dependency information for py-evm==0.7.0a1 from https://files.pythonhosted.org/packages/1e/28/e84c6734b4a3b3a1dbee9f1db738544c41b03dc1b2e3716207a0cdc7dc13/py_evm-0.7.0a1-py3-none-any.whl.metadata
+  Downloading py_evm-0.7.0a1-py3-none-any.whl.metadata (7.7 kB)
+Collecting py-solc-x<2.0.0 (from mythril)
+  Obtaining dependency information for py-solc-x<2.0.0 from https://files.pythonhosted.org/packages/79/f4/4210bbaa0b2fdfc862827fd89fe281b85682d5646c65156bcaa4a062a649/py_solc_x-1.1.1-py3-none-any.whl.metadata
+  Downloading py_solc_x-1.1.1-py3-none-any.whl.metadata (3.1 kB)
+Collecting py-solc (from mythril)
+  Obtaining dependency information for py-solc from https://files.pythonhosted.org/packages/47/74/d36abca3f36ccdcd04976c50f83502c870623e5beb4a4ec96c7bad4bb9e8/py_solc-3.2.0-py3-none-any.whl.metadata
+  Downloading py_solc-3.2.0-py3-none-any.whl.metadata (7.8 kB)
+Collecting pytest>=3.6.0 (from mythril)
+  Obtaining dependency information for pytest>=3.6.0 from https://files.pythonhosted.org/packages/24/25/1de2678b631f5a49215c6c96fff41ba892b0a34df68d6d80292b1b48aa7f/pytest-9.1.1-py3-none-any.whl.metadata
+  Downloading pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pyparsing<3,>=2.0.2 (from mythril)
+  Obtaining dependency information for pyparsing<3,>=2.0.2 from https://files.pythonhosted.org/packages/8a/bb/488841f56197b13700afd5658fc279a2025a39e22449b7cf29864669b15d/pyparsing-2.4.7-py2.py3-none-any.whl.metadata
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl.metadata (3.6 kB)
+Collecting pytest-cov (from mythril)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/9d/7a/d968e294073affff457b041c2be9868a40c1c71f4a35fcc1e45e5493067b/pytest_cov-7.1.0-py3-none-any.whl.metadata
+  Downloading pytest_cov-7.1.0-py3-none-any.whl.metadata (32 kB)
+Collecting pytest_mock (from mythril)
+  Obtaining dependency information for pytest_mock from https://files.pythonhosted.org/packages/e8/ea/47fbdc8f37410956fd445720e927589b1e2a47772c5f28109f0ce2fa26d9/pytest_mock-3.17.0-py3-none-any.whl.metadata
+  Downloading pytest_mock-3.17.0-py3-none-any.whl.metadata (3.9 kB)
+Collecting requests (from mythril)
+  Obtaining dependency information for requests from https://files.pythonhosted.org/packages/a0/f4/c67b0b3f1b9245e8d266f0f112c500d50e5b4e83cb6f3b71b6528104182a/requests-2.34.2-py3-none-any.whl.metadata
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting rlp<4,>=3 (from mythril)
+  Obtaining dependency information for rlp<4,>=3 from https://files.pythonhosted.org/packages/e4/24/03e9b6f0c61e92ed27b1e16a5393034ae07b98c307e3b0e6be3e03183ba8/rlp-3.0.0-py2.py3-none-any.whl.metadata
+  Downloading rlp-3.0.0-py2.py3-none-any.whl.metadata (3.4 kB)
+Collecting semantic_version (from mythril)
+  Obtaining dependency information for semantic_version from https://files.pythonhosted.org/packages/6a/23/8146aad7d88f4fcb3a6218f41a60f6c2d4e3a72de72da1825dc7c8f7877c/semantic_version-2.10.0-py2.py3-none-any.whl.metadata
+  Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+Collecting scikit-learn (from mythril)
+  Obtaining dependency information for scikit-learn from https://files.pythonhosted.org/packages/60/ea/57e57539ce175d774fc291ed091b0a6d756854b92cd92554c6bb4d0ae498/scikit_learn-1.9.1-cp312-cp312-macosx_12_0_arm64.whl.metadata
+  Downloading scikit_learn-1.9.1-cp312-cp312-macosx_12_0_arm64.whl.metadata (9.3 kB)
+Collecting transaction>=2.2.1 (from mythril)
+  Obtaining dependency information for transaction>=2.2.1 from https://files.pythonhosted.org/packages/53/c4/6fc6a256e4873fdc1daf34fb6a6ff4d7f9dac49505a7004f5cac3a485cfc/transaction-5.1-py3-none-any.whl.metadata
+  Downloading transaction-5.1-py3-none-any.whl.metadata (14 kB)
+Collecting z3-solver<=4.12.5.0,>=4.8.8.0 (from mythril)
+  Obtaining dependency information for z3-solver<=4.12.5.0,>=4.8.8.0 from https://files.pythonhosted.org/packages/71/a7/b4a7667e795a6f53a970e15e4ddfad589d63886c89a20bd47ee1dbd1ff69/z3_solver-4.12.5.0-py2.py3-none-macosx_11_0_arm64.whl.metadata
+  Downloading z3_solver-4.12.5.0-py2.py3-none-macosx_11_0_arm64.whl.metadata (732 bytes)
+Collecting matplotlib (from mythril)
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/a6/c4/7f5f3601ee69baf072c0c7d3ce60c03e0618621c5a56c34a62a460e29d11/matplotlib-3.11.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading matplotlib-3.11.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 210.6 MB/s eta 0:00:00
+Collecting pre-commit<2.21.0 (from mythril)
+  Obtaining dependency information for pre-commit<2.21.0 from https://files.pythonhosted.org/packages/b2/6c/9ccb5213a3d9fd3f8c0fd69d207951901eaef86b7a1a69bcc478364d3072/pre_commit-2.20.0-py2.py3-none-any.whl.metadata
+  Downloading pre_commit-2.20.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting certifi>=2020.06.20 (from mythril)
+  Obtaining dependency information for certifi>=2020.06.20 from https://files.pythonhosted.org/packages/c4/51/29046e48f693c54e5b7412216d447a1d8362c9653148d98c02cdf65fa733/certifi-2026.10.19-py3-none-any.whl.metadata
+  Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Collecting cached-property<2,>=1.5.1 (from py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for cached-property<2,>=1.5.1 from https://files.pythonhosted.org/packages/48/19/f2090f7dad41e225c7f2326e4cfe6fff49e57dedb5b53636c9551f86b069/cached_property-1.5.2-py2.py3-none-any.whl.metadata
+  Downloading cached_property-1.5.2-py2.py3-none-any.whl.metadata (11 kB)
+Collecting eth-bloom>=1.0.3 (from py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for eth-bloom>=1.0.3 from https://files.pythonhosted.org/packages/ef/92/6115040b9c3ff074a8eba3509f99cde799527e2b2ea6a265e37a30ece133/eth_bloom-4.0.0-py3-none-any.whl.metadata
+  Downloading eth_bloom-4.0.0-py3-none-any.whl.metadata (7.5 kB)
+Collecting eth-keys<0.5.0,>=0.4.0 (from py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for eth-keys<0.5.0,>=0.4.0 from https://files.pythonhosted.org/packages/32/37/bf429c57076d129c02316a3bdd7a513478396e302b40f20edc70704338af/eth_keys-0.4.0-py3-none-any.whl.metadata
+  Downloading eth_keys-0.4.0-py3-none-any.whl.metadata (12 kB)
+Collecting eth-typing<4.0.0,>=3.3.0 (from py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for eth-typing<4.0.0,>=3.3.0 from https://files.pythonhosted.org/packages/d0/36/50c5d5f070b7e4318dc906f8bf642719418ffef741db94f85ab6447563e1/eth_typing-3.5.2-py3-none-any.whl.metadata
+  Downloading eth_typing-3.5.2-py3-none-any.whl.metadata (5.5 kB)
+Collecting eth-utils>=2 (from mythril)
+  Obtaining dependency information for eth-utils>=2 from https://files.pythonhosted.org/packages/0c/e8/1c15f2f97ac144b7d7cb851d72b52aa717b284251981ec74773e99573e26/eth_utils-2.3.2-py3-none-any.whl.metadata
+  Downloading eth_utils-2.3.2-py3-none-any.whl.metadata (5.6 kB)
+Collecting lru-dict>=1.1.6 (from py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for lru-dict>=1.1.6 from https://files.pythonhosted.org/packages/e9/7e/280267ae23f1ec1074ddaab787c5e041e090220e8e37828d51ff4e681dfd/lru_dict-1.4.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading lru_dict-1.4.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (4.8 kB)
+Collecting pyethash<1.0.0,>=0.1.27 (from py-evm==0.7.0a1->mythril)
+  Downloading pyethash-0.1.27.tar.gz (38 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting trie<3,>=2.0.0 (from py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for trie<3,>=2.0.0 from https://files.pythonhosted.org/packages/dd/36/5a7045acbbc64470c64ef74c882b6ca37c865953f8246775bd09ee63f8dc/trie-2.2.0-py3-none-any.whl.metadata
+  Downloading trie-2.2.0-py3-none-any.whl.metadata (19 kB)
+Collecting humanfriendly>=9.1 (from coloredlogs>=10.0->mythril)
+  Obtaining dependency information for humanfriendly>=9.1 from https://files.pythonhosted.org/packages/f0/0f/310fb31e39e2d734ccaa2c0fb981ee41f7bd5056ce9bc29b2248bd569169/humanfriendly-10.0-py2.py3-none-any.whl.metadata
+  Downloading humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+Collecting toolz>=0.8.0 (from cytoolz>=0.12.0->mythril)
+  Obtaining dependency information for toolz>=0.8.0 from https://files.pythonhosted.org/packages/db/17/4c8beb6c8c4176c6bf143bfd7e1e4dd6719b00ced90738c7ac471b71c1df/toolz-1.2.0-py3-none-any.whl.metadata
+  Downloading toolz-1.2.0-py3-none-any.whl.metadata (5.2 kB)
+Collecting parsimonious<0.10.0,>=0.9.0 (from eth-abi<5.0.0,>=4.0.0->mythril)
+  Downloading parsimonious-0.9.0.tar.gz (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.7/48.7 kB 90.1 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting bitarray>=2.4 (from eth-account>=0.8.0->mythril)
+  Obtaining dependency information for bitarray>=2.4 from https://files.pythonhosted.org/packages/84/79/435925f261b08c44d5affc9556cffd06dae2626535f0af44dd044855c334/bitarray-3.12.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading bitarray-3.12.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.1/40.1 kB 154.9 MB/s eta 0:00:00
+INFO: pip is looking at multiple versions of eth-account to determine which version is compatible with other requirements. This could take a while.
+Collecting eth-account>=0.8.0 (from mythril)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/46/18/088fb250018cbe665bc2111974301b2d59f294a565aff7564c4df6878da2/eth_account-0.13.7-py3-none-any.whl.metadata
+  Downloading eth_account-0.13.7-py3-none-any.whl.metadata (3.7 kB)
+Collecting eth-keyfile>=0.6.0 (from mythril)
+  Obtaining dependency information for eth-keyfile>=0.6.0 from https://files.pythonhosted.org/packages/88/fc/48a586175f847dd9e05e5b8994d2fe8336098781ec2e9836a2ad94280281/eth_keyfile-0.8.1-py3-none-any.whl.metadata
+  Downloading eth_keyfile-0.8.1-py3-none-any.whl.metadata (8.5 kB)
+Collecting eth-account>=0.8.0 (from mythril)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/5c/c7/a1547b84df3a28d62e534525e777b8e43642018a79534ccf6aca2723853b/eth_account-0.13.6-py3-none-any.whl.metadata
+  Downloading eth_account-0.13.6-py3-none-any.whl.metadata (3.7 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/56/b9/d20fc50a5c04b23bd3e2f3d7864b529e0888f928d62b69209c778268e08e/eth_account-0.13.5-py3-none-any.whl.metadata
+  Downloading eth_account-0.13.5-py3-none-any.whl.metadata (3.8 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/03/0b/c8e21c361b61be773e2d9a4a69ec2c72d445a1f1293e026935affe7fc7df/eth_account-0.13.4-py3-none-any.whl.metadata
+  Downloading eth_account-0.13.4-py3-none-any.whl.metadata (5.3 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/6e/a5/45dcf568ec39f138597df708e4dbad8543ee7e29d4e14da6d7202da79832/eth_account-0.13.3-py3-none-any.whl.metadata
+  Downloading eth_account-0.13.3-py3-none-any.whl.metadata (5.3 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/a7/85/9918eaf416d948350fbae33cdd9d81bd71c1ea03ab66d42eb36f358ff212/eth_account-0.13.2-py3-none-any.whl.metadata
+  Downloading eth_account-0.13.2-py3-none-any.whl.metadata (5.3 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/03/76/9b2a093ceb90c3ea494099e1f1c065fef9f1a4af237b3f69fa57f4f30097/eth_account-0.13.1-py3-none-any.whl.metadata
+  Downloading eth_account-0.13.1-py3-none-any.whl.metadata (5.3 kB)
+INFO: pip is still looking at multiple versions of eth-account to determine which version is compatible with other requirements. This could take a while.
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/72/15/1a97e249dcb5166d2f6f8a2a2e5c0f0421f228c35322dbda4081120172b2/eth_account-0.13.0-py3-none-any.whl.metadata
+  Downloading eth_account-0.13.0-py3-none-any.whl.metadata (5.3 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/0a/8e/b52e316b2eb807c2cbf1b947953f9f9ca8dcd655734a0a21e7eeb40d6b1c/eth_account-0.12.4-py3-none-any.whl.metadata
+  Downloading eth_account-0.12.4-py3-none-any.whl.metadata (5.1 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/67/fc/10b2b5fe505d66bf683f3045486976bb487dfa1c1b349fb09ce90a0a8550/eth_account-0.12.3-py3-none-any.whl.metadata
+  Downloading eth_account-0.12.3-py3-none-any.whl.metadata (5.1 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/31/49/6c79ae238d8c35150fa3f57da64cded52bd1326cec91d16210fdab047822/eth_account-0.12.2-py3-none-any.whl.metadata
+  Downloading eth_account-0.12.2-py3-none-any.whl.metadata (5.1 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/d1/cb/d5e0136332bad2eee2bbb12708e18dbeee54798bcff740625e326e57a870/eth_account-0.12.1-py3-none-any.whl.metadata
+  Downloading eth_account-0.12.1-py3-none-any.whl.metadata (5.1 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/25/3a/05a03b1ede3ae4d050df23028bb0710583f3f15d5283bde10bc6a9b1e45e/eth_account-0.12.0-py3-none-any.whl.metadata
+  Downloading eth_account-0.12.0-py3-none-any.whl.metadata (5.1 kB)
+  Obtaining dependency information for eth-account>=0.8.0 from https://files.pythonhosted.org/packages/bc/de/a850f7d3d47f7c14c50cda73c8646a9ab140608c553008bffa949d74afab/eth_account-0.11.3-py3-none-any.whl.metadata
+  Downloading eth_account-0.11.3-py3-none-any.whl.metadata (5.1 kB)
+Collecting ckzg<2,>=0.4.3 (from eth-account>=0.8.0->mythril)
+  Obtaining dependency information for ckzg<2,>=0.4.3 from https://files.pythonhosted.org/packages/a6/27/f9b73f240bc2c4a7995a43f9b7850cd8e6931f396206f7e38d6df3e8d8d7/ckzg-1.0.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading ckzg-1.0.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (683 bytes)
+INFO: pip is looking at multiple versions of eth-keyfile to determine which version is compatible with other requirements. This could take a while.
+Collecting eth-keyfile>=0.6.0 (from mythril)
+  Obtaining dependency information for eth-keyfile>=0.6.0 from https://files.pythonhosted.org/packages/5f/08/9c8bf617b39e1dd56303593292e8b4eb66497a5f0f5b997a4b291e5343c0/eth_keyfile-0.9.1-py3-none-any.whl.metadata
+  Downloading eth_keyfile-0.9.1-py3-none-any.whl.metadata (11 kB)
+  Obtaining dependency information for eth-keyfile>=0.6.0 from https://files.pythonhosted.org/packages/19/5f/854a4c2bb7184b69947b77ed1337009ad3e57e085dc7b2010dc13d868d4a/eth_keyfile-0.9.0-py3-none-any.whl.metadata
+  Downloading eth_keyfile-0.9.0-py3-none-any.whl.metadata (11 kB)
+Collecting pycryptodome<4,>=3.6.6 (from eth-keyfile>=0.6.0->mythril)
+  Obtaining dependency information for pycryptodome<4,>=3.6.6 from https://files.pythonhosted.org/packages/9f/08/014128274efca5bc18ae7e4e4f5c593d1fd6d43b77bf7492b233589cef79/pycryptodome-3.24.1-cp37-abi3-macosx_10_9_universal2.whl.metadata
+  Downloading pycryptodome-3.24.1-cp37-abi3-macosx_10_9_universal2.whl.metadata (3.4 kB)
+Collecting zope.deferredimport (from persistent>=4.2.0->mythril)
+  Obtaining dependency information for zope.deferredimport from https://files.pythonhosted.org/packages/4a/e5/36c4eea224dcec773841fd9487c4717430b669e9122067c9cc33db195612/zope_deferredimport-6.1.1-py3-none-any.whl.metadata
+  Downloading zope_deferredimport-6.1.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting zope.interface (from persistent>=4.2.0->mythril)
+  Obtaining dependency information for zope.interface from https://files.pythonhosted.org/packages/cc/40/8fe168cff93670859815e78c6fc4c2e47f11b8e8277cf26a69363dcd5fdd/zope_interface-8.7-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading zope_interface-8.7-cp312-cp312-macosx_11_0_arm64.whl.metadata (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.0/48.0 kB 185.2 MB/s eta 0:00:00
+Collecting cffi (from persistent>=4.2.0->mythril)
+  Obtaining dependency information for cffi from https://files.pythonhosted.org/packages/54/7d/16e5a096677b5e313ca80cd5e5170efa3ea44624a82bb111925522da64b1/cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.5 kB)
+Collecting cfgv>=2.0.0 (from pre-commit<2.21.0->mythril)
+  Obtaining dependency information for cfgv>=2.0.0 from https://files.pythonhosted.org/packages/db/3c/33bac158f8ab7f89b2e59426d5fe2e4f63f7ed25df84c036890172b412b5/cfgv-3.5.0-py2.py3-none-any.whl.metadata
+  Downloading cfgv-3.5.0-py2.py3-none-any.whl.metadata (8.9 kB)
+Collecting identify>=1.0.0 (from pre-commit<2.21.0->mythril)
+  Obtaining dependency information for identify>=1.0.0 from https://files.pythonhosted.org/packages/fa/70/fffc9613501877c0a10a1ef73a165e6ded3e53f6e7502227fef56d973933/identify-2.6.20-py2.py3-none-any.whl.metadata
+  Downloading identify-2.6.20-py2.py3-none-any.whl.metadata (4.4 kB)
+Collecting nodeenv>=0.11.1 (from pre-commit<2.21.0->mythril)
+  Obtaining dependency information for nodeenv>=0.11.1 from https://files.pythonhosted.org/packages/54/c8/12811c9b48fde162bb72b6f2e78fada9a247a09d7bb5be2050a5d099c77b/nodeenv-1.11.0-py2.py3-none-any.whl.metadata
+  Downloading nodeenv-1.11.0-py2.py3-none-any.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.0/41.0 kB 95.2 MB/s eta 0:00:00
+Collecting pyyaml>=5.1 (from pre-commit<2.21.0->mythril)
+  Obtaining dependency information for pyyaml>=5.1 from https://files.pythonhosted.org/packages/89/a0/6cf41a19a1f2f3feab0e9c0b74134aa2ce6849093d5517a0c550fe37a648/pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting toml (from pre-commit<2.21.0->mythril)
+  Obtaining dependency information for toml from https://files.pythonhosted.org/packages/44/6f/7120676b6d73228c96e17f1f794d8ab046fc910d781c8d151120c3f1569e/toml-0.10.2-py2.py3-none-any.whl.metadata
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting virtualenv>=20.0.8 (from pre-commit<2.21.0->mythril)
+  Obtaining dependency information for virtualenv>=20.0.8 from https://files.pythonhosted.org/packages/a0/92/f3b8af2d36ddec4dc61dc25655dc010e419ff456cb4ca0e720c8112f1047/virtualenv-21.14.12-py3-none-any.whl.metadata
+  Downloading virtualenv-21.14.12-py3-none-any.whl.metadata (4.1 kB)
+INFO: pip is looking at multiple versions of py-ecc to determine which version is compatible with other requirements. This could take a while.
+Collecting py_ecc<5.0.0,>=1.4.7 (from mythril)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/25/43/b2956cb42045ee000d301133289e7fbfb04ff0148c13cff2f8d81f1b4c11/py_ecc-4.0.0-py3-none-any.whl.metadata
+  Downloading py_ecc-4.0.0-py3-none-any.whl.metadata (5.1 kB)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/8e/cf/2b7116ac3e49fe613bf8cb3ae124979e35b95e1c59a3fa80ec7ce85a9978/py_ecc-3.1.0-py3-none-any.whl.metadata
+  Downloading py_ecc-3.1.0-py3-none-any.whl.metadata (5.0 kB)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/91/97/fe2bba3fe9af2be179353823f4161a8abdf0a65702bb38c70934f1e38c36/py_ecc-3.0.0-py3-none-any.whl.metadata
+  Downloading py_ecc-3.0.0-py3-none-any.whl.metadata (5.0 kB)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/f2/1b/92fa243ce512503d3dee7255bdff6f631c942ed28f99abfb8360eddbb1ac/py_ecc-2.0.0-py3-none-any.whl.metadata
+  Downloading py_ecc-2.0.0-py3-none-any.whl.metadata (5.0 kB)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/b1/35/e0324065e4cd93ba0174f178c73872106cba04c4a72c7d8a95515b83c701/py_ecc-1.7.1-py3-none-any.whl.metadata
+  Downloading py_ecc-1.7.1-py3-none-any.whl.metadata (4.3 kB)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/da/96/5169a0fc3c5863273953302da4469e2eca50a1d10f95a87aeaf0f99f430d/py_ecc-1.7.0-py3-none-any.whl.metadata
+  Downloading py_ecc-1.7.0-py3-none-any.whl.metadata (4.3 kB)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/57/37/052d1f8d13da5cfc3faf249c6e825d47984fc9065c90cde676e72c762ac8/py_ecc-1.6.0-py3-none-any.whl.metadata
+  Downloading py_ecc-1.6.0-py3-none-any.whl.metadata (4.4 kB)
+Collecting eth-hash[pycryptodome] (from py_ecc<5.0.0,>=1.4.7->mythril)
+  Obtaining dependency information for eth-hash[pycryptodome] from https://files.pythonhosted.org/packages/87/87/b36792150ca0b28e4df683a34be15a61461ca0e349e5b5cf3ec8f694edb9/eth_hash-0.8.0-py3-none-any.whl.metadata
+  Downloading eth_hash-0.8.0-py3-none-any.whl.metadata (4.1 kB)
+INFO: pip is still looking at multiple versions of py-ecc to determine which version is compatible with other requirements. This could take a while.
+Collecting py_ecc<5.0.0,>=1.4.7 (from mythril)
+  Obtaining dependency information for py_ecc<5.0.0,>=1.4.7 from https://files.pythonhosted.org/packages/9d/2e/3e335989dc215fc7181b8f044517590af9680f2575337021df3832432b2e/py_ecc-1.4.7-py3-none-any.whl.metadata
+  Downloading py_ecc-1.4.7-py3-none-any.whl.metadata (2.8 kB)
+Collecting iniconfig>=1.0.1 (from pytest>=3.6.0->mythril)
+  Obtaining dependency information for iniconfig>=1.0.1 from https://files.pythonhosted.org/packages/56/43/4ca9e49d27a1fcf6bece6f6aec0ea46bb9112489b93d4b688fb415457bdb/iniconfig-2.3.1-py3-none-any.whl.metadata
+  Downloading iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=22 (from pytest>=3.6.0->mythril)
+  Obtaining dependency information for packaging>=22 from https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl.metadata
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest>=3.6.0->mythril)
+  Obtaining dependency information for pluggy<2,>=1.5 from https://files.pythonhosted.org/packages/40/9e/2b38731e0fc536806f16490e1a12d7f0dc2a1235aa8cc07bcc75416a7daa/pluggy-1.7.0-py3-none-any.whl.metadata
+  Downloading pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest>=3.6.0->mythril)
+  Obtaining dependency information for pygments>=2.7.2 from https://files.pythonhosted.org/packages/71/46/17f022dd3e953bf20a04a028a21ec746d942f8d2af30fa0f124fa0e6a684/pygments-2.21.0-py3-none-any.whl.metadata
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting charset_normalizer<4,>=2 (from requests->mythril)
+  Obtaining dependency information for charset_normalizer<4,>=2 from https://files.pythonhosted.org/packages/e7/c8/693809898870237d82785a03f3b2b58fe4c9f14669f84a7d4e623c92a59e/charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl.metadata
+  Downloading charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl.metadata (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 127.4 MB/s eta 0:00:00
+Collecting idna<4,>=2.5 (from requests->mythril)
+  Obtaining dependency information for idna<4,>=2.5 from https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl.metadata
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting urllib3<3,>=1.26 (from requests->mythril)
+  Obtaining dependency information for urllib3<3,>=1.26 from https://files.pythonhosted.org/packages/92/9d/c4e665119135114480843e7ab388fa94d8480650450e6f8e26b70d323a4c/urllib3-2.8.0-py3-none-any.whl.metadata
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting importlib-resources (from z3-solver<=4.12.5.0,>=4.8.8.0->mythril)
+  Obtaining dependency information for importlib-resources from https://files.pythonhosted.org/packages/8a/db/55a262f3606bebcae07cc14095338471ad7c0bbcaa37707e6f0ee49725b7/importlib_resources-7.1.0-py3-none-any.whl.metadata
+  Downloading importlib_resources-7.1.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->mythril)
+  Obtaining dependency information for contourpy>=1.0.1 from https://files.pythonhosted.org/packages/dd/f5/c5bf67522d49a2222f3154fe46879451d26f0e35ece41770758a64ea78cb/contourpy-1.4.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading contourpy-1.4.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib->mythril)
+  Obtaining dependency information for cycler>=0.10 from https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl.metadata
+  Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib->mythril)
+  Obtaining dependency information for fonttools>=4.28.2 from https://files.pythonhosted.org/packages/5b/50/f674402869f11a89868c4755ae86cd2fcfd67ca6193c6f5d1b479b1267b9/fonttools-4.67.0-cp312-cp312-macosx_10_13_universal2.whl.metadata
+  Downloading fonttools-4.67.0-cp312-cp312-macosx_10_13_universal2.whl.metadata (137 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.2/137.2 kB 277.0 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib->mythril)
+  Obtaining dependency information for kiwisolver>=1.3.1 from https://files.pythonhosted.org/packages/84/e5/bdb34e21523e01dceda064d63713f3bdec91388af24fba1eca7ea5e85864/kiwisolver-1.5.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading kiwisolver-1.5.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (5.2 kB)
+Collecting pillow>=9 (from matplotlib->mythril)
+  Obtaining dependency information for pillow>=9 from https://files.pythonhosted.org/packages/39/4b/f2ed53d83aa44ac19599ac0a54897f867fafb95f406980d1e24083f8cbe3/pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+INFO: pip is looking at multiple versions of matplotlib to determine which version is compatible with other requirements. This could take a while.
+Collecting matplotlib (from mythril)
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/eb/f8/6d0c312c8d9738e7d9677f09fe5c986b3239e651a7b73a2deb38b65e4a71/matplotlib-3.11.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading matplotlib-3.11.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 78.6 MB/s eta 0:00:00
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/82/34/bdd77418adb2178a1d59f044bd67bfebb115896e91b840b8a197eb3f4f4e/matplotlib-3.11.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading matplotlib-3.11.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.3/80.3 kB 87.1 MB/s eta 0:00:00
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/b7/18/4880dd762e40cd360c1bf06e890c5a97b997e91cb324602b1a19950ad5ce/matplotlib-3.10.9-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading matplotlib-3.10.9-cp312-cp312-macosx_11_0_arm64.whl.metadata (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 195.2 MB/s eta 0:00:00
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/7e/65/07d5f5c7f7c994f12c768708bd2e17a4f01a2b0f44a1c9eccad872433e2e/matplotlib-3.10.8-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading matplotlib-3.10.8-cp312-cp312-macosx_11_0_arm64.whl.metadata (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 99.5 MB/s eta 0:00:00
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/11/0b/1ae80ddafb8652fd8046cb5c8460ecc8d4afccb89e2c6d6bec61e04e1eaf/matplotlib-3.10.7-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading matplotlib-3.10.7-cp312-cp312-macosx_11_0_arm64.whl.metadata (11 kB)
+  Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/a9/5d/1d5f33f5b43f4f9e69e6a5fe1fb9090936ae7bc8e2ff6158e7a76542633b/matplotlib-3.10.6-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading matplotlib-3.10.6-cp312-cp312-macosx_11_0_arm64.whl.metadata (11 kB)
+Collecting python-dateutil>=2.7 (from matplotlib->mythril)
+  Obtaining dependency information for python-dateutil>=2.7 from https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl.metadata
+  Downloading python_dateutil-3.0.0-py2.py3-none-any.whl.metadata (8.2 kB)
+Collecting dictionaries==0.0.2 (from py-flags->mythril)
+  Obtaining dependency information for dictionaries==0.0.2 from https://files.pythonhosted.org/packages/0c/66/99daf061d3940bcdcb25101be442c370896df7ab25eeea3653b9751e6848/dictionaries-0.0.2-py2.py3-none-any.whl.metadata
+  Downloading dictionaries-0.0.2-py2.py3-none-any.whl.metadata (10 kB)
+Collecting coverage[toml]>=7.10.6 (from pytest-cov->mythril)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/90/23/6f3dcb1423a0d43216e402ea1746e4a7c7c44f38896b97dd573790f56a40/coverage-7.16.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.16.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+Collecting scipy>=1.10.0 (from scikit-learn->mythril)
+  Obtaining dependency information for scipy>=1.10.0 from https://files.pythonhosted.org/packages/a5/f6/a5b82f8abbe14d134691b8b903696f701d25a081353a29dc655c364d9e62/scipy-1.18.1-cp312-cp312-macosx_14_0_arm64.whl.metadata
+  Downloading scipy-1.18.1-cp312-cp312-macosx_14_0_arm64.whl.metadata (62 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.4/62.4 kB 217.9 MB/s eta 0:00:00
+Collecting joblib>=1.4.0 (from scikit-learn->mythril)
+  Obtaining dependency information for joblib>=1.4.0 from https://files.pythonhosted.org/packages/18/53/84099323c2ec4be98d935f63c033ac4151ee83836ca1050ede3b3aadf155/joblib-1.6.0-py3-none-any.whl.metadata
+  Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn->mythril)
+  Obtaining dependency information for narwhals>=2.0.1 from https://files.pythonhosted.org/packages/d1/89/5d4c86da1130d9059681e5b6cd7645df5c10279a6a079c5c37dcb2cc6f3f/narwhals-2.27.1-py3-none-any.whl.metadata
+  Downloading narwhals-2.27.1-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn->mythril)
+  Obtaining dependency information for threadpoolctl>=3.5.0 from https://files.pythonhosted.org/packages/43/3f/f88a53f60a472b46f4023f56d204dd7de33d34c5d2acbfa0d70a674e639e/threadpoolctl-3.7.0-py3-none-any.whl.metadata
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+INFO: pip is looking at multiple versions of coverage[toml] to determine which version is compatible with other requirements. This could take a while.
+Collecting coverage[toml]>=7.10.6 (from pytest-cov->mythril)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/3e/f2/9ac65f9cedd43f91e2d3657c11f13aef82aebae89b2243dc9e44fe58a740/coverage-7.16.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.16.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/ca/11/f002163dd688aa3fa49ac6a424b7c2705c7fcf80fba18ec9f586d77827ca/coverage-7.16.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.16.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/20/dd/88d6f83f1fffc974a3691a34a97951c5b12df7512a6782c5963883cbc058/coverage-7.15.4-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.15.4-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/aa/bc/cb9a39b083bc1aa70586482dab25c9be20bab0ec6c155340e50d9066bb1e/coverage-7.15.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.15.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/06/d1/da99af464c335d4e023a6efcd7ec30f63b88a43c93745154ab74ffb31cea/coverage-7.15.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.15.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/db/5c/b88ce0d68fa550c7f3b58617fbf363bce64df5bf8295a01b627e4696e022/coverage-7.15.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.15.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/0f/2e/2347583467bd7f0402635101a916961915cc68fce652cd0db5f173ea04fc/coverage-7.15.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.15.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+INFO: pip is still looking at multiple versions of coverage[toml] to determine which version is compatible with other requirements. This could take a while.
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/36/16/0fc0cb52538783dbbae0934b834f5a58fd5354380ee6cad4a07b15dc845d/coverage-7.14.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.14.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/02/97/d24ae7d2afc62c54a36313d4dedb655c9afbba3003f0f7f1ae81e97af31f/coverage-7.14.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.14.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/72/81/fdc0898a55c6219223291ec1a1fe89966ef212ce82276aa0899df84b5de0/coverage-7.14.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.14.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.6 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/34/23/35c7aea1274aef7525bdd2dc92f710bdde6d11652239d71d1ec450067939/coverage-7.14.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.14.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/a6/16/a68a19e5384e93f811dccc51034b1fd0b865841c390e3c931dcc4699e035/coverage-7.13.5-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.13.5-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/5d/96/5238b1efc5922ddbdc9b0db9243152c09777804fb7c02ad1741eb18a11c0/coverage-7.13.4-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.13.4-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/08/e7/29db05693562c2e65bdf6910c0af2fd6f9325b8f43caf7a258413f369e30/coverage-7.13.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.13.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/45/7a/8bf9e9309c4c996e65c52a7c5a112707ecdd9fbaf49e10b5a705a402bbb4/coverage-7.13.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.13.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/82/a8/6e22fdc67242a4a5a153f9438d05944553121c8f4ba70cb072af4c41362e/coverage-7.13.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.13.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/2b/11/30d71ae5d6e949ff93b2a79a2c1b4822e00423116c5c6edfaeef37301396/coverage-7.13.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.13.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/08/e1/706fae6692a66c2d6b871a608bbde0da6281903fa0e9f53a39ed441da36a/coverage-7.12.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.12.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/3c/f8/21126d34b174d037b5d01bea39077725cbb9a0da94a95c5f96929c695433/coverage-7.11.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.11.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.1 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/f9/1f/41f144dc49c07043230ad79126a9c79236724579c43175e476e0731ddc2a/coverage-7.11.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.11.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.0 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/f5/e9/1c3628a1225bdea66295a117cd2bb1d324d9c433c40078b24d50f55448a7/coverage-7.11.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.11.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.0 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/21/54/e7b26157048c7ba555596aad8569ff903d6cd67867d41b75287323678ede/coverage-7.11.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.11.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (9.0 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/37/66/593f9be12fc19fb36711f19a5371af79a718537204d16ea1d36f16bd78d2/coverage-7.10.7-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.10.7-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.10.6 from https://files.pythonhosted.org/packages/e9/60/1e1ded9a4fe80d843d7d53b3e395c1db3ff32d6c301e501f393b2e6c1c1f/coverage-7.10.6-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.10.6-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+Collecting pytest-cov (from mythril)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/ee/49/1377b49de7d0c1ce41292161ea0f721913fa8722c19fb9c1e3aa0367eecb/pytest_cov-7.0.0-py3-none-any.whl.metadata
+  Downloading pytest_cov-7.0.0-py3-none-any.whl.metadata (31 kB)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/80/b4/bb7263e12aade3842b938bc5c6958cae79c5ee18992f9b9349019579da0f/pytest_cov-6.3.0-py3-none-any.whl.metadata
+  Downloading pytest_cov-6.3.0-py3-none-any.whl.metadata (30 kB)
+Collecting coverage[toml]>=7.5 (from pytest-cov->mythril)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/18/a8/f333f4cf3fb5477a7f727b4d603a2eb5c3c5611c7fe01329c2e13b23b678/coverage-7.10.5-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.10.5-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/6a/8c/51255202ca03d2e7b664770289f80db6f47b05138e06cce112b3957d5dfd/coverage-7.10.4-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.10.4-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/b5/f0/59fdf79be7ac2f0206fc739032f482cfd3f66b18f5248108ff192741beae/coverage-7.10.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.10.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/68/6a/84277d73a2cafb96e24be81b7169372ba7ff28768ebbf98e55c85a491b0f/coverage-7.10.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.10.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/f8/e4/a61b27d5c4c2d185bdfb0bfe9d15ab4ac4f0073032665544507429ae60eb/coverage-7.10.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.10.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/f4/15/d862a806734c7e50fd5350cef18e22832ba3cdad282ca5660d6fd49def92/coverage-7.10.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.10.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/95/0c/ee03c95d32be4d519e6a02e601267769ce2e9a91fc8faa1b540e3626c680/coverage-7.9.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.9.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/20/20/e07cb920ef3addf20f052ee3d54906e57407b6aeee3227a9c91eea38a665/coverage-7.9.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.9.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/08/fe/7e08dd50c3c3cfdbe822ee11e24da9f418983faefb4f5e52fbffae5beeb2/coverage-7.9.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.9.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/70/e9/3d715ffd5b6b17a8be80cd14a8917a002530a99943cc1939ad5bb2aa74b9/coverage-7.8.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.8.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/e6/00/a8a4548c22b73f8fd4373714f5a4cce3584827e2603847a8d90fba129807/coverage-7.8.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.8.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.9 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/be/e1/2a4ec273894000ebedd789e8f2fc3813fcaf486074f87fd1c5b2cb1c0a2b/coverage-7.8.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.8.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/fd/68/21b973e6780a3f2457e31ede1aca6c2f84bda4359457b40da3ae805dcf30/coverage-7.7.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.7.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/ea/eb/40b39bdc6c1da403257f0fcb2c1b2fd81ff9f66c13abbe3862f42780e1c1/coverage-7.7.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.7.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/dc/60/d19df912989117caa95123524d26fc973f56dc14aecdec5ccd7d0084e131/coverage-7.6.12-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.12-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/e7/e1/b1448995072ab033898758179e208afa924f4625ea4524ec868fafbae77d/coverage-7.6.11-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.11-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.5 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/b6/67/5479b9f2f99fcfb49c0d5cf61912a5255ef80b6e80a3cddba39c38146cf4/coverage-7.6.10-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.10-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/0f/79/6b7826fca8846c1216a113227b9f114ac3e6eacf168b4adcad0cb974aaca/coverage-7.6.9-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.9-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/09/9c/cf102ab046c9cf8895c3f7aadcde6f489a4b2ec326757e8c6e6581829b5e/coverage-7.6.8-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.8-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/88/8b/e28f86412317b9514692fd6f9d8ac6faa12494c3f470c3c63f202e10c756/coverage-7.6.7-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.7-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/76/2b/fd2f2d614d0f0e8b9eee80c3932096faf3332f53455d73cdaa262757f431/coverage-7.6.6-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.6-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/95/3c/32d967cffd098f855d25acca024a8dc9ffe84802e20c90a984fa65e21a9a/coverage-7.6.5-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.5-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/27/03/932c2c5717a7fa80cd43c6a07d3177076d97b79f12f40f882f9916db0063/coverage-7.6.4-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.4-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/90/d1/11307a6f28dc496ff8ee17258e20ecca1c48b537113146a114aa4e29d4e7/coverage-7.6.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/e4/58/030354d250f107a95e7aca24c7fd238709a3c7df3083cb206368798e637a/coverage-7.6.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/e1/ab/6bf00de5327ecb8db205f9ae596885417a31535eeda6e7b99463108782e1/coverage-7.6.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.3 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/7b/14/3432bbdabeaa79de25421d24161ab472578ffe73fc56b0aa9411bea66335/coverage-7.6.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.6.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/2c/63/4f781db529b585a6ef3860ea01390951b006dbea9ada4ea3a3d830e325f4/coverage-7.5.4-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.5.4-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/01/ab/6851d4be3a6b84ae094c7f0b1ffdfbea1ab4c8baec7caeb0fbf4bea4c386/coverage-7.5.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.5.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/c9/61/303b35a4d3f4e1024d6883213823d638ae8553955f1d5c26f735431df28d/coverage-7.5.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.5.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/41/9f/8db7f64de1cbc925ec7b4033c8d21979ec4acb0209e6b77f5cdfbdd83e05/coverage-7.5.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.5.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=7.5 from https://files.pythonhosted.org/packages/c3/bc/d7e832280f269be9e8d46cff5c4031b4840f1844674dc53ad93c5a9c1da6/coverage-7.5.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.5.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+Collecting pytest-cov (from mythril)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/bc/16/4ea354101abb1287856baa4af2732be351c7bee728065aed451b678153fd/pytest_cov-6.2.1-py3-none-any.whl.metadata
+  Downloading pytest_cov-6.2.1-py3-none-any.whl.metadata (30 kB)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/aa/66/a38138fbf711b2b93592dfd7303bba561f6bc05f85361a0388c105ceb727/pytest_cov-6.2.0-py3-none-any.whl.metadata
+  Downloading pytest_cov-6.2.0-py3-none-any.whl.metadata (29 kB)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/28/d0/def53b4a790cfb21483016430ed828f64830dd981ebe1089971cd10cab25/pytest_cov-6.1.1-py3-none-any.whl.metadata
+  Downloading pytest_cov-6.1.1-py3-none-any.whl.metadata (28 kB)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/e1/c5/8d6ffe9fc8f7f57b3662156ae8a34f2b8e7a754c73b48e689ce43145e98c/pytest_cov-6.1.0-py3-none-any.whl.metadata
+  Downloading pytest_cov-6.1.0-py3-none-any.whl.metadata (28 kB)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/36/3b/48e79f2cd6a61dbbd4807b4ed46cb564b4fd50a76166b1c4ea5c1d9e2371/pytest_cov-6.0.0-py3-none-any.whl.metadata
+  Downloading pytest_cov-6.0.0-py3-none-any.whl.metadata (27 kB)
+  Obtaining dependency information for pytest-cov from https://files.pythonhosted.org/packages/78/3a/af5b4fa5961d9a1e6237b530eb87dd04aea6eb83da09d2a4073d81b54ccf/pytest_cov-5.0.0-py3-none-any.whl.metadata
+  Downloading pytest_cov-5.0.0-py3-none-any.whl.metadata (27 kB)
+Collecting coverage[toml]>=5.2.1 (from pytest-cov->mythril)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/88/92/07f9c593cd27e3c595b8cb83b95adad8c9ba3d611debceed097a5fd6be4b/coverage-7.4.4-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.4.4-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/9d/d8/111ec1a65fef57ad2e31445af627d481f660d4a9218ee5c774b45187812a/coverage-7.4.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.4.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/2d/d9/dea9e579d509dcac5b4b9f36945dea657ecff640de02e6d4f2e8729d367e/coverage-7.4.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.4.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/de/37/4f3eb8e6f4be39eeca4318e3c2ef10e954e86871a68b0e71f004835d6a30/coverage-7.4.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.4.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.2 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/0b/18/03a276a0f4f7847f50d21b1e9a5c715438c0ae03afd4a944c2123bee3621/coverage-7.4.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.4.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/cd/1e/8f7f43fd04eecec58f7edb0f2cc10336e3b37282657597309d392fbee785/coverage-7.3.4-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.3.4-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/b1/56/99c484d06e851e77da7b2fb777fa43e40cdb773fda7829d5be57fb7ff869/coverage-7.3.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.3.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/92/c7/6723b42ee2776e5a7a5288aadf9562a69b67aa32260e4692dcfab5944fb5/coverage-7.3.2-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.3.2-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/f1/5a/b670d8a1f07a6d57278d37e765250b5a7d3e2d1b8904fcc56420c16d2828/coverage-7.3.1-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.3.1-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+  Obtaining dependency information for coverage[toml]>=5.2.1 from https://files.pythonhosted.org/packages/9b/01/49a4f47d87acc3be6cd0013c33b7ef6e1acc13f67ac9ff2fd1f7d73b4b12/coverage-7.3.0-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading coverage-7.3.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (8.1 kB)
+  Downloading coverage-7.2.7.tar.gz (762 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 762.6/762.6 kB 44.0 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.2.6.tar.gz (762 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 762.3/762.3 kB 53.3 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.2.5.tar.gz (759 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 759.5/759.5 kB 52.4 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.2.4.tar.gz (759 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 759.1/759.1 kB 51.9 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.2.3.tar.gz (757 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 757.2/757.2 kB 44.4 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.2.2.tar.gz (812 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 812.4/812.4 kB 44.0 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.2.1.tar.gz (812 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 812.2/812.2 kB 43.1 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.2.0.tar.gz (812 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 812.1/812.1 kB 46.6 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.1.0.tar.gz (809 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 809.8/809.8 kB 37.5 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.0.5.tar.gz (796 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 796.2/796.2 kB 44.5 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.0.4.tar.gz (794 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 794.5/794.5 kB 41.8 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.0.3.tar.gz (790 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 790.4/790.4 kB 47.7 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.0.2.tar.gz (789 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 789.2/789.2 kB 42.7 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.0.1.tar.gz (781 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 781.2/781.2 kB 8.3 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+  Downloading coverage-7.0.0.tar.gz (780 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 780.5/780.5 kB 38.6 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting typing-extensions>=4.0.1 (from eth-typing<4.0.0,>=3.3.0->py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for typing-extensions>=4.0.1 from https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl.metadata
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.4.0->scikit-learn->mythril)
+  Obtaining dependency information for cloudpickle>=3.0 from https://files.pythonhosted.org/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl.metadata
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting regex>=2022.3.15 (from parsimonious<0.10.0,>=0.9.0->eth-abi<5.0.0,>=4.0.0->mythril)
+  Obtaining dependency information for regex>=2022.3.15 from https://files.pythonhosted.org/packages/37/14/f3f0ba083d2094392d5eabf56db5ea6ba469fd6e927afd187042054ea68a/regex-2026.9.29-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading regex-2026.9.29-cp312-cp312-macosx_11_0_arm64.whl.metadata (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.6/40.6 kB 12.3 MB/s eta 0:00:00
+Collecting six>=1.6 (from python-dateutil>=2.7->matplotlib->mythril)
+  Obtaining dependency information for six>=1.6 from https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl.metadata
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting tzdata (from python-dateutil>=2.7->matplotlib->mythril)
+  Obtaining dependency information for tzdata from https://files.pythonhosted.org/packages/94/21/1e5995a1c920cce14e4bffae20c665ec10e7ed03ab25e006cd741092b718/tzdata-2026.5-py2.py3-none-any.whl.metadata
+  Downloading tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting sortedcontainers>=2.1.0 (from trie<3,>=2.0.0->py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for sortedcontainers>=2.1.0 from https://files.pythonhosted.org/packages/32/46/9cb0e58b2deb7f82b84065f37f3bffeb12413f947f9388e4cac22c4621ce/sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl.metadata (10 kB)
+Collecting distlib<1,>=0.4.3 (from virtualenv>=20.0.8->pre-commit<2.21.0->mythril)
+  Obtaining dependency information for distlib<1,>=0.4.3 from https://files.pythonhosted.org/packages/c1/2b/238f02a4927fa2e27aa995371d240a468b52e42eae44a678434aff736b38/distlib-0.4.4-py2.py3-none-any.whl.metadata
+  Downloading distlib-0.4.4-py2.py3-none-any.whl.metadata (5.3 kB)
+Collecting filelock<5,>=3.24.2 (from virtualenv>=20.0.8->pre-commit<2.21.0->mythril)
+  Obtaining dependency information for filelock<5,>=3.24.2 from https://files.pythonhosted.org/packages/e0/1b/5e74289a1878e666bb4b65fe5805a04cafcac2aa5f519ef1ead67ef91c56/filelock-4.2.4-py3-none-any.whl.metadata
+  Downloading filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting platformdirs<5,>=4.4 (from virtualenv>=20.0.8->pre-commit<2.21.0->mythril)
+  Obtaining dependency information for platformdirs<5,>=4.4 from https://files.pythonhosted.org/packages/6c/8a/1d8cb3842909dc193a73835adedf412e32e18f8ffd59f43983949622fe6f/platformdirs-4.13.5-py3-none-any.whl.metadata
+  Downloading platformdirs-4.13.5-py3-none-any.whl.metadata (5.5 kB)
+Collecting python-discovery>=1.6.1 (from virtualenv>=20.0.8->pre-commit<2.21.0->mythril)
+  Obtaining dependency information for python-discovery>=1.6.1 from https://files.pythonhosted.org/packages/60/91/1aa70d3dfcab0dbcf88a2cbc3bce7f7c69562287a90216e617eaa4937e25/python_discovery-1.6.4-py3-none-any.whl.metadata
+  Downloading python_discovery-1.6.4-py3-none-any.whl.metadata (5.1 kB)
+Collecting pycparser (from cffi->persistent>=4.2.0->mythril)
+  Obtaining dependency information for pycparser from https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl.metadata
+  Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Collecting zope.proxy (from zope.deferredimport->persistent>=4.2.0->mythril)
+  Obtaining dependency information for zope.proxy from https://files.pythonhosted.org/packages/d9/50/1903fbfd988d71c52ccd42003e328e4e7f58d780fe0e7f83976598e067eb/zope_proxy-7.3-cp312-cp312-macosx_11_0_arm64.whl.metadata
+  Downloading zope_proxy-7.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (12 kB)
+INFO: pip is looking at multiple versions of eth-hash[pycryptodome] to determine which version is compatible with other requirements. This could take a while.
+Collecting eth-hash[pycryptodome]>=0.4.0 (from eth-bloom>=1.0.3->py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for eth-hash[pycryptodome]>=0.4.0 from https://files.pythonhosted.org/packages/eb/db/f8775490669d28aca24871c67dd56b3e72105cb3bcae9a4ec65dd70859b3/eth_hash-0.7.1-py3-none-any.whl.metadata
+  Downloading eth_hash-0.7.1-py3-none-any.whl.metadata (4.2 kB)
+  Obtaining dependency information for eth-hash[pycryptodome]>=0.4.0 from https://files.pythonhosted.org/packages/73/f0/a35e791bd73fa425838d8d0157754150ded141a94cf30d567dfeb9d57316/eth_hash-0.7.0-py3-none-any.whl.metadata
+  Downloading eth_hash-0.7.0-py3-none-any.whl.metadata (5.4 kB)
+  Obtaining dependency information for eth-hash[pycryptodome]>=0.4.0 from https://files.pythonhosted.org/packages/6c/60/2626237b0ed71f06b486d77925fb0daab94f4710bf28a8a03c2b9f6e1ec4/eth_hash-0.6.0-py3-none-any.whl.metadata
+  Downloading eth_hash-0.6.0-py3-none-any.whl.metadata (5.4 kB)
+  Obtaining dependency information for eth-hash[pycryptodome]>=0.4.0 from https://files.pythonhosted.org/packages/eb/cd/afecfb3d0d0096338fee1cf7d57678eab49a69d5ff775e2052f81261efd0/eth_hash-0.5.2-py3-none-any.whl.metadata
+  Downloading eth_hash-0.5.2-py3-none-any.whl.metadata (5.8 kB)
+  Obtaining dependency information for eth-hash[pycryptodome]>=0.4.0 from https://files.pythonhosted.org/packages/b4/e7/bf4d54952c1665a2a84990b998e2cbf4bf2bcc96099a10e150ff8344122c/eth_hash-0.5.1-py3-none-any.whl.metadata
+  Downloading eth_hash-0.5.1-py3-none-any.whl.metadata (6.8 kB)
+  Obtaining dependency information for eth-hash[pycryptodome]>=0.4.0 from https://files.pythonhosted.org/packages/15/32/28b4c5c7c7d4d5f8b5d4fd66bcfcc0658a08d8887db219453edc93fe1ac2/eth_hash-0.5.0-py3-none-any.whl.metadata
+  Downloading eth_hash-0.5.0-py3-none-any.whl.metadata (6.6 kB)
+  Obtaining dependency information for eth-hash[pycryptodome]>=0.4.0 from https://files.pythonhosted.org/packages/b5/fb/415d258702800b914fd3e2700d7a514863521a1480fa487aaef7e086bff5/eth_hash-0.4.0-py3-none-any.whl.metadata
+  Downloading eth_hash-0.4.0-py3-none-any.whl.metadata (6.6 kB)
+INFO: pip is still looking at multiple versions of eth-hash[pycryptodome] to determine which version is compatible with other requirements. This could take a while.
+Collecting trie<3,>=2.0.0 (from py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for trie<3,>=2.0.0 from https://files.pythonhosted.org/packages/a0/66/fa817d9cb84626b69638d195d588ad83eb16fbbdf4e1ebe3e6ecabe46604/trie-2.1.1-py3-none-any.whl.metadata
+  Downloading trie-2.1.1-py3-none-any.whl.metadata (19 kB)
+INFO: This is taking longer than usual. You might need to provide the dependency resolver with stricter constraints to reduce runtime. See https://pip.pypa.io/warnings/backtracking for guidance. If you want to abort this run, press Ctrl + C.
+  Obtaining dependency information for trie<3,>=2.0.0 from https://files.pythonhosted.org/packages/ac/c2/8174f6597208d80415b3dfcdb915425827d68635f1a0deb5a2d5196eb559/trie-2.1.0-py3-none-any.whl.metadata
+  Downloading trie-2.1.0-py3-none-any.whl.metadata (18 kB)
+  Obtaining dependency information for trie<3,>=2.0.0 from https://files.pythonhosted.org/packages/36/a6/2f2ee141c4fbf517a823aa17446a4368d030e3ce629568d08e7c01da6210/trie-2.0.2-py3-none-any.whl.metadata
+  Downloading trie-2.0.2-py3-none-any.whl.metadata (18 kB)
+  Obtaining dependency information for trie<3,>=2.0.0 from https://files.pythonhosted.org/packages/1f/62/d2a96d20928249c7816cc1b7ac4db315eb9016ba4123594766cb5f0fd9ac/trie-2.0.1-py3-none-any.whl.metadata
+  Downloading trie-2.0.1-py3-none-any.whl.metadata (18 kB)
+  Obtaining dependency information for trie<3,>=2.0.0 from https://files.pythonhosted.org/packages/71/07/1df4063316523350ce3ff0faebdbb0e5de166876d7c1f21fc8168ad556ca/trie-2.0.0-py3-none-any.whl.metadata
+  Downloading trie-2.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting eth-bloom>=1.0.3 (from py-evm==0.7.0a1->mythril)
+  Obtaining dependency information for eth-bloom>=1.0.3 from https://files.pythonhosted.org/packages/81/e5/251bda1d3f3cff230fa39e95d41141c1b44e8f55c101c5f593ccf5a31b63/eth_bloom-3.1.0-py3-none-any.whl.metadata
+  Downloading eth_bloom-3.1.0-py3-none-any.whl.metadata (8.7 kB)
+  Obtaining dependency information for eth-bloom>=1.0.3 from https://files.pythonhosted.org/packages/b5/6b/c06b2c72035d24ae5ebc06b56b37a3e3da3e9a80bdfe7b78d3987f9c5013/eth_bloom-3.0.1-py3-none-any.whl.metadata
+  Downloading eth_bloom-3.0.1-py3-none-any.whl.metadata (8.3 kB)
+  Obtaining dependency information for eth-bloom>=1.0.3 from https://files.pythonhosted.org/packages/15/f7/aa848ef37ca0526c029f5ee6e1454757b4296ca8ef0c04a130ba4a416800/eth_bloom-3.0.0-py3-none-any.whl.metadata
+  Downloading eth_bloom-3.0.0-py3-none-any.whl.metadata (8.3 kB)
+  Obtaining dependency information for eth-bloom>=1.0.3 from https://files.pythonhosted.org/packages/5d/d3/c88291712889e9b15b3bdeb3b76c597321117ea59a83cdf54a0e51fc0e18/eth_bloom-2.0.0-py3-none-any.whl.metadata
+  Downloading eth_bloom-2.0.0-py3-none-any.whl.metadata (7.5 kB)
+  Obtaining dependency information for eth-bloom>=1.0.3 from https://files.pythonhosted.org/packages/92/70/cfd696ebb70c964975bc1a42ba7b811c9a9523d680ada2ba9e04b0a5f8d0/eth_bloom-1.0.4-py3-none-any.whl.metadata
+  Downloading eth_bloom-1.0.4-py3-none-any.whl.metadata (7.9 kB)
+Downloading py_evm-0.7.0a1-py3-none-any.whl (295 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 295.3/295.3 kB 77.0 MB/s eta 0:00:00
+Downloading asn1crypto-1.5.1-py2.py3-none-any.whl (105 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 105.0/105.0 kB 111.4 MB/s eta 0:00:00
+Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 136.5/136.5 kB 140.2 MB/s eta 0:00:00
+Downloading coincurve-21.0.0-cp312-cp312-macosx_11_0_arm64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 46.7 MB/s eta 0:00:00
+Downloading coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.0/46.0 kB 158.1 MB/s eta 0:00:00
+Downloading configparser-7.2.0-py3-none-any.whl (17 kB)
+Downloading cytoolz-1.2.0-cp312-cp312-macosx_11_0_arm64.whl (1.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 53.1 MB/s eta 0:00:00
+Downloading eth_abi-4.2.1-py3-none-any.whl (28 kB)
+Downloading eth_account-0.11.3-py3-none-any.whl (355 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 355.4/355.4 kB 46.5 MB/s eta 0:00:00
+Downloading eth_hash-0.3.3-py3-none-any.whl (8.9 kB)
+Downloading eth_keyfile-0.8.1-py3-none-any.whl (7.5 kB)
+Downloading eth_rlp-0.3.0-py3-none-any.whl (5.0 kB)
+Downloading eth_utils-2.3.2-py3-none-any.whl (77 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 77.8/77.8 kB 55.9 MB/s eta 0:00:00
+Downloading hexbytes-0.2.3-py3-none-any.whl (6.4 kB)
+Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 52.6 MB/s eta 0:00:00
+Downloading persistent-6.8-cp312-cp312-macosx_11_0_arm64.whl (151 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 151.3/151.3 kB 42.5 MB/s eta 0:00:00
+Downloading pre_commit-2.20.0-py2.py3-none-any.whl (199 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.5/199.5 kB 42.9 MB/s eta 0:00:00
+Downloading py_ecc-1.4.7-py3-none-any.whl (29 kB)
+Downloading py_solc_x-1.1.1-py3-none-any.whl (15 kB)
+Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.8/67.8 kB 136.1 MB/s eta 0:00:00
+Downloading pytest-9.1.1-py3-none-any.whl (386 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.5/386.5 kB 13.9 MB/s eta 0:00:00
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 209.0 MB/s eta 0:00:00
+Downloading rlp-3.0.0-py2.py3-none-any.whl (20 kB)
+Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+Downloading transaction-5.1-py3-none-any.whl (46 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 58.2 MB/s eta 0:00:00
+Downloading z3_solver-4.12.5.0-py2.py3-none-macosx_11_0_arm64.whl (27.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 27.0/27.0 MB 2.6 MB/s eta 0:00:00
+Downloading blake2b_py-0.4.0-cp312-cp312-macosx_11_0_arm64.whl (188 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 188.4/188.4 kB 4.6 MB/s eta 0:00:00
+Downloading matplotlib-3.10.6-cp312-cp312-macosx_11_0_arm64.whl (8.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 2.8 MB/s eta 0:00:00
+Downloading numpy-2.5.4-cp312-cp312-macosx_14_0_arm64.whl (5.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 3.5 MB/s eta 0:00:00
+Downloading mock-5.2.0-py3-none-any.whl (31 kB)
+Downloading py_flags-1.1.4-py3-none-any.whl (17 kB)
+Downloading dictionaries-0.0.2-py2.py3-none-any.whl (7.9 kB)
+Downloading py_solc-3.2.0-py3-none-any.whl (12 kB)
+Downloading pytest_cov-5.0.0-py3-none-any.whl (21 kB)
+Downloading pytest_mock-3.17.0-py3-none-any.whl (11 kB)
+Downloading scikit_learn-1.9.1-cp312-cp312-macosx_12_0_arm64.whl (8.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 4.7 MB/s eta 0:00:00
+Downloading bitarray-3.12.3-cp312-cp312-macosx_11_0_arm64.whl (182 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 182.8/182.8 kB 7.5 MB/s eta 0:00:00
+Downloading cached_property-1.5.2-py2.py3-none-any.whl (7.6 kB)
+Downloading cfgv-3.5.0-py2.py3-none-any.whl (7.4 kB)
+Downloading charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl (367 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 367.8/367.8 kB 7.6 MB/s eta 0:00:00
+Downloading ckzg-1.0.2-cp312-cp312-macosx_11_0_arm64.whl (85 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 85.8/85.8 kB 52.6 MB/s eta 0:00:00
+Downloading contourpy-1.4.0-cp312-cp312-macosx_11_0_arm64.whl (284 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 284.9/284.9 kB 7.5 MB/s eta 0:00:00
+Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Downloading trie-2.2.0-py3-none-any.whl (39 kB)
+Downloading eth_bloom-1.0.4-py3-none-any.whl (5.4 kB)
+Downloading eth_keys-0.4.0-py3-none-any.whl (21 kB)
+Downloading eth_typing-3.5.2-py3-none-any.whl (14 kB)
+Downloading fonttools-4.67.0-cp312-cp312-macosx_10_13_universal2.whl (3.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 5.8 MB/s eta 0:00:00
+Downloading humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.8/86.8 kB 18.6 MB/s eta 0:00:00
+Downloading identify-2.6.20-py2.py3-none-any.whl (99 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.5/99.5 kB 14.5 MB/s eta 0:00:00
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 27.3 MB/s eta 0:00:00
+Downloading iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 306.1/306.1 kB 8.7 MB/s eta 0:00:00
+Downloading kiwisolver-1.5.1-cp312-cp312-macosx_11_0_arm64.whl (64 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.7/64.7 kB 24.3 MB/s eta 0:00:00
+Downloading lru_dict-1.4.1-cp312-cp312-macosx_11_0_arm64.whl (11 kB)
+Downloading narwhals-2.27.1-py3-none-any.whl (483 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 483.2/483.2 kB 7.9 MB/s eta 0:00:00
+Downloading nodeenv-1.11.0-py2.py3-none-any.whl (34 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 130.0/130.0 kB 12.5 MB/s eta 0:00:00
+Downloading pillow-13.0.0-cp312-cp312-macosx_11_0_arm64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 7.0 MB/s eta 0:00:00
+Downloading pluggy-1.7.0-py3-none-any.whl (27 kB)
+Downloading pycryptodome-3.24.1-cp37-abi3-macosx_10_9_universal2.whl (2.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 8.0 MB/s eta 0:00:00
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 8.9 MB/s eta 0:00:00
+Downloading python_dateutil-3.0.0-py2.py3-none-any.whl (94 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.7/94.7 kB 21.4 MB/s eta 0:00:00
+Downloading pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 174.0/174.0 kB 13.8 MB/s eta 0:00:00
+Downloading scipy-1.18.1-cp312-cp312-macosx_14_0_arm64.whl (20.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.5/20.5 MB 3.9 MB/s eta 0:00:00
+Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Downloading toolz-1.2.0-py3-none-any.whl (60 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.8/60.8 kB 6.4 MB/s eta 0:00:00
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 6.0 MB/s eta 0:00:00
+Downloading virtualenv-21.14.12-py3-none-any.whl (5.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.6/5.6 MB 4.2 MB/s eta 0:00:00
+Downloading cffi-2.1.1-cp312-cp312-macosx_11_0_arm64.whl (184 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.7/184.7 kB 5.9 MB/s eta 0:00:00
+Downloading importlib_resources-7.1.0-py3-none-any.whl (37 kB)
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Downloading zope_deferredimport-6.1.1-py3-none-any.whl (9.6 kB)
+Downloading zope_interface-8.7-cp312-cp312-macosx_11_0_arm64.whl (219 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.1/219.1 kB 5.7 MB/s eta 0:00:00
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading distlib-0.4.4-py2.py3-none-any.whl (472 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.1/472.1 kB 4.5 MB/s eta 0:00:00
+Downloading filelock-4.2.4-py3-none-any.whl (162 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.5/162.5 kB 5.8 MB/s eta 0:00:00
+Downloading platformdirs-4.13.5-py3-none-any.whl (32 kB)
+Downloading python_discovery-1.6.4-py3-none-any.whl (39 kB)
+Downloading regex-2026.9.29-cp312-cp312-macosx_11_0_arm64.whl (293 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 293.6/293.6 kB 5.6 MB/s eta 0:00:00
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 7.9 MB/s eta 0:00:00
+Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.2/51.2 kB 7.6 MB/s eta 0:00:00
+Downloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.0/348.0 kB 5.4 MB/s eta 0:00:00
+Downloading zope_proxy-7.3-cp312-cp312-macosx_11_0_arm64.whl (38 kB)
+Building wheels for collected packages: mythril, coverage, ethereum-input-decoder, MarkupSafe, mypy-extensions, parsimonious, pyethash
+  Building wheel for mythril (pyproject.toml): started
+  Building wheel for mythril (pyproject.toml): finished with status 'done'
+  Created wheel for mythril: filename=mythril-0.24.8-py3-none-any.whl size=4624334 sha256=7f1f6109da9e53779f48e7b166474a6ce5460f4b7f6b72a900648930a4a1e5c0
+  Stored in directory: /private/var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/pip-ephem-wheel-cache-ddbzd78b/wheels/32/ae/b1/fafb2cf304837123cc5a54a1b45947935bbb84ecc88c1d2934
+  Building wheel for coverage (pyproject.toml): started
+  Building wheel for coverage (pyproject.toml): finished with status 'done'
+  Created wheel for coverage: filename=coverage-6.5.0-cp312-cp312-macosx_10_9_universal2.whl size=193146 sha256=9d2071fbde90ef5ca899e72001a48b54088b8d616ac11013e87a4a1c4dc3ce7e
+  Stored in directory: /private/var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/pip-ephem-wheel-cache-ddbzd78b/wheels/a7/85/79/1888edb87e446075e2d1d011f7470ac992016bc1fc7f65ed38
+  Building wheel for ethereum-input-decoder (pyproject.toml): started
+  Building wheel for ethereum-input-decoder (pyproject.toml): finished with status 'done'
+  Created wheel for ethereum-input-decoder: filename=ethereum_input_decoder-0.2.2-py3-none-any.whl size=6411 sha256=882161fb1587a83719598db0407ab7dd9dc11a26c622f9602641887bfb1470d9
+  Stored in directory: /private/var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/pip-ephem-wheel-cache-ddbzd78b/wheels/ef/e6/e2/2c845633394a724abb3e006c11389fbc37b87ec02c4a29837e
+  Building wheel for MarkupSafe (pyproject.toml): started
+  Building wheel for MarkupSafe (pyproject.toml): finished with status 'done'
+  Created wheel for MarkupSafe: filename=markupsafe-2.0.1-cp312-cp312-macosx_10_9_universal2.whl size=18068 sha256=26a32ebf14c316ec8ec74061bfad419b0296823570adc7e7cbfcce0202bcf1e3
+  Stored in directory: /private/var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/pip-ephem-wheel-cache-ddbzd78b/wheels/4f/d0/53/2b4a97f61dfc68c6cc6248bfb770e2f6ff952e89a5c2696aae
+  Building wheel for mypy-extensions (pyproject.toml): started
+  Building wheel for mypy-extensions (pyproject.toml): finished with status 'done'
+  Created wheel for mypy-extensions: filename=mypy_extensions-0.4.4-py2.py3-none-any.whl size=4557 sha256=b504eaa927d0c9ef65d4afce5e896519b609850963facca65a7357c8c619ac1b
+  Stored in directory: /private/var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/pip-ephem-wheel-cache-ddbzd78b/wheels/c8/8b/b5/4826a8f3859371d619b2b20d683910a65d271460f6807fd54f
+  Building wheel for parsimonious (pyproject.toml): started
+  Building wheel for parsimonious (pyproject.toml): finished with status 'done'
+  Created wheel for parsimonious: filename=parsimonious-0.9.0-py3-none-any.whl size=44377 sha256=6120502c84571e819fb97a396aef582055d01b2407947a4fe4d8d1c650ee0736
+  Stored in directory: /private/var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/pip-ephem-wheel-cache-ddbzd78b/wheels/83/de/47/e7f4d777272d7044e17868c7804f488944016ae93455053b14
+  Building wheel for pyethash (pyproject.toml): started
+  Building wheel for pyethash (pyproject.toml): finished with status 'done'
+  Created wheel for pyethash: filename=pyethash-0.1.27-cp312-cp312-macosx_10_9_universal2.whl size=46741 sha256=a3b71dded29b8e8bc9a94bafba9616b9ac334967a2806c200e7fbf5f75f894a8
+  Stored in directory: /private/var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/pip-ephem-wheel-cache-ddbzd78b/wheels/20/a5/a9/9f0a65b2508dcca83ab0720d9abf1f0330cff7742d340b9887
+Successfully built mythril coverage ethereum-input-decoder MarkupSafe mypy-extensions parsimonious pyethash
+Installing collected packages: sortedcontainers, pyethash, distlib, dictionaries, ckzg, cached-property, asn1crypto, zope.interface, urllib3, tzdata, typing-extensions, toolz, toml, threadpoolctl, six, semantic_version, regex, pyyaml, pyparsing, pygments, pycryptodome, pycparser, py-flags, py_ecc, pluggy, platformdirs, pillow, packaging, numpy, nodeenv, narwhals, mypy-extensions, mock, MarkupSafe, lru-dict, kiwisolver, iniconfig, importlib-resources, idna, identify, humanfriendly, hexbytes, fonttools, filelock, eth-hash, cycler, coverage, configparser, coincurve, cloudpickle, charset_normalizer, cfgv, certifi, blake2b-py, bitarray, zope.proxy, z3-solver, transaction, scipy, requests, python-discovery, python-dateutil, pytest, py-solc, parsimonious, joblib, jinja2, eth-typing, cytoolz, contourpy, coloredlogs, cffi, zope.deferredimport, virtualenv, scikit-learn, pytest_mock, pytest-cov, py-solc-x, matplotlib, eth-utils, eth-bloom, rlp, pre-commit, persistent, eth-keys, eth-abi, trie, ethereum-input-decoder, eth-rlp, eth-keyfile, py-evm, eth-account, mythril
+Successfully installed MarkupSafe-2.0.1 asn1crypto-1.5.1 bitarray-3.12.3 blake2b-py-0.4.0 cached-property-1.5.2 certifi-2026.10.19 cffi-2.1.1 cfgv-3.5.0 charset_normalizer-3.5.2 ckzg-1.0.2 cloudpickle-3.1.2 coincurve-21.0.0 coloredlogs-15.0.1 configparser-7.2.0 contourpy-1.4.0 coverage-6.5.0 cycler-0.12.1 cytoolz-1.2.0 dictionaries-0.0.2 distlib-0.4.4 eth-abi-4.2.1 eth-account-0.11.3 eth-bloom-1.0.4 eth-hash-0.3.3 eth-keyfile-0.8.1 eth-keys-0.4.0 eth-rlp-0.3.0 eth-typing-3.5.2 eth-utils-2.3.2 ethereum-input-decoder-0.2.2 filelock-4.2.4 fonttools-4.67.0 hexbytes-0.2.3 humanfriendly-10.0 identify-2.6.20 idna-3.20 importlib-resources-7.1.0 iniconfig-2.3.1 jinja2-3.1.6 joblib-1.6.0 kiwisolver-1.5.1 lru-dict-1.4.1 matplotlib-3.10.6 mock-5.2.0 mypy-extensions-0.4.4 mythril-0.24.8 narwhals-2.27.1 nodeenv-1.11.0 numpy-2.5.4 packaging-26.3 parsimonious-0.9.0 persistent-6.8 pillow-13.0.0 platformdirs-4.13.5 pluggy-1.7.0 pre-commit-2.20.0 py-evm-0.7.0a1 py-flags-1.1.4 py-solc-3.2.0 py-solc-x-1.1.1 py_ecc-1.4.7 pycparser-3.11 pycryptodome-3.24.1 pyethash-0.1.27 pygments-2.21.0 pyparsing-2.4.7 pytest-9.1.1 pytest-cov-5.0.0 pytest_mock-3.17.0 python-dateutil-3.0.0 python-discovery-1.6.4 pyyaml-6.0.3 regex-2026.9.29 requests-2.34.2 rlp-3.0.0 scikit-learn-1.9.1 scipy-1.18.1 semantic_version-2.10.0 six-1.17.0 sortedcontainers-2.4.0 threadpoolctl-3.7.0 toml-0.10.2 toolz-1.2.0 transaction-5.1 trie-2.2.0 typing-extensions-4.16.0 tzdata-2026.5 urllib3-2.8.0 virtualenv-21.14.12 z3-solver-4.12.5.0 zope.deferredimport-6.1.1 zope.interface-8.7 zope.proxy-7.3

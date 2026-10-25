@@ -1,0 +1,27 @@
+--- baseline/reentrancy_simple.sol
++++ guard/reentrancy_simple.sol
+@@ -7,6 +7,15 @@
+  pragma solidity ^0.4.15;
+ 
+  contract Reentrance {
++    // Experiment guard: Solidity 0.4-compatible, shared contract lock.
++    bool private experimentEntered;
++    modifier nonReentrant() {
++        require(!experimentEntered);
++        experimentEntered = true;
++        _;
++        experimentEntered = false;
++    }
++
+      mapping (address => uint) userBalance;
+ 
+      function getBalance(address u) constant returns(uint){
+@@ -17,7 +26,7 @@
+          userBalance[msg.sender] += msg.value;
+      }
+ 
+-     function withdrawBalance(){
++     function withdrawBalance() nonReentrant{
+          // send userBalance[msg.sender] ethers to msg.sender
+          // if mgs.sender is a contract, it will call its fallback function
+          // <yes> <report> REENTRANCY

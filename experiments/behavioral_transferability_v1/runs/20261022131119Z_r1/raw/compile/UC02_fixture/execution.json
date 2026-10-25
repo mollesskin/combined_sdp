@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/design_v1/toolchain/solc-0.4.18",
+    "--combined-json",
+    "abi,bin",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_transferability_v1/fixtures/TransferFromToken.sol"
+  ],
+  "compiler_sha256": "dddc86683d12d0f016b5d5799ed84f6f2a79f667ebb932b9a8e6bfe9a48c3190",
+  "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_transferability_v1/runs/20261022131119Z_r1/raw/compile/UC02_fixture",
+  "ended_utc": "2026-10-22T13:11:26.011750+00:00",
+  "exit_code": 0,
+  "source": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_transferability_v1/fixtures/TransferFromToken.sol",
+  "source_sha256": "fdcf2a269017d3bbf9bdc69a69f90a2d2808075053a3916d4853721315efb844",
+  "started_utc": "2026-10-22T13:11:25.986144+00:00",
+  "status": "compiled",
+  "timeout_seconds": 60
+}

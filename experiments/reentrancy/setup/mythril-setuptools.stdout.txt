@@ -1,0 +1,7 @@
+Collecting setuptools==80.9.0
+  Obtaining dependency information for setuptools==80.9.0 from https://files.pythonhosted.org/packages/a3/dc/17031897dae0efacfea57dfd3a82fdd2a2aeb58e0ff71b77b87e44edc772/setuptools-80.9.0-py3-none-any.whl.metadata
+  Downloading setuptools-80.9.0-py3-none-any.whl.metadata (6.6 kB)
+Downloading setuptools-80.9.0-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 2.8 MB/s eta 0:00:00
+Installing collected packages: setuptools
+Successfully installed setuptools-80.9.0

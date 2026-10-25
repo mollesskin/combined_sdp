@@ -1,0 +1,16 @@
+{
+  "compiler_sha256": "ace5107a68fa75634e26848d6d208b808a76cc4f9262e53e8a3622bcefd4dcaf",
+  "compiler_version_exit_code": 0,
+  "compiler_version_stderr": "",
+  "compiler_version_stdout": "solc, the solidity compiler commandline interface\nVersion: 0.4.19+commit.c4cbbb05.Darwin.appleclang\n",
+  "execution_lock_sha256": "35121c7abfcb78be3fbd7afd10816b1e1b381ac3f7262ecd76da7b930b80f0ad",
+  "packages": {
+    "eth-abi": "6.0.0",
+    "eth-tester": "0.14.0b1",
+    "py-evm": "0.12.1b1",
+    "web3": "8.0.0"
+  },
+  "platform": "macOS-15.0-arm64-arm-64bit",
+  "protocol_lock_sha256": "e65bf1071f48ecd08d0826cd2e5f61859ba1a80a856a6d35cbca14deae6bff48",
+  "python": "3.12.0 (v3.12.0:0fb18b02c8, Oct  2 2023, 09:45:56) [Clang 13.0.0 (clang-1300.0.29.30)]"
+}

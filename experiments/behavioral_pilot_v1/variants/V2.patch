@@ -1,0 +1,19 @@
+--- V0/TokenBank.sol
++++ V2/TokenBank.sol
+@@ -42,6 +42,16 @@
+     {
+          // <yes> <report> UNCHECKED_LL_CALLS
+         token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
++        uint256 returnSize;
++        uint256 returnWord;
++        assembly { returnSize := returndatasize }
++        require(returnSize == 32);
++        assembly {
++            let ptr := mload(0x40)
++            returndatacopy(ptr, 0, 32)
++            returnWord := mload(ptr)
++        }
++        require(returnWord == 1);
+     }
+ }
+ 

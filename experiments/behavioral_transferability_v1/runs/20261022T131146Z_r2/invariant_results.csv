@@ -1,0 +1,169 @@
+contract_id,variant,scenario,run,phase,invariant_id,name,applicable,satisfied,status,raw_evidence_path
+UC02,V0,S1,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S1
+UC02,V0,S1,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S1
+UC02,V0,S1,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S1
+UC02,V0,S1,2,primary,I4,atomic_failure_policy incl allowance (negative only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S1
+UC02,V0,S1,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S1
+UC02,V0,S1,2,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S1
+UC02,V0,S1,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S1
+UC02,V0,S2,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S2
+UC02,V0,S2,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S2
+UC02,V0,S2,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S2
+UC02,V0,S2,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S2
+UC02,V0,S2,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S2
+UC02,V0,S2,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S2
+UC02,V0,S2,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S2
+UC02,V0,S3,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S3
+UC02,V0,S3,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S3
+UC02,V0,S3,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S3
+UC02,V0,S3,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S3
+UC02,V0,S3,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S3
+UC02,V0,S3,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S3
+UC02,V0,S3,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V0/S3
+UC02,V1,S1,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S1
+UC02,V1,S1,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S1
+UC02,V1,S1,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S1
+UC02,V1,S1,2,primary,I4,atomic_failure_policy incl allowance (negative only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S1
+UC02,V1,S1,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S1
+UC02,V1,S1,2,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S1
+UC02,V1,S1,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S1
+UC02,V1,S2,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S2
+UC02,V1,S2,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S2
+UC02,V1,S2,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S2
+UC02,V1,S2,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S2
+UC02,V1,S2,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S2
+UC02,V1,S2,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S2
+UC02,V1,S2,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S2
+UC02,V1,S3,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S3
+UC02,V1,S3,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S3
+UC02,V1,S3,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S3
+UC02,V1,S3,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S3
+UC02,V1,S3,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S3
+UC02,V1,S3,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S3
+UC02,V1,S3,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V1/S3
+UC02,V2,S1,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S1
+UC02,V2,S1,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S1
+UC02,V2,S1,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S1
+UC02,V2,S1,2,primary,I4,atomic_failure_policy incl allowance (negative only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S1
+UC02,V2,S1,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S1
+UC02,V2,S1,2,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S1
+UC02,V2,S1,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S1
+UC02,V2,S2,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S2
+UC02,V2,S2,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S2
+UC02,V2,S2,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S2
+UC02,V2,S2,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S2
+UC02,V2,S2,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S2
+UC02,V2,S2,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S2
+UC02,V2,S2,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S2
+UC02,V2,S3,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S3
+UC02,V2,S3,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S3
+UC02,V2,S3,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S3
+UC02,V2,S3,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S3
+UC02,V2,S3,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S3
+UC02,V2,S3,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S3
+UC02,V2,S3,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V2/S3
+UC02,V3,S1,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S1
+UC02,V3,S1,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S1
+UC02,V3,S1,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S1
+UC02,V3,S1,2,primary,I4,atomic_failure_policy incl allowance (negative only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S1
+UC02,V3,S1,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S1
+UC02,V3,S1,2,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S1
+UC02,V3,S1,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S1
+UC02,V3,S2,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S2
+UC02,V3,S2,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S2
+UC02,V3,S2,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S2
+UC02,V3,S2,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S2
+UC02,V3,S2,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S2
+UC02,V3,S2,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S2
+UC02,V3,S2,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S2
+UC02,V3,S3,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S3
+UC02,V3,S3,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S3
+UC02,V3,S3,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S3
+UC02,V3,S3,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S3
+UC02,V3,S3,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S3
+UC02,V3,S3,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S3
+UC02,V3,S3,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC02/V3/S3
+UC03,V0,S1,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S1
+UC03,V0,S1,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S1
+UC03,V0,S1,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S1
+UC03,V0,S1,2,primary,I4,atomic_failure_policy incl allowance (negative only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S1
+UC03,V0,S1,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S1
+UC03,V0,S1,2,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S1
+UC03,V0,S1,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S1
+UC03,V0,S2,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S2
+UC03,V0,S2,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S2
+UC03,V0,S2,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S2
+UC03,V0,S2,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S2
+UC03,V0,S2,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S2
+UC03,V0,S2,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S2
+UC03,V0,S2,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S2
+UC03,V0,S3,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S3
+UC03,V0,S3,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S3
+UC03,V0,S3,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S3
+UC03,V0,S3,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S3
+UC03,V0,S3,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S3
+UC03,V0,S3,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S3
+UC03,V0,S3,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V0/S3
+UC03,V1,S1,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S1
+UC03,V1,S1,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S1
+UC03,V1,S1,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S1
+UC03,V1,S1,2,primary,I4,atomic_failure_policy incl allowance (negative only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S1
+UC03,V1,S1,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S1
+UC03,V1,S1,2,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S1
+UC03,V1,S1,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S1
+UC03,V1,S2,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S2
+UC03,V1,S2,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S2
+UC03,V1,S2,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S2
+UC03,V1,S2,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,False,violated,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S2
+UC03,V1,S2,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S2
+UC03,V1,S2,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S2
+UC03,V1,S2,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S2
+UC03,V1,S3,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S3
+UC03,V1,S3,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S3
+UC03,V1,S3,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S3
+UC03,V1,S3,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S3
+UC03,V1,S3,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S3
+UC03,V1,S3,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S3
+UC03,V1,S3,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V1/S3
+UC03,V2,S1,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S1
+UC03,V2,S1,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S1
+UC03,V2,S1,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S1
+UC03,V2,S1,2,primary,I4,atomic_failure_policy incl allowance (negative only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S1
+UC03,V2,S1,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S1
+UC03,V2,S1,2,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S1
+UC03,V2,S1,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S1
+UC03,V2,S2,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S2
+UC03,V2,S2,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S2
+UC03,V2,S2,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S2
+UC03,V2,S2,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S2
+UC03,V2,S2,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S2
+UC03,V2,S2,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S2
+UC03,V2,S2,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S2
+UC03,V2,S3,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S3
+UC03,V2,S3,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S3
+UC03,V2,S3,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S3
+UC03,V2,S3,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S3
+UC03,V2,S3,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S3
+UC03,V2,S3,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S3
+UC03,V2,S3,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V2/S3
+UC03,V3,S1,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S1
+UC03,V3,S1,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S1
+UC03,V3,S1,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S1
+UC03,V3,S1,2,primary,I4,atomic_failure_policy incl allowance (negative only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S1
+UC03,V3,S1,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S1
+UC03,V3,S1,2,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S1
+UC03,V3,S1,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S1
+UC03,V3,S2,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S2
+UC03,V3,S2,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S2
+UC03,V3,S2,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S2
+UC03,V3,S2,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S2
+UC03,V3,S2,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S2
+UC03,V3,S2,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S2
+UC03,V3,S2,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S2
+UC03,V3,S3,2,primary,I1,acknowledged_delivery plus transferFrom allowance,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S3
+UC03,V3,S3,2,primary,I2,N/A no internal entitlement ledger,False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S3
+UC03,V3,S3,2,primary,I3,token_conservation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S3
+UC03,V3,S3,2,primary,I4,atomic_failure_policy incl allowance (negative only),True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S3
+UC03,V3,S3,2,primary,I5,ether_frame,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S3
+UC03,V3,S3,2,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S3
+UC03,V3,S3,2,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T131146Z_r2/raw/trials/UC03/V3/S3

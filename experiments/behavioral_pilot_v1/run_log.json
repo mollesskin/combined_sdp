@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-10-22T12:35:25.391775+00:00",
+  "purpose": "exploratory AI-assisted developmental pilot; prior evidence known",
+  "protocol_freeze": "2026-10-22T12:27:51.967292+00:00",
+  "implementation_freeze": "2026-10-22T12:31:53.503493+00:00",
+  "run_events": [
+    {
+      "run_id": "20261022T_behavioral_repeat1",
+      "argv": [
+        "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python",
+        "experiments/behavioral_pilot_v1/tests/run_pilot.py",
+        "--output",
+        "experiments/behavioral_pilot_v1/runs/20261022T_behavioral_repeat1",
+        "--repetition",
+        "1"
+      ],
+      "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated",
+      "network": "in-process only",
+      "pip_freeze_exit_code": 0,
+      "repetition": 1,
+      "started_utc": "2026-10-22T12:32:01.773408+00:00",
+      "ended_utc": "2026-10-22T12:32:06.251465+00:00",
+      "infrastructure_errors": 0,
+      "new_PES_values": 0,
+      "new_analyzer_runs": 0,
+      "primary_trials": 12
+    },
+    {
+      "run_id": "20261022T123234Z",
+      "argv": [
+        "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python",
+        "experiments/behavioral_pilot_v1/tests/run_pilot.py",
+        "--output",
+        "experiments/behavioral_pilot_v1/runs/20261022T123234Z",
+        "--repetition",
+        "2"
+      ],
+      "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated",
+      "network": "in-process only",
+      "pip_freeze_exit_code": 0,
+      "repetition": 2,
+      "started_utc": "2026-10-22T12:32:43.880703+00:00",
+      "ended_utc": "2026-10-22T12:32:48.421455+00:00",
+      "infrastructure_errors": 0,
+      "new_PES_values": 0,
+      "new_analyzer_runs": 0,
+      "primary_trials": 12
+    }
+  ],
+  "summary_command": "PYTHONDONTWRITEBYTECODE=1 experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python experiments/behavioral_pilot_v1/tests/summarize.py experiments/behavioral_pilot_v1/runs/20261022T_behavioral_repeat1 experiments/behavioral_pilot_v1/runs/20261022T123234Z --comparison-output experiments/behavioral_pilot_v1/comparison",
+  "validation_command": "PYTHONDONTWRITEBYTECODE=1 experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python experiments/behavioral_pilot_v1/tests/validate_evidence.py experiments/behavioral_pilot_v1/runs/20261022T_behavioral_repeat1 experiments/behavioral_pilot_v1/runs/20261022T123234Z",
+  "deviations": [
+    {
+      "kind": "directory_naming_only",
+      "detail": "First run uses descriptive date-prefixed ID instead of full timestamp. Exact UTC captured in raw command/execution logs; evidence preserved under original name."
+    }
+  ],
+  "new_analyzer_runs": 0,
+  "new_PES_values": 0,
+  "new_dependency_installs": 0
+}

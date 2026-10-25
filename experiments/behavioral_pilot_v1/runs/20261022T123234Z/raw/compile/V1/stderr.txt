@@ -1,0 +1,11 @@
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V1/TokenBank.sol:62:5: Warning: No visibility specified. Defaulting to "public".
+    function()
+    ^
+Spanning multiple lines.
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V1/TokenBank.sol:68:5: Warning: No visibility specified. Defaulting to "public".
+    function Deposit() 
+    ^
+Spanning multiple lines.
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V1/TokenBank.sol:44:48: Warning: "sha3" has been deprecated in favour of "keccak256"
+        bool callSucceeded = token.call(bytes4(sha3("transfer(address,uint256)")),to,amount);
+                                               ^-------------------------------^

@@ -1,0 +1,12 @@
+--- V0/TokenBank.sol
++++ V1/TokenBank.sol
+@@ -41,7 +41,8 @@
+     onlyOwner
+     {
+          // <yes> <report> UNCHECKED_LL_CALLS
+-        token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
++        bool callSucceeded = token.call(bytes4(sha3("transfer(address,uint256)")),to,amount);
++        require(callSucceeded);
+     }
+ }
+ 

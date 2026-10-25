@@ -1,0 +1,19 @@
+--- UC03/V0
++++ UC03/V2
+@@ -15,6 +15,16 @@
+         for(uint i=0;i<_tos.length;i++){
+             // <yes> <report> UNCHECKED_LL_CALLS
+             caddress.call(id,from,_tos[i],_value);
++            uint256 returnSize;
++            uint256 returnWord;
++            assembly { returnSize := returndatasize }
++            require(returnSize == 32);
++            assembly {
++                let ptr := mload(0x40)
++                returndatacopy(ptr, 0, 32)
++                returnWord := mload(ptr)
++            }
++            require(returnWord == 1);
+         }
+         return true;
+     }

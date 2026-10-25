@@ -1,0 +1,55 @@
+{
+  "platform": "macOS-15.0-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python": "3.13.1 (v3.13.1:06714517797, Dec  3 2024, 14:00:22) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "tools": {
+    "slither": {
+      "available": true,
+      "version": "0.11.6",
+      "path": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/venv/bin/slither",
+      "executable_sha256": "4b88ed5d575d930d59451cd604ba7de4f318eb0a55ce4b6ec1f54c7262866e0b",
+      "packages": "aiohappyeyeballs==2.7.1\naiohttp==3.14.5\naiosignal==1.4.0\nannotated-types==0.8.0\nattrs==26.1.0\nbitarray==3.12.3\ncbor2==6.1.5\ncertifi==2026.10.19\ncharset-normalizer==3.5.2\nckzg==2.1.8\ncrytic-compile==0.4.2\ncytoolz==1.2.0\neth-account==0.14.0\neth-hash==0.8.0\neth-keyfile==0.10.0\neth-keys==0.8.0\neth-rlp==3.0.0\neth-typing==6.0.0\neth-utils==6.0.0\neth_abi==6.0.0\nfrozenlist==1.8.0\nhexbytes==2.0.0\nidna==3.20\nmultidict==7.1.0\npackaging==26.3\nparsimonious==0.10.0\npip==24.3.1\nprettytable==3.18.0\npropcache==0.5.4\npy-ecc==8.0.0\npycryptodome==3.24.1\npydantic==2.14.1\npydantic_core==2.50.1\npyunormalize==18.0.0\nregex==2026.9.29\nrequests==2.34.2\nrlp==5.0.0\nslither-analyzer==0.11.6\nsolc-select==1.2.0\ntoolz==1.2.0\ntypes-requests==2.33.0.20261006\ntyping-inspection==0.4.4\ntyping_extensions==4.16.0\nurllib3==2.8.0\nwcwidth==0.9.3\nweb3==7.16.0\nwebsockets==15.0.1\nyarl==1.25.1\n",
+      "package_inventory_status": "exited",
+      "site_packages_sha256": "3324ac46d9d696e232a45adaeb5327b1ddc8a08a757e40268e155fa606d33c23",
+      "python_sha256": "20c9c2144a9f5202177620417e67643fb551aa31586e5d3c1361627b920cadb0"
+    },
+    "mythril": {
+      "available": true,
+      "version": "Mythril version v0.24.8",
+      "path": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/bin/myth",
+      "executable_sha256": "1609edc7487f837b4e6b1c64d66962a5a6ca6ae48b27c445fc8b746d3eb3fc7c",
+      "packages": "asn1crypto==1.5.1\nbitarray==3.12.3\nblake2b-py==0.4.0\ncached-property==1.5.2\ncertifi==2026.10.19\ncffi==2.1.1\ncfgv==3.5.0\ncharset-normalizer==3.5.2\nckzg==1.0.2\ncloudpickle==3.1.2\ncoincurve==21.0.0\ncoloredlogs==15.0.1\nconfigparser==7.2.0\ncontourpy==1.4.0\ncoverage==6.5.0\ncycler==0.12.1\ncytoolz==1.2.0\ndictionaries==0.0.2\ndistlib==0.4.4\neth-abi==4.2.1\neth-account==0.11.3\neth-bloom==1.0.4\neth-hash==0.3.3\neth-keyfile==0.8.1\neth-keys==0.4.0\neth-rlp==0.3.0\neth-typing==3.5.2\neth-utils==2.3.2\nethereum_input_decoder==0.2.2\nfilelock==4.2.4\nfonttools==4.67.0\nhexbytes==0.2.3\nhumanfriendly==10.0\nidentify==2.6.20\nidna==3.20\nimportlib_resources==7.1.0\niniconfig==2.3.1\nJinja2==3.1.6\njoblib==1.6.0\nkiwisolver==1.5.1\nlru-dict==1.4.1\nMarkupSafe==2.0.1\nmatplotlib==3.10.6\nmock==5.2.0\nmypy_extensions==0.4.4\nmythril==0.24.8\nnarwhals==2.27.1\nnodeenv==1.11.0\nnumpy==2.5.4\npackaging==26.3\nparsimonious==0.9.0\npersistent==6.8\npillow==13.0.0\npip==23.2.1\nplatformdirs==4.13.5\npluggy==1.7.0\npre-commit==2.20.0\npy-ecc==1.4.7\npy-evm==0.7.0a1\npy-flags==1.1.4\npy-solc==3.2.0\npy-solc-x==1.1.1\npycparser==3.11\npycryptodome==3.24.1\npyethash==0.1.27\nPygments==2.21.0\npyparsing==2.4.7\npytest==9.1.1\npytest-cov==5.0.0\npytest-mock==3.17.0\npython-dateutil==3.0.0\npython-discovery==1.6.4\nPyYAML==6.0.3\nregex==2026.9.29\nrequests==2.34.2\nrlp==3.0.0\nscikit-learn==1.9.1\nscipy==1.18.1\nsemantic-version==2.10.0\nsetuptools==80.9.0\nsix==1.17.0\nsortedcontainers==2.4.0\nthreadpoolctl==3.7.0\ntoml==0.10.2\ntoolz==1.2.0\ntransaction==5.1\ntrie==2.2.0\ntyping_extensions==4.16.0\ntzdata==2026.5\nurllib3==2.8.0\nvirtualenv==21.14.12\nz3-solver==4.12.5.0\nzope.deferredimport==6.1.1\nzope.interface==8.7\nzope.proxy==7.3\n",
+      "package_inventory_status": "exited",
+      "site_packages_sha256": "c202d420db3c77d39a26e40bf0d3aeec250c43484aa7967c7c023367fcbc919e",
+      "python_sha256": "f4cd716d4b54f205398bec6932cc59361b087494ca2ddb157a5e8631d4d6f863"
+    }
+  },
+  "compilers": {
+    "0.4.10": {
+      "path": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.10",
+      "sha256": "40f179e4d27201ab726669dd26d594cfe10bf4dd6117495ee49d26f0dda9ef42",
+      "version": "solc, the solidity compiler commandline interface\nVersion: 0.4.10+commit.f0d539ae.Darwin.appleclang",
+      "available": true
+    },
+    "0.4.15": {
+      "path": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.15",
+      "sha256": "e449a4980db4ff18e7ffe704b40083cded96cccf33986bf6a6bb6fe925eb86c0",
+      "version": "solc, the solidity compiler commandline interface\nVersion: 0.4.15+commit.8b45bddb.Darwin.appleclang",
+      "available": true
+    },
+    "0.4.19": {
+      "path": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.19",
+      "sha256": "ace5107a68fa75634e26848d6d208b808a76cc4f9262e53e8a3622bcefd4dcaf",
+      "version": "solc, the solidity compiler commandline interface\nVersion: 0.4.19+commit.c4cbbb05.Darwin.appleclang",
+      "available": true
+    }
+  },
+  "inputs": {
+    "settings.json": "85e4e8504ff982e38aa2d72b9e02ee73c385141c4c05eedc15cd3411cd9eefd0",
+    "manifest.json": "14f1bd78435c3e61a12fa0bb8704230df711964ddb4d8ac18f38601547a4e655",
+    "protocol.md": "cbb95ae96fc6e3752a584a4a915bd4dfc5b41079fb70f0a1797f209f5baa4c42",
+    "prepare.py": "9c3823f02dbce8f17e37bc04332d3908df187ed2563c9676a66ce25b087b3ca4",
+    "run.py": "51c447f61b37757962ec018a83920fd3fdce2acd3159856656fc7075209c3b86",
+    "setup_compilers.py": "5b164be6d5ce256416a0a2345dd6795defd4c01549f49ce5c41d4457470198d0"
+  }
+}

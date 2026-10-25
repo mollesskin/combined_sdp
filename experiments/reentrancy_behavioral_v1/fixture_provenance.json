@@ -1,0 +1,7 @@
+{
+  "original_fixture": "experiments/multi_vulnerability/compatibility_v2/fixtures/LocalFixtures.sol",
+  "original_file_sha256": "6811dc7153ef16743149be2cd9a45cd2451bfb20b9787f3786e445e5dc683b2b",
+  "extracted_contract_sha256": "8e35e4184b29c6857d22b64fffb5325010ac21e1e73490316e5a2a23ae3a397c",
+  "new_fixture_sha256": "0eddfd3d5b6cf8ad32fb98c07cd5243aa4f081d8dc76ba3664b9687087aae206",
+  "modifications": "Only standalone file header/pragma; LocalRecipient contract body byte-identical."
+}

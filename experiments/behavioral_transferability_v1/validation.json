@@ -1,0 +1,21 @@
+{
+  "validated_utc": "2026-10-22T13:13:21.887589+00:00",
+  "status": "PASS",
+  "issues": [],
+  "prior_files_preserved": 1550,
+  "UC01_frozen_files_verified": 291,
+  "source_contracts": 2,
+  "variant_sources": 8,
+  "clean_process_launches": 2,
+  "repetitions_per_contract": 2,
+  "primary_trials": 48,
+  "primary_traces_crosschecked": 48,
+  "byte_identical_metric_recomputation": [
+    "runs/20261022131119Z_r1",
+    "runs/20261022T131146Z_r2"
+  ],
+  "matched_initial_states": true,
+  "new_PES_values": 0,
+  "new_analyzer_runs": 0,
+  "limits": "No general equivalence proof; contract-specific allowance adaptations and absent-ledger N/A keep results stratified, not pooled with UC01."
+}

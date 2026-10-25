@@ -1,0 +1,5 @@
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/eth/__init__.py:1: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/Users/moldir_2024icloud.com/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/matplotlib-0eocjybj because there was an issue with the default path (/Users/moldir_2024icloud.com/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.

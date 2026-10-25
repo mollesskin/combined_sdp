@@ -1,0 +1,110 @@
+{
+  "UC02": {
+    "V0": {
+      "S1_legitimate_passed": true,
+      "all_legitimate_functionality_preserved": true,
+      "infrastructure_errors": 0,
+      "legitimate_probes_expected": 3,
+      "legitimate_probes_passed": 3,
+      "negative_scenario_proportion": "0",
+      "negative_scenarios_completed": 2,
+      "negative_scenarios_excluded_infrastructure": 0,
+      "negative_scenarios_expected": 2,
+      "negative_scenarios_satisfied": 0,
+      "primary_invariant_violations": 4
+    },
+    "V1": {
+      "S1_legitimate_passed": true,
+      "all_legitimate_functionality_preserved": true,
+      "infrastructure_errors": 0,
+      "legitimate_probes_expected": 3,
+      "legitimate_probes_passed": 3,
+      "negative_scenario_proportion": "1/2",
+      "negative_scenarios_completed": 2,
+      "negative_scenarios_excluded_infrastructure": 0,
+      "negative_scenarios_expected": 2,
+      "negative_scenarios_satisfied": 1,
+      "primary_invariant_violations": 2
+    },
+    "V2": {
+      "S1_legitimate_passed": true,
+      "all_legitimate_functionality_preserved": true,
+      "infrastructure_errors": 0,
+      "legitimate_probes_expected": 3,
+      "legitimate_probes_passed": 3,
+      "negative_scenario_proportion": "1",
+      "negative_scenarios_completed": 2,
+      "negative_scenarios_excluded_infrastructure": 0,
+      "negative_scenarios_expected": 2,
+      "negative_scenarios_satisfied": 2,
+      "primary_invariant_violations": 0
+    },
+    "V3": {
+      "S1_legitimate_passed": true,
+      "all_legitimate_functionality_preserved": true,
+      "infrastructure_errors": 0,
+      "legitimate_probes_expected": 3,
+      "legitimate_probes_passed": 3,
+      "negative_scenario_proportion": "1",
+      "negative_scenarios_completed": 2,
+      "negative_scenarios_excluded_infrastructure": 0,
+      "negative_scenarios_expected": 2,
+      "negative_scenarios_satisfied": 2,
+      "primary_invariant_violations": 0
+    }
+  },
+  "UC03": {
+    "V0": {
+      "S1_legitimate_passed": true,
+      "all_legitimate_functionality_preserved": true,
+      "infrastructure_errors": 0,
+      "legitimate_probes_expected": 3,
+      "legitimate_probes_passed": 3,
+      "negative_scenario_proportion": "0",
+      "negative_scenarios_completed": 2,
+      "negative_scenarios_excluded_infrastructure": 0,
+      "negative_scenarios_expected": 2,
+      "negative_scenarios_satisfied": 0,
+      "primary_invariant_violations": 4
+    },
+    "V1": {
+      "S1_legitimate_passed": true,
+      "all_legitimate_functionality_preserved": true,
+      "infrastructure_errors": 0,
+      "legitimate_probes_expected": 3,
+      "legitimate_probes_passed": 3,
+      "negative_scenario_proportion": "1/2",
+      "negative_scenarios_completed": 2,
+      "negative_scenarios_excluded_infrastructure": 0,
+      "negative_scenarios_expected": 2,
+      "negative_scenarios_satisfied": 1,
+      "primary_invariant_violations": 2
+    },
+    "V2": {
+      "S1_legitimate_passed": true,
+      "all_legitimate_functionality_preserved": true,
+      "infrastructure_errors": 0,
+      "legitimate_probes_expected": 3,
+      "legitimate_probes_passed": 3,
+      "negative_scenario_proportion": "1",
+      "negative_scenarios_completed": 2,
+      "negative_scenarios_excluded_infrastructure": 0,
+      "negative_scenarios_expected": 2,
+      "negative_scenarios_satisfied": 2,
+      "primary_invariant_violations": 0
+    },
+    "V3": {
+      "S1_legitimate_passed": true,
+      "all_legitimate_functionality_preserved": true,
+      "infrastructure_errors": 0,
+      "legitimate_probes_expected": 3,
+      "legitimate_probes_passed": 3,
+      "negative_scenario_proportion": "1",
+      "negative_scenarios_completed": 2,
+      "negative_scenarios_excluded_infrastructure": 0,
+      "negative_scenarios_expected": 2,
+      "negative_scenarios_satisfied": 2,
+      "primary_invariant_violations": 0
+    }
+  }
+}

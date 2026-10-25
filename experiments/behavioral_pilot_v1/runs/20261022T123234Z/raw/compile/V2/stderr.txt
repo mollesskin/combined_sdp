@@ -1,0 +1,20 @@
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V2/TokenBank.sol:71:5: Warning: No visibility specified. Defaulting to "public".
+    function()
+    ^
+Spanning multiple lines.
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V2/TokenBank.sol:77:5: Warning: No visibility specified. Defaulting to "public".
+    function Deposit() 
+    ^
+Spanning multiple lines.
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V2/TokenBank.sol:44:27: Warning: "sha3" has been deprecated in favour of "keccak256"
+        token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
+                          ^-------------------------------^
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V2/TokenBank.sol:44:9: Warning: Return value of low-level calls not used.
+        token.call(bytes4(sha3("transfer(address,uint256)")),to,amount); 
+        ^-------------------------------------------------------------^
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V2/TokenBank.sol:47:34: Warning: The "returndatasize" instruction is only available after the Metropolis hard fork. Before that it acts as an invalid instruction.
+        assembly { returnSize := returndatasize }
+                                 ^------------^
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/behavioral_pilot_v1/variants/V2/TokenBank.sol:51:13: Warning: The "returndatacopy" instruction is only available after the Metropolis hard fork. Before that it acts as an invalid instruction.
+            returndatacopy(ptr, 0, 32)
+            ^------------^

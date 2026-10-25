@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-10-22T13:45:42.586319+00:00",
+  "purpose": "exploratory AI-assisted developmental local pilot, prior results known; UC01\u2013UC03 branch closed by unchanged reference",
+  "protocol_freeze_utc": "2026-10-22T13:34:51.400268+00:00",
+  "implementation_freeze_utc": "2026-10-22T13:40:40.559655+00:00",
+  "run_events": [
+    {
+      "run_id": "20261022T134046Z_r1",
+      "argv": [
+        "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python",
+        "experiments/reentrancy_behavioral_v1/tests/run_reentrancy.py",
+        "--output",
+        "experiments/reentrancy_behavioral_v1/runs/20261022T134046Z_r1",
+        "--repetition",
+        "1"
+      ],
+      "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated",
+      "network": "in-process only; no static tools/PES",
+      "repetition": 1,
+      "started_utc": "2026-10-22T13:40:48.817116+00:00",
+      "PES_values": 0,
+      "ended_utc": "2026-10-22T13:41:02.139838+00:00",
+      "infrastructure_errors": 0,
+      "observed_withdrawal_steps": 60,
+      "scenario_trials": 36,
+      "source_contracts": 3,
+      "static_tool_runs": 0,
+      "variant_sources": 12
+    },
+    {
+      "run_id": "20261022T134111Z_r2",
+      "argv": [
+        "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python",
+        "experiments/reentrancy_behavioral_v1/tests/run_reentrancy.py",
+        "--output",
+        "experiments/reentrancy_behavioral_v1/runs/20261022T134111Z_r2",
+        "--repetition",
+        "2"
+      ],
+      "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated",
+      "network": "in-process only; no static tools/PES",
+      "repetition": 2,
+      "started_utc": "2026-10-22T13:41:12.727713+00:00",
+      "PES_values": 0,
+      "ended_utc": "2026-10-22T13:41:25.290173+00:00",
+      "infrastructure_errors": 0,
+      "observed_withdrawal_steps": 60,
+      "scenario_trials": 36,
+      "source_contracts": 3,
+      "static_tool_runs": 0,
+      "variant_sources": 12
+    }
+  ],
+  "derive_command": "PYTHONDONTWRITEBYTECODE=1 experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python experiments/reentrancy_behavioral_v1/tests/summarize.py experiments/reentrancy_behavioral_v1/runs/20261022T134046Z_r1 experiments/reentrancy_behavioral_v1/runs/20261022T134111Z_r2 --comparison-output experiments/reentrancy_behavioral_v1/comparison",
+  "validation_command": "PYTHONDONTWRITEBYTECODE=1 experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python experiments/reentrancy_behavioral_v1/tests/validate_evidence.py experiments/reentrancy_behavioral_v1/runs/20261022T134046Z_r1 experiments/reentrancy_behavioral_v1/runs/20261022T134111Z_r2",
+  "report_command": "PYTHONDONTWRITEBYTECODE=1 experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python experiments/reentrancy_behavioral_v1/tests/report.py experiments/reentrancy_behavioral_v1/runs/20261022T134046Z_r1 experiments/reentrancy_behavioral_v1/runs/20261022T134111Z_r2",
+  "deviations": [],
+  "continuation_note": "User repeated the same task after interruption; no run existed at resume, and the existing protocol/partial runner were preserved. New comparisons used the original protocol lock.",
+  "modified_existing_implementations": 0,
+  "new_static_analyzer_runs": 0,
+  "new_PES_values": 0,
+  "new_dependency_installs": 0,
+  "stop": "RE01\u2013RE03 only"
+}

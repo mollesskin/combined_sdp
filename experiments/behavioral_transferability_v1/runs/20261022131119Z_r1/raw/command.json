@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python",
+    "experiments/behavioral_transferability_v1/tests/run_transfer.py",
+    "--output",
+    "experiments/behavioral_transferability_v1/runs/20261022131119Z_r1",
+    "--repetition",
+    "1"
+  ],
+  "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated",
+  "network": "in-process only",
+  "repetition": 1,
+  "started_utc": "2026-10-22T13:11:23.289385+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "validated_utc": "2026-10-22T12:33:52.029772+00:00",
+  "status": "PASS",
+  "issues": [],
+  "prior_files_preserved": 1258,
+  "trial_observations": 24,
+  "primary_traces_crosschecked": 24,
+  "byte_identical_recomputation": [
+    "runs/20261022T_behavioral_repeat1",
+    "runs/20261022T123234Z"
+  ],
+  "new_analyzer_runs": 0,
+  "new_PES_computations": 0,
+  "limits": "Defined pilot observations only; source/ABI comparison and tests are not proof of full functional equivalence."
+}

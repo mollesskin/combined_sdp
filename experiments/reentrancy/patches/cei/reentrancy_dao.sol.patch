@@ -1,0 +1,13 @@
+--- baseline/reentrancy_dao.sol
++++ cei/reentrancy_dao.sol
+@@ -15,9 +15,9 @@
+         if (oCredit > 0) {
+             balance -= oCredit;
+             // <yes> <report> REENTRANCY
++            credit[msg.sender] = 0;
+             bool callResult = msg.sender.call.value(oCredit)();
+             require (callResult);
+-            credit[msg.sender] = 0;
+         }
+     }
+ 

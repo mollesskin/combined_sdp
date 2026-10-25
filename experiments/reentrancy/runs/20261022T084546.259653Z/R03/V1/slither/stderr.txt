@@ -1,0 +1,32 @@
+
+Detector: deprecated-standards
+Deprecated standard detected THROW (../../../../../contracts/cei/reentrancy_simple.sol#27):
+	- Usage of "throw" should be replaced with "revert()"
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#deprecated-standards
+
+Detector: solc-version
+Version constraint ^0.4.15 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector.
+It is used by:
+	- ^0.4.15 (../../../../../contracts/cei/reentrancy_simple.sol#7)
+solc-0.4.15 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Detector: low-level-calls
+Low level call in Reentrance.withdrawBalance() (../../../../../contracts/cei/reentrancy_simple.sol#20-29):
+	- ! (msg.sender.call.value(amount)()) (../../../../../contracts/cei/reentrancy_simple.sol#26)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei/reentrancy_simple.sol analyzed (1 contracts with 102 detectors), 4 result(s) found

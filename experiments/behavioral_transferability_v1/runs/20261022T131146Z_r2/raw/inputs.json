@@ -1,0 +1,75 @@
+{
+  "cases": [
+    {
+      "amount": 5,
+      "compiler": "0.4.18",
+      "contract": "AirDropContract",
+      "decimals": 0,
+      "id": "UC02",
+      "source": "dataset/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+      "v": 5
+    },
+    {
+      "amount": 500,
+      "compiler": "0.4.24",
+      "contract": "airDrop",
+      "decimals": 2,
+      "id": "UC03",
+      "source": "dataset/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+      "v": 5
+    }
+  ],
+  "compile_timeout_seconds": 60,
+  "discrepancy_formula": "max(0,amount-delivered_delta) if outer_status==1 else 0",
+  "entitlement_metric": "not_applicable",
+  "evm": "ByzantiumVM",
+  "genesis": {
+    "difficulty": 1,
+    "gas_limit": 30000000,
+    "timestamp": 2000000000
+  },
+  "initial_allowance": 10000,
+  "initial_source_tokens": 10000,
+  "invariants": {
+    "I1": "acknowledged_delivery plus transferFrom allowance",
+    "I2": "N/A no internal entitlement ledger",
+    "I3": "token_conservation",
+    "I4": "atomic_failure_policy incl allowance (negative only)",
+    "I5": "ether_frame",
+    "I6": "legitimate_operation (normal only)"
+  },
+  "negative_requirements": [
+    "I1",
+    "I3",
+    "I4",
+    "I5"
+  ],
+  "repetitions": 2,
+  "scenarios": [
+    {
+      "id": "S1",
+      "mode": 0,
+      "negative": false
+    },
+    {
+      "id": "S2",
+      "mode": 1,
+      "negative": true
+    },
+    {
+      "id": "S3",
+      "mode": 2,
+      "negative": true
+    }
+  ],
+  "tx": {
+    "gas": 12000000,
+    "gasPrice": 1
+  },
+  "variants": [
+    "V0",
+    "V1",
+    "V2",
+    "V3"
+  ]
+}

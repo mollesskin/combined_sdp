@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-10-22T09:04:21.002765+00:00",
+  "command": [
+    "experiments/reentrancy/summarize.py",
+    "experiments/reentrancy/runs/20261022T085428.694311Z"
+  ],
+  "python": "3.13.1 (v3.13.1:06714517797, Dec  3 2024, 14:00:22) [Clang 15.0.0 (clang-1500.3.9.4)]",
+  "results_csv_sha256": "77a36364ba3d289488a201e10daeefd3dbb558451ea29bd744263f1c6f2d5ca0",
+  "summary_script_sha256": "e6ece3bdcab9f465ee9fabafee78efaccbfe46dcaf22d2e5e3d6353dbac68539"
+}

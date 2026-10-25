@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-10-22T13:34:51.400268+00:00",
+  "type": "developmental freeze before coding and new runs; previous outcomes known",
+  "sha256": {
+    "prior_branch_closure.md": "1c40168e86638bbe830d72ac29b3e75f9c14f1668f20dbac77429b928cb77d37",
+    "test_inventory.md": "cde8ef0b5eb84d0ae71690c2602dd0d7abbe51ba7372e20865563b16f4da538f",
+    "protocol.md": "7efe7d4afb09eda647a4e104337111f61188a2e5bc65a921719756fd56f97ee7",
+    "scenario_inputs.json": "a6f383b2d9f7ceb2b93796e2049d0d736841b705c6082c795db8a2f79bc1cbbe"
+  }
+}

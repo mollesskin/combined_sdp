@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.10",
+    "--combined-json",
+    "abi,bin",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/guard/etherstore.sol"
+  ],
+  "compiler_sha256": "40f179e4d27201ab726669dd26d594cfe10bf4dd6117495ee49d26f0dda9ef42",
+  "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy_behavioral_v1/runs/20261022T134111Z_r2/raw/compile/RE01_V2",
+  "ended_utc": "2026-10-22T13:41:14.075535+00:00",
+  "exit_code": 0,
+  "source": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/guard/etherstore.sol",
+  "source_sha256": "25fcf0e8bd20a8e8f093fb842613d5ac4a7e4f5c0b50d7c995a12b88f36203c2",
+  "started_utc": "2026-10-22T13:41:14.055466+00:00",
+  "status": "compiled",
+  "timeout_seconds": 60
+}

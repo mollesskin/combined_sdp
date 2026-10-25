@@ -1,0 +1,34 @@
+{
+  "compilers": {
+    "UC02": {
+      "command": [
+        "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/design_v1/toolchain/solc-0.4.18",
+        "--version"
+      ],
+      "exit_code": 0,
+      "sha256": "dddc86683d12d0f016b5d5799ed84f6f2a79f667ebb932b9a8e6bfe9a48c3190",
+      "stderr": "",
+      "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.4.18+commit.9cf6e910.Darwin.appleclang\n"
+    },
+    "UC03": {
+      "command": [
+        "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/design_v1/toolchain/solc-0.4.24",
+        "--version"
+      ],
+      "exit_code": 0,
+      "sha256": "7034c4048bc713d5c14cdd6681953c736e2adbdb9174f8bfbfb6a097109ffaaa",
+      "stderr": "",
+      "stdout": "solc, the solidity compiler commandline interface\nVersion: 0.4.24+commit.e67f0147.Darwin.appleclang\n"
+    }
+  },
+  "execution_lock_sha256": "98c4147c992c1b37eb2d3bcd4eab42813a849c491acf4b2b9207a52780636f7d",
+  "packages": {
+    "eth-abi": "6.0.0",
+    "eth-tester": "0.14.0b1",
+    "py-evm": "0.12.1b1",
+    "web3": "8.0.0"
+  },
+  "platform": "macOS-15.0-arm64-arm-64bit",
+  "protocol_lock_sha256": "5686fdbaa61e9b3ebfdd18082b4acd625ec01d2622b023dac2c19458a44ff448",
+  "python": "3.12.0 (v3.12.0:0fb18b02c8, Oct  2 2023, 09:45:56) [Clang 13.0.0 (clang-1300.0.29.30)]"
+}

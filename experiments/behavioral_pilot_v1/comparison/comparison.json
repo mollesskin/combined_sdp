@@ -1,0 +1,148 @@
+{
+  "additional_benefit_over_both": false,
+  "comparisons": [
+    {
+      "all_legitimate_functionality_preserved": true,
+      "classification": "additional observed protection",
+      "comparison": "V3 vs V1",
+      "matched_evidence": [
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 1,
+          "scenario": "S1"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 5,
+          "comparator_unfulfilled_entitlement": 2000000000000000000,
+          "improved_invariant_ids": [
+            "I1",
+            "I2",
+            "I4"
+          ],
+          "regressed_invariant_ids": [],
+          "run": 1,
+          "scenario": "S2"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 1,
+          "scenario": "S3"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 2,
+          "scenario": "S1"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 5,
+          "comparator_unfulfilled_entitlement": 2000000000000000000,
+          "improved_invariant_ids": [
+            "I1",
+            "I2",
+            "I4"
+          ],
+          "regressed_invariant_ids": [],
+          "run": 2,
+          "scenario": "S2"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 2,
+          "scenario": "S3"
+        }
+      ]
+    },
+    {
+      "all_legitimate_functionality_preserved": true,
+      "classification": "equal observed protection",
+      "comparison": "V3 vs V2",
+      "matched_evidence": [
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 1,
+          "scenario": "S1"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 1,
+          "scenario": "S2"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 1,
+          "scenario": "S3"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 2,
+          "scenario": "S1"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 2,
+          "scenario": "S2"
+        },
+        {
+          "V3_shortfall": 0,
+          "V3_unfulfilled_entitlement": 0,
+          "comparator_shortfall": 0,
+          "comparator_unfulfilled_entitlement": 0,
+          "improved_invariant_ids": [],
+          "regressed_invariant_ids": [],
+          "run": 2,
+          "scenario": "S3"
+        }
+      ]
+    }
+  ],
+  "scope": "one synthetic-fixture operational case; deterministic repetitions not independent contracts; no PES"
+}

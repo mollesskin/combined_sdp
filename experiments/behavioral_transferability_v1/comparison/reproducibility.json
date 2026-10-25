@@ -1,0 +1,13 @@
+{
+  "behavioral_metrics_identical": {
+    "UC02": true,
+    "UC03": true
+  },
+  "clean_process_launches": 2,
+  "legitimate_probes": 48,
+  "not_independent_contracts": "Deterministic repetitions are reproducibility checks; UC01 not pooled.",
+  "primary_trials": 48,
+  "repetitions_per_source": 2,
+  "source_contracts": 2,
+  "variant_sources": 8
+}

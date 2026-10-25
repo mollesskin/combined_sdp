@@ -1,0 +1,170 @@
+{
+  "cases": [
+    {
+      "aggregate_slot_base": null,
+      "compiler": "0.4.10",
+      "contract": "EtherStore",
+      "credit_slot_base": 2,
+      "deposit_function": "depositFunds",
+      "deposit_selector": "depositFunds()",
+      "filename": "etherstore.sol",
+      "id": "RE01",
+      "metadata": {
+        "name": "etherstore.sol",
+        "path": "dataset/reentrancy/etherstore.sol",
+        "pragma": "0.4.10",
+        "source": "https://github.com/sigp/solidity-security-blog",
+        "vulnerabilities": [
+          {
+            "category": "reentrancy",
+            "lines": [
+              27
+            ]
+          }
+        ]
+      },
+      "sources": {
+        "V0": {
+          "path": "experiments/reentrancy/contracts/baseline/etherstore.sol",
+          "sha256": "bffe7255c351724c3ab15f6c4c4909a3d756650791360e86cf2f71c48046aa79"
+        },
+        "V1": {
+          "path": "experiments/reentrancy/contracts/cei/etherstore.sol",
+          "sha256": "d471efe1d8e94b69d35db688305e8e577f667edd165409d2dc84d95287e53f83"
+        },
+        "V2": {
+          "path": "experiments/reentrancy/contracts/guard/etherstore.sol",
+          "sha256": "25fcf0e8bd20a8e8f093fb842613d5ac4a7e4f5c0b50d7c995a12b88f36203c2"
+        },
+        "V3": {
+          "path": "experiments/reentrancy/contracts/cei_guard/etherstore.sol",
+          "sha256": "104240cb5028fe66915697bac8e01fa9b6a726d5a8b0d3371e429cab33bc64b6"
+        }
+      },
+      "time_slot_base": 1,
+      "withdraw_function": "withdrawFunds",
+      "withdraw_selector": "withdrawFunds(uint256)"
+    },
+    {
+      "aggregate_slot_base": 1,
+      "compiler": "0.4.19",
+      "contract": "ReentrancyDAO",
+      "credit_slot_base": 0,
+      "deposit_function": "deposit",
+      "deposit_selector": "deposit()",
+      "filename": "reentrancy_dao.sol",
+      "id": "RE02",
+      "metadata": {
+        "name": "reentrancy_dao.sol",
+        "path": "dataset/reentrancy/reentrancy_dao.sol",
+        "pragma": "0.4.19",
+        "source": "https://github.com/ConsenSys/evm-analyzer-benchmark-suite",
+        "vulnerabilities": [
+          {
+            "category": "reentrancy",
+            "lines": [
+              18
+            ]
+          }
+        ]
+      },
+      "sources": {
+        "V0": {
+          "path": "experiments/reentrancy/contracts/baseline/reentrancy_dao.sol",
+          "sha256": "e507ae792671a38307734b38b8d35abf062a7e78889e0178f8647838a2527dd2"
+        },
+        "V1": {
+          "path": "experiments/reentrancy/contracts/cei/reentrancy_dao.sol",
+          "sha256": "589c4acc618b4fa49723cec2708f3f063a62b5e927778968911978a81ce76df3"
+        },
+        "V2": {
+          "path": "experiments/reentrancy/contracts/guard/reentrancy_dao.sol",
+          "sha256": "0db4107a42ab33afdc0067e726d9e2a8b4de779e904d5613c4136d834f8bfd9a"
+        },
+        "V3": {
+          "path": "experiments/reentrancy/contracts/cei_guard/reentrancy_dao.sol",
+          "sha256": "1e723339961ab59ca0fd4bcfea31bb1d8a11ced0cc710d9b9ca2438127ca5b59"
+        }
+      },
+      "time_slot_base": null,
+      "withdraw_function": "withdrawAll",
+      "withdraw_selector": "withdrawAll()"
+    },
+    {
+      "aggregate_slot_base": null,
+      "compiler": "0.4.15",
+      "contract": "Reentrance",
+      "credit_slot_base": 0,
+      "deposit_function": "addToBalance",
+      "deposit_selector": "addToBalance()",
+      "filename": "reentrancy_simple.sol",
+      "id": "RE03",
+      "metadata": {
+        "name": "reentrancy_simple.sol",
+        "path": "dataset/reentrancy/reentrancy_simple.sol",
+        "pragma": "0.4.15",
+        "source": "https://github.com/trailofbits/not-so-smart-contracts/blob/master/reentrancy/Reentrancy.sol",
+        "vulnerabilities": [
+          {
+            "category": "reentrancy",
+            "lines": [
+              24
+            ]
+          }
+        ]
+      },
+      "sources": {
+        "V0": {
+          "path": "experiments/reentrancy/contracts/baseline/reentrancy_simple.sol",
+          "sha256": "98b4c8b45c2e6711b1c58fb6991375f698a66f148799ca7aff6e27db8a9803e1"
+        },
+        "V1": {
+          "path": "experiments/reentrancy/contracts/cei/reentrancy_simple.sol",
+          "sha256": "689238c83588ac916e6f9f46695ca964b600fd8b3b402f28d85275f1a5edaf63"
+        },
+        "V2": {
+          "path": "experiments/reentrancy/contracts/guard/reentrancy_simple.sol",
+          "sha256": "dbfa97ef9787b47582aecd5969bf06be45aa521e19d0a49eb4597ee41be8130f"
+        },
+        "V3": {
+          "path": "experiments/reentrancy/contracts/cei_guard/reentrancy_simple.sol",
+          "sha256": "89332d562e06379f21a2c615b0897c94b9c05bc0673e8ade7bfb7169500d30fb"
+        }
+      },
+      "time_slot_base": null,
+      "withdraw_function": "withdrawBalance",
+      "withdraw_selector": "withdrawBalance()"
+    }
+  ],
+  "fixture_compiler": "0.4.24",
+  "genesis": {
+    "difficulty": 1,
+    "gas_limit": 30000000,
+    "timestamp": 2000000000
+  },
+  "invariants": {
+    "I1": "payout_cap",
+    "I2": "accounting_consistency",
+    "I3": "financial_conservation",
+    "I4": "failed_transaction_rollback",
+    "I5": "claim_coverage",
+    "I6": "permitted_operation"
+  },
+  "repetitions": 2,
+  "scenarios": [
+    "O1",
+    "F1",
+    "S1"
+  ],
+  "tx": {
+    "gas": 12000000,
+    "gasPrice": 1
+  },
+  "unit_wei": 1000000000000000000,
+  "variants": {
+    "V0": "baseline",
+    "V1": "cei",
+    "V2": "guard",
+    "V3": "cei_guard"
+  }
+}

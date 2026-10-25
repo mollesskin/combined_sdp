@@ -1,0 +1,32 @@
+{
+  "command": [
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/venv/bin/slither",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei_guard/reentrancy_simple.sol",
+    "--solc",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.15",
+    "--json",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/runs/20261022T085428.694311Z/R03/V3/slither/report.json"
+  ],
+  "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/runs/20261022T085428.694311Z/R03/V3/slither",
+  "started_utc": "2026-10-22T09:01:48.147368+00:00",
+  "timeout_seconds": 180,
+  "environment": {
+    "PATH": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/venv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/moldir_2024icloud.com/bin:/Users/moldir_2024icloud.com/bin:/Users/moldir_2024icloud.com/.nvm/versions/node/v20.20.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/opt/homebrew/bin:/Users/moldir_2024icloud.com/.codex/tmp/arg0/codex-arg0LMbCae:/opt/homebrew/sbin:/Users/moldir_2024icloud.com/bin:/Users/moldir_2024icloud.com/.nvm/versions/node/v20.20.0/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/Users/moldir_2024icloud.com/.foundry/bin:/Users/moldir_2024icloud.com/Desktop/cross platform/flutter/bin:/Users/moldir_2024icloud.com/.vscode/extensions/openai.chatgpt-26.1007.21434-darwin-arm64/bin/macos-aarch64:/Users/moldir_2024icloud.com/Desktop/cross platform/flutter/bin:/Users/moldir_2024icloud.com/.foundry/bin",
+    "TMPDIR": "/var/folders/51/fqj__2ys64n7z6xkd_rdts3m0000gn/T/",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "VIRTUAL_ENV": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/venv",
+    "PYTHONHASHSEED": "0",
+    "TZ": "UTC",
+    "NO_COLOR": "1",
+    "MYTHRIL_DIR": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-state",
+    "SOLCX_BINARY_PATH": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solcx",
+    "MPLCONFIGDIR": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/matplotlib",
+    "SOLC": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.15"
+  },
+  "ended_utc": "2026-10-22T09:01:48.561989+00:00",
+  "elapsed_seconds": 0.414565,
+  "exit_code": 255,
+  "status": "exited",
+  "error": ""
+}

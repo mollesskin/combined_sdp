@@ -1,0 +1,20 @@
+{
+  "UC02": {
+    "compile_errors": {},
+    "matches_V0": {
+      "V0": true,
+      "V1": true,
+      "V2": true,
+      "V3": true
+    }
+  },
+  "UC03": {
+    "compile_errors": {},
+    "matches_V0": {
+      "V0": true,
+      "V1": true,
+      "V2": true,
+      "V3": true
+    }
+  }
+}

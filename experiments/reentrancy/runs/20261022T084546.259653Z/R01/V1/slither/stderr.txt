@@ -1,0 +1,45 @@
+
+Detector: timestamp
+EtherStore.withdrawFunds(uint256) (../../../../../contracts/cei/etherstore.sol#20-30) uses timestamp for comparisons
+	Dangerous comparisons:
+	- require(bool)(now >= lastWithdrawTime[msg.sender] + 604800) (../../../../../contracts/cei/etherstore.sol#25)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+
+Detector: solc-version
+Version constraint ^0.4.10 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- DirtyBytesArrayToStorage
+	- KeccakCaching
+	- EmptyByteArrayCopy
+	- DynamicArrayCleanup
+	- ImplicitConstructorCallvalueCheck
+	- TupleAssignmentMultiStackSlotComponents
+	- MemoryArrayCreationOverflow
+	- privateCanBeOverridden
+	- SignedArrayStorageCopy
+	- UninitializedFunctionPointerInConstructor_0.4.x
+	- IncorrectEventSignatureInLibraries_0.4.x
+	- ExpExponentCleanup
+	- NestedArrayFunctionCallDecoder
+	- ZeroFunctionSelector
+	- DelegateCallReturnValue
+	- ECRecoverMalformedInput
+	- SkipEmptyStringLiteral
+	- ConstantOptimizerSubtraction.
+It is used by:
+	- ^0.4.10 (../../../../../contracts/cei/etherstore.sol#8)
+solc-0.4.10 is an outdated solc version. Use a more recent version (at least 0.8.0), if possible.
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+
+Detector: low-level-calls
+Low level call in EtherStore.withdrawFunds(uint256) (../../../../../contracts/cei/etherstore.sol#20-30):
+	- require(bool)(msg.sender.call.value(_weiToWithdraw)()) (../../../../../contracts/cei/etherstore.sol#29)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#low-level-calls
+
+Detector: naming-convention
+Parameter EtherStore.withdrawFunds(uint256)._weiToWithdraw (../../../../../contracts/cei/etherstore.sol#20) is not in mixedCase
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#conformance-to-solidity-naming-conventions
+
+Detector: constable-states
+EtherStore.withdrawalLimit (../../../../../contracts/cei/etherstore.sol#12) should be constant 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-constant
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei/etherstore.sol analyzed (1 contracts with 102 detectors), 6 result(s) found

@@ -1,0 +1,85 @@
+contract_id,variant,scenario,run,phase,invariant_id,name,applicable,satisfied,status,raw_evidence_path
+UC01,V0,S1,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S1
+UC01,V0,S1,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S1
+UC01,V0,S1,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S1
+UC01,V0,S1,1,primary,I4,atomic_failure_policy (negative only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V0/S1
+UC01,V0,S1,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S1
+UC01,V0,S1,1,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S1
+UC01,V0,S1,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S1
+UC01,V0,S2,1,primary,I1,acknowledged_delivery,True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V0/S2
+UC01,V0,S2,1,primary,I2,entitlement_preserved_on_nondelivery,True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V0/S2
+UC01,V0,S2,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S2
+UC01,V0,S2,1,primary,I4,atomic_failure_policy (negative only),True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V0/S2
+UC01,V0,S2,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S2
+UC01,V0,S2,1,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V0/S2
+UC01,V0,S2,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S2
+UC01,V0,S3,1,primary,I1,acknowledged_delivery,True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V0/S3
+UC01,V0,S3,1,primary,I2,entitlement_preserved_on_nondelivery,True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V0/S3
+UC01,V0,S3,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S3
+UC01,V0,S3,1,primary,I4,atomic_failure_policy (negative only),True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V0/S3
+UC01,V0,S3,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S3
+UC01,V0,S3,1,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V0/S3
+UC01,V0,S3,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V0/S3
+UC01,V1,S1,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S1
+UC01,V1,S1,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S1
+UC01,V1,S1,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S1
+UC01,V1,S1,1,primary,I4,atomic_failure_policy (negative only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V1/S1
+UC01,V1,S1,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S1
+UC01,V1,S1,1,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S1
+UC01,V1,S1,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S1
+UC01,V1,S2,1,primary,I1,acknowledged_delivery,True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V1/S2
+UC01,V1,S2,1,primary,I2,entitlement_preserved_on_nondelivery,True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V1/S2
+UC01,V1,S2,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S2
+UC01,V1,S2,1,primary,I4,atomic_failure_policy (negative only),True,False,violated,runs/20261022T_behavioral_repeat1/raw/trials/V1/S2
+UC01,V1,S2,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S2
+UC01,V1,S2,1,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V1/S2
+UC01,V1,S2,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S2
+UC01,V1,S3,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S3
+UC01,V1,S3,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S3
+UC01,V1,S3,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S3
+UC01,V1,S3,1,primary,I4,atomic_failure_policy (negative only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S3
+UC01,V1,S3,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S3
+UC01,V1,S3,1,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V1/S3
+UC01,V1,S3,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V1/S3
+UC01,V2,S1,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S1
+UC01,V2,S1,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S1
+UC01,V2,S1,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S1
+UC01,V2,S1,1,primary,I4,atomic_failure_policy (negative only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V2/S1
+UC01,V2,S1,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S1
+UC01,V2,S1,1,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S1
+UC01,V2,S1,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S1
+UC01,V2,S2,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S2
+UC01,V2,S2,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S2
+UC01,V2,S2,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S2
+UC01,V2,S2,1,primary,I4,atomic_failure_policy (negative only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S2
+UC01,V2,S2,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S2
+UC01,V2,S2,1,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V2/S2
+UC01,V2,S2,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S2
+UC01,V2,S3,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S3
+UC01,V2,S3,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S3
+UC01,V2,S3,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S3
+UC01,V2,S3,1,primary,I4,atomic_failure_policy (negative only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S3
+UC01,V2,S3,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S3
+UC01,V2,S3,1,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V2/S3
+UC01,V2,S3,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V2/S3
+UC01,V3,S1,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S1
+UC01,V3,S1,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S1
+UC01,V3,S1,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S1
+UC01,V3,S1,1,primary,I4,atomic_failure_policy (negative only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V3/S1
+UC01,V3,S1,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S1
+UC01,V3,S1,1,primary,I6,legitimate_operation (normal only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S1
+UC01,V3,S1,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S1
+UC01,V3,S2,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S2
+UC01,V3,S2,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S2
+UC01,V3,S2,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S2
+UC01,V3,S2,1,primary,I4,atomic_failure_policy (negative only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S2
+UC01,V3,S2,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S2
+UC01,V3,S2,1,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V3/S2
+UC01,V3,S2,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S2
+UC01,V3,S3,1,primary,I1,acknowledged_delivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S3
+UC01,V3,S3,1,primary,I2,entitlement_preserved_on_nondelivery,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S3
+UC01,V3,S3,1,primary,I3,token_conservation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S3
+UC01,V3,S3,1,primary,I4,atomic_failure_policy (negative only),True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S3
+UC01,V3,S3,1,primary,I5,ether_frame,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S3
+UC01,V3,S3,1,primary,I6,legitimate_operation (normal only),False,,not_applicable,runs/20261022T_behavioral_repeat1/raw/trials/V3/S3
+UC01,V3,S3,1,legitimate_probe,I6,legitimate_operation,True,True,passed,runs/20261022T_behavioral_repeat1/raw/trials/V3/S3

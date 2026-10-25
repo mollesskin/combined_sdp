@@ -1,0 +1,1085 @@
+{
+  "RE01": {
+    "additional_benefit_over_both": false,
+    "comparisons": [
+      {
+        "classification": "equal observed protection",
+        "comparison": "V3 vs V1",
+        "contract_id": "RE01",
+        "matched_evidence": [
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          }
+        ],
+        "ordinary_and_permitted_functionality_preserved": true
+      },
+      {
+        "classification": "equal observed protection",
+        "comparison": "V3 vs V2",
+        "contract_id": "RE01",
+        "matched_evidence": [
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          }
+        ],
+        "ordinary_and_permitted_functionality_preserved": true
+      }
+    ]
+  },
+  "RE02": {
+    "additional_benefit_over_both": false,
+    "comparisons": [
+      {
+        "classification": "equal observed protection",
+        "comparison": "V3 vs V1",
+        "contract_id": "RE02",
+        "matched_evidence": [
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          }
+        ],
+        "ordinary_and_permitted_functionality_preserved": true
+      },
+      {
+        "classification": "equal observed protection",
+        "comparison": "V3 vs V2",
+        "contract_id": "RE02",
+        "matched_evidence": [
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          }
+        ],
+        "ordinary_and_permitted_functionality_preserved": true
+      }
+    ]
+  },
+  "RE03": {
+    "additional_benefit_over_both": false,
+    "comparisons": [
+      {
+        "classification": "equal observed protection",
+        "comparison": "V3 vs V1",
+        "contract_id": "RE03",
+        "matched_evidence": [
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          }
+        ],
+        "ordinary_and_permitted_functionality_preserved": true
+      },
+      {
+        "classification": "equal observed protection",
+        "comparison": "V3 vs V2",
+        "contract_id": "RE03",
+        "matched_evidence": [
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 1,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "06_rejected_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "F1",
+            "step": "08_recovery_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "06_first_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "O1",
+            "step": "08_second_withdraw"
+          },
+          {
+            "V3_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "comparator_consequences": {
+              "claim_shortfall_wei": 0,
+              "credit_mismatch_wei": 0,
+              "excess_payout_wei": 0
+            },
+            "improved_properties": [],
+            "regressed_properties": [],
+            "run": 2,
+            "scenario": "S1",
+            "step": "06_bounded_reentry"
+          }
+        ],
+        "ordinary_and_permitted_functionality_preserved": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+contract_id,source_contract,variant,security_patterns,solidity_version,compilation_status,tool,vulnerability_detected,vulnerability_count,reentrancy_finding_count,execution_status,error_timeout_status,exit_code,elapsed_seconds,raw_output_directory,source_sha256
+R01,dataset/reentrancy/etherstore.sol,V0,none,0.4.10,success,slither,true,7,1,completed,,255,0.457096,R01/V0/slither,bffe7255c351724c3ab15f6c4c4909a3d756650791360e86cf2f71c48046aa79
+R01,dataset/reentrancy/etherstore.sol,V0,none,0.4.10,success,mythril,,,,analysis_error,"Traceback (most recent call last):
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 975, in parse_args_and_execute
+    address = load_code(disassembler, args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 726, in load_code
+    address, _ = disassembler.load_from_solidity(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 282, in load_from_solidity
+    self.sigs.import_solidity_file(
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/support/signatures.py"", line 245, in import_solidity_file
+    solc_json = get_solc_json(file_path, solc_binary, solc_settings_json)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 102, in get_solc_json
+    raise e
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 99, in get_solc_json
+    result = json.loads(out)
+             ^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 355, in raw_decode
+    raise JSONDecodeError(""Expecting value"", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+",0,2.232714,R01/V0/mythril,bffe7255c351724c3ab15f6c4c4909a3d756650791360e86cf2f71c48046aa79
+R01,dataset/reentrancy/etherstore.sol,V1,CEI,0.4.10,success,slither,true,6,0,completed,,255,0.403898,R01/V1/slither,d471efe1d8e94b69d35db688305e8e577f667edd165409d2dc84d95287e53f83
+R01,dataset/reentrancy/etherstore.sol,V1,CEI,0.4.10,success,mythril,,,,analysis_error,"Traceback (most recent call last):
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 975, in parse_args_and_execute
+    address = load_code(disassembler, args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 726, in load_code
+    address, _ = disassembler.load_from_solidity(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 282, in load_from_solidity
+    self.sigs.import_solidity_file(
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/support/signatures.py"", line 245, in import_solidity_file
+    solc_json = get_solc_json(file_path, solc_binary, solc_settings_json)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 102, in get_solc_json
+    raise e
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 99, in get_solc_json
+    result = json.loads(out)
+             ^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 355, in raw_decode
+    raise JSONDecodeError(""Expecting value"", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+",0,2.41175,R01/V1/mythril,d471efe1d8e94b69d35db688305e8e577f667edd165409d2dc84d95287e53f83
+R01,dataset/reentrancy/etherstore.sol,V2,mutex,0.4.10,success,slither,true,7,1,completed,,255,0.654625,R01/V2/slither,25fcf0e8bd20a8e8f093fb842613d5ac4a7e4f5c0b50d7c995a12b88f36203c2
+R01,dataset/reentrancy/etherstore.sol,V2,mutex,0.4.10,success,mythril,,,,analysis_error,"Traceback (most recent call last):
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 975, in parse_args_and_execute
+    address = load_code(disassembler, args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 726, in load_code
+    address, _ = disassembler.load_from_solidity(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 282, in load_from_solidity
+    self.sigs.import_solidity_file(
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/support/signatures.py"", line 245, in import_solidity_file
+    solc_json = get_solc_json(file_path, solc_binary, solc_settings_json)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 102, in get_solc_json
+    raise e
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 99, in get_solc_json
+    result = json.loads(out)
+             ^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 355, in raw_decode
+    raise JSONDecodeError(""Expecting value"", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+",0,2.544852,R01/V2/mythril,25fcf0e8bd20a8e8f093fb842613d5ac4a7e4f5c0b50d7c995a12b88f36203c2
+R01,dataset/reentrancy/etherstore.sol,V3,CEI+mutex,0.4.10,success,slither,true,6,0,completed,,255,0.388104,R01/V3/slither,104240cb5028fe66915697bac8e01fa9b6a726d5a8b0d3371e429cab33bc64b6
+R01,dataset/reentrancy/etherstore.sol,V3,CEI+mutex,0.4.10,success,mythril,,,,analysis_error,"Traceback (most recent call last):
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 975, in parse_args_and_execute
+    address = load_code(disassembler, args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 726, in load_code
+    address, _ = disassembler.load_from_solidity(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 282, in load_from_solidity
+    self.sigs.import_solidity_file(
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/support/signatures.py"", line 245, in import_solidity_file
+    solc_json = get_solc_json(file_path, solc_binary, solc_settings_json)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 102, in get_solc_json
+    raise e
+  File ""/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 99, in get_solc_json
+    result = json.loads(out)
+             ^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 355, in raw_decode
+    raise JSONDecodeError(""Expecting value"", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+",0,1.945173,R01/V3/mythril,104240cb5028fe66915697bac8e01fa9b6a726d5a8b0d3371e429cab33bc64b6
+R02,dataset/reentrancy/reentrancy_dao.sol,V0,none,0.4.19,success,slither,true,4,1,completed,,255,0.34016,R02/V0/slither,e507ae792671a38307734b38b8d35abf062a7e78889e0178f8647838a2527dd2
+R02,dataset/reentrancy/reentrancy_dao.sol,V0,none,0.4.19,success,mythril,true,3,2,completed_budget_limited,internal_timeout_not_distinguishable_from_exhaustion,1,34.395831,R02/V0/mythril,e507ae792671a38307734b38b8d35abf062a7e78889e0178f8647838a2527dd2
+R02,dataset/reentrancy/reentrancy_dao.sol,V1,CEI,0.4.19,success,slither,true,3,0,completed,,255,0.615165,R02/V1/slither,589c4acc618b4fa49723cec2708f3f063a62b5e927778968911978a81ce76df3
+R02,dataset/reentrancy/reentrancy_dao.sol,V1,CEI,0.4.19,success,mythril,true,2,1,completed_budget_limited,internal_timeout_not_distinguishable_from_exhaustion,1,31.193018,R02/V1/mythril,589c4acc618b4fa49723cec2708f3f063a62b5e927778968911978a81ce76df3
+R02,dataset/reentrancy/reentrancy_dao.sol,V2,mutex,0.4.19,success,slither,true,4,1,completed,,255,0.463391,R02/V2/slither,0db4107a42ab33afdc0067e726d9e2a8b4de779e904d5613c4136d834f8bfd9a
+R02,dataset/reentrancy/reentrancy_dao.sol,V2,mutex,0.4.19,success,mythril,true,5,4,completed_budget_limited,internal_timeout_not_distinguishable_from_exhaustion,1,52.589713,R02/V2/mythril,0db4107a42ab33afdc0067e726d9e2a8b4de779e904d5613c4136d834f8bfd9a
+R02,dataset/reentrancy/reentrancy_dao.sol,V3,CEI+mutex,0.4.19,success,slither,true,3,0,completed,,255,0.602466,R02/V3/slither,1e723339961ab59ca0fd4bcfea31bb1d8a11ced0cc710d9b9ca2438127ca5b59
+R02,dataset/reentrancy/reentrancy_dao.sol,V3,CEI+mutex,0.4.19,success,mythril,true,4,3,completed_budget_limited,internal_timeout_not_distinguishable_from_exhaustion,1,45.762627,R02/V3/mythril,1e723339961ab59ca0fd4bcfea31bb1d8a11ced0cc710d9b9ca2438127ca5b59
+R03,dataset/reentrancy/reentrancy_simple.sol,V0,none,0.4.15,success,slither,true,5,1,completed,,255,0.508556,R03/V0/slither,98b4c8b45c2e6711b1c58fb6991375f698a66f148799ca7aff6e27db8a9803e1
+R03,dataset/reentrancy/reentrancy_simple.sol,V0,none,0.4.15,success,mythril,true,3,2,completed_budget_limited,internal_timeout_not_distinguishable_from_exhaustion,1,50.472689,R03/V0/mythril,98b4c8b45c2e6711b1c58fb6991375f698a66f148799ca7aff6e27db8a9803e1
+R03,dataset/reentrancy/reentrancy_simple.sol,V1,CEI,0.4.15,success,slither,true,4,0,completed,,255,0.615854,R03/V1/slither,689238c83588ac916e6f9f46695ca964b600fd8b3b402f28d85275f1a5edaf63
+R03,dataset/reentrancy/reentrancy_simple.sol,V1,CEI,0.4.15,success,mythril,true,2,1,completed_budget_limited,internal_timeout_not_distinguishable_from_exhaustion,1,50.244155,R03/V1/mythril,689238c83588ac916e6f9f46695ca964b600fd8b3b402f28d85275f1a5edaf63
+R03,dataset/reentrancy/reentrancy_simple.sol,V2,mutex,0.4.15,success,slither,true,5,1,completed,,255,0.448529,R03/V2/slither,dbfa97ef9787b47582aecd5969bf06be45aa521e19d0a49eb4597ee41be8130f
+R03,dataset/reentrancy/reentrancy_simple.sol,V2,mutex,0.4.15,success,mythril,true,5,4,completed_budget_limited,internal_timeout_not_distinguishable_from_exhaustion,1,59.139252,R03/V2/mythril,dbfa97ef9787b47582aecd5969bf06be45aa521e19d0a49eb4597ee41be8130f
+R03,dataset/reentrancy/reentrancy_simple.sol,V3,CEI+mutex,0.4.15,success,slither,true,4,0,completed,,255,0.451799,R03/V3/slither,89332d562e06379f21a2c615b0897c94b9c05bc0673e8ade7bfb7169500d30fb
+R03,dataset/reentrancy/reentrancy_simple.sol,V3,CEI+mutex,0.4.15,success,mythril,true,4,3,completed_budget_limited,internal_timeout_not_distinguishable_from_exhaustion,1,58.663479,R03/V3/mythril,89332d562e06379f21a2c615b0897c94b9c05bc0673e8ade7bfb7169500d30fb

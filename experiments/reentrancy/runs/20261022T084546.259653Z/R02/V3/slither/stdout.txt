@@ -1,0 +1,3 @@
+Multiple frameworks detected: solc, Solc-json. Using solc (highest priority). Use --compile-force-framework to override.
+'/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.19 --version' running
+'/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.19 /Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei_guard/reentrancy_dao.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei_guard' running

@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-10-22T12:31:53.503493+00:00",
+  "purpose": "implementation freeze before comparative execution; no claim of data-naive preregistration",
+  "sha256": {
+    "protocol.lock.json": "e65bf1071f48ecd08d0826cd2e5f61859ba1a80a856a6d35cbca14deae6bff48",
+    "source_manifest.json": "5ad63e8c4db8d894a1d80b44b615494e7a4b9d87a5d6b19023edc3c50ae8dec3",
+    "source_changes.md": "d719644b9ae0602e21cfe454b99feffe997bff7116366772343c2911108f5944",
+    "fixtures/BehaviorToken.sol": "eeda3b690def0ec63372ebb7438a95c444c4054d15b1889de642f0b5f290d28f",
+    "tests/run_pilot.py": "bae041cb8d9633850a5ad607dec600abc59506e24484a8790386c09b453bdb88",
+    "tests/summarize.py": "ce1d8b31e3b452f302f26d28cf70cbc6f8062189bb0797fab588a175f8a35f55",
+    "variants/V3.patch": "d0b075842907daf8d261d6e211b7972289fe1b8e67a488833cd8f8dbf99a1305",
+    "variants/V1.patch": "815d66c42c48b94a3e62acd6c5ec934e361a5ba87bbfca45d50f89bb09e58c6d",
+    "variants/V2.patch": "b93846e4c3e178fde03f81f9dda2d7c8364e1360375e284a6ddc59816348ed64",
+    "variants/V1/TokenBank.sol": "f07e6322d75df0758392c6123d9bf2b36d95fd561058c26562c4210bc2180678",
+    "variants/V0/TokenBank.sol": "db71d5e85c2a1b799885afdca80dfed9cfbe3f20b3e2851b8b1cc3c6a73913e7",
+    "variants/V2/TokenBank.sol": "5f6ca663c5de346d3d157cdec97f7a97deefa3ca6c7efa4461e29e8e1d5bfaaa",
+    "variants/V3/TokenBank.sol": "4d790b334c81feaa8787cd02f52129f3a566623fb78b280efc943a0fc45d9eb9"
+  }
+}

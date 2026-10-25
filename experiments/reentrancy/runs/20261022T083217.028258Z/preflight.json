@@ -1,0 +1,11 @@
+{
+  "status": "blocked_missing_tools",
+  "missing": [
+    "slither",
+    "myth",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.10",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.15",
+    "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.19"
+  ],
+  "analysis_performed": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "finished",
+  "rows": 24,
+  "compilation_statuses": {
+    "success": 12
+  },
+  "analysis_statuses": {
+    "completed": 12,
+    "analysis_error": 4,
+    "completed_budget_limited": 8
+  },
+  "abi_matches_baseline": {
+    "R01": {
+      "V1": true,
+      "V2": true,
+      "V3": true
+    },
+    "R02": {
+      "V1": true,
+      "V2": true,
+      "V3": true
+    },
+    "R03": {
+      "V1": true,
+      "V2": true,
+      "V3": true
+    }
+  },
+  "notes": "Counts are detector observations, not exploit-prevention evidence. Empty counts mean unknown."
+}

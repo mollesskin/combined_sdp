@@ -1,0 +1,89 @@
+{
+  "actors": {
+    "airdrop": "0xF2E246BB76DF876Cef8b38ae84130F4F55De395b",
+    "caller_source": "0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf",
+    "recipient": "0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF",
+    "token": "0x2946259E0334f33A064106302415aD3391BeD384"
+  },
+  "after": {
+    "airdrop_ether_wei": 0,
+    "airdrop_tokens": 0,
+    "allowance": 9995,
+    "recipient_tokens": 5,
+    "source_tokens": 9995,
+    "token_mode": 0
+  },
+  "amount": 5,
+  "before": {
+    "airdrop_ether_wei": 0,
+    "airdrop_tokens": 0,
+    "allowance": 10000,
+    "recipient_tokens": 0,
+    "source_tokens": 10000,
+    "token_mode": 0
+  },
+  "compilation_status": "compiled",
+  "contract_id": "UC02",
+  "deployment_status": "deployed",
+  "error": null,
+  "execution_status": "completed",
+  "initial_state": {
+    "airdrop_ether_wei": 0,
+    "airdrop_tokens": 0,
+    "allowance": 10000,
+    "recipient_tokens": 0,
+    "source_tokens": 10000,
+    "token_mode": 0
+  },
+  "legitimate_probe": {
+    "after": {
+      "airdrop_ether_wei": 0,
+      "airdrop_tokens": 0,
+      "allowance": 9995,
+      "recipient_tokens": 5,
+      "source_tokens": 9995,
+      "token_mode": 0
+    },
+    "before": {
+      "airdrop_ether_wei": 0,
+      "airdrop_tokens": 0,
+      "allowance": 10000,
+      "recipient_tokens": 0,
+      "source_tokens": 10000,
+      "token_mode": 0
+    },
+    "outer_return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+    "outer_status": 1,
+    "raw_transaction": "05_legitimate_probe.json"
+  },
+  "low_level_error": null,
+  "low_level_return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+  "low_level_status": true,
+  "negative": false,
+  "operation_inputs": [
+    "0x2946259E0334f33A064106302415aD3391BeD384",
+    [
+      "0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF"
+    ],
+    [
+      5
+    ]
+  ],
+  "outer_gas_used": 59697,
+  "outer_return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+  "outer_status": 1,
+  "raw_evidence_path": "runs/20261022131119Z_r1/raw/trials/UC02/V1/S1",
+  "run": 1,
+  "scenario": "S1",
+  "setup_checks": {
+    "airdrop_ether_wei": true,
+    "airdrop_tokens": true,
+    "allowance": true,
+    "recipient_tokens": true,
+    "source_tokens": true,
+    "token_mode": true
+  },
+  "setup_status": "passed",
+  "snapshot_restored": true,
+  "variant": "V1"
+}

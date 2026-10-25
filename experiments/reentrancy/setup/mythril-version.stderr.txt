@@ -1,0 +1,56 @@
+Traceback (most recent call last):
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py", line 653, in <module>
+    _default_solc_binary = _get_which_solc()
+                           ^^^^^^^^^^^^^^^^^
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py", line 110, in _get_which_solc
+    response = subprocess.check_output(["which", "solc"], encoding="utf8").strip()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['which', 'solc']' returned non-zero exit status 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/bin/myth", line 5, in <module>
+    from mythril.interfaces.cli import main
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/__init__.py", line 8, in <module>
+    from mythril.plugin.loader import MythrilPluginLoader
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/plugin/__init__.py", line 1, in <module>
+    from mythril.plugin.interface import MythrilPlugin, MythrilCLIPlugin
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/plugin/interface.py", line 2, in <module>
+    from mythril.laser.plugin.builder import PluginBuilder as LaserPluginBuilder
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/laser/plugin/builder.py", line 1, in <module>
+    from mythril.laser.plugin.interface import LaserPlugin
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/laser/plugin/interface.py", line 1, in <module>
+    from mythril.laser.ethereum.svm import LaserEVM
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/laser/ethereum/svm.py", line 10, in <module>
+    from mythril.analysis.potential_issues import check_potential_issues
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/analysis/potential_issues.py", line 1, in <module>
+    from mythril.analysis.report import Issue
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/analysis/report.py", line 18, in <module>
+    from mythril.solidity.soliditycontract import SolidityContract
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/solidity/soliditycontract.py", line 7, in <module>
+    from mythril.ethereum.evmcontract import EVMContract
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/evmcontract.py", line 8, in <module>
+    from mythril.disassembler.disassembly import Disassembly
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/disassembler/disassembly.py", line 2, in <module>
+    from mythril.ethereum import util
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py", line 26, in <module>
+    import solcx
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/__init__.py", line 1, in <module>
+    from solcx.install import (
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py", line 656, in <module>
+    if get_installed_solc_versions():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py", line 399, in get_installed_solc_versions
+    install_path = get_solcx_install_folder(solcx_binary_path)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py", line 101, in get_solcx_install_folder
+    path.mkdir(exist_ok=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1312, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [Errno 1] Operation not permitted: '/Users/moldir_2024icloud.com/.solcx'

@@ -1,0 +1,10 @@
+{
+  "ended_utc": "2026-10-22T13:11:35.524960+00:00",
+  "infrastructure_errors": 0,
+  "new_PES_values": 0,
+  "new_analyzer_runs": 0,
+  "pip_freeze_exit_code": 0,
+  "primary_trials": 24,
+  "source_contracts": 2,
+  "variant_sources": 8
+}

@@ -1,0 +1,8 @@
+Multiple frameworks detected: solc, Solc-json. Using solc (highest priority). Use --compile-force-framework to override.
+'/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.15 --version' running
+'/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/toolchain/solc-0.4.15 /Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei/reentrancy_simple.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei' running
+Compilation warnings/errors on /Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei/reentrancy_simple.sol:
+/Users/moldir_2024icloud.com/smartbugs-curated/experiments/reentrancy/contracts/cei/reentrancy_simple.sol:27:14: Warning: "throw" is deprecated in favour of "revert()", "require()" and "assert()".
+             throw;
+             ^---^
+

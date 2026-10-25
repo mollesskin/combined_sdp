@@ -1,0 +1,13 @@
+{
+  "behavioral_metrics_identical": {
+    "RE01": true,
+    "RE02": true,
+    "RE03": true
+  },
+  "clean_process_launches": 2,
+  "note": "Repeated deterministic trials are not independent source contracts; no PES.",
+  "repetitions_per_contract": 2,
+  "source_contracts": 3,
+  "variant_sources": 12,
+  "withdrawal_steps": 120
+}

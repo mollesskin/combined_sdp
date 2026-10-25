@@ -1,0 +1,11 @@
+# Fixed-order developmental case selection
+
+Order: UC01, UC02, UC03 from the existing design_v1 registry. UC01 is selected first based on original source, benchmark annotation, pinned compiler and setup requirements. No comparative treatment outcomes were available in this new pilot at selection. Earlier static results and channel-fixture results, including prior source-level expectations, were known; this is not data-naive preregistration.
+
+UC01: original `dataset/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol`, TokenBank, solc 0.4.19. Prior design_v1 has unchanged compilation evidence; compatibility_v2 has actual unchanged deployment/initTokenBank/direct WithdrawToken mock-transfer evidence. This pilot additionally exercises the existing WitdrawTokenToHolder entry point and its real Holders state. Inspection shows a legitimate setup: original deployer remains Ownable.owner; same deployer initializes Token.owner; holder deposits >1 ether; mint synthetic tokens to bank. No ownership or funding fix is needed. WithdrawToken uses low-level token.call and ignores its success. Return-size/word validation is available in Byzantium with 0.4.19. No new ABI or storage is required. The mandatory fresh setup checks must pass before comparing outcomes; if not, retain failure and stop rather than switch case for convenient results.
+
+UC02: registered airdrop case at `dataset/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol` (0.4.18). Not skipped as unsuitable: not reached because UC01 qualifies first. Source has caller-sourced transferFrom and matched arrays; would require allowances and has no equivalent holder ledger.
+
+UC03: registered decimal-scaled airdrop at `dataset/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol` (0.4.24). Not skipped as unsuitable: not reached because UC01 qualifies first. Source has scaled transferFrom batch; would require allowances and decimal inputs.
+
+The benchmark is not replaced with a synthetic contract. Only the mock token/test inputs are synthetic. Deployment/setup observations and any blockers will be retained in the run, not retrospectively rewritten into selection criteria.

@@ -1,0 +1,270 @@
+{
+  "UC02": {
+    "additional_benefit_over_both": false,
+    "comparisons": [
+      {
+        "all_legitimate_functionality_preserved": true,
+        "classification": "additional observed protection",
+        "comparison": "V3 vs V1",
+        "matched_evidence": [
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S1"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 5,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [
+              "I1",
+              "I4"
+            ],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S2"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S3"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S1"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 5,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [
+              "I1",
+              "I4"
+            ],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S2"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S3"
+          }
+        ]
+      },
+      {
+        "all_legitimate_functionality_preserved": true,
+        "classification": "equal observed protection",
+        "comparison": "V3 vs V2",
+        "matched_evidence": [
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S1"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S2"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S3"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S1"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S2"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S3"
+          }
+        ]
+      }
+    ],
+    "scope": "one synthetic-fixture operational case; deterministic repetitions not independent contracts; no PES"
+  },
+  "UC03": {
+    "additional_benefit_over_both": false,
+    "comparisons": [
+      {
+        "all_legitimate_functionality_preserved": true,
+        "classification": "additional observed protection",
+        "comparison": "V3 vs V1",
+        "matched_evidence": [
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S1"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 500,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [
+              "I1",
+              "I4"
+            ],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S2"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S3"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S1"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 500,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [
+              "I1",
+              "I4"
+            ],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S2"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S3"
+          }
+        ]
+      },
+      {
+        "all_legitimate_functionality_preserved": true,
+        "classification": "equal observed protection",
+        "comparison": "V3 vs V2",
+        "matched_evidence": [
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S1"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S2"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 1,
+            "scenario": "S3"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S1"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S2"
+          },
+          {
+            "V3_shortfall": 0,
+            "comparator_shortfall": 0,
+            "entitlement_metric": "not_applicable",
+            "improved_invariant_ids": [],
+            "regressed_invariant_ids": [],
+            "run": 2,
+            "scenario": "S3"
+          }
+        ]
+      }
+    ],
+    "scope": "one synthetic-fixture operational case; deterministic repetitions not independent contracts; no PES"
+  }
+}

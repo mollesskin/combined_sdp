@@ -1,0 +1,6 @@
+{
+  "behavioral_metrics_identical": true,
+  "clean_process_repetitions": 2,
+  "compared_fields": "all behavioral CSV fields except repetition identifier and raw evidence path/hash",
+  "independent_contracts": 1
+}

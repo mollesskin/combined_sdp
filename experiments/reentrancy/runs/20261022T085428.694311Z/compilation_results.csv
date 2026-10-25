@@ -1,0 +1,13 @@
+contract_id,source_contract,variant,solidity_version,compilation_status,exit_code,elapsed_seconds,error,raw_output_directory
+R01,dataset/reentrancy/etherstore.sol,V0,0.4.10,success,0,0.039578,,R01/V0/compile
+R01,dataset/reentrancy/etherstore.sol,V1,0.4.10,success,0,0.0408,,R01/V1/compile
+R01,dataset/reentrancy/etherstore.sol,V2,0.4.10,success,0,0.040955,,R01/V2/compile
+R01,dataset/reentrancy/etherstore.sol,V3,0.4.10,success,0,0.041026,,R01/V3/compile
+R02,dataset/reentrancy/reentrancy_dao.sol,V0,0.4.19,success,0,0.041213,,R02/V0/compile
+R02,dataset/reentrancy/reentrancy_dao.sol,V1,0.4.19,success,0,0.078467,,R02/V1/compile
+R02,dataset/reentrancy/reentrancy_dao.sol,V2,0.4.19,success,0,0.07831,,R02/V2/compile
+R02,dataset/reentrancy/reentrancy_dao.sol,V3,0.4.19,success,0,0.07976,,R02/V3/compile
+R03,dataset/reentrancy/reentrancy_simple.sol,V0,0.4.15,success,0,0.735706,,R03/V0/compile
+R03,dataset/reentrancy/reentrancy_simple.sol,V1,0.4.15,success,0,0.618151,,R03/V1/compile
+R03,dataset/reentrancy/reentrancy_simple.sol,V2,0.4.15,success,0,0.151176,,R03/V2/compile
+R03,dataset/reentrancy/reentrancy_simple.sol,V3,0.4.15,success,0,0.050448,,R03/V3/compile

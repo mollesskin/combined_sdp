@@ -1,0 +1,84 @@
+{
+  "actors": {
+    "bank": "0xF2E246BB76DF876Cef8b38ae84130F4F55De395b",
+    "holder": "0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF",
+    "owner": "0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf",
+    "token": "0x2946259E0334f33A064106302415aD3391BeD384"
+  },
+  "after": {
+    "allowance_holder_bank": 0,
+    "bank_ether_wei": 2000000000000000000,
+    "bank_tokens": 100,
+    "entitlement_wei": 2000000000000000000,
+    "holder_tokens": 0,
+    "min_deposit_wei": 1000000000000000000,
+    "token_mode": 2
+  },
+  "before": {
+    "allowance_holder_bank": 0,
+    "bank_ether_wei": 2000000000000000000,
+    "bank_tokens": 100,
+    "entitlement_wei": 2000000000000000000,
+    "holder_tokens": 0,
+    "min_deposit_wei": 1000000000000000000,
+    "token_mode": 2
+  },
+  "compilation_status": "compiled",
+  "contract_id": "UC01",
+  "deployment_status": "deployed",
+  "error": null,
+  "execution_status": "completed",
+  "initial_state": {
+    "allowance_holder_bank": 0,
+    "bank_ether_wei": 2000000000000000000,
+    "bank_tokens": 100,
+    "entitlement_wei": 2000000000000000000,
+    "holder_tokens": 0,
+    "min_deposit_wei": 1000000000000000000,
+    "token_mode": 0
+  },
+  "legitimate_probe": {
+    "after": {
+      "allowance_holder_bank": 0,
+      "bank_ether_wei": 2000000000000000000,
+      "bank_tokens": 95,
+      "entitlement_wei": 0,
+      "holder_tokens": 5,
+      "min_deposit_wei": 1000000000000000000,
+      "token_mode": 0
+    },
+    "before": {
+      "allowance_holder_bank": 0,
+      "bank_ether_wei": 2000000000000000000,
+      "bank_tokens": 100,
+      "entitlement_wei": 2000000000000000000,
+      "holder_tokens": 0,
+      "min_deposit_wei": 1000000000000000000,
+      "token_mode": 0
+    },
+    "outer_status": 1,
+    "raw_transaction": "06_legitimate_probe.json"
+  },
+  "low_level_error": "b''",
+  "low_level_observation": "actual PyEVM CALL child computation; CALL success follows child is_error; no contract instrumentation",
+  "low_level_return_data": "0x",
+  "low_level_status": false,
+  "negative": true,
+  "outer_gas_used": 32231,
+  "outer_status": 0,
+  "raw_evidence_path": "runs/20261022T_behavioral_repeat1/raw/trials/V3/S3",
+  "run": 1,
+  "scenario": "S3",
+  "setup_checks": {
+    "allowance_holder_bank": true,
+    "bank_ether_wei": true,
+    "bank_tokens": true,
+    "entitlement_wei": true,
+    "holder_tokens": true,
+    "min_deposit_wei": true,
+    "token_mode": true
+  },
+  "setup_status": "passed",
+  "snapshot_restored": true,
+  "variant": "V3"
+}

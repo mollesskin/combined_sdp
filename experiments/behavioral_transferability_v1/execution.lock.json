@@ -1,0 +1,26 @@
+{
+  "frozen_utc": "2026-10-22T13:11:13.221646+00:00",
+  "type": "developmental implementation freeze before comparative runs",
+  "sha256": {
+    "protocol.lock.json": "5686fdbaa61e9b3ebfdd18082b4acd625ec01d2622b023dac2c19458a44ff448",
+    "source_manifest.json": "eca4bf8565091399e8e87c48413551638277fd4e10d07334d462c857453e9d4b",
+    "source_changes.md": "0810a8e33ecf237dac907ca4d251a5b434bba8c9cd279faf8afde5d5edce9a4b",
+    "fixtures/TransferFromToken.sol": "fdcf2a269017d3bbf9bdc69a69f90a2d2808075053a3916d4853721315efb844",
+    "tests/run_transfer.py": "d1e999cee2e3cf3a4a60ba6a91a6a76345a25dcdb8220f0c1aea415a42aa34dc",
+    "tests/summarize.py": "276a2b4f7c2a776994307a4d0203822dff003791b7ac8bc2e6aa97839ccffeb7",
+    "variants/UC02/V3.patch": "b718b6b7edf6b53b8f548e92876c0b9e05dc95c6a58c7931ebb7c442f4a5d03a",
+    "variants/UC02/V1.patch": "5cce83f50b0b9c044520dd0213768051163d1372f06593f45b7239a39708dda4",
+    "variants/UC02/V2.patch": "a97820620002590ae85651e7cb26e1da4e34d04cfc7236d5a6082deb414424fd",
+    "variants/UC03/V3.patch": "a75cbbd152824ec51a00e2012e0534b2a6eea82dccc09c657f4aec13dd8b3c68",
+    "variants/UC03/V1.patch": "1249b96918d21fee4e3cb46c767e2e2cd8b30dfef10467a8e2ddca8941c05782",
+    "variants/UC03/V2.patch": "0fb13212fdbe0a6c01b0429150496d4ce3b4c678468c7fb491465edb23765aa4",
+    "variants/UC03/V1/Contract.sol": "7285df4e5ada87576253b38cf550aed3a736ce27834fefc7f8fbd3c54d70ad60",
+    "variants/UC03/V0/Contract.sol": "e0371b2aacecbdb695c9861bab902f6d16890c17bcdd856005105867cd4a82fb",
+    "variants/UC03/V2/Contract.sol": "f4948de2312ca6859710655c72f8cfd8d9516624d71e0f4348c8e7c60de071f1",
+    "variants/UC03/V3/Contract.sol": "13bfdf467b9f45d16c13e076620e0bef8e05ff80b6e9f161c6d079f24d9e2f31",
+    "variants/UC02/V1/Contract.sol": "662866ef0f287859ca6c4305e653ee88206d2c30e0f13efd4563dfae2e692761",
+    "variants/UC02/V0/Contract.sol": "c6174237895ac810af5d27c2a9c87896369f7582775d6b4dc78451ca581b523e",
+    "variants/UC02/V2/Contract.sol": "cfdf8d30d42b402e9ba43eb125ada8596b8d63064b142a7a657e04db1248459d",
+    "variants/UC02/V3/Contract.sol": "1812ec69bd62d539b48553b786ed367e04c28f2ab9e6ee0a49e1365d4600a27c"
+  }
+}

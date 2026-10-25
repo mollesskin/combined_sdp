@@ -1,0 +1,92 @@
+[
+  {
+    "tool": "slither",
+    "before": "V0",
+    "after": "V1",
+    "paired_completed": 3,
+    "fewer_reentrancy_findings": 3,
+    "same_reentrancy_findings": 0,
+    "more_reentrancy_findings": 0
+  },
+  {
+    "tool": "slither",
+    "before": "V0",
+    "after": "V2",
+    "paired_completed": 3,
+    "fewer_reentrancy_findings": 0,
+    "same_reentrancy_findings": 3,
+    "more_reentrancy_findings": 0
+  },
+  {
+    "tool": "slither",
+    "before": "V0",
+    "after": "V3",
+    "paired_completed": 3,
+    "fewer_reentrancy_findings": 3,
+    "same_reentrancy_findings": 0,
+    "more_reentrancy_findings": 0
+  },
+  {
+    "tool": "slither",
+    "before": "V1",
+    "after": "V3",
+    "paired_completed": 3,
+    "fewer_reentrancy_findings": 0,
+    "same_reentrancy_findings": 3,
+    "more_reentrancy_findings": 0
+  },
+  {
+    "tool": "slither",
+    "before": "V2",
+    "after": "V3",
+    "paired_completed": 3,
+    "fewer_reentrancy_findings": 3,
+    "same_reentrancy_findings": 0,
+    "more_reentrancy_findings": 0
+  },
+  {
+    "tool": "mythril",
+    "before": "V0",
+    "after": "V1",
+    "paired_completed": 2,
+    "fewer_reentrancy_findings": 2,
+    "same_reentrancy_findings": 0,
+    "more_reentrancy_findings": 0
+  },
+  {
+    "tool": "mythril",
+    "before": "V0",
+    "after": "V2",
+    "paired_completed": 2,
+    "fewer_reentrancy_findings": 0,
+    "same_reentrancy_findings": 0,
+    "more_reentrancy_findings": 2
+  },
+  {
+    "tool": "mythril",
+    "before": "V0",
+    "after": "V3",
+    "paired_completed": 2,
+    "fewer_reentrancy_findings": 0,
+    "same_reentrancy_findings": 0,
+    "more_reentrancy_findings": 2
+  },
+  {
+    "tool": "mythril",
+    "before": "V1",
+    "after": "V3",
+    "paired_completed": 2,
+    "fewer_reentrancy_findings": 0,
+    "same_reentrancy_findings": 0,
+    "more_reentrancy_findings": 2
+  },
+  {
+    "tool": "mythril",
+    "before": "V2",
+    "after": "V3",
+    "paired_completed": 2,
+    "fewer_reentrancy_findings": 2,
+    "same_reentrancy_findings": 0,
+    "more_reentrancy_findings": 0
+  }
+]

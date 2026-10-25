@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-10-22T13:15:30.990221+00:00",
+  "purpose": "source-only applicability first, then bounded local UC02/UC03 behavioral transferability; prior outcomes known",
+  "protocol_frozen_utc": "2026-10-22T13:08:22.842962+00:00",
+  "implementation_frozen_utc": "2026-10-22T13:11:13.221646+00:00",
+  "run_events": [
+    {
+      "run_id": "20261022131119Z_r1",
+      "argv": [
+        "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python",
+        "experiments/behavioral_transferability_v1/tests/run_transfer.py",
+        "--output",
+        "experiments/behavioral_transferability_v1/runs/20261022131119Z_r1",
+        "--repetition",
+        "1"
+      ],
+      "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated",
+      "network": "in-process only",
+      "repetition": 1,
+      "started_utc": "2026-10-22T13:11:23.289385+00:00",
+      "ended_utc": "2026-10-22T13:11:35.524960+00:00",
+      "infrastructure_errors": 0,
+      "new_PES_values": 0,
+      "new_analyzer_runs": 0,
+      "pip_freeze_exit_code": 0,
+      "primary_trials": 24,
+      "source_contracts": 2,
+      "variant_sources": 8
+    },
+    {
+      "run_id": "20261022T131146Z_r2",
+      "argv": [
+        "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python",
+        "experiments/behavioral_transferability_v1/tests/run_transfer.py",
+        "--output",
+        "experiments/behavioral_transferability_v1/runs/20261022T131146Z_r2",
+        "--repetition",
+        "2"
+      ],
+      "cwd": "/Users/moldir_2024icloud.com/smartbugs-curated",
+      "network": "in-process only",
+      "repetition": 2,
+      "started_utc": "2026-10-22T13:11:48.025038+00:00",
+      "ended_utc": "2026-10-22T13:11:56.745548+00:00",
+      "infrastructure_errors": 0,
+      "new_PES_values": 0,
+      "new_analyzer_runs": 0,
+      "pip_freeze_exit_code": 0,
+      "primary_trials": 24,
+      "source_contracts": 2,
+      "variant_sources": 8
+    }
+  ],
+  "derive_command": "PYTHONDONTWRITEBYTECODE=1 experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python experiments/behavioral_transferability_v1/tests/summarize.py experiments/behavioral_transferability_v1/runs/20261022131119Z_r1 experiments/behavioral_transferability_v1/runs/20261022T131146Z_r2 --comparison-output experiments/behavioral_transferability_v1/comparison",
+  "validation_command": "PYTHONDONTWRITEBYTECODE=1 experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python experiments/behavioral_transferability_v1/tests/validate_evidence.py experiments/behavioral_transferability_v1/runs/20261022131119Z_r1 experiments/behavioral_transferability_v1/runs/20261022T131146Z_r2",
+  "report_command": "PYTHONDONTWRITEBYTECODE=1 experiments/multi_vulnerability/compatibility_v2/toolchain/venv/bin/python experiments/behavioral_transferability_v1/tests/report.py experiments/behavioral_transferability_v1/runs/20261022131119Z_r1 experiments/behavioral_transferability_v1/runs/20261022T131146Z_r2",
+  "adaptations_documented_before_run": [
+    "transferFrom fixture with approval",
+    "source and allowance accounting instead of absent Holders; I2/E not applicable",
+    "registered UC03 decimal-scaled amount500 vs UC02 amount5",
+    "single recipient batches; compiler pinned separately per original"
+  ],
+  "outcome_driven_protocol_deviations": [],
+  "naming_deviations": [
+    "First run UTC ID has no T separator; actual raw start/end UTC retained."
+  ],
+  "new_static_analyses": 0,
+  "new_PES_values": 0,
+  "new_dependency_installs": 0,
+  "source_contracts": 2,
+  "variant_sources": 8,
+  "full_process_launches": 2,
+  "repetitions_per_contract": 2,
+  "stop": "UC02/UC03 only; no scale-up"
+}

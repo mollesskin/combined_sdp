@@ -1,0 +1,201 @@
+{
+  "actors": {
+    "bank": "0xF2E246BB76DF876Cef8b38ae84130F4F55De395b",
+    "controller": "0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf",
+    "other_depositor": "0x2B5AD5c4795c026514f8317c7a215E218DcCD6cF",
+    "receiver": "0x2946259E0334f33A064106302415aD3391BeD384"
+  },
+  "compilation_status": "compiled",
+  "contract_id": "RE01",
+  "deployment_status": "deployed",
+  "error": null,
+  "execution_status": "completed",
+  "initial_state": {
+    "actor_credit_wei": 1000000000000000000,
+    "aggregate_wei": null,
+    "bank_ether_wei": 3000000000000000000,
+    "callbacks": 0,
+    "guard_entered": null,
+    "last_withdraw_time": 0,
+    "other_credit_wei": 2000000000000000000,
+    "public_getter_matches_storage": true,
+    "receiver_ether_wei": 0,
+    "storage_words": {
+      "actor_credit": {
+        "slot": "0x75e1947d66c4813f54fe88520ba6e5cf8a863547017fd21909afad5485aa7e2c",
+        "word": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000"
+      },
+      "last_withdraw": {
+        "slot": "0x41e461a79d9bb803cfcccc95282ee345985c4b77d7cbfe1c1c36ddfa2396fcff",
+        "word": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "other_credit": {
+        "slot": "0x96042d6ae635435865132c8e3997f535d694e30b22299f6e641d48b8395f0e99",
+        "word": "0x0000000000000000000000000000000000000000000000001bc16d674ec80000"
+      }
+    }
+  },
+  "raw_evidence_path": "runs/20261022T134111Z_r2/raw/trials/RE01/V0/S1",
+  "run": 2,
+  "scenario": "S1",
+  "setup_checks": {
+    "actor_credit": true,
+    "aggregate": true,
+    "bank_funding": true,
+    "getter_match": true,
+    "guard_clear": true,
+    "other_credit": true,
+    "receiver_funding": true,
+    "timestamp": true
+  },
+  "setup_status": "passed",
+  "steps": [
+    {
+      "after": {
+        "actor_credit_wei": 115792089237316195423570985008687907853269984665640564039456584007913129639936,
+        "aggregate_wei": null,
+        "bank_ether_wei": 1000000000000000000,
+        "callbacks": 2,
+        "guard_entered": null,
+        "last_withdraw_time": 2000000006,
+        "other_credit_wei": 2000000000000000000,
+        "public_getter_matches_storage": true,
+        "receiver_ether_wei": 2000000000000000000,
+        "storage_words": {
+          "actor_credit": {
+            "slot": "0x75e1947d66c4813f54fe88520ba6e5cf8a863547017fd21909afad5485aa7e2c",
+            "word": "0xfffffffffffffffffffffffffffffffffffffffffffffffff21f494c589c0000"
+          },
+          "last_withdraw": {
+            "slot": "0x41e461a79d9bb803cfcccc95282ee345985c4b77d7cbfe1c1c36ddfa2396fcff",
+            "word": "0x0000000000000000000000000000000000000000000000000000000077359406"
+          },
+          "other_credit": {
+            "slot": "0x96042d6ae635435865132c8e3997f535d694e30b22299f6e641d48b8395f0e99",
+            "word": "0x0000000000000000000000000000000000000000000000001bc16d674ec80000"
+          }
+        }
+      },
+      "authorized_amount_wei": 1000000000000000000,
+      "bank_withdrawal_calls": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "code_address": "0x2946259e0334f33a064106302415ad3391bed384",
+                      "error": null,
+                      "gas_used": 6072,
+                      "input": "0x",
+                      "is_error": false,
+                      "output": "0x",
+                      "sender": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+                      "to": "0x2946259e0334f33a064106302415ad3391bed384",
+                      "value": 1000000000000000000
+                    }
+                  ],
+                  "code_address": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+                  "error": null,
+                  "gas_used": 40030,
+                  "input": "0x155dd5ee0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+                  "is_error": false,
+                  "output": "0x",
+                  "sender": "0x2946259e0334f33a064106302415ad3391bed384",
+                  "to": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+                  "value": 0
+                }
+              ],
+              "code_address": "0x2946259e0334f33a064106302415ad3391bed384",
+              "error": null,
+              "gas_used": 62661,
+              "input": "0x",
+              "is_error": false,
+              "output": "0x",
+              "sender": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+              "to": "0x2946259e0334f33a064106302415ad3391bed384",
+              "value": 1000000000000000000
+            }
+          ],
+          "code_address": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+          "error": null,
+          "gas_used": 96619,
+          "input": "0x155dd5ee0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "is_error": false,
+          "output": "0x",
+          "sender": "0x2946259e0334f33a064106302415ad3391bed384",
+          "to": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+          "value": 0
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "code_address": "0x2946259e0334f33a064106302415ad3391bed384",
+              "error": null,
+              "gas_used": 6072,
+              "input": "0x",
+              "is_error": false,
+              "output": "0x",
+              "sender": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+              "to": "0x2946259e0334f33a064106302415ad3391bed384",
+              "value": 1000000000000000000
+            }
+          ],
+          "code_address": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+          "error": null,
+          "gas_used": 40030,
+          "input": "0x155dd5ee0000000000000000000000000000000000000000000000000de0b6b3a7640000",
+          "is_error": false,
+          "output": "0x",
+          "sender": "0x2946259e0334f33a064106302415ad3391bed384",
+          "to": "0xf2e246bb76df876cef8b38ae84130f4f55de395b",
+          "value": 0
+        }
+      ],
+      "before": {
+        "actor_credit_wei": 1000000000000000000,
+        "aggregate_wei": null,
+        "bank_ether_wei": 3000000000000000000,
+        "callbacks": 0,
+        "guard_entered": null,
+        "last_withdraw_time": 0,
+        "other_credit_wei": 2000000000000000000,
+        "public_getter_matches_storage": true,
+        "receiver_ether_wei": 0,
+        "storage_words": {
+          "actor_credit": {
+            "slot": "0x75e1947d66c4813f54fe88520ba6e5cf8a863547017fd21909afad5485aa7e2c",
+            "word": "0x0000000000000000000000000000000000000000000000000de0b6b3a7640000"
+          },
+          "last_withdraw": {
+            "slot": "0x41e461a79d9bb803cfcccc95282ee345985c4b77d7cbfe1c1c36ddfa2396fcff",
+            "word": "0x0000000000000000000000000000000000000000000000000000000000000000"
+          },
+          "other_credit": {
+            "slot": "0x96042d6ae635435865132c8e3997f535d694e30b22299f6e641d48b8395f0e99",
+            "word": "0x0000000000000000000000000000000000000000000000001bc16d674ec80000"
+          }
+        }
+      },
+      "block_timestamp": 2000000006,
+      "intended_rejection": false,
+      "nested_attempts": [
+        {
+          "error": null,
+          "output": "0x",
+          "status": true,
+          "value": 0
+        }
+      ],
+      "outer_error": null,
+      "outer_gas_used": 104667,
+      "outer_status": 1,
+      "raw_transaction": "06_bounded_reentry.json",
+      "step": "06_bounded_reentry"
+    }
+  ],
+  "variant": "V0"
+}
