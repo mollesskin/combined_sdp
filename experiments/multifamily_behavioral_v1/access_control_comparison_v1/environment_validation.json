@@ -1,0 +1,10 @@
+{
+  "package_json_matches_baseline": true,
+  "package_lock_matches_baseline": true,
+  "34_sources_same_actual_solc_settings": true,
+  "actual_solc": "0.4.25",
+  "reproduce_script_executed_successfully": true,
+  "reproduction_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/access_control_comparison_v1/runs/reproduction_20261023T044355Z_65006",
+  "evidence_checks": 107,
+  "arithmetic_preserved": true
+}

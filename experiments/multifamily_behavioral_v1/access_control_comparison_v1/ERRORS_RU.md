@@ -1,0 +1,7 @@
+# Ошибки и ограничения инструмента
+
+1. При discovery рабочий baseline project/scripts/test-results.json не найден. Сохранены действительный pinned report с 16 AC файлами и отдельный 33-file reproduction log. Это различие provenance не скрывается и не считается результатом защиты.
+2. node --check обнаружил недостающую скобку внешнего массива origin_phishing; исправлено до первого исполнения. Генератор init-модификатора Parity уточнён до compilation, чтобы изменять только function annotations, не modifier declaration. В компилируемом final source оба изменения корректны.
+3. initial_01 обнаружил 2 ложных failure Parity: expected required был JS Number 1, actual — BigInt 1n. Исправлена типизация oracle/input, контракты/сценарии/условия не менялись. Первоначальный protocol/measure.js сохранён в frozen_before_first_run, все outputs — runs/initial_01. Этот прогон не входит в итоговые два повтора.
+4. Итоговые run1/run2 завершены без compilation/setup/infrastructure errors. Solidity warnings legacy syntax, deprecated calls, unused functions сохранены в compile.log/run2_compile.log; compilation завершилась успешно. Ошибки low-level execution, вызванные запретами, сохраняются в raw outputs и проверяются по mined receipt status, это не infrastructure failure.
+5. Два unresolved файла не имеют comparative execution; показатели N/A. Wallet_04 V2 имеет два разрешённых withdrawal failure из-за унаследованного >=; это сохранённый функциональный результат, не ошибка runner и не «успешная защита».

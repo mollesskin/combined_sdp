@@ -1,0 +1,217 @@
+{
+  "row": {
+    "file": "parity_wallet_bug_2.sol",
+    "group": "parity_wallet_bug_2.sol",
+    "track": "single",
+    "variant": "V0",
+    "scenario": "legitimate",
+    "step": 2,
+    "method": "execute",
+    "kind": "allowed",
+    "effect": "parity_pay",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [
+        "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+        "4",
+        "0x"
+      ],
+      "value_wei": "0",
+      "via": null,
+      "gas_limit": "6000000"
+    },
+    "before": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true,
+        "required": "1",
+        "numOwners": "2",
+        "dailyLimit": "100",
+        "spentToday": "0",
+        "lastDay": "17896",
+        "isOwner0": true,
+        "isOwner1": true,
+        "isOwner2": false
+      },
+      "storage": {
+        "0": "1",
+        "1": "2",
+        "2": "100",
+        "3": "0",
+        "4": "17896",
+        "5": "0",
+        "6": "1390849295786071768276380950238675083608645509734",
+        "7": "642829559307850963015472508762062935916233390536",
+        "8": "0",
+        "261": "0",
+        "262": "0",
+        "263": "0",
+        "264": "0",
+        "265": "0",
+        "108708196666672953898688138854524356117851225417226780694518187546080151146915": "1",
+        "21500498759296346180689604781859206808181074515181079815591444219376584343739": "2",
+        "66426752324267377221897215960356110711032824143543435787442953669414057819624": "0"
+      },
+      "accounts": {
+        "user0": "9999996863363241906503",
+        "user1": "10000000000000000000000",
+        "user2": "9999999965916954176814",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "expected": {
+      "state": {
+        "contract_wei": "6",
+        "code_present": true,
+        "required": "1",
+        "numOwners": "2",
+        "dailyLimit": "100",
+        "spentToday": "4",
+        "lastDay": "17896",
+        "isOwner0": true,
+        "isOwner1": true,
+        "isOwner2": false
+      },
+      "accounts": {
+        "user0": "9999996863363241906503",
+        "user1": "10000000000000000000000",
+        "user2": "9999999965916954176818",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual": {
+      "state": {
+        "contract_wei": "6",
+        "code_present": true,
+        "required": "1",
+        "numOwners": "2",
+        "dailyLimit": "100",
+        "spentToday": "4",
+        "lastDay": "17896",
+        "isOwner0": true,
+        "isOwner1": true,
+        "isOwner2": false
+      },
+      "storage": {
+        "0": "1",
+        "1": "2",
+        "2": "100",
+        "3": "4",
+        "4": "17896",
+        "5": "0",
+        "6": "1390849295786071768276380950238675083608645509734",
+        "7": "642829559307850963015472508762062935916233390536",
+        "8": "0",
+        "261": "0",
+        "262": "0",
+        "263": "0",
+        "264": "0",
+        "265": "0",
+        "108708196666672953898688138854524356117851225417226780694518187546080151146915": "1",
+        "21500498759296346180689604781859206808181074515181079815591444219376584343739": "2",
+        "66426752324267377221897215960356110711032824143543435787442953669414057819624": "0"
+      },
+      "accounts": {
+        "user0": "9999996769699164873944",
+        "user1": "10000000000000000000000",
+        "user2": "9999999965916954176818",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual_accounts_excluding_tx_gas": {
+      "user0": "9999996863363241906503",
+      "user1": "10000000000000000000000",
+      "user2": "9999999965916954176818",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "state_differences": {},
+    "account_differences": {},
+    "getter_check": null,
+    "correct": true,
+    "security_pass": null,
+    "functionality_pass": true,
+    "full_observed_rollback": null,
+    "forbidden_no_effect": null,
+    "contract_outflow_wei": "4",
+    "unauthorized_outflow_wei": null,
+    "excess_payout_wei": null,
+    "account_deltas_wei_excluding_tx_gas": {
+      "user0": "0",
+      "user1": "0",
+      "user2": "4",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "applicability": {
+      "owner_integrity": true,
+      "credit_accounting": false,
+      "code_lifecycle": true,
+      "wei_outflow": true,
+      "gas": true,
+      "full_rollback": false
+    },
+    "gas_used": "64317",
+    "error": null,
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/access_control_comparison_v1/runs/run1/parity_wallet_bug_2.sol.V0.legitimate.2.json"
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x9e9b3e4f454fcbf6f97e204859746deaec039fab058368f0187c39c98e607cd5",
+    "blockNumber": 6,
+    "contractAddress": null,
+    "cumulativeGasUsed": "64317",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1456288027",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "64317",
+    "hash": "0x91450fe1c0bdf49f52f94e093d3e596a42963d681ec0a0e885f8f7fb7e7c35c7",
+    "index": 0,
+    "logs": [
+      {
+        "_type": "log",
+        "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+        "blockHash": "0x9e9b3e4f454fcbf6f97e204859746deaec039fab058368f0187c39c98e607cd5",
+        "blockNumber": 6,
+        "data": "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb9226600000000000000000000000000000000000000000000000000000000000000040000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc00000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "index": 0,
+        "topics": [
+          "0x9738cd1a8777c86b011f7b01d87d484217dc6ab5154a9d41eda5d14af8caf292"
+        ],
+        "transactionHash": "0x91450fe1c0bdf49f52f94e093d3e596a42963d681ec0a0e885f8f7fb7e7c35c7",
+        "transactionIndex": 0
+      }
+    ],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000004000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  },
+  "setup": {
+    "funding": null,
+    "deploy_receipt": {
+      "_type": "TransactionReceipt",
+      "blockHash": "0x9f70efaf186420b13130466db0de530abfa0025aa0e90cdd0742bd3d6aad8950",
+      "blockNumber": 1,
+      "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "cumulativeGasUsed": "1257664",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "gasPrice": "1875000000",
+      "blobGasUsed": null,
+      "blobGasPrice": null,
+      "gasUsed": "1257664",
+      "hash": "0xacb855ddf9949890f1c721c771e37a07125650c740d4d57d8bd753fcfd6a0e03",
+      "index": 0,
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "status": 1,
+      "to": null
+    }
+  }
+}

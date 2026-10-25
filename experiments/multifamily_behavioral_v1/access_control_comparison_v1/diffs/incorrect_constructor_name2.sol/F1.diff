@@ -1,0 +1,11 @@
+--- V0/incorrect_constructor_name2.sol
++++ F1/incorrect_constructor_name2.sol
+@@ -15,7 +15,7 @@
+         _;
+     }
+     // <yes> <report> ACCESS_CONTROL
+-    function missing()
++    constructor()
+         public
+     {
+         owner = msg.sender;

@@ -1,0 +1,11 @@
+--- V0/mycontract.sol
++++ F1/mycontract.sol
+@@ -17,7 +17,7 @@
+ 
+     function sendTo(address receiver, uint amount) public {
+         // <yes> <report> ACCESS_CONTROL
+-        require(tx.origin == owner);
++        require(msg.sender == owner);
+         receiver.transfer(amount);
+     }
+ 

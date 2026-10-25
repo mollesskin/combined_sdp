@@ -1,0 +1,24 @@
+--- V0/wallet_04_confused_sign.sol
++++ V3/wallet_04_confused_sign.sol
+@@ -27,9 +27,9 @@
+ 
+      function withdraw(uint256 amount) public {
+          // <yes> <report> ACCESS_CONTROL
+-         require(amount >= balances[msg.sender]);
++         require(amount <= balances[msg.sender]);
+          msg.sender.transfer(amount);
+-         balances[msg.sender] -= amount;
++         balances[msg.sender] = ResearchDebit.sub(balances[msg.sender], amount);
+      }
+ 
+      // In an emergency the owner can migrate  allfunds to a different address.
+@@ -40,3 +40,9 @@
+      }
+ 
+  }
++
++// AI-assisted local checked subtraction, not a third-party library release.
++// Check the computed modular result before it can be assigned to storage.
++library ResearchDebit {
++ function sub(uint a,uint b) internal pure returns(uint) { uint c=a-b; require(c<=a); return c; }
++}

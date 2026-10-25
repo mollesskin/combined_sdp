@@ -1,0 +1,162 @@
+{
+  "row": {
+    "file": "incorrect_constructor_name3.sol",
+    "group": "AC_INIT_CLONE",
+    "track": "single",
+    "variant": "F1",
+    "scenario": "legitimate",
+    "step": 1,
+    "method": "withdraw",
+    "kind": "allowed",
+    "effect": "all",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [],
+      "value_wei": "0",
+      "via": null,
+      "gas_limit": "6000000"
+    },
+    "before": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+      },
+      "storage": {
+        "0": "1390849295786071768276380950238675083608645509734",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0"
+      },
+      "accounts": {
+        "user0": "9999999308124674913817",
+        "user1": "9999999966580731578150",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "expected": {
+      "state": {
+        "contract_wei": "0",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+      },
+      "accounts": {
+        "user0": "9999999308124674913827",
+        "user1": "9999999966580731578150",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual": {
+      "state": {
+        "contract_wei": "0",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+      },
+      "storage": {
+        "0": "1390849295786071768276380950238675083608645509734",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0"
+      },
+      "accounts": {
+        "user0": "9999999262046704008259",
+        "user1": "9999999966580731578150",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual_accounts_excluding_tx_gas": {
+      "user0": "9999999308124674913827",
+      "user1": "9999999966580731578150",
+      "user2": "10000000000000000000000",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "state_differences": {},
+    "account_differences": {},
+    "getter_check": null,
+    "correct": true,
+    "security_pass": null,
+    "functionality_pass": true,
+    "full_observed_rollback": null,
+    "forbidden_no_effect": null,
+    "contract_outflow_wei": "10",
+    "unauthorized_outflow_wei": null,
+    "excess_payout_wei": null,
+    "account_deltas_wei_excluding_tx_gas": {
+      "user0": "10",
+      "user1": "0",
+      "user2": "0",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "applicability": {
+      "owner_integrity": true,
+      "credit_accounting": false,
+      "code_lifecycle": false,
+      "wei_outflow": true,
+      "gas": true,
+      "full_rollback": false
+    },
+    "gas_used": "30416",
+    "error": null,
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/access_control_comparison_v1/runs/run2/incorrect_constructor_name3.sol.F1.legitimate.1.json"
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x6713c5e3ecd7a04f58a03ac453a3bfce4dff503e74a94029f4a6a033754d28af",
+    "blockNumber": 5,
+    "contractAddress": null,
+    "cumulativeGasUsed": "30416",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1514925398",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "30416",
+    "hash": "0x198e90144e3afc6b59fada5605d94104b3382b6f44bd9e1aefd617815eb2ed27",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  },
+  "setup": {
+    "funding": null,
+    "deploy_receipt": {
+      "_type": "TransactionReceipt",
+      "blockHash": "0x50b4ed1e5b82f6530891562c70a6d24e5cbf09d2cda0af85a24a5f20fdeef83d",
+      "blockNumber": 1,
+      "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "cumulativeGasUsed": "125449",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "gasPrice": "1875000000",
+      "blobGasUsed": null,
+      "blobGasPrice": null,
+      "gasUsed": "125449",
+      "hash": "0x30263dccf7c8dfae2bccf05acd12363a514406ed096bfa644dd191ae04577229",
+      "index": 0,
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "status": 1,
+      "to": null
+    }
+  }
+}

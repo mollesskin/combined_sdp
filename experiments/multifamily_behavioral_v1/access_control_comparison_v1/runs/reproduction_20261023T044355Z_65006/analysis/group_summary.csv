@@ -1,0 +1,15 @@
+group,files,tracks,files_executed,all_protected_variants_pass_security,all_final_fixes_pass_functionality
+AC_INIT_CLONE,"[""incorrect_constructor_name1.sol"", ""incorrect_constructor_name2.sol"", ""incorrect_constructor_name3.sol""]","[""single""]",3,True,True
+FibonacciBalance.sol,"[""FibonacciBalance.sol""]","[""unresolved""]",0,,
+arbitrary_location_write_simple.sol,"[""arbitrary_location_write_simple.sol""]","[""factorial""]",1,True,True
+mapping_write.sol,"[""mapping_write.sol""]","[""single""]",1,True,True
+multiowned_vulnerable.sol,"[""multiowned_vulnerable.sol""]","[""single""]",1,True,True
+mycontract.sol,"[""mycontract.sol""]","[""single""]",1,True,True
+parity_wallet_bug_2.sol,"[""parity_wallet_bug_2.sol""]","[""single""]",1,True,True
+phishable.sol,"[""phishable.sol""]","[""single""]",1,True,True
+proxy.sol,"[""proxy.sol""]","[""unresolved""]",0,,
+simple_suicide.sol,"[""simple_suicide.sol""]","[""single""]",1,True,True
+unprotected0.sol,"[""unprotected0.sol""]","[""single""]",1,True,True
+wallet_02_refund_nosub.sol,"[""wallet_02_refund_nosub.sol""]","[""single""]",1,True,True
+wallet_03_wrong_constructor.sol,"[""wallet_03_wrong_constructor.sol""]","[""single""]",1,True,True
+wallet_04_confused_sign.sol,"[""wallet_04_confused_sign.sol""]","[""factorial""]",1,True,True

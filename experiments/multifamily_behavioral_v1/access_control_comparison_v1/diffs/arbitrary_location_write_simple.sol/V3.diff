@@ -1,0 +1,23 @@
+--- V0/arbitrary_location_write_simple.sol
++++ V3/arbitrary_location_write_simple.sol
+@@ -24,8 +24,8 @@
+ 
+      function PopBonusCode() public {
+          // <yes> <report> ACCESS_CONTROL
+-         require(0 <= bonusCodes.length); // this condition is always true since array lengths are unsigned
+-         bonusCodes.length--; // an underflow can be caused here
++         require(0 < bonusCodes.length); // this condition is always true since array lengths are unsigned
++         bonusCodes.length = ResearchDebit.sub(bonusCodes.length, 1); // an underflow can be caused here
+      }
+ 
+      function UpdateBonusCodeAt(uint idx, uint c) public {
+@@ -38,3 +38,9 @@
+          selfdestruct(msg.sender);
+      }
+  }
++
++// AI-assisted local checked subtraction, not a third-party library release.
++// Check the computed modular result before it can be assigned to storage.
++library ResearchDebit {
++ function sub(uint a,uint b) internal pure returns(uint) { uint c=a-b; require(c<=a); return c; }
++}

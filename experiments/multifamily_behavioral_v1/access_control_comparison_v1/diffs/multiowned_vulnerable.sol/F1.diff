@@ -1,0 +1,11 @@
+--- V0/multiowned_vulnerable.sol
++++ F1/multiowned_vulnerable.sol
+@@ -35,7 +35,7 @@
+   * Note that the "onlyOwner" modifier is missing here.
+   */
+   // <yes> <report> ACCESS_CONTROL
+-  function newOwner(address _owner) external returns (bool) {
++  function newOwner(address _owner) external onlyOwner returns (bool) {
+     require(_owner != 0);
+     owners[_owner] = msg.sender;
+     return true;

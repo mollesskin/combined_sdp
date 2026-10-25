@@ -1,0 +1,11 @@
+--- V0/arbitrary_location_write_simple.sol
++++ V1/arbitrary_location_write_simple.sol
+@@ -24,7 +24,7 @@
+ 
+      function PopBonusCode() public {
+          // <yes> <report> ACCESS_CONTROL
+-         require(0 <= bonusCodes.length); // this condition is always true since array lengths are unsigned
++         require(0 < bonusCodes.length); // this condition is always true since array lengths are unsigned
+          bonusCodes.length--; // an underflow can be caused here
+      }
+ 

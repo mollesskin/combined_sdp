@@ -1,0 +1,11 @@
+--- V0/phishable.sol
++++ F1/phishable.sol
+@@ -17,7 +17,7 @@
+ 
+     function withdrawAll(address _recipient) public {
+         // <yes> <report> ACCESS_CONTROL
+-        require(tx.origin == owner);
++        require(msg.sender == owner);
+         _recipient.transfer(this.balance);
+     }
+ }

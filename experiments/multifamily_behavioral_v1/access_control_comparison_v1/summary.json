@@ -1,0 +1,1117 @@
+{
+  "files_considered": 16,
+  "files_executed": 14,
+  "full_factorial_files": 2,
+  "single_fix_files": 12,
+  "unresolved_files": 2,
+  "groups_total": 14,
+  "groups_executed": 12,
+  "stored_variants": 34,
+  "executed_variants": 32,
+  "unique_case_scenarios": 47,
+  "variant_scenario_instances_per_run": 110,
+  "observations_per_run": 266,
+  "transactions_per_run": 258,
+  "deployment_observations_per_run": 8,
+  "final_repeats": 2,
+  "comparisons": {
+    "V3_vs_V1": {
+      "overall_relation": {
+        "tie": 22
+      },
+      "security_relation": {
+        "N/A": 14,
+        "tie": 8
+      },
+      "functionality_relation": {
+        "tie": 14,
+        "N/A": 8
+      }
+    },
+    "V3_vs_V2": {
+      "overall_relation": {
+        "tie": 20,
+        "improvement": 2
+      },
+      "security_relation": {
+        "N/A": 14,
+        "tie": 8
+      },
+      "functionality_relation": {
+        "tie": 12,
+        "N/A": 8,
+        "improvement": 2
+      }
+    }
+  },
+  "files": [
+    {
+      "file": "FibonacciBalance.sol",
+      "group": "FibonacciBalance.sol",
+      "track": "unresolved",
+      "status": "unresolved",
+      "reason": "No resolved policy for setStart or allowed selectors; isolated computation changes shared-library workflow/storage layout. Need exact sequence and permitted fallback API before architecture comparison.",
+      "variants": {
+        "V0": null
+      }
+    },
+    {
+      "file": "arbitrary_location_write_simple.sol",
+      "group": "arbitrary_location_write_simple.sol",
+      "track": "factorial",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 3,
+          "observations": 9,
+          "transaction_observations": 9,
+          "allowed_total": 4,
+          "allowed_pass": 4,
+          "security_total": 5,
+          "security_pass": 2,
+          "infrastructure_errors": 0
+        },
+        "V1": {
+          "scenarios": 3,
+          "observations": 9,
+          "transaction_observations": 9,
+          "allowed_total": 4,
+          "allowed_pass": 4,
+          "security_total": 5,
+          "security_pass": 5,
+          "infrastructure_errors": 0
+        },
+        "V2": {
+          "scenarios": 3,
+          "observations": 9,
+          "transaction_observations": 9,
+          "allowed_total": 4,
+          "allowed_pass": 4,
+          "security_total": 5,
+          "security_pass": 5,
+          "infrastructure_errors": 0
+        },
+        "V3": {
+          "scenarios": 3,
+          "observations": 9,
+          "transaction_observations": 9,
+          "allowed_total": 4,
+          "allowed_pass": 4,
+          "security_total": 5,
+          "security_pass": 5,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name1.sol",
+      "group": "AC_INIT_CLONE",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 4,
+          "observations": 8,
+          "transaction_observations": 7,
+          "allowed_total": 4,
+          "allowed_pass": 2,
+          "security_total": 4,
+          "security_pass": 0,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 4,
+          "observations": 8,
+          "transaction_observations": 7,
+          "allowed_total": 4,
+          "allowed_pass": 4,
+          "security_total": 4,
+          "security_pass": 4,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name2.sol",
+      "group": "AC_INIT_CLONE",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 4,
+          "observations": 8,
+          "transaction_observations": 7,
+          "allowed_total": 4,
+          "allowed_pass": 2,
+          "security_total": 4,
+          "security_pass": 0,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 4,
+          "observations": 8,
+          "transaction_observations": 7,
+          "allowed_total": 4,
+          "allowed_pass": 4,
+          "security_total": 4,
+          "security_pass": 4,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name3.sol",
+      "group": "AC_INIT_CLONE",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 4,
+          "observations": 8,
+          "transaction_observations": 7,
+          "allowed_total": 4,
+          "allowed_pass": 2,
+          "security_total": 4,
+          "security_pass": 0,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 4,
+          "observations": 8,
+          "transaction_observations": 7,
+          "allowed_total": 4,
+          "allowed_pass": 4,
+          "security_total": 4,
+          "security_pass": 4,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "mapping_write.sol",
+      "group": "mapping_write.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 2,
+          "observations": 6,
+          "transaction_observations": 6,
+          "allowed_total": 5,
+          "allowed_pass": 3,
+          "security_total": 1,
+          "security_pass": 0,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 2,
+          "observations": 6,
+          "transaction_observations": 6,
+          "allowed_total": 5,
+          "allowed_pass": 5,
+          "security_total": 1,
+          "security_pass": 1,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "multiowned_vulnerable.sol",
+      "group": "multiowned_vulnerable.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 3,
+          "observations": 13,
+          "transaction_observations": 13,
+          "allowed_total": 10,
+          "allowed_pass": 10,
+          "security_total": 3,
+          "security_pass": 1,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 3,
+          "observations": 13,
+          "transaction_observations": 13,
+          "allowed_total": 10,
+          "allowed_pass": 10,
+          "security_total": 3,
+          "security_pass": 3,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "mycontract.sol",
+      "group": "mycontract.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 3,
+          "observations": 3,
+          "transaction_observations": 3,
+          "allowed_total": 1,
+          "allowed_pass": 1,
+          "security_total": 2,
+          "security_pass": 1,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 3,
+          "observations": 3,
+          "transaction_observations": 3,
+          "allowed_total": 1,
+          "allowed_pass": 1,
+          "security_total": 2,
+          "security_pass": 2,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "parity_wallet_bug_2.sol",
+      "group": "parity_wallet_bug_2.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 5,
+          "observations": 13,
+          "transaction_observations": 13,
+          "allowed_total": 7,
+          "allowed_pass": 7,
+          "security_total": 6,
+          "security_pass": 2,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 5,
+          "observations": 13,
+          "transaction_observations": 13,
+          "allowed_total": 7,
+          "allowed_pass": 7,
+          "security_total": 6,
+          "security_pass": 6,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "phishable.sol",
+      "group": "phishable.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 3,
+          "observations": 3,
+          "transaction_observations": 3,
+          "allowed_total": 1,
+          "allowed_pass": 1,
+          "security_total": 2,
+          "security_pass": 1,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 3,
+          "observations": 3,
+          "transaction_observations": 3,
+          "allowed_total": 1,
+          "allowed_pass": 1,
+          "security_total": 2,
+          "security_pass": 2,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "proxy.sol",
+      "group": "proxy.sol",
+      "track": "unresolved",
+      "status": "unresolved",
+      "reason": "No trusted target set or delegated-user policy specified; benign function in attack fixture cannot define a production trust policy. Do not invent allowlist to force A+B.",
+      "variants": {
+        "V0": null
+      }
+    },
+    {
+      "file": "simple_suicide.sol",
+      "group": "simple_suicide.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 2,
+          "observations": 2,
+          "transaction_observations": 2,
+          "allowed_total": 1,
+          "allowed_pass": 1,
+          "security_total": 1,
+          "security_pass": 0,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 2,
+          "observations": 2,
+          "transaction_observations": 2,
+          "allowed_total": 1,
+          "allowed_pass": 1,
+          "security_total": 1,
+          "security_pass": 1,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "unprotected0.sol",
+      "group": "unprotected0.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 2,
+          "observations": 4,
+          "transaction_observations": 4,
+          "allowed_total": 2,
+          "allowed_pass": 2,
+          "security_total": 2,
+          "security_pass": 0,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 2,
+          "observations": 4,
+          "transaction_observations": 4,
+          "allowed_total": 2,
+          "allowed_pass": 2,
+          "security_total": 2,
+          "security_pass": 2,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "wallet_02_refund_nosub.sol",
+      "group": "wallet_02_refund_nosub.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 3,
+          "observations": 12,
+          "transaction_observations": 12,
+          "allowed_total": 10,
+          "allowed_pass": 6,
+          "security_total": 2,
+          "security_pass": 2,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 3,
+          "observations": 12,
+          "transaction_observations": 12,
+          "allowed_total": 10,
+          "allowed_pass": 10,
+          "security_total": 2,
+          "security_pass": 2,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "wallet_03_wrong_constructor.sol",
+      "group": "wallet_03_wrong_constructor.sol",
+      "track": "single",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 4,
+          "observations": 9,
+          "transaction_observations": 8,
+          "allowed_total": 5,
+          "allowed_pass": 3,
+          "security_total": 4,
+          "security_pass": 0,
+          "infrastructure_errors": 0
+        },
+        "F1": {
+          "scenarios": 4,
+          "observations": 9,
+          "transaction_observations": 8,
+          "allowed_total": 5,
+          "allowed_pass": 5,
+          "security_total": 4,
+          "security_pass": 4,
+          "infrastructure_errors": 0
+        }
+      }
+    },
+    {
+      "file": "wallet_04_confused_sign.sol",
+      "group": "wallet_04_confused_sign.sol",
+      "track": "factorial",
+      "status": "executed_repeated",
+      "reason": null,
+      "variants": {
+        "V0": {
+          "scenarios": 5,
+          "observations": 13,
+          "transaction_observations": 13,
+          "allowed_total": 10,
+          "allowed_pass": 8,
+          "security_total": 3,
+          "security_pass": 1,
+          "infrastructure_errors": 0
+        },
+        "V1": {
+          "scenarios": 5,
+          "observations": 13,
+          "transaction_observations": 13,
+          "allowed_total": 10,
+          "allowed_pass": 10,
+          "security_total": 3,
+          "security_pass": 3,
+          "infrastructure_errors": 0
+        },
+        "V2": {
+          "scenarios": 5,
+          "observations": 13,
+          "transaction_observations": 13,
+          "allowed_total": 10,
+          "allowed_pass": 8,
+          "security_total": 3,
+          "security_pass": 3,
+          "infrastructure_errors": 0
+        },
+        "V3": {
+          "scenarios": 5,
+          "observations": 13,
+          "transaction_observations": 13,
+          "allowed_total": 10,
+          "allowed_pass": 10,
+          "security_total": 3,
+          "security_pass": 3,
+          "infrastructure_errors": 0
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "group": "AC_INIT_CLONE",
+      "files": [
+        "incorrect_constructor_name1.sol",
+        "incorrect_constructor_name2.sol",
+        "incorrect_constructor_name3.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 3,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "FibonacciBalance.sol",
+      "files": [
+        "FibonacciBalance.sol"
+      ],
+      "tracks": [
+        "unresolved"
+      ],
+      "files_executed": 0,
+      "all_protected_variants_pass_security": null,
+      "all_final_fixes_pass_functionality": null
+    },
+    {
+      "group": "arbitrary_location_write_simple.sol",
+      "files": [
+        "arbitrary_location_write_simple.sol"
+      ],
+      "tracks": [
+        "factorial"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "mapping_write.sol",
+      "files": [
+        "mapping_write.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "multiowned_vulnerable.sol",
+      "files": [
+        "multiowned_vulnerable.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "mycontract.sol",
+      "files": [
+        "mycontract.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "parity_wallet_bug_2.sol",
+      "files": [
+        "parity_wallet_bug_2.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "phishable.sol",
+      "files": [
+        "phishable.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "proxy.sol",
+      "files": [
+        "proxy.sol"
+      ],
+      "tracks": [
+        "unresolved"
+      ],
+      "files_executed": 0,
+      "all_protected_variants_pass_security": null,
+      "all_final_fixes_pass_functionality": null
+    },
+    {
+      "group": "simple_suicide.sol",
+      "files": [
+        "simple_suicide.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "unprotected0.sol",
+      "files": [
+        "unprotected0.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "wallet_02_refund_nosub.sol",
+      "files": [
+        "wallet_02_refund_nosub.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "wallet_03_wrong_constructor.sol",
+      "files": [
+        "wallet_03_wrong_constructor.sol"
+      ],
+      "tracks": [
+        "single"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    },
+    {
+      "group": "wallet_04_confused_sign.sol",
+      "files": [
+        "wallet_04_confused_sign.sol"
+      ],
+      "tracks": [
+        "factorial"
+      ],
+      "files_executed": 1,
+      "all_protected_variants_pass_security": true,
+      "all_final_fixes_pass_functionality": true
+    }
+  ],
+  "evidence_checks": [
+    {
+      "check": "16 registered cases",
+      "passed": true
+    },
+    {
+      "check": "2 factorial / 12 single / 2 unresolved",
+      "passed": true
+    },
+    {
+      "check": "source hash FibonacciBalance.sol V0",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 FibonacciBalance.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash FibonacciBalance.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash arbitrary_location_write_simple.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash arbitrary_location_write_simple.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash arbitrary_location_write_simple.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash arbitrary_location_write_simple.sol V3",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 arbitrary_location_write_simple.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash arbitrary_location_write_simple.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash incorrect_constructor_name1.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash incorrect_constructor_name1.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 incorrect_constructor_name1.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash incorrect_constructor_name1.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash incorrect_constructor_name2.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash incorrect_constructor_name2.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 incorrect_constructor_name2.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash incorrect_constructor_name2.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash incorrect_constructor_name3.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash incorrect_constructor_name3.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 incorrect_constructor_name3.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash incorrect_constructor_name3.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash mapping_write.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash mapping_write.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 mapping_write.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash mapping_write.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash multiowned_vulnerable.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash multiowned_vulnerable.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 multiowned_vulnerable.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash multiowned_vulnerable.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash mycontract.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash mycontract.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 mycontract.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash mycontract.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash parity_wallet_bug_2.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash parity_wallet_bug_2.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 parity_wallet_bug_2.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash parity_wallet_bug_2.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash phishable.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash phishable.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 phishable.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash phishable.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash proxy.sol V0",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 proxy.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash proxy.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash simple_suicide.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash simple_suicide.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 simple_suicide.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash simple_suicide.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash unprotected0.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash unprotected0.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 unprotected0.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash unprotected0.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash wallet_02_refund_nosub.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash wallet_02_refund_nosub.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 wallet_02_refund_nosub.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash wallet_02_refund_nosub.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash wallet_03_wrong_constructor.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash wallet_03_wrong_constructor.sol F1",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 wallet_03_wrong_constructor.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash wallet_03_wrong_constructor.sol",
+      "passed": true
+    },
+    {
+      "check": "source hash wallet_04_confused_sign.sol V0",
+      "passed": true
+    },
+    {
+      "check": "source hash wallet_04_confused_sign.sol V1",
+      "passed": true
+    },
+    {
+      "check": "source hash wallet_04_confused_sign.sol V2",
+      "passed": true
+    },
+    {
+      "check": "source hash wallet_04_confused_sign.sol V3",
+      "passed": true
+    },
+    {
+      "check": "unchanged V0 wallet_04_confused_sign.sol",
+      "passed": true
+    },
+    {
+      "check": "author test hash wallet_04_confused_sign.sol",
+      "passed": true
+    },
+    {
+      "check": "run1 266 unique observations",
+      "passed": true
+    },
+    {
+      "check": "run1 14 executed files / 32 variants",
+      "passed": true
+    },
+    {
+      "check": "run1 no infrastructure/setup/compile errors",
+      "passed": true
+    },
+    {
+      "check": "run1 raw outputs exist",
+      "passed": true
+    },
+    {
+      "check": "run1 all single fixes pass common oracle",
+      "passed": true
+    },
+    {
+      "check": "run1 all V1/V3 pass common oracle",
+      "passed": true
+    },
+    {
+      "check": "run1 B safety preserved",
+      "passed": true
+    },
+    {
+      "check": "run1 B inherited restriction exactly zero/partial withdrawal",
+      "passed": true
+    },
+    {
+      "check": "run1 protected forbidden success/no-effect accepted",
+      "passed": true
+    },
+    {
+      "check": "run1 reverted operations atomically observed rollback",
+      "passed": true
+    },
+    {
+      "check": "run1 constructor owner invariant catches V0 and passes fix",
+      "passed": true
+    },
+    {
+      "check": "run1 >2^53 uint input exact string",
+      "passed": true
+    },
+    {
+      "check": "run1 identical compiler/settings in every comparison",
+      "passed": true
+    },
+    {
+      "check": "run1 only declared constructor ABI metadata/selector changes",
+      "passed": true
+    },
+    {
+      "check": "run1 repeat refund independent claim detects baseline extra 6 wei",
+      "passed": true
+    },
+    {
+      "check": "run1 protected refunds no excess payout",
+      "passed": true
+    },
+    {
+      "check": "run1 successful ordinary pop tested",
+      "passed": true
+    },
+    {
+      "check": "run1 owner-only simple lifecycle preserves successful shutdown",
+      "passed": true
+    },
+    {
+      "check": "run2 266 unique observations",
+      "passed": true
+    },
+    {
+      "check": "run2 14 executed files / 32 variants",
+      "passed": true
+    },
+    {
+      "check": "run2 no infrastructure/setup/compile errors",
+      "passed": true
+    },
+    {
+      "check": "run2 raw outputs exist",
+      "passed": true
+    },
+    {
+      "check": "run2 all single fixes pass common oracle",
+      "passed": true
+    },
+    {
+      "check": "run2 all V1/V3 pass common oracle",
+      "passed": true
+    },
+    {
+      "check": "run2 B safety preserved",
+      "passed": true
+    },
+    {
+      "check": "run2 B inherited restriction exactly zero/partial withdrawal",
+      "passed": true
+    },
+    {
+      "check": "run2 protected forbidden success/no-effect accepted",
+      "passed": true
+    },
+    {
+      "check": "run2 reverted operations atomically observed rollback",
+      "passed": true
+    },
+    {
+      "check": "run2 constructor owner invariant catches V0 and passes fix",
+      "passed": true
+    },
+    {
+      "check": "run2 >2^53 uint input exact string",
+      "passed": true
+    },
+    {
+      "check": "run2 identical compiler/settings in every comparison",
+      "passed": true
+    },
+    {
+      "check": "run2 only declared constructor ABI metadata/selector changes",
+      "passed": true
+    },
+    {
+      "check": "run2 repeat refund independent claim detects baseline extra 6 wei",
+      "passed": true
+    },
+    {
+      "check": "run2 protected refunds no excess payout",
+      "passed": true
+    },
+    {
+      "check": "run2 successful ordinary pop tested",
+      "passed": true
+    },
+    {
+      "check": "run2 owner-only simple lifecycle preserves successful shutdown",
+      "passed": true
+    },
+    {
+      "check": "clean repeat exact observations match",
+      "passed": true
+    },
+    {
+      "check": "clean repeat raw receipts and setup match",
+      "passed": true
+    },
+    {
+      "check": "arithmetic all files and hashes unchanged",
+      "passed": true
+    }
+  ]
+}

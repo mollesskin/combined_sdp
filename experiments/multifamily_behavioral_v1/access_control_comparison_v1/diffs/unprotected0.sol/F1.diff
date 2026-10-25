@@ -1,0 +1,11 @@
+--- V0/unprotected0.sol
++++ F1/unprotected0.sol
+@@ -23,7 +23,7 @@
+      // This function should be protected
+      // <yes> <report> ACCESS_CONTROL
+      function changeOwner(address _newOwner)
+-         public
++         public onlyowner
+      {
+         owner = _newOwner;
+      }

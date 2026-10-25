@@ -1,0 +1,3210 @@
+[
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V0",
+    "scenario": "ordinary",
+    "steps": [
+      {
+        "method": "PushBonusCode",
+        "args": [
+          "7"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "push",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "0",
+          "9"
+        ],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "update",
+        "value": "0"
+      },
+      {
+        "method": "PopBonusCode",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "pop",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "0",
+          "1"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V0",
+    "scenario": "empty_pop_takeover",
+    "steps": [
+      {
+        "method": "PopBonusCode",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "97222658762210312835982718871080339316596872691747246639997364149093866936990",
+          "642829559307850963015472508762062935916233390536"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V0",
+    "scenario": "owner_destroy",
+    "steps": [
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "destroy",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V1",
+    "scenario": "ordinary",
+    "steps": [
+      {
+        "method": "PushBonusCode",
+        "args": [
+          "7"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "push",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "0",
+          "9"
+        ],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "update",
+        "value": "0"
+      },
+      {
+        "method": "PopBonusCode",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "pop",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "0",
+          "1"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V1",
+    "scenario": "empty_pop_takeover",
+    "steps": [
+      {
+        "method": "PopBonusCode",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "97222658762210312835982718871080339316596872691747246639997364149093866936990",
+          "642829559307850963015472508762062935916233390536"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V1",
+    "scenario": "owner_destroy",
+    "steps": [
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "destroy",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V2",
+    "scenario": "ordinary",
+    "steps": [
+      {
+        "method": "PushBonusCode",
+        "args": [
+          "7"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "push",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "0",
+          "9"
+        ],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "update",
+        "value": "0"
+      },
+      {
+        "method": "PopBonusCode",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "pop",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "0",
+          "1"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V2",
+    "scenario": "empty_pop_takeover",
+    "steps": [
+      {
+        "method": "PopBonusCode",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "97222658762210312835982718871080339316596872691747246639997364149093866936990",
+          "642829559307850963015472508762062935916233390536"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V2",
+    "scenario": "owner_destroy",
+    "steps": [
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "destroy",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V3",
+    "scenario": "ordinary",
+    "steps": [
+      {
+        "method": "PushBonusCode",
+        "args": [
+          "7"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "push",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "0",
+          "9"
+        ],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "update",
+        "value": "0"
+      },
+      {
+        "method": "PopBonusCode",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "pop",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "0",
+          "1"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V3",
+    "scenario": "empty_pop_takeover",
+    "steps": [
+      {
+        "method": "PopBonusCode",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "UpdateBonusCodeAt",
+        "args": [
+          "97222658762210312835982718871080339316596872691747246639997364149093866936990",
+          "642829559307850963015472508762062935916233390536"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V3",
+    "scenario": "owner_destroy",
+    "steps": [
+      {
+        "method": "Destroy",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "destroy",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "V0",
+    "scenario": "deployment_authority",
+    "steps": [
+      {
+        "method": "$deployment",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deployment",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "V0",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "V0",
+    "scenario": "takeover",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "IamMissing",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "V0",
+    "scenario": "repeat_initializer",
+    "steps": [
+      {
+        "method": "IamMissing",
+        "args": [],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "IamMissing",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "F1",
+    "scenario": "deployment_authority",
+    "steps": [
+      {
+        "method": "$deployment",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deployment",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "F1",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "F1",
+    "scenario": "takeover",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "IamMissing",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "F1",
+    "scenario": "repeat_initializer",
+    "steps": [
+      {
+        "method": "IamMissing",
+        "args": [],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "IamMissing",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "V0",
+    "scenario": "deployment_authority",
+    "steps": [
+      {
+        "method": "$deployment",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deployment",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "V0",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "V0",
+    "scenario": "takeover",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "missing",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "V0",
+    "scenario": "repeat_initializer",
+    "steps": [
+      {
+        "method": "missing",
+        "args": [],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "missing",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "F1",
+    "scenario": "deployment_authority",
+    "steps": [
+      {
+        "method": "$deployment",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deployment",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "F1",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "F1",
+    "scenario": "takeover",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "missing",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "F1",
+    "scenario": "repeat_initializer",
+    "steps": [
+      {
+        "method": "missing",
+        "args": [],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "missing",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "V0",
+    "scenario": "deployment_authority",
+    "steps": [
+      {
+        "method": "$deployment",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deployment",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "V0",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "V0",
+    "scenario": "takeover",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "Constructor",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "V0",
+    "scenario": "repeat_initializer",
+    "steps": [
+      {
+        "method": "Constructor",
+        "args": [],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Constructor",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "F1",
+    "scenario": "deployment_authority",
+    "steps": [
+      {
+        "method": "$deployment",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deployment",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "F1",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "F1",
+    "scenario": "takeover",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "Constructor",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "F1",
+    "scenario": "repeat_initializer",
+    "steps": [
+      {
+        "method": "Constructor",
+        "args": [],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "Constructor",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mapping_write.sol",
+    "variant": "V0",
+    "scenario": "normal_keys",
+    "steps": [
+      {
+        "method": "set",
+        "args": [
+          "1",
+          "7"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      },
+      {
+        "method": "set",
+        "args": [
+          "1",
+          "9"
+        ],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      },
+      {
+        "method": "set",
+        "args": [
+          "57896044618658097711785492504343953926634992332820282019728792003956564819968",
+          "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      },
+      {
+        "method": "set",
+        "args": [
+          "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "13"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mapping_write.sol",
+    "variant": "V0",
+    "scenario": "owner_collision",
+    "steps": [
+      {
+        "method": "set",
+        "args": [
+          "35707666377435648211887908874984608119992236509074197713628505308453184860938",
+          "642829559307850963015472508762062935916233390536"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mapping_write.sol",
+    "variant": "F1",
+    "scenario": "normal_keys",
+    "steps": [
+      {
+        "method": "set",
+        "args": [
+          "1",
+          "7"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      },
+      {
+        "method": "set",
+        "args": [
+          "1",
+          "9"
+        ],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      },
+      {
+        "method": "set",
+        "args": [
+          "57896044618658097711785492504343953926634992332820282019728792003956564819968",
+          "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      },
+      {
+        "method": "set",
+        "args": [
+          "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "13"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mapping_write.sol",
+    "variant": "F1",
+    "scenario": "owner_collision",
+    "steps": [
+      {
+        "method": "set",
+        "args": [
+          "35707666377435648211887908874984608119992236509074197713628505308453184860938",
+          "642829559307850963015472508762062935916233390536"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "map_set",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "V0",
+    "scenario": "delegation",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "newOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "grant",
+        "value": "0"
+      },
+      {
+        "method": "newOwner",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "grant",
+        "value": "0"
+      },
+      {
+        "method": "deleteOwner",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "revoke",
+        "value": "0"
+      },
+      {
+        "method": "deleteOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "revoke",
+        "value": "0"
+      },
+      {
+        "method": "withdrawAll",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdrawAll",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "V0",
+    "scenario": "self_grant",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "newOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdrawAll",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "V0",
+    "scenario": "delegated_withdraw",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "newOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "grant",
+        "value": "0"
+      },
+      {
+        "method": "withdrawAll",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "F1",
+    "scenario": "delegation",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "newOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "grant",
+        "value": "0"
+      },
+      {
+        "method": "newOwner",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "grant",
+        "value": "0"
+      },
+      {
+        "method": "deleteOwner",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "revoke",
+        "value": "0"
+      },
+      {
+        "method": "deleteOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "revoke",
+        "value": "0"
+      },
+      {
+        "method": "withdrawAll",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdrawAll",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "F1",
+    "scenario": "self_grant",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "newOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "withdrawAll",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "F1",
+    "scenario": "delegated_withdraw",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "newOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "grant",
+        "value": "0"
+      },
+      {
+        "method": "withdrawAll",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "V0",
+    "scenario": "direct_owner",
+    "steps": [
+      {
+        "method": "sendTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "4"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "send",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "V0",
+    "scenario": "direct_outsider",
+    "steps": [
+      {
+        "method": "sendTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "4"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "V0",
+    "scenario": "origin_phishing",
+    "steps": [
+      {
+        "method": "sendTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "4"
+        ],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0",
+        "via": "relay"
+      }
+    ]
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "F1",
+    "scenario": "direct_owner",
+    "steps": [
+      {
+        "method": "sendTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "4"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "send",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "F1",
+    "scenario": "direct_outsider",
+    "steps": [
+      {
+        "method": "sendTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "4"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "F1",
+    "scenario": "origin_phishing",
+    "steps": [
+      {
+        "method": "sendTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "4"
+        ],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0",
+        "via": "relay"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "V0",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "initWallet",
+        "args": [
+          [
+            "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+          ],
+          1,
+          "100"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "parity_init",
+        "value": "0"
+      },
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "execute",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "4",
+          "0x"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "parity_pay",
+        "value": "0"
+      },
+      {
+        "method": "execute",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "1",
+          "0x"
+        ],
+        "sender": 2,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "initWallet",
+        "args": [
+          [
+            "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+          ],
+          1,
+          "1"
+        ],
+        "sender": 0,
+        "kind": "must_revert",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "kill",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "destroy_to",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "V0",
+    "scenario": "first_initWallet",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "initWallet",
+        "args": [
+          [],
+          1,
+          "100"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "kill",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "V0",
+    "scenario": "first_initMultiowned",
+    "steps": [
+      {
+        "method": "initMultiowned",
+        "args": [
+          [],
+          1
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "V0",
+    "scenario": "first_initDaylimit",
+    "steps": [
+      {
+        "method": "initDaylimit",
+        "args": [
+          "777"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "V0",
+    "scenario": "separate_legitimate",
+    "steps": [
+      {
+        "method": "initDaylimit",
+        "args": [
+          "100"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "daylimit",
+        "value": "0"
+      },
+      {
+        "method": "initMultiowned",
+        "args": [
+          [
+            "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+          ],
+          1
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "multiinit",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "F1",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "initWallet",
+        "args": [
+          [
+            "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+          ],
+          1,
+          "100"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "parity_init",
+        "value": "0"
+      },
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 2,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "execute",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "4",
+          "0x"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "parity_pay",
+        "value": "0"
+      },
+      {
+        "method": "execute",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "1",
+          "0x"
+        ],
+        "sender": 2,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "initWallet",
+        "args": [
+          [
+            "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+          ],
+          1,
+          "1"
+        ],
+        "sender": 0,
+        "kind": "must_revert",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "kill",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "destroy_to",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "F1",
+    "scenario": "first_initWallet",
+    "steps": [
+      {
+        "method": "$fund",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "fund",
+        "value": "10"
+      },
+      {
+        "method": "initWallet",
+        "args": [
+          [],
+          1,
+          "100"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "kill",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "F1",
+    "scenario": "first_initMultiowned",
+    "steps": [
+      {
+        "method": "initMultiowned",
+        "args": [
+          [],
+          1
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "F1",
+    "scenario": "first_initDaylimit",
+    "steps": [
+      {
+        "method": "initDaylimit",
+        "args": [
+          "777"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "F1",
+    "scenario": "separate_legitimate",
+    "steps": [
+      {
+        "method": "initDaylimit",
+        "args": [
+          "100"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "daylimit",
+        "value": "0"
+      },
+      {
+        "method": "initMultiowned",
+        "args": [
+          [
+            "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+          ],
+          1
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "multiinit",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "V0",
+    "scenario": "direct_owner",
+    "steps": [
+      {
+        "method": "withdrawAll",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "recipient_all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "V0",
+    "scenario": "direct_outsider",
+    "steps": [
+      {
+        "method": "withdrawAll",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "V0",
+    "scenario": "origin_phishing",
+    "steps": [
+      {
+        "method": "withdrawAll",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0",
+        "via": "relay"
+      }
+    ]
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "F1",
+    "scenario": "direct_owner",
+    "steps": [
+      {
+        "method": "withdrawAll",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "recipient_all",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "F1",
+    "scenario": "direct_outsider",
+    "steps": [
+      {
+        "method": "withdrawAll",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "F1",
+    "scenario": "origin_phishing",
+    "steps": [
+      {
+        "method": "withdrawAll",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0",
+        "via": "relay"
+      }
+    ]
+  },
+  {
+    "file": "simple_suicide.sol",
+    "variant": "V0",
+    "scenario": "outsider",
+    "steps": [
+      {
+        "method": "sudicideAnyone",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "simple_suicide.sol",
+    "variant": "V0",
+    "scenario": "owner",
+    "steps": [
+      {
+        "method": "sudicideAnyone",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "destroy",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "simple_suicide.sol",
+    "variant": "F1",
+    "scenario": "outsider",
+    "steps": [
+      {
+        "method": "sudicideAnyone",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "simple_suicide.sol",
+    "variant": "F1",
+    "scenario": "owner",
+    "steps": [
+      {
+        "method": "sudicideAnyone",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "destroy",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "unprotected0.sol",
+    "variant": "V0",
+    "scenario": "outsider",
+    "steps": [
+      {
+        "method": "changeOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "unprotected0.sol",
+    "variant": "V0",
+    "scenario": "normal_transfer",
+    "steps": [
+      {
+        "method": "changeOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "owner",
+        "value": "0"
+      },
+      {
+        "method": "changeOwner",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "changeOwner",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "owner",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "unprotected0.sol",
+    "variant": "F1",
+    "scenario": "outsider",
+    "steps": [
+      {
+        "method": "changeOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "unprotected0.sol",
+    "variant": "F1",
+    "scenario": "normal_transfer",
+    "steps": [
+      {
+        "method": "changeOwner",
+        "args": [
+          "0x70997970C51812dc3A010C7d01b50e0d17dc79C8"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "owner",
+        "value": "0"
+      },
+      {
+        "method": "changeOwner",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "changeOwner",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "owner",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "V0",
+    "scenario": "normal_refund",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "4"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      },
+      {
+        "method": "refund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "refund",
+        "value": "0"
+      },
+      {
+        "method": "refund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "refund",
+        "value": "0"
+      },
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "3"
+      },
+      {
+        "method": "refund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "refund",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "V0",
+    "scenario": "rejecting_receiver",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "refund",
+        "args": [],
+        "sender": 0,
+        "kind": "must_revert",
+        "effect": "same",
+        "value": "0",
+        "via": "rejector"
+      }
+    ]
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "V0",
+    "scenario": "migration",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "migrate",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "F1",
+    "scenario": "normal_refund",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "4"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      },
+      {
+        "method": "refund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "refund",
+        "value": "0"
+      },
+      {
+        "method": "refund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "refund",
+        "value": "0"
+      },
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "3"
+      },
+      {
+        "method": "refund",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "refund",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "F1",
+    "scenario": "rejecting_receiver",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "refund",
+        "args": [],
+        "sender": 0,
+        "kind": "must_revert",
+        "effect": "same",
+        "value": "0",
+        "via": "rejector"
+      }
+    ]
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "F1",
+    "scenario": "migration",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "migrate",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "V0",
+    "scenario": "deployment_authority",
+    "steps": [
+      {
+        "method": "$deployment",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deployment",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "V0",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "4"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "migrate",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "V0",
+    "scenario": "takeover",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "initWallet",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "V0",
+    "scenario": "repeat_initializer",
+    "steps": [
+      {
+        "method": "initWallet",
+        "args": [],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "initWallet",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "F1",
+    "scenario": "deployment_authority",
+    "steps": [
+      {
+        "method": "$deployment",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deployment",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "F1",
+    "scenario": "legitimate",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "4"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "migrate",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "F1",
+    "scenario": "takeover",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "initWallet",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "F1",
+    "scenario": "repeat_initializer",
+    "steps": [
+      {
+        "method": "initWallet",
+        "args": [],
+        "sender": 0,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "initWallet",
+        "args": [],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V0",
+    "scenario": "allowed_partial",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "0"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "4"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V0",
+    "scenario": "allowed_full",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "10"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V0",
+    "scenario": "excess",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "11"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V0",
+    "scenario": "no_credit",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "1"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V0",
+    "scenario": "migration",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "migrate",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V1",
+    "scenario": "allowed_partial",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "0"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "4"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V1",
+    "scenario": "allowed_full",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "10"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V1",
+    "scenario": "excess",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "11"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V1",
+    "scenario": "no_credit",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "1"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V1",
+    "scenario": "migration",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "migrate",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V2",
+    "scenario": "allowed_partial",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "0"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "4"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V2",
+    "scenario": "allowed_full",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "10"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V2",
+    "scenario": "excess",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "11"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V2",
+    "scenario": "no_credit",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "1"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V2",
+    "scenario": "migration",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "migrate",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V3",
+    "scenario": "allowed_partial",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "0"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "4"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V3",
+    "scenario": "allowed_full",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "10"
+        ],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "withdraw",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V3",
+    "scenario": "excess",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "11"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V3",
+    "scenario": "no_credit",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "100"
+      },
+      {
+        "method": "withdraw",
+        "args": [
+          "1"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V3",
+    "scenario": "migration",
+    "steps": [
+      {
+        "method": "deposit",
+        "args": [],
+        "sender": 1,
+        "kind": "allowed",
+        "effect": "deposit",
+        "value": "10"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 1,
+        "kind": "forbidden",
+        "effect": "same",
+        "value": "0"
+      },
+      {
+        "method": "migrateTo",
+        "args": [
+          "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+        ],
+        "sender": 0,
+        "kind": "allowed",
+        "effect": "migrate",
+        "value": "0"
+      }
+    ]
+  }
+]

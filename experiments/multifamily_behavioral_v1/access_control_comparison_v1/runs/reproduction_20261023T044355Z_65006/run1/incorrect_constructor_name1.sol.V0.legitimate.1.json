@@ -1,0 +1,178 @@
+{
+  "row": {
+    "file": "incorrect_constructor_name1.sol",
+    "group": "AC_INIT_CLONE",
+    "track": "single",
+    "variant": "V0",
+    "scenario": "legitimate",
+    "step": 1,
+    "method": "withdraw",
+    "kind": "allowed",
+    "effect": "all",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "reverted",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [],
+      "value_wei": "0",
+      "via": null,
+      "gas_limit": "6000000"
+    },
+    "before": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true,
+        "owner": "0x0000000000000000000000000000000000000000"
+      },
+      "storage": {
+        "0": "0",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0"
+      },
+      "accounts": {
+        "user0": "9999999323927465971753",
+        "user1": "9999999966581723088150",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "expected": {
+      "state": {
+        "contract_wei": "0",
+        "code_present": true,
+        "owner": "0x0000000000000000000000000000000000000000"
+      },
+      "accounts": {
+        "user0": "9999999323927465971763",
+        "user1": "9999999966581723088150",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true,
+        "owner": "0x0000000000000000000000000000000000000000"
+      },
+      "storage": {
+        "0": "0",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0"
+      },
+      "accounts": {
+        "user0": "9999999288570069770713",
+        "user1": "9999999966581723088150",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual_accounts_excluding_tx_gas": {
+      "user0": "9999999323927465971753",
+      "user1": "9999999966581723088150",
+      "user2": "10000000000000000000000",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "state_differences": {
+      "contract_wei": {
+        "expected": "0",
+        "actual": "10",
+        "discrepancy": "10"
+      }
+    },
+    "account_differences": {
+      "user0": {
+        "expected": "9999999323927465971763",
+        "actual": "9999999323927465971753",
+        "discrepancy": "-10"
+      }
+    },
+    "getter_check": null,
+    "correct": false,
+    "security_pass": null,
+    "functionality_pass": false,
+    "full_observed_rollback": true,
+    "forbidden_no_effect": null,
+    "contract_outflow_wei": "0",
+    "unauthorized_outflow_wei": null,
+    "excess_payout_wei": null,
+    "account_deltas_wei_excluding_tx_gas": {
+      "user0": "0",
+      "user1": "0",
+      "user2": "0",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "applicability": {
+      "owner_integrity": true,
+      "credit_accounting": false,
+      "code_lifecycle": false,
+      "wei_outflow": true,
+      "gas": true,
+      "full_rollback": true
+    },
+    "gas_used": "23340",
+    "error": {
+      "message": "Transaction reverted without a reason string",
+      "data": "0x",
+      "transactionHash": "0x1be61ba82141253e23a5e267cc64ca01f7fffa56d698e8935f8b535908a88135"
+    },
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/access_control_comparison_v1/runs/reproduction_20261023T044355Z_65006/run1/incorrect_constructor_name1.sol.V0.legitimate.1.json"
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x097a20b5e74b27a779a6eb85c85cff036d505c7dd30ba737078e1b9c2dfac9b9",
+    "blockNumber": 5,
+    "contractAddress": null,
+    "cumulativeGasUsed": "23340",
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "gasPrice": "1514884156",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "23340",
+    "hash": "0x1be61ba82141253e23a5e267cc64ca01f7fffa56d698e8935f8b535908a88135",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 0,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  },
+  "setup": {
+    "funding": null,
+    "deploy_receipt": {
+      "_type": "TransactionReceipt",
+      "blockHash": "0x7b04e6962bea4efb4391d803cb72de6c01f0e281af19a074aa4d20463ec0d9a6",
+      "blockNumber": 1,
+      "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "cumulativeGasUsed": "117029",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "gasPrice": "1875000000",
+      "blobGasUsed": null,
+      "blobGasPrice": null,
+      "gasUsed": "117029",
+      "hash": "0x280d4dacab22e43bf2168563f8a076dfdcefb0a6ee11698801e40d651b180f77",
+      "index": 0,
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "status": 1,
+      "to": null
+    }
+  }
+}

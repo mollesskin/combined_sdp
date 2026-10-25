@@ -1,0 +1,31 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Missing",
+  "sourceName": "contracts/F1/incorrect_constructor_name3.sol",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060008054600160a060020a0319163317905560e7806100316000396000f300608060405260043610603e5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633ccfd60b81146040575b005b348015604b57600080fd5b50603e60005473ffffffffffffffffffffffffffffffffffffffff163314607157600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff90911691303180156108fc02929091818181858888f1935050505015801560b8573d6000803e3d6000fd5b505600a165627a7a723058209283fcac40548203f991cc5f2a4b2c736c903fd57ad5af74e38c0c7350db964b0029",
+  "deployedBytecode": "0x608060405260043610603e5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633ccfd60b81146040575b005b348015604b57600080fd5b50603e60005473ffffffffffffffffffffffffffffffffffffffff163314607157600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff90911691303180156108fc02929091818181858888f1935050505015801560b8573d6000803e3d6000fd5b505600a165627a7a723058209283fcac40548203f991cc5f2a4b2c736c903fd57ad5af74e38c0c7350db964b0029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

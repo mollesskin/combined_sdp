@@ -1,0 +1,834 @@
+[
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "mapping_write.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "mapping_write.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "simple_suicide.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "simple_suicide.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "unprotected0.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "unprotected0.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "F1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V0",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V1",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V2",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V3",
+    "solcVersion": "0.4.25",
+    "solcLongVersion": "0.4.25+commit.59dbf8f1",
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "FibonacciLib",
+  "sourceName": "contracts/V0/FibonacciBalance.sol",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "calculatedFibNumber",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "start",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_start",
+          "type": "uint256"
+        }
+      ],
+      "name": "setStart",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "n",
+          "type": "uint256"
+        }
+      ],
+      "name": "setFibonacci",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610168806100206000396000f3006080604052600436106100615763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663bbe1d75b8114610066578063be9a65551461008d578063f6a03ebf146100a2578063fe75faab146100bc575b600080fd5b34801561007257600080fd5b5061007b6100d4565b60408051918252519081900360200190f35b34801561009957600080fd5b5061007b6100da565b3480156100ae57600080fd5b506100ba6004356100e0565b005b3480156100c857600080fd5b506100ba6004356100e5565b60015481565b60005481565b600055565b6100ee816100f4565b60015550565b60008115156101065750600054610137565b816001141561011b5750600054600101610137565b610127600283036100f4565b610133600184036100f4565b0190505b9190505600a165627a7a723058205033e7f9018dc2f44096c9be426d700718a2ce952854f931eca74865712a74ad0029",
+  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663bbe1d75b8114610066578063be9a65551461008d578063f6a03ebf146100a2578063fe75faab146100bc575b600080fd5b34801561007257600080fd5b5061007b6100d4565b60408051918252519081900360200190f35b34801561009957600080fd5b5061007b6100da565b3480156100ae57600080fd5b506100ba6004356100e0565b005b3480156100c857600080fd5b506100ba6004356100e5565b60015481565b60005481565b600055565b6100ee816100f4565b60015550565b60008115156101065750600054610137565b816001141561011b5750600054600101610137565b610127600283036100f4565b610133600184036100f4565b0190505b9190505600a165627a7a723058205033e7f9018dc2f44096c9be426d700718a2ce952854f931eca74865712a74ad0029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

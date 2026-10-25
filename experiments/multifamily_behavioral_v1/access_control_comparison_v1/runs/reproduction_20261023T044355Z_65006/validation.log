@@ -1,0 +1,48 @@
+{
+  "files_considered": 16,
+  "files_executed": 14,
+  "full_factorial_files": 2,
+  "single_fix_files": 12,
+  "unresolved_files": 2,
+  "groups_total": 14,
+  "groups_executed": 12,
+  "stored_variants": 34,
+  "executed_variants": 32,
+  "unique_case_scenarios": 47,
+  "variant_scenario_instances_per_run": 110,
+  "observations_per_run": 266,
+  "transactions_per_run": 258,
+  "deployment_observations_per_run": 8,
+  "final_repeats": 2,
+  "comparisons": {
+    "V3_vs_V1": {
+      "overall_relation": {
+        "tie": 22
+      },
+      "security_relation": {
+        "N/A": 14,
+        "tie": 8
+      },
+      "functionality_relation": {
+        "tie": 14,
+        "N/A": 8
+      }
+    },
+    "V3_vs_V2": {
+      "overall_relation": {
+        "tie": 20,
+        "improvement": 2
+      },
+      "security_relation": {
+        "N/A": 14,
+        "tie": 8
+      },
+      "functionality_relation": {
+        "tie": 12,
+        "N/A": 8,
+        "improvement": 2
+      }
+    }
+  }
+}
+107 evidence checks passed

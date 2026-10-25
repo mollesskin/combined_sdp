@@ -1,0 +1,11 @@
+--- V0/wallet_03_wrong_constructor.sol
++++ F1/wallet_03_wrong_constructor.sol
+@@ -16,7 +16,7 @@
+      mapping(address => uint256) balances;
+      
+      // <yes> <report> ACCESS_CONTROL
+-     function initWallet() public {
++     constructor() public {
+          creator = msg.sender;
+      }
+ 

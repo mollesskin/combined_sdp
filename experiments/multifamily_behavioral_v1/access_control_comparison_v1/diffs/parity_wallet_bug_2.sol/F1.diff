@@ -1,0 +1,44 @@
+--- V0/parity_wallet_bug_2.sol
++++ F1/parity_wallet_bug_2.sol
+@@ -68,6 +68,8 @@
+ }
+ 
+ contract WalletLibrary is WalletEvents {
++  constructor() public { deploymentAuthority = msg.sender; }
++  modifier onlyDeploymentAuthority { require(msg.sender == deploymentAuthority); _; }
+   // TYPES
+ 
+   // struct for the status of a pending operation.
+@@ -110,7 +112,7 @@
+ 
+   // constructor is given number of sigs required to do protected "onlymanyowners" transactions
+   // as well as the selection of addresses capable of confirming them.
+-  function initMultiowned(address[] _owners, uint _required) only_uninitialized {
++  function initMultiowned(address[] _owners, uint _required) only_uninitialized onlyDeploymentAuthority {
+     m_numOwners = _owners.length + 1;
+     m_owners[1] = uint(msg.sender);
+     m_ownerIndex[uint(msg.sender)] = 1;
+@@ -204,7 +206,7 @@
+   }
+ 
+   // constructor - stores initial daily limit and records the present day's index.
+-  function initDaylimit(uint _limit) only_uninitialized {
++  function initDaylimit(uint _limit) only_uninitialized onlyDeploymentAuthority {
+     m_dailyLimit = _limit;
+     m_lastDay = today();
+   }
+@@ -223,7 +225,7 @@
+   // constructor - just pass on the owner array to the multiowned and
+   // the limit to daylimit
+   // <yes> <report> ACCESS_CONTROL
+-  function initWallet(address[] _owners, uint _required, uint _daylimit) only_uninitialized {
++  function initWallet(address[] _owners, uint _required, uint _daylimit) only_uninitialized onlyDeploymentAuthority {
+     initDaylimit(_daylimit);
+     initMultiowned(_owners, _required);
+   }
+@@ -403,4 +405,5 @@
+ 
+   // pending transactions we have at present.
+   mapping (bytes32 => Transaction) m_txs;
++  address private deploymentAuthority; // appended to preserve existing field slots
+ }

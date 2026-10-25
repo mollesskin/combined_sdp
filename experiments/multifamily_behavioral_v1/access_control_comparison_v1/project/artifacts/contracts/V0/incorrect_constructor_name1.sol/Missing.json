@@ -1,0 +1,34 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Missing",
+  "sourceName": "contracts/V0/incorrect_constructor_name1.sol",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "IamMissing",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610128806100206000396000f30060806040526004361060485763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632e4071d48114604a5780633ccfd60b14605c575b005b348015605557600080fd5b506048606e565b348015606757600080fd5b506048608f565b6000805473ffffffffffffffffffffffffffffffffffffffff191633179055565b60005473ffffffffffffffffffffffffffffffffffffffff16331460b257600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff90911691303180156108fc02929091818181858888f1935050505015801560f9573d6000803e3d6000fd5b505600a165627a7a723058202eb47b9707941596bd140123f5f3ca8a675d686ec07ac902b0dce6d3bbc5aaf20029",
+  "deployedBytecode": "0x60806040526004361060485763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416632e4071d48114604a5780633ccfd60b14605c575b005b348015605557600080fd5b506048606e565b348015606757600080fd5b506048608f565b6000805473ffffffffffffffffffffffffffffffffffffffff191633179055565b60005473ffffffffffffffffffffffffffffffffffffffff16331460b257600080fd5b6000805460405173ffffffffffffffffffffffffffffffffffffffff90911691303180156108fc02929091818181858888f1935050505015801560f9573d6000803e3d6000fd5b505600a165627a7a723058202eb47b9707941596bd140123f5f3ca8a675d686ec07ac902b0dce6d3bbc5aaf20029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

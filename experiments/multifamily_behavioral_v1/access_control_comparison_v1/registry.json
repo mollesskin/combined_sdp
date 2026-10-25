@@ -1,0 +1,1153 @@
+{
+  "RQ": "How effective are combinations of security design patterns compared with their individual components in preventing vulnerabilities in Ethereum smart contracts?",
+  "report_provenance": "experiments/multifamily_behavioral_v1/vendor/pinned/smartbugs-curated/0.4.x/scripts/test-results.json",
+  "report_note": "Working baseline scripts/test-results.json absent at inspection; saved pinned report lists 16 AC files. Actual 33-file reproduction supported separately by saved baseline-tests.log, not new protected results.",
+  "cases": [
+    {
+      "file": "FibonacciBalance.sol",
+      "source_path": "contracts/dataset/access_control/FibonacciBalance.sol",
+      "test_path": "test/access_control/FibonacciBalance_test.js",
+      "source_sha256": "784009c0758940079bd3a7402a3acdf60e3a9a659012e19b0aa21dbc9c0a35ab",
+      "test_sha256": "2fa3f84fedbdd23cc1fc88c9af514a9f45af08dcf64a88e17c1ab99f185ff35d",
+      "group": "FibonacciBalance.sol",
+      "track": "unresolved",
+      "protected_asset": "Library pointer and exact Fibonacci payout",
+      "permissions": "Public withdraw; fallback explicitly permits library calls; no owner role",
+      "decision_and_scope": "No resolved policy for setStart or allowed selectors; isolated computation changes shared-library workflow/storage layout. Need exact sequence and permitted fallback API before architecture comparison.",
+      "author_test_defect": "Delegatecall с несогласованным storage layout и изменяемым адресом библиотеки",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/FibonacciBalance.sol",
+        "test_path": "test/access_control/FibonacciBalance_test.js",
+        "source_sha256": "784009c0758940079bd3a7402a3acdf60e3a9a659012e19b0aa21dbc9c0a35ab",
+        "test_sha256": "2fa3f84fedbdd23cc1fc88c9af514a9f45af08dcf64a88e17c1ab99f185ff35d",
+        "benchmark_category": "access_control",
+        "file": "FibonacciBalance.sol",
+        "pragma": "^0.4.22",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Delegatecall с несогласованным storage layout и изменяемым адресом библиотеки",
+        "proposed_track": "architecture_pair_requires_explicit_model",
+        "proposed_A": "Замена записи через delegatecall на изолированное вычисление с явным результатом и локальным обновлением состояния",
+        "proposed_B": "Ограничение доступных операций библиотеки / неизменность доверенного target по согласованной модели",
+        "comparability_caveat": "Это изменение архитектуры и интерфейсных ожиданий, не минимальный onlyOwner patch. Перед фиксацией A/B определить допустимость setStart и требуемую последовательность Fibonacci.",
+        "proposed_measurements": [
+          "соответствие выплаты математическому эталону",
+          "изменение доверенного адреса",
+          "неразрешённый отток, wei",
+          "функциональность последовательности"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/FibonacciBalance.sol",
+            "start": 10,
+            "end": 60
+          }
+        ],
+        "required_test_changes": [
+          "В текущем functional check проверяется calculatedFibNumber > 0, но не точное правильное значение.",
+          "Добавить эталон вычисления вне EVM и требуемую модель библиотечных операций."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/FibonacciBalance.sol",
+          "sha256": "784009c0758940079bd3a7402a3acdf60e3a9a659012e19b0aa21dbc9c0a35ab"
+        }
+      },
+      "existing_mechanisms": [
+        "require on delegatecall success; no caller restriction; mutable library pointer via mismatched fallback storage"
+      ],
+      "compilation_status": "success",
+      "execution_status": "not_executed_unresolved_requirements",
+      "output_paths": null,
+      "missing_reason": "No resolved policy for setStart or allowed selectors; isolated computation changes shared-library workflow/storage layout. Need exact sequence and permitted fallback API before architecture comparison."
+    },
+    {
+      "file": "arbitrary_location_write_simple.sol",
+      "source_path": "contracts/dataset/access_control/arbitrary_location_write_simple.sol",
+      "test_path": "test/access_control/arbitrary_location_write_simple_test.js",
+      "source_sha256": "bbbdb5367463fd3d1e11b2c569695d8b4734e3f88fcf937a34469a23121b01ab",
+      "test_sha256": "4d74fdfe9a440c368d91a76e4985b8542edd4e52dbe323ef06039db1825f5d96",
+      "group": "arbitrary_location_write_simple.sol",
+      "track": "factorial",
+      "protected_asset": "owner slot1 and bounded dynamic array",
+      "permissions": "Any user may push/pop/update valid index; only deployer may Destroy",
+      "decision_and_scope": "A nonempty pre-guard; B post-result checked subtraction; V3 both. Existing update bound and Destroy owner check retained.",
+      "author_test_defect": "Уменьшение длины пустого массива и последующая порча чужого storage",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/arbitrary_location_write_simple.sol",
+        "test_path": "test/access_control/arbitrary_location_write_simple_test.js",
+        "source_sha256": "bbbdb5367463fd3d1e11b2c569695d8b4734e3f88fcf937a34469a23121b01ab",
+        "test_sha256": "4d74fdfe9a440c368d91a76e4985b8542edd4e52dbe323ef06039db1825f5d96",
+        "benchmark_category": "access_control",
+        "file": "arbitrary_location_write_simple.sol",
+        "pragma": "^0.4.25",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Уменьшение длины пустого массива и последующая порча чужого storage",
+        "proposed_track": "overlapping_bounds_pair_candidate",
+        "proposed_A": "Guard Check: до уменьшения длины проверить непустой массив",
+        "proposed_B": "Checked arithmetic при уменьшении длины массива",
+        "comparability_caveat": "Два механизма могут обеспечивать одно и то же свойство; ожидаемое равенство допустимо. Категория benchmark остаётся access_control, непосредственная причина — арифметика/границы storage.",
+        "proposed_measurements": [
+          "изменение owner",
+          "целостность длины массива",
+          "успешность разрешённых push/pop/update",
+          "газ разрешённого pop"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/arbitrary_location_write_simple.sol",
+            "start": 21,
+            "end": 38
+          }
+        ],
+        "required_test_changes": [
+          "Проверить пустой pop, непустой pop, допустимый update и неизменность owner; не считать разные assertions отдельными дефектами."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/arbitrary_location_write_simple.sol",
+          "sha256": "bbbdb5367463fd3d1e11b2c569695d8b4734e3f88fcf937a34469a23121b01ab"
+        },
+        "V1": {
+          "path": "project/contracts/V1/arbitrary_location_write_simple.sol",
+          "sha256": "5c4e0e00a05edca6c9586f1793f09efb70bd4efdbe7b41b576ef63d45edc5254"
+        },
+        "V2": {
+          "path": "project/contracts/V2/arbitrary_location_write_simple.sol",
+          "sha256": "3fb38f9634b4df54954a6b4e75a8bddfe5c019671514c0a30bcbc9db45354d77"
+        },
+        "V3": {
+          "path": "project/contracts/V3/arbitrary_location_write_simple.sol",
+          "sha256": "84ccd66984d62f44476969341f4324cf9ba9cc7f3d06923f41e46425302bfad3"
+        }
+      },
+      "existing_mechanisms": [
+        "Update bounds guard",
+        "Destroy owner guard"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "incorrect_constructor_name1.sol",
+      "source_path": "contracts/dataset/access_control/incorrect_constructor_name1.sol",
+      "test_path": "test/access_control/incorrect_constructor_name1_test.js",
+      "source_sha256": "d918731cebddf34ad385dd799691237e0ec1aab09f34ce7eb6bbe83ec86cd8c8",
+      "test_sha256": "10c20d149803dd0b19b6df269222fd732a5c594bef1f43699f2a57c0531e501e",
+      "group": "AC_INIT_CLONE",
+      "track": "single",
+      "protected_asset": "Owner slot0 and withdrawal authority",
+      "permissions": "Deployer owns at construction; anyone may fund; only owner may withdraw",
+      "decision_and_scope": "Replace misnamed initializer with constructor; remove runtime selector. No post-deployment initialization requirement is inferred.",
+      "author_test_defect": "Публичная функция инициализации может изменить владельца/creator",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/incorrect_constructor_name1.sol",
+        "test_path": "test/access_control/incorrect_constructor_name1_test.js",
+        "source_sha256": "d918731cebddf34ad385dd799691237e0ec1aab09f34ce7eb6bbe83ec86cd8c8",
+        "test_sha256": "10c20d149803dd0b19b6df269222fd732a5c594bef1f43699f2a57c0531e501e",
+        "benchmark_category": "access_control",
+        "file": "incorrect_constructor_name1.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Публичная функция инициализации может изменить владельца/creator",
+        "proposed_track": "initialization_pair_candidate_requires_declared_policy",
+        "proposed_A": "Ограничение доступа к исходному initializer заранее определённой deployment authority",
+        "proposed_B": "Однократная инициализация посредством отдельного флага состояния",
+        "comparability_caveat": "Сначала явно принять модель отдельной post-deployment инициализации. Не выдавать guard за onlyOwner до задания owner. Правильный constructor — важный дополнительный ориентир. Повторная запись того же владельца сама по себе не обязательно вред. Три Missing-файла — одна нормализованная семья.",
+        "proposed_measurements": [
+          "изменился ли owner/creator после запрещённого вызова",
+          "неразрешённый отток, wei",
+          "успешность разрешённых действий",
+          "газ успешной разрешённой операции"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/incorrect_constructor_name1.sol",
+            "start": 20,
+            "end": 25
+          }
+        ],
+        "required_test_changes": [
+          "Разделить первый вызов постороннего, первый разрешённый вызов и повторную инициализацию; правила не зависят от варианта.",
+          "Проверять состояние владельца и обычные действия, а не только факт revert.",
+          "Не называть жизненный цикл отдельным опубликованным паттерном без подтверждения в источнике."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/incorrect_constructor_name1.sol",
+          "sha256": "d918731cebddf34ad385dd799691237e0ec1aab09f34ce7eb6bbe83ec86cd8c8"
+        },
+        "F1": {
+          "path": "project/contracts/F1/incorrect_constructor_name1.sol",
+          "sha256": "5294793fb90292fcf8d27bfbbc9229ad93822ad7b98bfae9d2c46be27e508f87"
+        }
+      },
+      "existing_mechanisms": [
+        "onlyowner on withdraw",
+        "payable fallback",
+        "runtime IamMissing unguarded; no constructor owner init"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "incorrect_constructor_name2.sol",
+      "source_path": "contracts/dataset/access_control/incorrect_constructor_name2.sol",
+      "test_path": "test/access_control/incorrect_constructor_name2_test.js",
+      "source_sha256": "d210fc21c6fdf273cfe2af52408b09ec82df89ebdea554b0c6356ad8b5d8796d",
+      "test_sha256": "8effcfbbf0039bf53154ee7d990440588255d8b5c4c8834bd9cb05cfea63a720",
+      "group": "AC_INIT_CLONE",
+      "track": "single",
+      "protected_asset": "Owner slot0 and withdrawal authority",
+      "permissions": "Deployer owns at construction; anyone may fund; only owner may withdraw",
+      "decision_and_scope": "Replace misnamed initializer with constructor; remove runtime selector. No post-deployment initialization requirement is inferred.",
+      "author_test_defect": "Публичная функция инициализации может изменить владельца/creator",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/incorrect_constructor_name2.sol",
+        "test_path": "test/access_control/incorrect_constructor_name2_test.js",
+        "source_sha256": "d210fc21c6fdf273cfe2af52408b09ec82df89ebdea554b0c6356ad8b5d8796d",
+        "test_sha256": "8effcfbbf0039bf53154ee7d990440588255d8b5c4c8834bd9cb05cfea63a720",
+        "benchmark_category": "access_control",
+        "file": "incorrect_constructor_name2.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Публичная функция инициализации может изменить владельца/creator",
+        "proposed_track": "initialization_pair_candidate_requires_declared_policy",
+        "proposed_A": "Ограничение доступа к исходному initializer заранее определённой deployment authority",
+        "proposed_B": "Однократная инициализация посредством отдельного флага состояния",
+        "comparability_caveat": "Сначала явно принять модель отдельной post-deployment инициализации. Не выдавать guard за onlyOwner до задания owner. Правильный constructor — важный дополнительный ориентир. Повторная запись того же владельца сама по себе не обязательно вред. Три Missing-файла — одна нормализованная семья.",
+        "proposed_measurements": [
+          "изменился ли owner/creator после запрещённого вызова",
+          "неразрешённый отток, wei",
+          "успешность разрешённых действий",
+          "газ успешной разрешённой операции"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/incorrect_constructor_name2.sol",
+            "start": 18,
+            "end": 23
+          }
+        ],
+        "required_test_changes": [
+          "Разделить первый вызов постороннего, первый разрешённый вызов и повторную инициализацию; правила не зависят от варианта.",
+          "Проверять состояние владельца и обычные действия, а не только факт revert.",
+          "Не называть жизненный цикл отдельным опубликованным паттерном без подтверждения в источнике."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/incorrect_constructor_name2.sol",
+          "sha256": "d210fc21c6fdf273cfe2af52408b09ec82df89ebdea554b0c6356ad8b5d8796d"
+        },
+        "F1": {
+          "path": "project/contracts/F1/incorrect_constructor_name2.sol",
+          "sha256": "b3c5a19e0c00244d4253167bdaed9a75c3a0c56c6d27673e4d47e32478b8e812"
+        }
+      },
+      "existing_mechanisms": [
+        "onlyowner on withdraw",
+        "payable fallback",
+        "runtime missing unguarded; no constructor owner init"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "incorrect_constructor_name3.sol",
+      "source_path": "contracts/dataset/access_control/incorrect_constructor_name3.sol",
+      "test_path": "test/access_control/incorrect_constructor_name3_test.js",
+      "source_sha256": "a1a505f4d25449a4a566b9a84b8c51ecdc2cbe768f9d1f041900d90a530807a6",
+      "test_sha256": "24e0e4cc4d276722dfbf34b75270bbb0c6f6f702a6e9f6cb0521bd9b9706f557",
+      "group": "AC_INIT_CLONE",
+      "track": "single",
+      "protected_asset": "Owner slot0 and withdrawal authority",
+      "permissions": "Deployer owns at construction; anyone may fund; only owner may withdraw",
+      "decision_and_scope": "Replace misnamed initializer with constructor; remove runtime selector. No post-deployment initialization requirement is inferred.",
+      "author_test_defect": "Публичная функция инициализации может изменить владельца/creator",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/incorrect_constructor_name3.sol",
+        "test_path": "test/access_control/incorrect_constructor_name3_test.js",
+        "source_sha256": "a1a505f4d25449a4a566b9a84b8c51ecdc2cbe768f9d1f041900d90a530807a6",
+        "test_sha256": "24e0e4cc4d276722dfbf34b75270bbb0c6f6f702a6e9f6cb0521bd9b9706f557",
+        "benchmark_category": "access_control",
+        "file": "incorrect_constructor_name3.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Публичная функция инициализации может изменить владельца/creator",
+        "proposed_track": "initialization_pair_candidate_requires_declared_policy",
+        "proposed_A": "Ограничение доступа к исходному initializer заранее определённой deployment authority",
+        "proposed_B": "Однократная инициализация посредством отдельного флага состояния",
+        "comparability_caveat": "Сначала явно принять модель отдельной post-deployment инициализации. Не выдавать guard за onlyOwner до задания owner. Правильный constructor — важный дополнительный ориентир. Повторная запись того же владельца сама по себе не обязательно вред. Три Missing-файла — одна нормализованная семья.",
+        "proposed_measurements": [
+          "изменился ли owner/creator после запрещённого вызова",
+          "неразрешённый отток, wei",
+          "успешность разрешённых действий",
+          "газ успешной разрешённой операции"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/incorrect_constructor_name3.sol",
+            "start": 17,
+            "end": 22
+          }
+        ],
+        "required_test_changes": [
+          "Разделить первый вызов постороннего, первый разрешённый вызов и повторную инициализацию; правила не зависят от варианта.",
+          "Проверять состояние владельца и обычные действия, а не только факт revert.",
+          "Не называть жизненный цикл отдельным опубликованным паттерном без подтверждения в источнике."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/incorrect_constructor_name3.sol",
+          "sha256": "a1a505f4d25449a4a566b9a84b8c51ecdc2cbe768f9d1f041900d90a530807a6"
+        },
+        "F1": {
+          "path": "project/contracts/F1/incorrect_constructor_name3.sol",
+          "sha256": "f4f13a8477b21a05b3fd374197a2d3aa6e34282d01a12b41b241c0f43b412e7b"
+        }
+      },
+      "existing_mechanisms": [
+        "onlyowner on withdraw",
+        "payable fallback",
+        "runtime Constructor unguarded; no constructor owner init"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "mapping_write.sol",
+      "source_path": "contracts/dataset/access_control/mapping_write.sol",
+      "test_path": "test/access_control/mapping_write_test.js",
+      "source_sha256": "a4c6ab0924feb97c929511f65e9f86a82ca5efa307aa29dcae69a21d2fc0fbd6",
+      "test_sha256": "c17acfe593a715a3fd401cebb12a77ebec606dd89a60ba38618fd1e47b79aeb8",
+      "group": "mapping_write.sol",
+      "track": "single",
+      "protected_asset": "owner slot0 integrity; arbitrary uint256 key/value storage",
+      "permissions": "Public set/get arbitrary keys; withdraw restricted to owner, which remains zero/uninitialized",
+      "decision_and_scope": "Replace dynamic array with mapping; remove length manipulation only. No key cap or owner initialization. Artificial funding 1 wei disclosed; absent-key get now returns zero instead of possible OOB revert (interface same, behavior extension).",
+      "author_test_defect": "Индексируемый динамический массив используется как map; произвольная длина и порча storage",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/mapping_write.sol",
+        "test_path": "test/access_control/mapping_write_test.js",
+        "source_sha256": "a4c6ab0924feb97c929511f65e9f86a82ca5efa307aa29dcae69a21d2fc0fbd6",
+        "test_sha256": "c17acfe593a715a3fd401cebb12a77ebec606dd89a60ba38618fd1e47b79aeb8",
+        "benchmark_category": "access_control",
+        "file": "mapping_write.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Индексируемый динамический массив используется как map; произвольная длина и порча storage",
+        "proposed_track": "single_fix_or_separate_architecture_comparison",
+        "proposed_A": "Представление произвольных ключей настоящим mapping вместо динамического массива",
+        "proposed_B": null,
+        "comparability_caveat": "Без требований к допустимым ключам нельзя придумать arbitrary key cap или owner-only политику. owner не инициализируется; исправление этого отдельно меняет задачу. Второй обоснованный паттерн по текущим материалам не установлен.",
+        "proposed_measurements": [
+          "неизменность owner при set",
+          "set/get для легитимных ключей",
+          "записанное значение",
+          "неразрешённый отток, wei"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/mapping_write.sol",
+            "start": 11,
+            "end": 29
+          }
+        ],
+        "required_test_changes": [
+          "Зафиксировать artificial funding через hardhat_setBalance из авторского теста.",
+          "Не исправлять owner/init вместе с storage representation незаметно."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/mapping_write.sol",
+          "sha256": "a4c6ab0924feb97c929511f65e9f86a82ca5efa307aa29dcae69a21d2fc0fbd6"
+        },
+        "F1": {
+          "path": "project/contracts/F1/mapping_write.sol",
+          "sha256": "7c2dd6ab87a0d5be624a37f3447cd2c39454a148ecfeb85b1aadbe8b7e8baef4"
+        }
+      },
+      "existing_mechanisms": [
+        "withdraw msg.sender==owner; owner defaults to zero",
+        "implicit array bounds in get/set; public length growth can expose other storage"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "multiowned_vulnerable.sol",
+      "source_path": "contracts/dataset/access_control/multiowned_vulnerable.sol",
+      "test_path": "test/access_control/multiowned_vulnerable_test.js",
+      "source_sha256": "ee0df823e630dd8fc538222bfb82ad97fd563b9f1185e3eba3d02dfefd812fc6",
+      "test_sha256": "8d572966c695bbb53fbf0131879d970e21e6cba095dbaefa83ef6e20cecaea54",
+      "group": "multiowned_vulnerable.sol",
+      "track": "single",
+      "protected_asset": "Owner-parent tree and funds",
+      "permissions": "Root and delegated owners may add; parent/root may revoke according to existing rule; owners may withdraw",
+      "decision_and_scope": "Apply existing onlyOwner to newOwner; no new two-step grant workflow. Existing deleteOwner and withdraw guards retained.",
+      "author_test_defect": "newOwner не ограничивает вызывающего существующим владельцем",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/multiowned_vulnerable.sol",
+        "test_path": "test/access_control/multiowned_vulnerable_test.js",
+        "source_sha256": "ee0df823e630dd8fc538222bfb82ad97fd563b9f1185e3eba3d02dfefd812fc6",
+        "test_sha256": "8d572966c695bbb53fbf0131879d970e21e6cba095dbaefa83ef6e20cecaea54",
+        "benchmark_category": "access_control",
+        "file": "multiowned_vulnerable.sol",
+        "pragma": "^0.4.23",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "newOwner не ограничивает вызывающего существующим владельцем",
+        "proposed_track": "single_fix_plus_optional_workflow_extension",
+        "proposed_A": "Применить существующую авторизацию onlyOwner к выдаче прав",
+        "proposed_B": "Возможная отдельная модель двухэтапной выдачи/принятия прав; требует определения требований",
+        "comparability_caveat": "Нельзя назвать второе такое же сравнение адреса RBAC и считать независимой защитой. Двухэтапное принятие прав меняет workflow и не заменяет проверку инициатора.",
+        "proposed_measurements": [
+          "выданные посторонним права",
+          "изменение дерева owners",
+          "разрешённая выдача/отзыв",
+          "неразрешённый отток, wei"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/multiowned_vulnerable.sol",
+            "start": 20,
+            "end": 58
+          }
+        ],
+        "required_test_changes": [
+          "Проверять роли до и после, а не только итоговую выплату.",
+          "Сохранить предусмотренную модель делегирования владельцами."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/multiowned_vulnerable.sol",
+          "sha256": "ee0df823e630dd8fc538222bfb82ad97fd563b9f1185e3eba3d02dfefd812fc6"
+        },
+        "F1": {
+          "path": "project/contracts/F1/multiowned_vulnerable.sol",
+          "sha256": "fb45c71b87f86fd950a4001a12e782f6fa03404201daf005fd5fa04cb978d6f6"
+        }
+      },
+      "existing_mechanisms": [
+        "onlyOwner",
+        "parent/root deletion rule"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "mycontract.sol",
+      "source_path": "contracts/dataset/access_control/mycontract.sol",
+      "test_path": "test/access_control/mycontract_test.js",
+      "source_sha256": "5bdf79f5c7565c26dfe7437e94c354a6d6b2d353101f6d4dbe0ce8a36c4e1df1",
+      "test_sha256": "a32b85ac018d32201ada5a63794f2de02938d36e4cf76d89eb324061f9ef8638",
+      "group": "mycontract.sol",
+      "track": "single",
+      "protected_asset": "Owner-authorized outgoing ETH",
+      "permissions": "Deployment owner may directly sendTo any receiver; intermediary does not inherit authority from tx.origin",
+      "decision_and_scope": "Replace tx.origin with msg.sender. Prefund future CREATE address as author test, not artificial owner initialization.",
+      "author_test_defect": "Авторизация через tx.origin",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/mycontract.sol",
+        "test_path": "test/access_control/mycontract_test.js",
+        "source_sha256": "5bdf79f5c7565c26dfe7437e94c354a6d6b2d353101f6d4dbe0ce8a36c4e1df1",
+        "test_sha256": "a32b85ac018d32201ada5a63794f2de02938d36e4cf76d89eb324061f9ef8638",
+        "benchmark_category": "access_control",
+        "file": "mycontract.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Авторизация через tx.origin",
+        "proposed_track": "single_fix_or_explicit_authorization_workflow_extension",
+        "proposed_A": "Проверка непосредственного вызывающего по msg.sender с исходным owner",
+        "proposed_B": "Подписанное разрешение на конкретную операцию — только отдельная обоснованная модель, не автоматически готовая пара",
+        "comparability_caveat": "Подписанный протокол, nonces и новые параметры не содержатся в данном исходнике. Не добавлять получателю allowlist без требования. Не представлять две одинаковые owner-проверки как два паттерна.",
+        "proposed_measurements": [
+          "неразрешённый отток, wei",
+          "выполнение владельцем допустимого перевода",
+          "корректность получателя"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/mycontract.sol",
+            "start": 9,
+            "end": 24
+          }
+        ],
+        "required_test_changes": [
+          "Сохранить и раскрыть способ пополнения; mycontract финансируется до создания по заранее вычисленному адресу.",
+          "Сравнение нескольких паттернов требует отдельного обоснования второго, а не нового названия того же require."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/mycontract.sol",
+          "sha256": "5bdf79f5c7565c26dfe7437e94c354a6d6b2d353101f6d4dbe0ce8a36c4e1df1"
+        },
+        "F1": {
+          "path": "project/contracts/F1/mycontract.sol",
+          "sha256": "790b2575d72cb1a8a8f1ae433b78f43eaa90771307d0e627ab2dc67900fbf245"
+        }
+      },
+      "existing_mechanisms": [
+        "constructor sets owner",
+        "tx.origin==owner on sendTo (flawed authentication)",
+        "transfer value failure propagates"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "parity_wallet_bug_2.sol",
+      "source_path": "contracts/dataset/access_control/parity_wallet_bug_2.sol",
+      "test_path": "test/access_control/parity_wallet_bug_2_test.js",
+      "source_sha256": "3026bd9ff80d0a4b7d166c0d4d2aad07063d05a67e3df9267d9580933d1a529e",
+      "test_sha256": "a0a0edeed08623408d61027135be62155a42ac2c80651c400675c9dfde3cabb1",
+      "group": "parity_wallet_bug_2.sol",
+      "track": "single",
+      "protected_asset": "First initialization authority, owner set and wallet funds",
+      "permissions": "Scoped to author-tested standalone WalletLibrary: deployer initializes; existing owners act under original threshold/daily limit",
+      "decision_and_scope": "Single missing-authority fix on all 3 init entrypoints; existing only_uninitialized retained. Append private deploymentAuthority after original fields; no storage shift. This is not a proxy-compatible library fix or historical deployment reconstruction.",
+      "author_test_defect": "Первый initializer доступен постороннему; only_uninitialized уже существует",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/parity_wallet_bug_2.sol",
+        "test_path": "test/access_control/parity_wallet_bug_2_test.js",
+        "source_sha256": "3026bd9ff80d0a4b7d166c0d4d2aad07063d05a67e3df9267d9580933d1a529e",
+        "test_sha256": "a0a0edeed08623408d61027135be62155a42ac2c80651c400675c9dfde3cabb1",
+        "benchmark_category": "access_control",
+        "file": "parity_wallet_bug_2.sol",
+        "pragma": "^0.4.9",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Первый initializer доступен постороннему; only_uninitialized уже существует",
+        "proposed_track": "existing_combination_plus_missing_authorization_case",
+        "proposed_A": "Ограничить инициирование исходных открытых init entrypoints определённой authority",
+        "proposed_B": "only_uninitialized уже присутствует в baseline — не добавлять его как якобы отсутствующую защиту",
+        "comparability_caveat": "Для полного 2×2 ablation удаления существующих guards потребовалась бы отдельно обозначенная модифицированная база. Не удалять их из V0. Прямое развертывание WalletLibrary не равно всей реальной proxy-архитектуре.",
+        "proposed_measurements": [
+          "кто стал владельцем",
+          "разрешённая инициализация",
+          "несанкционированное уничтожение/отток, wei",
+          "сохранение обычных кошельковых действий"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/parity_wallet_bug_2.sol",
+            "start": 111,
+            "end": 122
+          },
+          {
+            "path": "contracts/dataset/access_control/parity_wallet_bug_2.sol",
+            "start": 206,
+            "end": 235
+          }
+        ],
+        "required_test_changes": [
+          "Учесть initMultiowned и initDaylimit, а не закрывать только initWallet.",
+          "Сохранить Shanghai для исторической семантики теста selfdestruct; не делать вывод про современные сети."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/parity_wallet_bug_2.sol",
+          "sha256": "3026bd9ff80d0a4b7d166c0d4d2aad07063d05a67e3df9267d9580933d1a529e"
+        },
+        "F1": {
+          "path": "project/contracts/F1/parity_wallet_bug_2.sol",
+          "sha256": "382622cf2797c2ceac65dd73b86933187b449f53758c7a6f265e5d0824fe4211"
+        }
+      },
+      "existing_mechanisms": [
+        "only_uninitialized on all init entrypoints",
+        "onlyowner",
+        "onlymanyowners",
+        "daily-limit overflow guard"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "phishable.sol",
+      "source_path": "contracts/dataset/access_control/phishable.sol",
+      "test_path": "test/access_control/phishable_test.js",
+      "source_sha256": "8525b9c841c6378acc4771ef8e5139aee074c1b508b68f1129120b4d19b79e8a",
+      "test_sha256": "bd880064bbc7ddb88c547b9cddec5e789899b2e6a8064c9bb7fad69891c51989",
+      "group": "phishable.sol",
+      "track": "single",
+      "protected_asset": "Owner-authorized outgoing ETH",
+      "permissions": "Constructor-designated owner may directly withdraw to arbitrary receiver; phishing intermediary unauthorized",
+      "decision_and_scope": "Replace tx.origin with msg.sender; payable fallback retained; no recipient allowlist.",
+      "author_test_defect": "Авторизация через tx.origin",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/phishable.sol",
+        "test_path": "test/access_control/phishable_test.js",
+        "source_sha256": "8525b9c841c6378acc4771ef8e5139aee074c1b508b68f1129120b4d19b79e8a",
+        "test_sha256": "bd880064bbc7ddb88c547b9cddec5e789899b2e6a8064c9bb7fad69891c51989",
+        "benchmark_category": "access_control",
+        "file": "phishable.sol",
+        "pragma": "^0.4.22",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Авторизация через tx.origin",
+        "proposed_track": "single_fix_or_explicit_authorization_workflow_extension",
+        "proposed_A": "Проверка непосредственного вызывающего по msg.sender с исходным owner",
+        "proposed_B": "Подписанное разрешение на конкретную операцию — только отдельная обоснованная модель, не автоматически готовая пара",
+        "comparability_caveat": "Подписанный протокол, nonces и новые параметры не содержатся в данном исходнике. Не добавлять получателю allowlist без требования. Не представлять две одинаковые owner-проверки как два паттерна.",
+        "proposed_measurements": [
+          "неразрешённый отток, wei",
+          "выполнение владельцем допустимого перевода",
+          "корректность получателя"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/phishable.sol",
+            "start": 9,
+            "end": 23
+          }
+        ],
+        "required_test_changes": [
+          "Сохранить и раскрыть способ пополнения; mycontract финансируется до создания по заранее вычисленному адресу.",
+          "Сравнение нескольких паттернов требует отдельного обоснования второго, а не нового названия того же require."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/phishable.sol",
+          "sha256": "8525b9c841c6378acc4771ef8e5139aee074c1b508b68f1129120b4d19b79e8a"
+        },
+        "F1": {
+          "path": "project/contracts/F1/phishable.sol",
+          "sha256": "97ba4959739f100e8d0e5aad619ce170d7ea811698a4701fce3ecae62b018190"
+        }
+      },
+      "existing_mechanisms": [
+        "constructor sets designated owner",
+        "tx.origin==owner on withdrawAll (flawed authentication)",
+        "payable fallback"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "proxy.sol",
+      "source_path": "contracts/dataset/access_control/proxy.sol",
+      "test_path": "test/access_control/proxy_test.js",
+      "source_sha256": "3016dcfca8050200ae9e64d9bfced9bfb6cb106268c10d714aa13d386c1d1e11",
+      "test_sha256": "b713b88e9dd1b580bdeb33d1f1ef806d18bc6f4b436982a5e072a7dcf8b4805b",
+      "group": "proxy.sol",
+      "track": "unresolved",
+      "protected_asset": "Owner/storage and ETH under delegatecall",
+      "permissions": "Constructor sets owner; public forwarding has no explicit target domain",
+      "decision_and_scope": "No trusted target set or delegated-user policy specified; benign function in attack fixture cannot define a production trust policy. Do not invent allowlist to force A+B.",
+      "author_test_defect": "Публичный forward допускает arbitrary delegatecall target",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/proxy.sol",
+        "test_path": "test/access_control/proxy_test.js",
+        "source_sha256": "3016dcfca8050200ae9e64d9bfced9bfb6cb106268c10d714aa13d386c1d1e11",
+        "test_sha256": "b713b88e9dd1b580bdeb33d1f1ef806d18bc6f4b436982a5e072a7dcf8b4805b",
+        "benchmark_category": "access_control",
+        "file": "proxy.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Публичный forward допускает arbitrary delegatecall target",
+        "proposed_track": "policy_explicit_pair_candidate",
+        "proposed_A": "Авторизация вызывающего forward",
+        "proposed_B": "Ограничение доверенных целей delegatecall",
+        "comparability_caveat": "Пара ограничивает разные условия, но исходник не определяет допустимый набор целей. Список доверенных библиотек и разрешённые пользователи — явные требования нового протокола, не факт из benchmark.",
+        "proposed_measurements": [
+          "выполнение запрещённого forward",
+          "целостность owner/storage",
+          "неразрешённый отток, wei",
+          "выполнение доверенного forwarding"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/proxy.sol",
+            "start": 9,
+            "end": 20
+          }
+        ],
+        "required_test_changes": [
+          "В существующем functional check используется benign-функция того же вспомогательного контракта; нужен определённый безопасный fixture target.",
+          "Не менять delegatecall на call и утверждать полную эквивалентность."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/proxy.sol",
+          "sha256": "3016dcfca8050200ae9e64d9bfced9bfb6cb106268c10d714aa13d386c1d1e11"
+        }
+      },
+      "existing_mechanisms": [
+        "owner set by constructor but unused in forward",
+        "require on delegatecall success; no caller/target policy"
+      ],
+      "compilation_status": "success",
+      "execution_status": "not_executed_unresolved_requirements",
+      "output_paths": null,
+      "missing_reason": "No trusted target set or delegated-user policy specified; benign function in attack fixture cannot define a production trust policy. Do not invent allowlist to force A+B."
+    },
+    {
+      "file": "simple_suicide.sol",
+      "source_path": "contracts/dataset/access_control/simple_suicide.sol",
+      "test_path": "test/access_control/simple_suicide_test.js",
+      "source_sha256": "07ab4f0b502c4d91859f2446f4dd3edf8330000c9e21ddb9940bb70580526300",
+      "test_sha256": "ec931a733abd5e3e4d9956e86132baa12354a8db0cae2a37006d012035f6ca72",
+      "group": "simple_suicide.sol",
+      "track": "single",
+      "protected_asset": "Lifecycle code and ETH under Shanghai",
+      "permissions": "Author functional test designates deployer as owner; infer deployer-only lifecycle authority for this standalone fixture",
+      "decision_and_scope": "Add private deployment owner and guard. New authority is an explicit experimental model inferred from functional test, absent in source; no second lifecycle requirement. No-argument ABI used, correcting author JS extra argument only in new measurements.",
+      "author_test_defect": "Неограниченное завершение контракта",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/simple_suicide.sol",
+        "test_path": "test/access_control/simple_suicide_test.js",
+        "source_sha256": "07ab4f0b502c4d91859f2446f4dd3edf8330000c9e21ddb9940bb70580526300",
+        "test_sha256": "ec931a733abd5e3e4d9956e86132baa12354a8db0cae2a37006d012035f6ca72",
+        "benchmark_category": "access_control",
+        "file": "simple_suicide.sol",
+        "pragma": "^0.4.0",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Неограниченное завершение контракта",
+        "proposed_track": "single_fix_or_explicit_lifecycle_extension",
+        "proposed_A": "Ограничение критической операции определённой authority",
+        "proposed_B": "Многошаговое подтверждение/задержка — только после определения политики завершения",
+        "comparability_caveat": "В исходнике нет owner и нет требования multisig/delay. Новая authority вводится как требование эксперимента. Не заявлять наличие готовой пары по одному имени категории.",
+        "proposed_measurements": [
+          "сохранение кода в зафиксированном fork",
+          "сохранение баланса",
+          "разрешённое завершение"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/simple_suicide.sol",
+            "start": 8,
+            "end": 14
+          }
+        ],
+        "required_test_changes": [
+          "Проверить функциональную сигнатуру: исходный метод без параметров, авторский JS передаёт owner.",
+          "Обязательно фиксировать EVM fork, так как проверяется удаление кода."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/simple_suicide.sol",
+          "sha256": "07ab4f0b502c4d91859f2446f4dd3edf8330000c9e21ddb9940bb70580526300"
+        },
+        "F1": {
+          "path": "project/contracts/F1/simple_suicide.sol",
+          "sha256": "7e706354200343e29cdc56c6bec4ae9826eefe155b7c9f0e6f345d124bad9dc0"
+        }
+      },
+      "existing_mechanisms": [
+        "none; no owner field or lifecycle guard"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "unprotected0.sol",
+      "source_path": "contracts/dataset/access_control/unprotected0.sol",
+      "test_path": "test/access_control/unprotected0_test.js",
+      "source_sha256": "8cfc8702a1a0afe407c2ea83e0c48e97909f66af1955ee5e1321f1dc2818a045",
+      "test_sha256": "02d3cca3ff048286f5c068378a2cb019fb705b283bd6c26ad4588a8cf29233b2",
+      "group": "unprotected0.sol",
+      "track": "single",
+      "protected_asset": "Owner slot0",
+      "permissions": "Current owner may transfer ownership to any chosen address; outsiders may not",
+      "decision_and_scope": "Use existing onlyowner on changeOwner; no acceptance phase or zero-address restriction introduced.",
+      "author_test_defect": "Публичный changeOwner без существующего onlyowner",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/unprotected0.sol",
+        "test_path": "test/access_control/unprotected0_test.js",
+        "source_sha256": "8cfc8702a1a0afe407c2ea83e0c48e97909f66af1955ee5e1321f1dc2818a045",
+        "test_sha256": "02d3cca3ff048286f5c068378a2cb019fb705b283bd6c26ad4588a8cf29233b2",
+        "benchmark_category": "access_control",
+        "file": "unprotected0.sol",
+        "pragma": "^0.4.15",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Публичный changeOwner без существующего onlyowner",
+        "proposed_track": "ownership_pair_requires_workflow_adaptation",
+        "proposed_A": "Применить существующий onlyowner при передаче владения",
+        "proposed_B": "Двухэтапная передача/принятие владения при отдельно описанном workflow",
+        "comparability_caveat": "B защищает подтверждение новым владельцем, но не заменяет A. Новая фаза и API должны быть явно разрешены; baseline остается неизменным.",
+        "proposed_measurements": [
+          "owner до/после",
+          "несанкционированная смена",
+          "разрешённая передача",
+          "завершённость workflow"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/unprotected0.sol",
+            "start": 9,
+            "end": 29
+          }
+        ],
+        "required_test_changes": [
+          "Авторский negative test проверяет только отсутствие revert; добавить чтение состояния/проверку полномочий.",
+          "Сравнивать разрешённое действие, а не одинаковое число транзакций при изменении workflow."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/unprotected0.sol",
+          "sha256": "8cfc8702a1a0afe407c2ea83e0c48e97909f66af1955ee5e1321f1dc2818a045"
+        },
+        "F1": {
+          "path": "project/contracts/F1/unprotected0.sol",
+          "sha256": "b696bd7e6d70b06c1cee7089a846a888b9dba4861104b868598d3eb34b8999fd"
+        }
+      },
+      "existing_mechanisms": [
+        "constructor sets owner",
+        "onlyowner modifier already declared but not applied to changeOwner"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "wallet_02_refund_nosub.sol",
+      "source_path": "contracts/dataset/access_control/wallet_02_refund_nosub.sol",
+      "test_path": "test/access_control/wallet_02_refund_nosub_test.js",
+      "source_sha256": "3bf849eea5a234dcf2755aa526f934b3edfa560ee7eac3d70385887e3bc6ff79",
+      "test_sha256": "f373e96740e6649f304d7c33f029b353e56e5c9e53a97a208d53eae125bbbe35",
+      "group": "wallet_02_refund_nosub.sol",
+      "track": "single",
+      "protected_asset": "Per-user claim and ETH accounting",
+      "permissions": "Any depositor may withdraw/refund own credit; creator migration remains allowed",
+      "decision_and_scope": "Set credit zero before refund transfer (accounting/CEI fix); allow zero refund as harmless no-effect success; sequential repeats must not pay again; no mutex/owner restriction.",
+      "author_test_defect": "Повторная выплата из-за отсутствия списания credit",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/wallet_02_refund_nosub.sol",
+        "test_path": "test/access_control/wallet_02_refund_nosub_test.js",
+        "source_sha256": "3bf849eea5a234dcf2755aa526f934b3edfa560ee7eac3d70385887e3bc6ff79",
+        "test_sha256": "f373e96740e6649f304d7c33f029b353e56e5c9e53a97a208d53eae125bbbe35",
+        "benchmark_category": "access_control",
+        "file": "wallet_02_refund_nosub.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Повторная выплата из-за отсутствия списания credit",
+        "proposed_track": "accounting_fix_case_not_generic_owner_only",
+        "proposed_A": "Погашение требования пользователя перед выплатой (учёт/CEI)",
+        "proposed_B": null,
+        "comparability_caveat": "Пользователь вправе вернуть собственный депозит. onlyOwner заблокирует нормальное право и не является корректной универсальной защитой. Mutex не запрещает последовательные повторные выплаты при неизменном credit.",
+        "proposed_measurements": [
+          "избыточная выплата относительно credit, wei",
+          "credit до/после",
+          "возможность нового депозита и законного возврата"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/wallet_02_refund_nosub.sol",
+            "start": 23,
+            "end": 37
+          }
+        ],
+        "required_test_changes": [
+          "Обычная functional check использует withdraw, а проблема в refund; добавить правильный однократный refund и новый цикл deposit/refund.",
+          "Не переписывать benchmark category; добавить столбец actual subtype."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/wallet_02_refund_nosub.sol",
+          "sha256": "3bf849eea5a234dcf2755aa526f934b3edfa560ee7eac3d70385887e3bc6ff79"
+        },
+        "F1": {
+          "path": "project/contracts/F1/wallet_02_refund_nosub.sol",
+          "sha256": "b1115a8a96c8c1dd78f709324f1df82ee068ae380ec55d6db843c904840cdd40"
+        }
+      },
+      "existing_mechanisms": [
+        "withdraw entitlement",
+        "creator-only migration",
+        "deposit assertion"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "wallet_03_wrong_constructor.sol",
+      "source_path": "contracts/dataset/access_control/wallet_03_wrong_constructor.sol",
+      "test_path": "test/access_control/wallet_03_wrong_constructor_test.js",
+      "source_sha256": "6f5e18f2dbfb404c4bece60b475d17bd49d66ad3da34cffee8a47f7326ae0aa9",
+      "test_sha256": "a8ef0e2878f74b181c9c7a91732d828d62fcf4796259cebe46be0870aa8e1329",
+      "group": "wallet_03_wrong_constructor.sol",
+      "track": "single",
+      "protected_asset": "Creator slot0 and migration authority",
+      "permissions": "Deployer is creator at construction; each depositor withdraws own credit; only creator migrates",
+      "decision_and_scope": "Replace initWallet with constructor, remove runtime init selector. This is a lifecycle/API correction, not comparison of artificial post-deploy guards.",
+      "author_test_defect": "Публичная функция инициализации может изменить владельца/creator",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/wallet_03_wrong_constructor.sol",
+        "test_path": "test/access_control/wallet_03_wrong_constructor_test.js",
+        "source_sha256": "6f5e18f2dbfb404c4bece60b475d17bd49d66ad3da34cffee8a47f7326ae0aa9",
+        "test_sha256": "a8ef0e2878f74b181c9c7a91732d828d62fcf4796259cebe46be0870aa8e1329",
+        "benchmark_category": "access_control",
+        "file": "wallet_03_wrong_constructor.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Публичная функция инициализации может изменить владельца/creator",
+        "proposed_track": "initialization_pair_candidate_requires_declared_policy",
+        "proposed_A": "Ограничение доступа к исходному initializer заранее определённой deployment authority",
+        "proposed_B": "Однократная инициализация посредством отдельного флага состояния",
+        "comparability_caveat": "Сначала явно принять модель отдельной post-deployment инициализации. Не выдавать guard за onlyOwner до задания owner. Правильный constructor — важный дополнительный ориентир. Повторная запись того же владельца сама по себе не обязательно вред. Три Missing-файла — одна нормализованная семья.",
+        "proposed_measurements": [
+          "изменился ли owner/creator после запрещённого вызова",
+          "неразрешённый отток, wei",
+          "успешность разрешённых действий",
+          "газ успешной разрешённой операции"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/wallet_03_wrong_constructor.sol",
+            "start": 19,
+            "end": 24
+          }
+        ],
+        "required_test_changes": [
+          "Разделить первый вызов постороннего, первый разрешённый вызов и повторную инициализацию; правила не зависят от варианта.",
+          "Проверять состояние владельца и обычные действия, а не только факт revert.",
+          "Не называть жизненный цикл отдельным опубликованным паттерном без подтверждения в источнике."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/wallet_03_wrong_constructor.sol",
+          "sha256": "6f5e18f2dbfb404c4bece60b475d17bd49d66ad3da34cffee8a47f7326ae0aa9"
+        },
+        "F1": {
+          "path": "project/contracts/F1/wallet_03_wrong_constructor.sol",
+          "sha256": "d1291e93caf0347d10a2d4a0ae85caa374057ca05ba39dfbded649afaea71d96"
+        }
+      },
+      "existing_mechanisms": [
+        "deposit overflow assert",
+        "withdraw amount<=credit and debit",
+        "creator check on migrateTo",
+        "initWallet lacks authority/once; no constructor creator init"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    },
+    {
+      "file": "wallet_04_confused_sign.sol",
+      "source_path": "contracts/dataset/access_control/wallet_04_confused_sign.sol",
+      "test_path": "test/access_control/wallet_04_confused_sign_test.js",
+      "source_sha256": "5ec3d85c76b1f1a15ec1295085087f1d969742bdc2aaf9c6fb1a79bfffa8735d",
+      "test_sha256": "8f3b1d195761d9cd0bc8040fc4d55bea4b2b1f9e9409bb430b3843874bf16d24",
+      "group": "wallet_04_confused_sign.sol",
+      "track": "factorial",
+      "protected_asset": "Deposit credit and ETH entitlement",
+      "permissions": "Each depositor may withdraw 0..credit; creator may migrate all funds",
+      "decision_and_scope": "A replaces reversed >= with <=; B checked debit only, preserving reversed guard. V2 inherits rejection of partial/zero-with-credit withdrawals. V3 expected to restore domain via A, not independent synergy.",
+      "author_test_defect": "Неправильное направление проверки entitlement и возможный underflow",
+      "review_proposal": {
+        "source_path": "contracts/dataset/access_control/wallet_04_confused_sign.sol",
+        "test_path": "test/access_control/wallet_04_confused_sign_test.js",
+        "source_sha256": "5ec3d85c76b1f1a15ec1295085087f1d969742bdc2aaf9c6fb1a79bfffa8735d",
+        "test_sha256": "8f3b1d195761d9cd0bc8040fc4d55bea4b2b1f9e9409bb430b3843874bf16d24",
+        "benchmark_category": "access_control",
+        "file": "wallet_04_confused_sign.sol",
+        "pragma": "^0.4.24",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Неправильное направление проверки entitlement и возможный underflow",
+        "proposed_track": "bounds_and_safe_arithmetic_candidate_with_functional_caveat",
+        "proposed_A": "Правильная проверка amount <= credit",
+        "proposed_B": "Checked subtraction для дебета credit",
+        "comparability_caveat": "B без A сохраняет ошибочный >= и может отвергать законное частичное снятие. Это функциональный дефект baseline: отдельно определить общую допустимую область и не исправлять A незаметно в B.",
+        "proposed_measurements": [
+          "избыточная выплата, wei",
+          "credit inconsistency",
+          "частичное/полное разрешённое снятие",
+          "газ"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/access_control/wallet_04_confused_sign.sol",
+            "start": 28,
+            "end": 33
+          }
+        ],
+        "required_test_changes": [
+          "Авторский functional check снимает весь credit, что не проверяет частичное снятие.",
+          "Нужны проверки состояния после revert, точные BigInt и отдельная отметка inherited baseline defect."
+        ]
+      },
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/wallet_04_confused_sign.sol",
+          "sha256": "5ec3d85c76b1f1a15ec1295085087f1d969742bdc2aaf9c6fb1a79bfffa8735d"
+        },
+        "V1": {
+          "path": "project/contracts/V1/wallet_04_confused_sign.sol",
+          "sha256": "f2d544ef08c08d1cf9349d2617de20195725137265cbdad35b7c99f567d02ce0"
+        },
+        "V2": {
+          "path": "project/contracts/V2/wallet_04_confused_sign.sol",
+          "sha256": "e50d49bf609260e1ef3eb0122ff7c958d2b496e59c3d3c893ed6c2b024ec0404"
+        },
+        "V3": {
+          "path": "project/contracts/V3/wallet_04_confused_sign.sol",
+          "sha256": "c6cc0ae810312949f17335c2caef799aa73e1e6c9d518d9ee70449bd77f18915"
+        }
+      },
+      "existing_mechanisms": [
+        "Wrong reversed entitlement guard",
+        "Creator-only migration",
+        "Deposit overflow assertion"
+      ],
+      "compilation_status": "success",
+      "execution_status": "executed_twice_clean_repeat_matched",
+      "output_paths": [
+        "runs/run1",
+        "runs/run2"
+      ],
+      "missing_reason": null
+    }
+  ],
+  "clone_groups": [
+    {
+      "id": "AC_INIT_CLONE",
+      "files": [
+        "incorrect_constructor_name1.sol",
+        "incorrect_constructor_name2.sol",
+        "incorrect_constructor_name3.sol"
+      ],
+      "basis": "Existing review: normalized identical Missing examples; not independent implementations"
+    }
+  ]
+}

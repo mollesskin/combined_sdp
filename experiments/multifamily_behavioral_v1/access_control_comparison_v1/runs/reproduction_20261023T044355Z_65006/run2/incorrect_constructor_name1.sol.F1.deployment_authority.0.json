@@ -1,0 +1,145 @@
+{
+  "row": {
+    "file": "incorrect_constructor_name1.sol",
+    "group": "AC_INIT_CLONE",
+    "track": "single",
+    "variant": "F1",
+    "scenario": "deployment_authority",
+    "step": 0,
+    "method": "$deployment",
+    "kind": "allowed",
+    "effect": "deployment",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "observation",
+    "inputs": {
+      "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "args": [],
+      "value_wei": "0",
+      "via": null,
+      "gas_limit": null
+    },
+    "before": {
+      "state": {
+        "contract_wei": "0",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+      },
+      "storage": {
+        "0": "1390849295786071768276380950238675083608645509734",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0"
+      },
+      "accounts": {
+        "user0": "9999999308124674913817",
+        "user1": "10000000000000000000000",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "expected": {
+      "state": {
+        "contract_wei": "0",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+      },
+      "accounts": {
+        "user0": "9999999308124674913817",
+        "user1": "10000000000000000000000",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual": {
+      "state": {
+        "contract_wei": "0",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+      },
+      "storage": {
+        "0": "1390849295786071768276380950238675083608645509734",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0"
+      },
+      "accounts": {
+        "user0": "9999999308124674913817",
+        "user1": "10000000000000000000000",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual_accounts_excluding_tx_gas": {
+      "user0": "9999999308124674913817",
+      "user1": "10000000000000000000000",
+      "user2": "10000000000000000000000",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "state_differences": {},
+    "account_differences": {},
+    "getter_check": null,
+    "correct": true,
+    "security_pass": null,
+    "functionality_pass": true,
+    "full_observed_rollback": null,
+    "forbidden_no_effect": null,
+    "contract_outflow_wei": "0",
+    "unauthorized_outflow_wei": null,
+    "excess_payout_wei": null,
+    "account_deltas_wei_excluding_tx_gas": {
+      "user0": "0",
+      "user1": "0",
+      "user2": "0",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "applicability": {
+      "owner_integrity": true,
+      "credit_accounting": false,
+      "code_lifecycle": false,
+      "wei_outflow": true,
+      "gas": false,
+      "full_rollback": false
+    },
+    "gas_used": null,
+    "error": null,
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/access_control_comparison_v1/runs/reproduction_20261023T044355Z_65006/run2/incorrect_constructor_name1.sol.F1.deployment_authority.0.json"
+  },
+  "receipt": null,
+  "setup": {
+    "funding": null,
+    "deploy_receipt": {
+      "_type": "TransactionReceipt",
+      "blockHash": "0x7567218ddb94d53db25172eb4f703d9a28942d7dce09d2cef19e6e03585b73f3",
+      "blockNumber": 1,
+      "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "cumulativeGasUsed": "125449",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "gasPrice": "1875000000",
+      "blobGasUsed": null,
+      "blobGasPrice": null,
+      "gasUsed": "125449",
+      "hash": "0x5077e3dd5d621076f72a1232849dd0988ca949bf1c7ac15f6dd045a4f1d114e6",
+      "index": 0,
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "status": 1,
+      "to": null
+    }
+  }
+}

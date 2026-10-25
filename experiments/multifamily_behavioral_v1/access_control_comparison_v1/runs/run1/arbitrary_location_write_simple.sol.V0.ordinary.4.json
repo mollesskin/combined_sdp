@@ -1,0 +1,180 @@
+{
+  "row": {
+    "file": "arbitrary_location_write_simple.sol",
+    "group": "arbitrary_location_write_simple.sol",
+    "track": "factorial",
+    "variant": "V0",
+    "scenario": "ordinary",
+    "step": 4,
+    "method": "Destroy",
+    "kind": "forbidden",
+    "effect": "same",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "reverted",
+    "inputs": {
+      "sender": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "args": [],
+      "value_wei": "0",
+      "via": null,
+      "gas_limit": "6000000"
+    },
+    "before": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "length": "0",
+        "element0": "0"
+      },
+      "storage": {
+        "0": "0",
+        "1": "1390849295786071768276380950238675083608645509734",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0",
+        "18569430475105882587588266137607568536673111973893317399460219858819262702947": "0",
+        "18569430475105882587588266137607568536673111973893317399460219858819262702948": "0"
+      },
+      "accounts": {
+        "user0": "9999999164899148397108",
+        "user1": "9999999833391582259692",
+        "user2": "9999999958209993428280",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "expected": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "length": "0",
+        "element0": "0"
+      },
+      "accounts": {
+        "user0": "9999999164899148397108",
+        "user1": "9999999833391582259692",
+        "user2": "9999999958209993428280",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true,
+        "owner": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+        "length": "0",
+        "element0": "0"
+      },
+      "storage": {
+        "0": "0",
+        "1": "1390849295786071768276380950238675083608645509734",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0",
+        "18569430475105882587588266137607568536673111973893317399460219858819262702947": "0",
+        "18569430475105882587588266137607568536673111973893317399460219858819262702948": "0"
+      },
+      "accounts": {
+        "user0": "9999999164899148397108",
+        "user1": "9999999802964434865760",
+        "user2": "9999999958209993428280",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual_accounts_excluding_tx_gas": {
+      "user0": "9999999164899148397108",
+      "user1": "9999999833391582259692",
+      "user2": "9999999958209993428280",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "state_differences": {},
+    "account_differences": {},
+    "getter_check": null,
+    "correct": true,
+    "security_pass": true,
+    "functionality_pass": null,
+    "full_observed_rollback": true,
+    "forbidden_no_effect": true,
+    "contract_outflow_wei": "0",
+    "unauthorized_outflow_wei": "0",
+    "excess_payout_wei": null,
+    "account_deltas_wei_excluding_tx_gas": {
+      "user0": "0",
+      "user1": "0",
+      "user2": "0",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "applicability": {
+      "owner_integrity": true,
+      "credit_accounting": false,
+      "code_lifecycle": true,
+      "wei_outflow": true,
+      "gas": true,
+      "full_rollback": true
+    },
+    "gas_used": "23362",
+    "error": {
+      "message": "Transaction reverted without a reason string",
+      "data": "0x",
+      "transactionHash": "0x6799f8c6fc04a4b2fd689f0be15dbb6edb172df5432d31fe6d26349a2043f3fb"
+    },
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/access_control_comparison_v1/runs/run1/arbitrary_location_write_simple.sol.V0.ordinary.4.json"
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0xaf81e995950729e657da8eef4e2f505277aa0b26a81b442238aef0148fdc583d",
+    "blockNumber": 9,
+    "contractAddress": null,
+    "cumulativeGasUsed": "23362",
+    "from": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "gasPrice": "1302420486",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "23362",
+    "hash": "0x6799f8c6fc04a4b2fd689f0be15dbb6edb172df5432d31fe6d26349a2043f3fb",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 0,
+    "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+  },
+  "setup": {
+    "funding": {
+      "method": "payable_fallback",
+      "value_wei": "10",
+      "hash": "0x1e1a520e6d6c0d612db13c755b375987c6e1d8ef0ffb184c3fc546aab9044ec5"
+    },
+    "deploy_receipt": {
+      "_type": "TransactionReceipt",
+      "blockHash": "0x25803478b459d0ff7daef59248e6e1c663a232ed437ff65d7f932193dc917740",
+      "blockNumber": 1,
+      "contractAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "cumulativeGasUsed": "183952",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "gasPrice": "1875000000",
+      "blobGasUsed": null,
+      "blobGasPrice": null,
+      "gasUsed": "183952",
+      "hash": "0xb9c95edfe110bbbad1ceb10af16b4e025d4ed452bbfe815f92c2dc49c071927a",
+      "index": 0,
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "status": 1,
+      "to": null
+    }
+  }
+}

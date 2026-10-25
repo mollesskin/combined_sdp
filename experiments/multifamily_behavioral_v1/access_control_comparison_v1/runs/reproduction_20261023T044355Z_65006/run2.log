@@ -1,0 +1,1052 @@
+{
+  "rows": 266,
+  "files": 14,
+  "errors": [],
+  "failed": [
+    {
+      "file": "arbitrary_location_write_simple.sol",
+      "variant": "V0",
+      "scenario": "empty_pop_takeover",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "length": {
+          "expected": "0",
+          "actual": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "discrepancy": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "arbitrary_location_write_simple.sol",
+      "variant": "V0",
+      "scenario": "empty_pop_takeover",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "arbitrary_location_write_simple.sol",
+      "variant": "V0",
+      "scenario": "empty_pop_takeover",
+      "step": 2,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        },
+        "code_present": {
+          "expected": true,
+          "actual": false,
+          "discrepancy": null
+        },
+        "owner": {
+          "expected": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "actual": "0x0000000000000000000000000000000000000000",
+          "discrepancy": null
+        },
+        "length": {
+          "expected": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "actual": "0",
+          "discrepancy": "-115792089237316195423570985008687907853269984665640564039457584007913129639935"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999891211460370197",
+          "actual": "9999999891211460370207",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name1.sol",
+      "variant": "V0",
+      "scenario": "deployment_authority",
+      "step": 0,
+      "kind": "allowed",
+      "status": "observation",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x0000000000000000000000000000000000000000",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name1.sol",
+      "variant": "V0",
+      "scenario": "legitimate",
+      "step": 1,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "0",
+          "actual": "10",
+          "discrepancy": "10"
+        }
+      },
+      "accounts": {
+        "user0": {
+          "expected": "9999999323927465971763",
+          "actual": "9999999323927465971753",
+          "discrepancy": "-10"
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name1.sol",
+      "variant": "V0",
+      "scenario": "takeover",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name1.sol",
+      "variant": "V0",
+      "scenario": "takeover",
+      "step": 2,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999934379763014548",
+          "actual": "9999999934379763014558",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name1.sol",
+      "variant": "V0",
+      "scenario": "repeat_initializer",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name1.sol",
+      "variant": "V0",
+      "scenario": "repeat_initializer",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name2.sol",
+      "variant": "V0",
+      "scenario": "deployment_authority",
+      "step": 0,
+      "kind": "allowed",
+      "status": "observation",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x0000000000000000000000000000000000000000",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name2.sol",
+      "variant": "V0",
+      "scenario": "legitimate",
+      "step": 1,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "0",
+          "actual": "10",
+          "discrepancy": "10"
+        }
+      },
+      "accounts": {
+        "user0": {
+          "expected": "9999999323927465971763",
+          "actual": "9999999323927465971753",
+          "discrepancy": "-10"
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name2.sol",
+      "variant": "V0",
+      "scenario": "takeover",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name2.sol",
+      "variant": "V0",
+      "scenario": "takeover",
+      "step": 2,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999934346435563116",
+          "actual": "9999999934346435563126",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name2.sol",
+      "variant": "V0",
+      "scenario": "repeat_initializer",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name2.sol",
+      "variant": "V0",
+      "scenario": "repeat_initializer",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name3.sol",
+      "variant": "V0",
+      "scenario": "deployment_authority",
+      "step": 0,
+      "kind": "allowed",
+      "status": "observation",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x0000000000000000000000000000000000000000",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name3.sol",
+      "variant": "V0",
+      "scenario": "legitimate",
+      "step": 1,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "0",
+          "actual": "10",
+          "discrepancy": "10"
+        }
+      },
+      "accounts": {
+        "user0": {
+          "expected": "9999999323927465971763",
+          "actual": "9999999323927465971753",
+          "discrepancy": "-10"
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name3.sol",
+      "variant": "V0",
+      "scenario": "takeover",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name3.sol",
+      "variant": "V0",
+      "scenario": "takeover",
+      "step": 2,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999934346435563116",
+          "actual": "9999999934346435563126",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "incorrect_constructor_name3.sol",
+      "variant": "V0",
+      "scenario": "repeat_initializer",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "incorrect_constructor_name3.sol",
+      "variant": "V0",
+      "scenario": "repeat_initializer",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "mapping_write.sol",
+      "variant": "V0",
+      "scenario": "normal_keys",
+      "step": 3,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {
+        "key2": {
+          "expected": "13",
+          "actual": "0",
+          "discrepancy": "-13"
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "mapping_write.sol",
+      "variant": "V0",
+      "scenario": "owner_collision",
+      "step": 0,
+      "kind": "allowed",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "mapping_write.sol",
+      "variant": "V0",
+      "scenario": "owner_collision",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "1",
+          "actual": "0",
+          "discrepancy": "-1"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999894037663579744",
+          "actual": "9999999894037663579745",
+          "discrepancy": "1"
+        }
+      }
+    },
+    {
+      "file": "multiowned_vulnerable.sol",
+      "variant": "V0",
+      "scenario": "self_grant",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "parent1": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "multiowned_vulnerable.sol",
+      "variant": "V0",
+      "scenario": "self_grant",
+      "step": 2,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999933132833250120",
+          "actual": "9999999933132833250130",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "mycontract.sol",
+      "variant": "V0",
+      "scenario": "origin_phishing",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "6",
+          "discrepancy": "-4"
+        }
+      },
+      "accounts": {
+        "user2": {
+          "expected": "10000000000000000000000",
+          "actual": "10000000000000000000004",
+          "discrepancy": "4"
+        }
+      }
+    },
+    {
+      "file": "parity_wallet_bug_2.sol",
+      "variant": "V0",
+      "scenario": "first_initWallet",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "required": {
+          "expected": "0",
+          "actual": "1",
+          "discrepancy": "1"
+        },
+        "numOwners": {
+          "expected": "0",
+          "actual": "1",
+          "discrepancy": "1"
+        },
+        "dailyLimit": {
+          "expected": "0",
+          "actual": "100",
+          "discrepancy": "100"
+        },
+        "lastDay": {
+          "expected": "0",
+          "actual": "17896",
+          "discrepancy": "17896"
+        },
+        "isOwner1": {
+          "expected": false,
+          "actual": true,
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "parity_wallet_bug_2.sol",
+      "variant": "V0",
+      "scenario": "first_initWallet",
+      "step": 2,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        },
+        "code_present": {
+          "expected": true,
+          "actual": false,
+          "discrepancy": null
+        },
+        "required": {
+          "expected": "1",
+          "actual": "0",
+          "discrepancy": "-1"
+        },
+        "numOwners": {
+          "expected": "1",
+          "actual": "0",
+          "discrepancy": "-1"
+        },
+        "dailyLimit": {
+          "expected": "100",
+          "actual": "0",
+          "discrepancy": "-100"
+        },
+        "lastDay": {
+          "expected": "17896",
+          "actual": "0",
+          "discrepancy": "-17896"
+        },
+        "isOwner1": {
+          "expected": true,
+          "actual": false,
+          "discrepancy": null
+        }
+      },
+      "accounts": {
+        "user2": {
+          "expected": "10000000000000000000000",
+          "actual": "10000000000000000000010",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "parity_wallet_bug_2.sol",
+      "variant": "V0",
+      "scenario": "first_initMultiowned",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "required": {
+          "expected": "0",
+          "actual": "1",
+          "discrepancy": "1"
+        },
+        "numOwners": {
+          "expected": "0",
+          "actual": "1",
+          "discrepancy": "1"
+        },
+        "isOwner1": {
+          "expected": false,
+          "actual": true,
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "parity_wallet_bug_2.sol",
+      "variant": "V0",
+      "scenario": "first_initDaylimit",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "dailyLimit": {
+          "expected": "0",
+          "actual": "777",
+          "discrepancy": "777"
+        },
+        "lastDay": {
+          "expected": "0",
+          "actual": "17896",
+          "discrepancy": "17896"
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "phishable.sol",
+      "variant": "V0",
+      "scenario": "origin_phishing",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        }
+      },
+      "accounts": {
+        "user2": {
+          "expected": "10000000000000000000000",
+          "actual": "10000000000000000000010",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "simple_suicide.sol",
+      "variant": "V0",
+      "scenario": "outsider",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        },
+        "code_present": {
+          "expected": true,
+          "actual": false,
+          "discrepancy": null
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "10000000000000000000000",
+          "actual": "10000000000000000000010",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "unprotected0.sol",
+      "variant": "V0",
+      "scenario": "outsider",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "unprotected0.sol",
+      "variant": "V0",
+      "scenario": "normal_transfer",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "actual": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "wallet_02_refund_nosub.sol",
+      "variant": "V0",
+      "scenario": "normal_refund",
+      "step": 3,
+      "kind": "allowed",
+      "status": "success",
+      "state_differences": {
+        "credit1": {
+          "expected": "0",
+          "actual": "6",
+          "discrepancy": "6"
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "wallet_02_refund_nosub.sol",
+      "variant": "V0",
+      "scenario": "normal_refund",
+      "step": 4,
+      "kind": "allowed",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "100",
+          "actual": "94",
+          "discrepancy": "-6"
+        },
+        "credit1": {
+          "expected": "0",
+          "actual": "6",
+          "discrepancy": "6"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999843024802667989",
+          "actual": "9999999843024802667995",
+          "discrepancy": "6"
+        }
+      }
+    },
+    {
+      "file": "wallet_02_refund_nosub.sol",
+      "variant": "V0",
+      "scenario": "normal_refund",
+      "step": 5,
+      "kind": "allowed",
+      "status": "success",
+      "state_differences": {
+        "credit1": {
+          "expected": "3",
+          "actual": "9",
+          "discrepancy": "6"
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "wallet_02_refund_nosub.sol",
+      "variant": "V0",
+      "scenario": "normal_refund",
+      "step": 6,
+      "kind": "allowed",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "94",
+          "actual": "88",
+          "discrepancy": "-6"
+        },
+        "credit1": {
+          "expected": "0",
+          "actual": "9",
+          "discrepancy": "9"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999767732722299997",
+          "actual": "9999999767732722300003",
+          "discrepancy": "6"
+        }
+      }
+    },
+    {
+      "file": "wallet_03_wrong_constructor.sol",
+      "variant": "V0",
+      "scenario": "deployment_authority",
+      "step": 0,
+      "kind": "allowed",
+      "status": "observation",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x0000000000000000000000000000000000000000",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "wallet_03_wrong_constructor.sol",
+      "variant": "V0",
+      "scenario": "legitimate",
+      "step": 2,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "0",
+          "actual": "6",
+          "discrepancy": "6"
+        }
+      },
+      "accounts": {
+        "user2": {
+          "expected": "10000000000000000000006",
+          "actual": "10000000000000000000000",
+          "discrepancy": "-6"
+        }
+      }
+    },
+    {
+      "file": "wallet_03_wrong_constructor.sol",
+      "variant": "V0",
+      "scenario": "takeover",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "wallet_03_wrong_constructor.sol",
+      "variant": "V0",
+      "scenario": "takeover",
+      "step": 2,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "10",
+          "actual": "0",
+          "discrepancy": "-10"
+        }
+      },
+      "accounts": {
+        "user2": {
+          "expected": "10000000000000000000000",
+          "actual": "10000000000000000000010",
+          "discrepancy": "10"
+        }
+      }
+    },
+    {
+      "file": "wallet_03_wrong_constructor.sol",
+      "variant": "V0",
+      "scenario": "repeat_initializer",
+      "step": 0,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0x0000000000000000000000000000000000000000",
+          "actual": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "wallet_03_wrong_constructor.sol",
+      "variant": "V0",
+      "scenario": "repeat_initializer",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "owner": {
+          "expected": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+          "actual": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+          "discrepancy": null
+        }
+      },
+      "accounts": {}
+    },
+    {
+      "file": "wallet_04_confused_sign.sol",
+      "variant": "V0",
+      "scenario": "allowed_partial",
+      "step": 1,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {},
+      "accounts": {}
+    },
+    {
+      "file": "wallet_04_confused_sign.sol",
+      "variant": "V0",
+      "scenario": "allowed_partial",
+      "step": 2,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "6",
+          "actual": "10",
+          "discrepancy": "4"
+        },
+        "credit1": {
+          "expected": "6",
+          "actual": "10",
+          "discrepancy": "4"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999895110763673726",
+          "actual": "9999999895110763673722",
+          "discrepancy": "-4"
+        }
+      }
+    },
+    {
+      "file": "wallet_04_confused_sign.sol",
+      "variant": "V0",
+      "scenario": "excess",
+      "step": 2,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "110",
+          "actual": "99",
+          "discrepancy": "-11"
+        },
+        "credit1": {
+          "expected": "10",
+          "actual": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "discrepancy": "115792089237316195423570985008687907853269984665640564039457584007913129639925"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999933945569776006",
+          "actual": "9999999933945569776017",
+          "discrepancy": "11"
+        }
+      }
+    },
+    {
+      "file": "wallet_04_confused_sign.sol",
+      "variant": "V0",
+      "scenario": "no_credit",
+      "step": 1,
+      "kind": "forbidden",
+      "status": "success",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "100",
+          "actual": "99",
+          "discrepancy": "-1"
+        },
+        "credit1": {
+          "expected": "0",
+          "actual": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "discrepancy": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "10000000000000000000000",
+          "actual": "10000000000000000000001",
+          "discrepancy": "1"
+        }
+      }
+    },
+    {
+      "file": "wallet_04_confused_sign.sol",
+      "variant": "V2",
+      "scenario": "allowed_partial",
+      "step": 1,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {},
+      "accounts": {}
+    },
+    {
+      "file": "wallet_04_confused_sign.sol",
+      "variant": "V2",
+      "scenario": "allowed_partial",
+      "step": 2,
+      "kind": "allowed",
+      "status": "reverted",
+      "state_differences": {
+        "contract_wei": {
+          "expected": "6",
+          "actual": "10",
+          "discrepancy": "4"
+        },
+        "credit1": {
+          "expected": "6",
+          "actual": "10",
+          "discrepancy": "4"
+        }
+      },
+      "accounts": {
+        "user1": {
+          "expected": "9999999895107280176416",
+          "actual": "9999999895107280176412",
+          "discrepancy": "-4"
+        }
+      }
+    }
+  ]
+}

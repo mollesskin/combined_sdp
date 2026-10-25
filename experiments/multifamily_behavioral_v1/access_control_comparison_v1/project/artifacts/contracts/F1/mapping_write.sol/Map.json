@@ -1,0 +1,71 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Map",
+  "sourceName": "contracts/F1/mapping_write.sol",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "key",
+          "type": "uint256"
+        },
+        {
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "set",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "withdraw",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "key",
+          "type": "uint256"
+        }
+      ],
+      "name": "get",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506101c0806100206000396000f3006080604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631ab06ee581146100665780633ccfd60b146100835780638da5cb5b146100985780639507d39a146100d6575b600080fd5b34801561007257600080fd5b50610081600435602435610100565b005b34801561008f57600080fd5b50610081610112565b3480156100a457600080fd5b506100ad610166565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b3480156100e257600080fd5b506100ee600435610182565b60408051918252519081900360200190f35b60009182526001602052604090912055565b60005473ffffffffffffffffffffffffffffffffffffffff16331461013657600080fd5b6040513390303180156108fc02916000818181858888f19350505050158015610163573d6000803e3d6000fd5b50565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b600090815260016020526040902054905600a165627a7a72305820477a2bbd1097cf9f30f280ec0642122443f1b61cf08e4568cc2cea2dbe9250190029",
+  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416631ab06ee581146100665780633ccfd60b146100835780638da5cb5b146100985780639507d39a146100d6575b600080fd5b34801561007257600080fd5b50610081600435602435610100565b005b34801561008f57600080fd5b50610081610112565b3480156100a457600080fd5b506100ad610166565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b3480156100e257600080fd5b506100ee600435610182565b60408051918252519081900360200190f35b60009182526001602052604090912055565b60005473ffffffffffffffffffffffffffffffffffffffff16331461013657600080fd5b6040513390303180156108fc02916000818181858888f19350505050158015610163573d6000803e3d6000fd5b50565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b600090815260016020526040902054905600a165627a7a72305820477a2bbd1097cf9f30f280ec0642122443f1b61cf08e4568cc2cea2dbe9250190029",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

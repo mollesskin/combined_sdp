@@ -1,0 +1,13 @@
+--- V0/wallet_02_refund_nosub.sol
++++ F1/wallet_02_refund_nosub.sol
+@@ -33,7 +33,9 @@
+ 
+      function refund() public {
+          // <yes> <report> ACCESS_CONTROL
+-         msg.sender.transfer(balances[msg.sender]);
++         uint256 claim = balances[msg.sender];
++         balances[msg.sender] = 0;
++         msg.sender.transfer(claim);
+      }
+ 
+      // In an emergency the owner can migrate  allfunds to a different address.

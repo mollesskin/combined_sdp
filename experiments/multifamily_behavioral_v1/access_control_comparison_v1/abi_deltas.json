@@ -1,0 +1,278 @@
+[
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V1",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V2",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "arbitrary_location_write_simple.sol",
+    "variant": "V3",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "incorrect_constructor_name1.sol",
+    "variant": "F1",
+    "removed": [
+      "function:IamMissing()"
+    ],
+    "added": [
+      "constructor:()"
+    ],
+    "abi_equal": false,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "incorrect_constructor_name2.sol",
+    "variant": "F1",
+    "removed": [
+      "function:missing()"
+    ],
+    "added": [
+      "constructor:()"
+    ],
+    "abi_equal": false,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "incorrect_constructor_name3.sol",
+    "variant": "F1",
+    "removed": [
+      "function:Constructor()"
+    ],
+    "added": [
+      "constructor:()"
+    ],
+    "abi_equal": false,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "mapping_write.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "mapping_write.sol",
+    "variant": "F1",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "multiowned_vulnerable.sol",
+    "variant": "F1",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "mycontract.sol",
+    "variant": "F1",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "parity_wallet_bug_2.sol",
+    "variant": "F1",
+    "removed": [],
+    "added": [
+      "constructor:()"
+    ],
+    "abi_equal": false,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "phishable.sol",
+    "variant": "F1",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "simple_suicide.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "simple_suicide.sol",
+    "variant": "F1",
+    "removed": [],
+    "added": [
+      "constructor:()"
+    ],
+    "abi_equal": false,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "unprotected0.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "unprotected0.sol",
+    "variant": "F1",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "wallet_02_refund_nosub.sol",
+    "variant": "F1",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "wallet_03_wrong_constructor.sol",
+    "variant": "F1",
+    "removed": [
+      "function:initWallet()"
+    ],
+    "added": [
+      "constructor:()"
+    ],
+    "abi_equal": false,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V0",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V1",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V2",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  },
+  {
+    "file": "wallet_04_confused_sign.sol",
+    "variant": "V3",
+    "removed": [],
+    "added": [],
+    "abi_equal": true,
+    "note": "Interface comparison only, not semantic equivalence"
+  }
+]

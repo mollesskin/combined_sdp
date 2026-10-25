@@ -1,0 +1,29 @@
+{
+  "name": "smartbugs-curated-exploits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "clean": "hardhat clean",
+    "lint": "npm run lint:js && npm run lint:sol",
+    "lint:fix": "npm run lint:js:fix && npm run lint:sol:fix",
+    "lint:js": "prettier --log-level warn '**/*.{js,ts}' --check && eslint .",
+    "lint:js:fix": "prettier --log-level warn '**/*.{js,ts}' --write && eslint . --fix",
+    "lint:sol": "prettier --log-level warn --plugin=prettier-plugin-solidity contracts/**/*.sol --check && solhint contracts/**/*.sol",
+    "lint:sol:fix": "prettier --log-level warn --plugin=prettier-plugin-solidity contracts/**/*.sol --write"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-solidity": "^1.4.1",
+    "solhint": "^5.0.3"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.5"
+  }
+}

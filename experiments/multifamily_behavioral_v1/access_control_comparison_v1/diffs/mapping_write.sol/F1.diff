@@ -1,0 +1,16 @@
+--- V0/mapping_write.sol
++++ F1/mapping_write.sol
+@@ -10,12 +10,9 @@
+ 
+  contract Map {
+      address public owner;
+-     uint256[] map;
++     mapping(uint256 => uint256) map;
+ 
+      function set(uint256 key, uint256 value) public {
+-         if (map.length <= key) {
+-             map.length = key + 1;
+-         }
+         // <yes> <report> ACCESS_CONTROL
+          map[key] = value;
+      }

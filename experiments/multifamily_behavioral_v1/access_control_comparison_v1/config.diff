@@ -1,0 +1,14 @@
+--- baseline/hardhat.config.js
++++ access_control/project/hardhat.config.js
+@@ -32,10 +32,5 @@
+       hardfork: "shanghai",
+     },
+   },
+-  mocha: {
+-    reporter: "./scripts/CustomReporter.js",
+-    reporterOptions: {
+-      json: true, // Export test results to JSON
+-    },
+-  },
++  mocha: { reporter: "spec" },
+ };

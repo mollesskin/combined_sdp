@@ -1,0 +1,181 @@
+{
+  "row": {
+    "file": "simple_suicide.sol",
+    "group": "simple_suicide.sol",
+    "track": "single",
+    "variant": "V0",
+    "scenario": "outsider",
+    "step": 0,
+    "method": "sudicideAnyone",
+    "kind": "forbidden",
+    "effect": "same",
+    "compilation_status": "success",
+    "setup_status": "success",
+    "execution_status": "success",
+    "inputs": {
+      "sender": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "args": [],
+      "value_wei": "0",
+      "via": null,
+      "gas_limit": "6000000"
+    },
+    "before": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true
+      },
+      "storage": {
+        "0": "0",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0"
+      },
+      "accounts": {
+        "user0": "9999999383007053533297",
+        "user1": "10000000000000000000000",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "expected": {
+      "state": {
+        "contract_wei": "10",
+        "code_present": true
+      },
+      "accounts": {
+        "user0": "9999999383007053533297",
+        "user1": "10000000000000000000000",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual": {
+      "state": {
+        "contract_wei": "0",
+        "code_present": false
+      },
+      "storage": {
+        "0": "0",
+        "1": "0",
+        "2": "0",
+        "3": "0",
+        "4": "0",
+        "5": "0",
+        "6": "0",
+        "7": "0",
+        "8": "0"
+      },
+      "accounts": {
+        "user0": "9999999383007053533297",
+        "user1": "9999999960334222138916",
+        "user2": "10000000000000000000000",
+        "relay": "0",
+        "rejector": "0"
+      }
+    },
+    "actual_accounts_excluding_tx_gas": {
+      "user0": "9999999383007053533297",
+      "user1": "10000000000000000000010",
+      "user2": "10000000000000000000000",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "state_differences": {
+      "contract_wei": {
+        "expected": "10",
+        "actual": "0",
+        "discrepancy": "-10"
+      },
+      "code_present": {
+        "expected": true,
+        "actual": false,
+        "discrepancy": null
+      }
+    },
+    "account_differences": {
+      "user1": {
+        "expected": "10000000000000000000000",
+        "actual": "10000000000000000000010",
+        "discrepancy": "10"
+      }
+    },
+    "getter_check": null,
+    "correct": false,
+    "security_pass": false,
+    "functionality_pass": null,
+    "full_observed_rollback": null,
+    "forbidden_no_effect": false,
+    "contract_outflow_wei": "10",
+    "unauthorized_outflow_wei": "10",
+    "excess_payout_wei": null,
+    "account_deltas_wei_excluding_tx_gas": {
+      "user0": "0",
+      "user1": "10",
+      "user2": "0",
+      "relay": "0",
+      "rejector": "0"
+    },
+    "applicability": {
+      "owner_integrity": false,
+      "credit_accounting": false,
+      "code_lifecycle": true,
+      "wei_outflow": true,
+      "gas": true,
+      "full_rollback": false
+    },
+    "gas_used": "26187",
+    "error": null,
+    "raw_output": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/access_control_comparison_v1/runs/reproduction_20261023T044355Z_65006/run2/simple_suicide.sol.V0.outsider.0.json"
+  },
+  "receipt": {
+    "_type": "TransactionReceipt",
+    "blockHash": "0x20590a0a10c72d0c3ba7924f64e840f8582adc57c4bea11b6f9ff21494efc26a",
+    "blockNumber": 5,
+    "contractAddress": null,
+    "cumulativeGasUsed": "26187",
+    "from": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "gasPrice": "1514712562",
+    "blobGasUsed": null,
+    "blobGasPrice": null,
+    "gasUsed": "26187",
+    "hash": "0x16f2116a6a29ea548eafee70168a99f0fb3e52174263304e96a5d4ec17e51546",
+    "index": 0,
+    "logs": [],
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "status": 1,
+    "to": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+  },
+  "setup": {
+    "funding": {
+      "method": "prefund_future_CREATE",
+      "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      "value_wei": "10",
+      "hash": "0xb721b6fa3f72b74ea3b04d2cfb0fcbc17724290cb09e626f381e59e400ca58d3"
+    },
+    "deploy_receipt": {
+      "_type": "TransactionReceipt",
+      "blockHash": "0xa11427875f5a6f488712d9cb4c91de765419a08018f2daa4cc5aafb25e9d56bd",
+      "blockNumber": 2,
+      "contractAddress": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+      "cumulativeGasUsed": "82037",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "gasPrice": "1765778125",
+      "blobGasUsed": null,
+      "blobGasPrice": null,
+      "gasUsed": "82037",
+      "hash": "0x61de93e09fc1a77aefb4a12eafb681696f12dc930951c3bec27b6fa985a830e4",
+      "index": 0,
+      "logs": [],
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "status": 1,
+      "to": null
+    }
+  }
+}
