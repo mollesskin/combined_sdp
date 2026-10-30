@@ -1,0 +1,14 @@
+﻿item,wording,observed_values,options_status
+Q1,Name,Free-text/date/name field; response options not inferable from export,Observed values only; full form options and labels unverified
+Q2,Date of response,Free-text/date/name field; response options not inferable from export,Observed values only; full form options and labels unverified
+Q3,What best describes your current role?,Blockchain Developer | Researcher,Observed values only; full form options and labels unverified
+Q4,How much experience do you have with Ethereum or Solidity?,2 | 1 | more than 1 year,Observed values only; full form options and labels unverified
+Q5,"Have you personally developed, reviewed, tested, or audited Ethereum smart contracts?",Yes,Observed values only; full form options and labels unverified
+Q6,"Have you encountered security vulnerabilities in smart contracts you developed, reviewed, or audited?","Yes, occasionally | Not sure",Observed values only; full form options and labels unverified
+Q7,Which smart-contract vulnerabilities have you encountered or consider most important? Why?,Free-text/date/name field; response options not inferable from export,Observed values only; full form options and labels unverified
+Q8,"Which vulnerability is the most difficult to prevent or detect in your experience, and why?",Free-text/date/name field; response options not inferable from export,Observed values only; full form options and labels unverified
+Q9,Which security design patterns or mechanisms have you used or recommended?,Free-text/date/name field; response options not inferable from export,Observed values only; full form options and labels unverified
+Q10,How effective do you consider security design patterns in preventing smart-contract vulnerabilities?,3 | 4,Observed values only; full form options and labels unverified
+Q11,"In your experience, is one security pattern usually enough to protect against a vulnerability?",Sometimes | Usually no | It strongly depends on the vulnerability,Observed values only; full form options and labels unverified
+Q12,"When you discover a vulnerability, how do you usually decide which security mechanism or design pattern to apply?",Free-text/date/name field; response options not inferable from export,Observed values only; full form options and labels unverified
+Q13,Do you think combining multiple security patterns can provide additional protection compared with using each pattern separately? Why or why not?,Free-text/date/name field; response options not inferable from export,Observed values only; full form options and labels unverified
