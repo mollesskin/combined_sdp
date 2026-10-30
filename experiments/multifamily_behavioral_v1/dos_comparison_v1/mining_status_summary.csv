@@ -1,0 +1,3 @@
+file,variant,requested_work,included_work,transaction_count,first_block_pending,final_success_count,final_pending_count,total_gas_used,admission_probe
+dos_simple.sol,V0,1400,1400,4,1,4,0,31476456,rejected_before_inclusion
+dos_simple.sol,F1,1400,1400,4,1,4,0,31501932,rejected_before_inclusion

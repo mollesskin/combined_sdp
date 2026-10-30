@@ -1,0 +1,2554 @@
+[
+  {
+    "check": "four source files / two factorial / one single / one alternatives",
+    "passed": true
+  },
+  {
+    "check": "source hash auction.sol V0",
+    "passed": true
+  },
+  {
+    "check": "source hash auction.sol PULL",
+    "passed": true
+  },
+  {
+    "check": "source hash auction.sol FALLBACK",
+    "passed": true
+  },
+  {
+    "check": "V0 identical to reviewed source auction.sol",
+    "passed": true
+  },
+  {
+    "check": "author test preserved auction.sol",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_address.sol V0",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_address.sol V1",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_address.sol V2",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_address.sol V3",
+    "passed": true
+  },
+  {
+    "check": "V0 identical to reviewed source dos_address.sol",
+    "passed": true
+  },
+  {
+    "check": "author test preserved dos_address.sol",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_number.sol V0",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_number.sol V1",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_number.sol V2",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_number.sol V3",
+    "passed": true
+  },
+  {
+    "check": "V0 identical to reviewed source dos_number.sol",
+    "passed": true
+  },
+  {
+    "check": "author test preserved dos_number.sol",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_simple.sol V0",
+    "passed": true
+  },
+  {
+    "check": "source hash dos_simple.sol F1",
+    "passed": true
+  },
+  {
+    "check": "V0 identical to reviewed source dos_simple.sol",
+    "passed": true
+  },
+  {
+    "check": "author test preserved dos_simple.sol",
+    "passed": true
+  },
+  {
+    "check": "run1 complete 13 variants / 338 measured tx / 34 operations",
+    "passed": true
+  },
+  {
+    "check": "run1 unique tx observations",
+    "passed": true
+  },
+  {
+    "check": "run1 final runner v2 / no missing or infrastructure statuses",
+    "passed": true
+  },
+  {
+    "check": "run1 gas limit12m all measured calls",
+    "passed": true
+  },
+  {
+    "check": "run1 raw evidence and receipt status/gas agree",
+    "passed": true
+  },
+  {
+    "check": "run1 mined reverts observed atomic rollback",
+    "passed": true
+  },
+  {
+    "check": "run1 four OOG nested-hash receipts recovered",
+    "passed": true
+  },
+  {
+    "check": "run1 13 variants same compiler/settings",
+    "passed": true
+  },
+  {
+    "check": "run1 auction budget and backing ('auction.sol', 'V0', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 every auction step balances bid plus registered claims ('auction.sol', 'V0', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 former refund paid/preserved ('auction.sol', 'V0', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 auction budget and backing ('auction.sol', 'V0', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 every auction step balances bid plus registered claims ('auction.sol', 'V0', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 auction budget and backing ('auction.sol', 'PULL', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 every auction step balances bid plus registered claims ('auction.sol', 'PULL', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 former refund paid/preserved ('auction.sol', 'PULL', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 auction budget and backing ('auction.sol', 'PULL', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 every auction step balances bid plus registered claims ('auction.sol', 'PULL', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 former refund paid/preserved ('auction.sol', 'PULL', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 refusing claim rollback/recovery/repeat ('auction.sol', 'PULL', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 auction budget and backing ('auction.sol', 'FALLBACK', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 every auction step balances bid plus registered claims ('auction.sol', 'FALLBACK', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 former refund paid/preserved ('auction.sol', 'FALLBACK', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 auction budget and backing ('auction.sol', 'FALLBACK', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 every auction step balances bid plus registered claims ('auction.sol', 'FALLBACK', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 former refund paid/preserved ('auction.sol', 'FALLBACK', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 refusing claim rollback/recovery/repeat ('auction.sol', 'FALLBACK', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_address.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_address.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_address.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_address.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 cap reject4200 explicitly retained ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 cap reject4200 explicitly retained ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_number.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_number.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_number.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_number.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 logical clear/reuse preserved ('dos_number.sol', 'V0', 'logical_clear_reuse')",
+    "passed": true
+  },
+  {
+    "check": "run1 oversize fails without claiming success ('dos_number.sol', 'V0', 'oversize_insert')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 logical clear/reuse preserved ('dos_number.sol', 'V1', 'logical_clear_reuse')",
+    "passed": true
+  },
+  {
+    "check": "run1 oversize fails without claiming success ('dos_number.sol', 'V1', 'oversize_insert')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 cap reject4200 explicitly retained ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 logical clear/reuse preserved ('dos_number.sol', 'V2', 'logical_clear_reuse')",
+    "passed": true
+  },
+  {
+    "check": "run1 oversize fails without claiming success ('dos_number.sol', 'V2', 'oversize_insert')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 cap reject4200 explicitly retained ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run1 logical clear/reuse preserved ('dos_number.sol', 'V3', 'logical_clear_reuse')",
+    "passed": true
+  },
+  {
+    "check": "run1 oversize fails without claiming success ('dos_number.sol', 'V3', 'oversize_insert')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 requested denominator ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 bounded operation budget ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 successful cleanup progress ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 full vs accepted completion not conflated ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 final state and another cycle ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run1 record evidence present",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_simple.sol.V0.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_simple.sol.V0.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_simple.sol.V0.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_simple.sol.F1.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_simple.sol.F1.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_simple.sol.F1.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_simple.sol.V0.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_simple.sol.V0.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_simple.sol.V0.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_simple.sol.V0.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_simple.sol.V0.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_simple.sol.V0.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_simple.sol.F1.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_simple.sol.F1.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_simple.sol.F1.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V0.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V0.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V0.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_simple.sol.F1.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_simple.sol.F1.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_simple.sol.F1.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V3.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V3.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V3.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V2.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V2.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V2.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V1.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V1.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V1.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_simple.sol.V0.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_simple.sol.V0.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_simple.sol.V0.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_simple.sol.F1.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_simple.sol.F1.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_simple.sol.F1.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_address.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_address.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_address.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 records map to one operation dos_number.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 record count dos_number.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 exact record integrity dos_number.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run1 transient pending then included V0",
+    "passed": true
+  },
+  {
+    "check": "run1 probe rejected before inclusion V0",
+    "passed": true
+  },
+  {
+    "check": "run1 transient pending then included F1",
+    "passed": true
+  },
+  {
+    "check": "run1 probe rejected before inclusion F1",
+    "passed": true
+  },
+  {
+    "check": "run1 ABI changes only stated new workflow functions/getters",
+    "passed": true
+  },
+  {
+    "check": "run2 complete 13 variants / 338 measured tx / 34 operations",
+    "passed": true
+  },
+  {
+    "check": "run2 unique tx observations",
+    "passed": true
+  },
+  {
+    "check": "run2 final runner v2 / no missing or infrastructure statuses",
+    "passed": true
+  },
+  {
+    "check": "run2 gas limit12m all measured calls",
+    "passed": true
+  },
+  {
+    "check": "run2 raw evidence and receipt status/gas agree",
+    "passed": true
+  },
+  {
+    "check": "run2 mined reverts observed atomic rollback",
+    "passed": true
+  },
+  {
+    "check": "run2 four OOG nested-hash receipts recovered",
+    "passed": true
+  },
+  {
+    "check": "run2 13 variants same compiler/settings",
+    "passed": true
+  },
+  {
+    "check": "run2 auction budget and backing ('auction.sol', 'V0', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 every auction step balances bid plus registered claims ('auction.sol', 'V0', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 former refund paid/preserved ('auction.sol', 'V0', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 auction budget and backing ('auction.sol', 'V0', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 every auction step balances bid plus registered claims ('auction.sol', 'V0', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 auction budget and backing ('auction.sol', 'PULL', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 every auction step balances bid plus registered claims ('auction.sol', 'PULL', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 former refund paid/preserved ('auction.sol', 'PULL', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 auction budget and backing ('auction.sol', 'PULL', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 every auction step balances bid plus registered claims ('auction.sol', 'PULL', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 former refund paid/preserved ('auction.sol', 'PULL', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 refusing claim rollback/recovery/repeat ('auction.sol', 'PULL', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 auction budget and backing ('auction.sol', 'FALLBACK', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 every auction step balances bid plus registered claims ('auction.sol', 'FALLBACK', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 former refund paid/preserved ('auction.sol', 'FALLBACK', 'ordinary_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 auction budget and backing ('auction.sol', 'FALLBACK', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 every auction step balances bid plus registered claims ('auction.sol', 'FALLBACK', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 former refund paid/preserved ('auction.sol', 'FALLBACK', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 refusing claim rollback/recovery/repeat ('auction.sol', 'FALLBACK', 'refusing_bidder')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_address.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_address.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_address.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_address.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_address.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_address.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_address.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_address.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 cap reject4200 explicitly retained ('dos_address.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_address.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 cap reject4200 explicitly retained ('dos_address.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_number.sol', 'V0', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_number.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_number.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_number.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_number.sol', 'V0', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 logical clear/reuse preserved ('dos_number.sol', 'V0', 'logical_clear_reuse')",
+    "passed": true
+  },
+  {
+    "check": "run2 oversize fails without claiming success ('dos_number.sol', 'V0', 'oversize_insert')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_number.sol', 'V1', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_number.sol', 'V1', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 logical clear/reuse preserved ('dos_number.sol', 'V1', 'logical_clear_reuse')",
+    "passed": true
+  },
+  {
+    "check": "run2 oversize fails without claiming success ('dos_number.sol', 'V1', 'oversize_insert')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_number.sol', 'V2', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 cap reject4200 explicitly retained ('dos_number.sol', 'V2', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 logical clear/reuse preserved ('dos_number.sol', 'V2', 'logical_clear_reuse')",
+    "passed": true
+  },
+  {
+    "check": "run2 oversize fails without claiming success ('dos_number.sol', 'V2', 'oversize_insert')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_number.sol', 'V3', 'load_1750')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 cap reject4200 explicitly retained ('dos_number.sol', 'V3', 'load_5950')",
+    "passed": true
+  },
+  {
+    "check": "run2 logical clear/reuse preserved ('dos_number.sol', 'V3', 'logical_clear_reuse')",
+    "passed": true
+  },
+  {
+    "check": "run2 oversize fails without claiming success ('dos_number.sol', 'V3', 'oversize_insert')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_simple.sol', 'V0', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 requested denominator ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 bounded operation budget ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 successful cleanup progress ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 full vs accepted completion not conflated ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 final state and another cycle ('dos_simple.sol', 'F1', 'natural_cycle')",
+    "passed": true
+  },
+  {
+    "check": "run2 record evidence present",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_simple.sol.V0.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_simple.sol.V0.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_simple.sol.V0.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_simple.sol.F1.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_simple.sol.F1.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_simple.sol.F1.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_simple.sol.V0.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_simple.sol.V0.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_simple.sol.V0.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V0.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_simple.sol.V0.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_simple.sol.V0.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_simple.sol.V0.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V1.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V1.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_simple.sol.F1.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_simple.sol.F1.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_simple.sol.F1.natural_cycle.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V0.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V0.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V0.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_simple.sol.F1.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_simple.sol.F1.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_simple.sol.F1.natural_cycle.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V3.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V3.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V3.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V2.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V2.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V2.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V2.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V1.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V0.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V1.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V2.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V1.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V1.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V1.logical_clear_reuse.reuse.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V3.load_1750.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V0.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V3.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V0.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_simple.sol.V0.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_simple.sol.V0.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_simple.sol.V0.mining_status.mining_final.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V3.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V3.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_simple.sol.F1.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_simple.sol.F1.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_simple.sol.F1.natural_cycle.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V3.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_address.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_address.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_address.sol.V2.load_5950.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V2.load_5950.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V3.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V2.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V2.load_1750.refill.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V1.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V1.load_1750.after_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 records map to one operation dos_number.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 record count dos_number.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 exact record integrity dos_number.sol.V0.load_5950.before_cleanup.records.json",
+    "passed": true
+  },
+  {
+    "check": "run2 transient pending then included V0",
+    "passed": true
+  },
+  {
+    "check": "run2 probe rejected before inclusion V0",
+    "passed": true
+  },
+  {
+    "check": "run2 transient pending then included F1",
+    "passed": true
+  },
+  {
+    "check": "run2 probe rejected before inclusion F1",
+    "passed": true
+  },
+  {
+    "check": "run2 ABI changes only stated new workflow functions/getters",
+    "passed": true
+  },
+  {
+    "check": "arithmetic_comparison_v1 read-only preservation",
+    "passed": true
+  },
+  {
+    "check": "access_control_comparison_v1 read-only preservation",
+    "passed": true
+  }
+]

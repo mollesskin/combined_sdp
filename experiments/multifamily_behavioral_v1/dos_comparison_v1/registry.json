@@ -1,0 +1,294 @@
+{
+  "RQ": "How effective are combinations of security design patterns compared with their individual components in preventing vulnerabilities in Ethereum smart contracts?",
+  "AI_assisted": true,
+  "cases": [
+    {
+      "file": "auction.sol",
+      "source_sha256": "85952d4855d88d2870b14816dddd238c13f5b70bea0950564c1563e1a80f2438",
+      "test_sha256": "f4216156023bcfff0b7fb3f943f04741c17d9dc0ac0f03a0ebab5c3abd36cef0",
+      "review_proposal": {
+        "source_path": "contracts/dataset/denial_of_service/auction.sol",
+        "test_path": "test/denial_of_service/auction_test.js",
+        "source_sha256": "85952d4855d88d2870b14816dddd238c13f5b70bea0950564c1563e1a80f2438",
+        "test_sha256": "f4216156023bcfff0b7fb3f943f04741c17d9dc0ac0f03a0ebab5c3abd36cef0",
+        "benchmark_category": "denial_of_service",
+        "file": "auction.sol",
+        "pragma": "^0.4.15",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Отказ предыдущего получателя блокирует новую ставку",
+        "proposed_track": "refund_workflow_comparison_not_forced_independent_pair",
+        "proposed_A": "Pull Payment: выплата возврата отдельным требованием получателя",
+        "proposed_B": "Отдельный кандидат: попытка возврата с изоляцией отказа и сохранением долга для последующего получения",
+        "comparability_caveat": "Это два конкурирующих workflow с общим deferred-refund механизмом; A+B может быть тождественным A или B. Не объявлять их автоматически двумя независимыми паттернами. Нет массивного цикла — batching здесь не нужен.",
+        "proposed_measurements": [
+          "принята ли допустимая новая ставка",
+          "учтённый долг предыдущему получателю, wei",
+          "возможность получить долг",
+          "число транзакций до завершения",
+          "gasUsed"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/denial_of_service/auction.sol",
+            "start": 14,
+            "end": 28
+          }
+        ],
+        "required_test_changes": [
+          "Функциональный тест ожидает немедленный возврат, а pull меняет время выплаты: в новой версии проверить eventual entitlement и выдачу долга.",
+          "Нельзя удалять failed refund без записи обязательства.",
+          "При отсутствии недублирующей пары оставить сравнение отдельных решений, не считать его комбинационным."
+        ]
+      },
+      "track": "alternatives",
+      "group": "auction.sol",
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/auction.sol",
+          "sha256": "85952d4855d88d2870b14816dddd238c13f5b70bea0950564c1563e1a80f2438"
+        },
+        "PULL": {
+          "path": "project/contracts/PULL/auction.sol",
+          "sha256": "9baaa0d57eaf4059037475cad00de2d93d02dd9ab259f2bd49dca8cb91456657"
+        },
+        "FALLBACK": {
+          "path": "project/contracts/FALLBACK/auction.sol",
+          "sha256": "1c97c6e55d8db4dee4e72fa6e2b86f71249b7f5e46bbef1bc89b25bb799e152c"
+        }
+      },
+      "requirement": "Accept strictly higher bids despite receiver refusal; preserve former bidder refund entitlement until payout; multiple claim tx permitted; current bid remains held. No batching.",
+      "compilation_status": "success",
+      "execution_status": "two_complete_primary_runs_validated",
+      "primary_outputs": {
+        "run1": "runs/evaluation_v2_1_20261023T053001Z",
+        "run2": "runs/evaluation_v2_2_20261023T053111Z"
+      },
+      "missing_reason": null,
+      "permissions": "Public workload operations. Auction refund claim belongs only to msg.sender; chosen recipient does not confer ability to claim another account debt.",
+      "interface_changes": "Added refunds(address), withdrawRefund(address) for alternatives only.",
+      "pair_definition": "Alternative workflows sharing deferred refund credit; no factorial V3."
+    },
+    {
+      "file": "dos_address.sol",
+      "source_sha256": "4f6960a84c3da5f791faf0111033b1d6a425e2575fb03b31acd248210497794e",
+      "test_sha256": "46e4901f85442c782e3004d5e6d1aea94cb694007350cdcc48bed73d4dd506cf",
+      "review_proposal": {
+        "source_path": "contracts/dataset/denial_of_service/dos_address.sol",
+        "test_path": "test/denial_of_service/dos_address_test.js",
+        "source_sha256": "4f6960a84c3da5f791faf0111033b1d6a425e2575fb03b31acd248210497794e",
+        "test_sha256": "46e4901f85442c782e3004d5e6d1aea94cb694007350cdcc48bed73d4dd506cf",
+        "benchmark_category": "denial_of_service",
+        "file": "dos_address.sol",
+        "pragma": "^0.4.25",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Массовое обнуление массива creditorAddresses",
+        "proposed_track": "resource_management_pair_requires_workflow_specification",
+        "proposed_A": "Ограниченная пошаговая очистка с монотонным прогрессом",
+        "proposed_B": "Ограничение объёма накопленного состояния/входной работы по заранее обоснованной политике",
+        "comparability_caveat": "Лимит меняет ёмкость/принимаемую нагрузку; это отдельный trade-off, не бесплатная безопасность. Пошаговость меняет атомарность/число вызовов. Порог >1500 в исходнике должен оставаться достижимым. Для dos_number обе цели insert/clear нельзя смешивать без общего scope.",
+        "proposed_measurements": [
+          "доля завершённой допустимой работы при фиксированном бюджете",
+          "объём отклонённой нагрузки/ёмкость",
+          "шаги до завершения",
+          "gasUsed по шагам",
+          "состояние после завершения"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/denial_of_service/dos_address.sol",
+            "start": 10,
+            "end": 36
+          }
+        ],
+        "required_test_changes": [
+          "Зафиксировать одинаковый лимит газа транзакции/блока и общую нагрузку до сравнения.",
+          "Различать mined/reverted/pending; отсутствие receipt за один блок не означает execution failure.",
+          "Сохранить публикационные baseline-тесты; расширенные рабочие проверки — отдельно, с фиксированными правильными свойствами.",
+          "Для pending/test-mining использовать cleanup в finally."
+        ]
+      },
+      "track": "factorial",
+      "group": "dos_address.sol",
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/dos_address.sol",
+          "sha256": "4f6960a84c3da5f791faf0111033b1d6a425e2575fb03b31acd248210497794e"
+        },
+        "V1": {
+          "path": "project/contracts/V1/dos_address.sol",
+          "sha256": "c0f6b9106d7ec09bb94bf3ee41258acb4dd57998709f903a6d476e2252d397a5"
+        },
+        "V2": {
+          "path": "project/contracts/V2/dos_address.sol",
+          "sha256": "ba49a561da8adc3beb05a7da96e8b4d29abf9de59098df021005b54501ec2fa2"
+        },
+        "V3": {
+          "path": "project/contracts/V3/dos_address.sol",
+          "sha256": "8836301e068ffa6a250c707367c1d66f49678b90a3b8056326c5294d3555c796"
+        }
+      },
+      "requirement": "Public append 350 caller addresses per request; explicit cleanup after length>1500 intentionally deletes all accepted records, ends length0/win true; multiple cleanup calls permitted and admission paused during cleanup.",
+      "compilation_status": "success",
+      "execution_status": "two_complete_primary_runs_validated",
+      "primary_outputs": {
+        "run1": "runs/evaluation_v2_1_20261023T053001Z",
+        "run2": "runs/evaluation_v2_2_20261023T053111Z"
+      },
+      "missing_reason": null,
+      "permissions": "All original public methods remain public; admission temporarily serialized during incremental cleanup. No owner-only rule introduced.",
+      "interface_changes": "Added clearing() for incremental variants; original method signatures retained.",
+      "pair_definition": "A bounded cleanup350 with persistent progress; B capacity1750; V3 both, accepted/rejected work reported separately."
+    },
+    {
+      "file": "dos_number.sol",
+      "source_sha256": "3ea414a7d2826634670730c75f983ee8cefc26a6a34fdda57844c0e897d362b0",
+      "test_sha256": "335f98dfca35efe5ac78b35c111e4b1f7693428086127cac58285fd8ad3fe883",
+      "review_proposal": {
+        "source_path": "contracts/dataset/denial_of_service/dos_number.sol",
+        "test_path": "test/denial_of_service/dos_number_test.js",
+        "source_sha256": "3ea414a7d2826634670730c75f983ee8cefc26a6a34fdda57844c0e897d362b0",
+        "test_sha256": "335f98dfca35efe5ac78b35c111e4b1f7693428086127cac58285fd8ad3fe883",
+        "benchmark_category": "denial_of_service",
+        "file": "dos_number.sol",
+        "pragma": "^0.4.25",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Массовое обнуление array в clearDOS; отдельно неограниченная вставка",
+        "proposed_track": "resource_management_pair_requires_workflow_specification",
+        "proposed_A": "Ограниченная пошаговая очистка с монотонным прогрессом",
+        "proposed_B": "Ограничение объёма накопленного состояния/входной работы по заранее обоснованной политике",
+        "comparability_caveat": "Лимит меняет ёмкость/принимаемую нагрузку; это отдельный trade-off, не бесплатная безопасность. Пошаговость меняет атомарность/число вызовов. Порог >1500 в исходнике должен оставаться достижимым. Для dos_number обе цели insert/clear нельзя смешивать без общего scope.",
+        "proposed_measurements": [
+          "доля завершённой допустимой работы при фиксированном бюджете",
+          "объём отклонённой нагрузки/ёмкость",
+          "шаги до завершения",
+          "gasUsed по шагам",
+          "состояние после завершения"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/denial_of_service/dos_number.sol",
+            "start": 10,
+            "end": 38
+          }
+        ],
+        "required_test_changes": [
+          "Зафиксировать одинаковый лимит газа транзакции/блока и общую нагрузку до сравнения.",
+          "Различать mined/reverted/pending; отсутствие receipt за один блок не означает execution failure.",
+          "Сохранить публикационные baseline-тесты; расширенные рабочие проверки — отдельно, с фиксированными правильными свойствами.",
+          "Для pending/test-mining использовать cleanup в finally."
+        ]
+      },
+      "track": "factorial",
+      "group": "dos_number.sol",
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/dos_number.sol",
+          "sha256": "3ea414a7d2826634670730c75f983ee8cefc26a6a34fdda57844c0e897d362b0"
+        },
+        "V1": {
+          "path": "project/contracts/V1/dos_number.sol",
+          "sha256": "88cc5a46b5f145a23e98b762fe80f3837d17c29df3cedf77688b39f0c403d61d"
+        },
+        "V2": {
+          "path": "project/contracts/V2/dos_number.sol",
+          "sha256": "49cca37aa003926017d42612461bcf17d15086aa940af2d58df7f9e1874f61b4"
+        },
+        "V3": {
+          "path": "project/contracts/V3/dos_number.sol",
+          "sha256": "25e29920dbbe123541c18b0902fd1562055c2be545e3e31a8790e5d87ab29125"
+        }
+      },
+      "requirement": "Public insertion and explicit physical clearDOS after numElements>1500; end numElements=array.length=0 with accepted values intact until requested deletion. Preserve separate logical clear() reuse semantics. Multiple cleanup tx permitted.",
+      "compilation_status": "success",
+      "execution_status": "two_complete_primary_runs_validated",
+      "primary_outputs": {
+        "run1": "runs/evaluation_v2_1_20261023T053001Z",
+        "run2": "runs/evaluation_v2_2_20261023T053111Z"
+      },
+      "missing_reason": null,
+      "permissions": "All original public methods remain public; admission temporarily serialized during incremental cleanup. No owner-only rule introduced.",
+      "interface_changes": "Added clearing() for incremental variants; original method signatures retained.",
+      "pair_definition": "A bounded cleanup350 with persistent progress; B capacity1750; V3 both, accepted/rejected work reported separately."
+    },
+    {
+      "file": "dos_simple.sol",
+      "source_sha256": "53dcfd96beb66caaefc66373d6cef836a0b1f0320d3e4421426cb26590fc2c0c",
+      "test_sha256": "2259e34ac713a03e9980eb909ed14f73c6015843f1a0b34b78ddf0698f84853e",
+      "review_proposal": {
+        "source_path": "contracts/dataset/denial_of_service/dos_simple.sol",
+        "test_path": "test/denial_of_service/dos_simple_test.js",
+        "source_sha256": "53dcfd96beb66caaefc66373d6cef836a0b1f0320d3e4421426cb26590fc2c0c",
+        "test_sha256": "2259e34ac713a03e9980eb909ed14f73c6015843f1a0b34b78ddf0698f84853e",
+        "benchmark_category": "denial_of_service",
+        "file": "dos_simple.sol",
+        "pragma": "^0.4.25",
+        "declared_test_count": 2,
+        "declared_functional_test_count": 1,
+        "declared_nonfunctional_test_count": 1,
+        "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+        "new_variant_execution_status": "not_created_or_executed_in_this_review",
+        "observed_subtype": "Заполнение/очистка массива; авторский тест наблюдает отсутствие включения tx",
+        "proposed_track": "resource_management_pair_requires_workflow_specification",
+        "proposed_A": "Ограниченная пошаговая очистка с монотонным прогрессом",
+        "proposed_B": "Ограничение объёма накопленного состояния/входной работы по заранее обоснованной политике",
+        "comparability_caveat": "Лимит меняет ёмкость/принимаемую нагрузку; это отдельный trade-off, не бесплатная безопасность. Пошаговость меняет атомарность/число вызовов. Порог >1500 в исходнике должен оставаться достижимым. Для dos_number обе цели insert/clear нельзя смешивать без общего scope.",
+        "proposed_measurements": [
+          "доля завершённой допустимой работы при фиксированном бюджете",
+          "объём отклонённой нагрузки/ёмкость",
+          "шаги до завершения",
+          "gasUsed по шагам",
+          "состояние после завершения"
+        ],
+        "source_evidence": [
+          {
+            "path": "contracts/dataset/denial_of_service/dos_simple.sol",
+            "start": 10,
+            "end": 27
+          }
+        ],
+        "required_test_changes": [
+          "Зафиксировать одинаковый лимит газа транзакции/блока и общую нагрузку до сравнения.",
+          "Различать mined/reverted/pending; отсутствие receipt за один блок не означает execution failure.",
+          "Сохранить публикационные baseline-тесты; расширенные рабочие проверки — отдельно, с фиксированными правильными свойствами.",
+          "Для pending/test-mining использовать cleanup в finally."
+        ]
+      },
+      "track": "single",
+      "group": "dos_simple.sol",
+      "variants": {
+        "V0": {
+          "path": "project/contracts/V0/dos_simple.sol",
+          "sha256": "53dcfd96beb66caaefc66373d6cef836a0b1f0320d3e4421426cb26590fc2c0c"
+        },
+        "F1": {
+          "path": "project/contracts/F1/dos_simple.sol",
+          "sha256": "5ccc586cc6005273ec8c9fb19e80156d3b98c1d682cd3846e9870aa01d86c6d0"
+        }
+      },
+      "requirement": "Original fill350 while length<1500, then clear cycle; after cleanup length0 and next fill350 works. Existing maximum1750 retained; multiple cleanup calls allowed, false return means cleanup phase, not necessarily completion.",
+      "compilation_status": "success",
+      "execution_status": "two_complete_primary_runs_validated",
+      "primary_outputs": {
+        "run1": "runs/evaluation_v2_1_20261023T053001Z",
+        "run2": "runs/evaluation_v2_2_20261023T053111Z"
+      },
+      "missing_reason": null,
+      "permissions": "All original public methods remain public; admission temporarily serialized during incremental cleanup. No owner-only rule introduced.",
+      "interface_changes": "Added clearing() for incremental variants; original method signatures retained.",
+      "pair_definition": "Single fix; source already caps growth at1750; no duplicate B."
+    }
+  ],
+  "clone_groups_note": "No clone groups for these four files specified in existing review; four singleton groups do not prove independence."
+}

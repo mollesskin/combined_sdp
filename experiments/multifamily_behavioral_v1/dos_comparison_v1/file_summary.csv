@@ -1,0 +1,5 @@
+file,group,track,variants,operations_per_run,observations_per_run,comparison_status,blocker
+auction.sol,auction.sol,alternatives,"[""V0"", ""PULL"", ""FALLBACK""]",6,26,executed_twice,
+dos_address.sol,dos_address.sol,factorial,"[""V0"", ""V1"", ""V2"", ""V3""]",8,131,executed_twice,
+dos_number.sol,dos_number.sol,factorial,"[""V0"", ""V1"", ""V2"", ""V3""]",16,163,executed_twice,
+dos_simple.sol,dos_simple.sol,single,"[""V0"", ""F1""]",4,18,executed_twice,

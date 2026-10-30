@@ -1,0 +1,5 @@
+group,files,track,completed_comparison,independence_claim
+auction.sol,"[""auction.sol""]",alternatives,True,False
+dos_address.sol,"[""dos_address.sol""]",factorial,True,False
+dos_number.sol,"[""dos_number.sol""]",factorial,True,False
+dos_simple.sol,"[""dos_simple.sol""]",single,True,False

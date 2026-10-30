@@ -1,0 +1,13 @@
+file,scenario,comparison,full_requested_completion_relation,requested_work,accepted_V3,accepted_other,completed_V3,completed_other,rejected_V3,rejected_other,accepted_part_complete_V3,accepted_part_complete_other,cleanup_tx_V3,cleanup_tx_other,gas_total_V3,gas_total_other,gas_comparable_same_work_and_outcome,gas_delta_if_comparable
+dos_address.sol,load_1750,V3_vs_V1,tie,1750,1750,1750,1750,1750,0,0,True,True,5,5,46555446,46554816,True,630
+dos_address.sol,load_1750,V3_vs_V2,tie,1750,1750,1750,1750,1750,0,0,True,True,5,1,46555446,46461627,True,93819
+dos_address.sol,load_5950,V3_vs_V1,worsening,5950,1750,5950,1750,5950,4200,0,True,True,5,17,46861818,158200428,False,
+dos_address.sol,load_5950,V3_vs_V2,tie,5950,1750,1750,1750,1750,4200,4200,True,True,5,1,46861818,46742055,True,119763
+dos_number.sol,load_1750,V3_vs_V1,tie,1750,1750,1750,1750,1750,0,0,True,True,5,5,47984199,47982839,True,1360
+dos_number.sol,load_1750,V3_vs_V2,tie,1750,1750,1750,1750,1750,0,0,True,True,5,1,47984199,47843160,True,141039
+dos_number.sol,load_5950,V3_vs_V1,worsening,5950,1750,5950,1750,5950,4200,0,True,True,5,17,48295503,163014491,False,
+dos_number.sol,load_5950,V3_vs_V2,tie,5950,1750,1750,1750,1750,4200,4200,True,True,5,1,48295503,48128652,True,166851
+dos_number.sol,logical_clear_reuse,V3_vs_V1,tie,2100,2100,2100,,,,,,,,,42822419,42820787,True,1632
+dos_number.sol,logical_clear_reuse,V3_vs_V2,tie,2100,2100,2100,,,,,,,,,42822419,42807365,True,15054
+dos_number.sol,oversize_insert,V3_vs_V1,tie,5000,0,0,0,0,5000,5000,,,,,25942,12000000,True,-11974058
+dos_number.sol,oversize_insert,V3_vs_V2,tie,5000,0,0,0,0,5000,5000,,,,,25942,23791,True,2151

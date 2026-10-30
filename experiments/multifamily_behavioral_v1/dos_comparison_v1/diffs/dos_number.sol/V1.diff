@@ -1,0 +1,42 @@
+--- V0/dos_number.sol
++++ V1/dos_number.sol
+@@ -10,8 +10,10 @@
+ 
+     uint numElements = 0;
+     uint[] array;
++    bool public clearing = false;
+ 
+     function insertNnumbers(uint value,uint numbers) public {
++        require(!clearing);
+ 
+         // Gas DOS if number > 382 more or less, it depends on actual gas limit
+         // <yes> <report> DENIAL_OF_SERVICE
+@@ -24,6 +26,7 @@
+     }
+ 
+     function clear() public {
++        require(!clearing);
+         require(numElements>1500);
+         numElements = 0;
+     }
+@@ -32,9 +35,17 @@
+     function clearDOS() public {
+ 
+         // number depends on actual gas limit
+-        require(numElements>1500);
+-        array = new uint[](0);
+-        numElements = 0;
++        if (!clearing) {
++            require(numElements > 1500);
++            clearing = true;
++        }
++        uint work = array.length > 350 ? 350 : array.length;
++        array.length -= work;
++        if (numElements > array.length) numElements = array.length;
++        if (array.length == 0) {
++            numElements = 0;
++            clearing = false;
++        }
+     }
+ 
+     function getLengthArray() public view returns(uint) {

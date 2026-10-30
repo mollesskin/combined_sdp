@@ -1,0 +1,26 @@
+--- V0/dos_simple.sol
++++ F1/dos_simple.sol
+@@ -10,9 +10,10 @@
+ contract DosOneFunc {
+ 
+     address[] listAddresses;
++    bool public clearing = false;
+ 
+     function ifillArray() public returns (bool){
+-        if(listAddresses.length<1500) {
++        if(listAddresses.length<1500 && !clearing) {
+             // <yes> <report> DENIAL_OF_SERVICE
+             for(uint i=0;i<350;i++) {
+                 listAddresses.push(msg.sender);
+@@ -20,7 +21,10 @@
+             return true;
+ 
+         } else {
+-            listAddresses = new address[](0);
++            clearing = true;
++            uint work = listAddresses.length > 350 ? 350 : listAddresses.length;
++            listAddresses.length -= work;
++            if (listAddresses.length == 0) clearing = false;
+             return false;
+         }
+     }

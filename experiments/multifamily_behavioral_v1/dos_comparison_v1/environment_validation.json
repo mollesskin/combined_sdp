@@ -1,0 +1,351 @@
+{
+  "package_json_matches_baseline": true,
+  "package_lock_matches_baseline": true,
+  "dependencies_link_target": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/stand_reproduction/20261023T024815Z_oJrMgr/project/node_modules",
+  "config_changes": "reporter spec; explicit blockGasLimit30000000, saved config.diff",
+  "compiler_settings": [
+    {
+      "file": "auction.sol",
+      "variant": "V0",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "auction.sol",
+      "variant": "PULL",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "auction.sol",
+      "variant": "FALLBACK",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V0",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V1",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V2",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V3",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V0",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V1",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V2",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V3",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_simple.sol",
+      "variant": "V0",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "file": "dos_simple.sol",
+      "variant": "F1",
+      "solcVersion": "0.4.25",
+      "solcLongVersion": "0.4.25+commit.59dbf8f1",
+      "settings": {
+        "optimizer": {
+          "enabled": true,
+          "runs": 200
+        },
+        "outputSelection": {
+          "*": {
+            "*": [
+              "abi",
+              "evm.bytecode",
+              "evm.deployedBytecode",
+              "evm.methodIdentifiers",
+              "metadata"
+            ],
+            "": [
+              "ast"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "source_files_compiled": 14,
+  "reproduce_script_syntax_checked": true,
+  "reproduce_script_extra_executions": 0,
+  "network_scope": "in-process hardhat only; no public network/fork",
+  "evidence_checks": 638
+}

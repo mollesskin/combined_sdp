@@ -1,0 +1,371 @@
+{
+  "observations": 338,
+  "operations": 34,
+  "statuses": {
+    "success": 275,
+    "reverted": 59,
+    "infrastructure_error": 4
+  },
+  "outcomes": [
+    {
+      "file": "auction.sol",
+      "variant": "V0",
+      "scenario": "ordinary_bidder",
+      "requested": "1",
+      "accepted": "1",
+      "completed": "1",
+      "complete": true
+    },
+    {
+      "file": "auction.sol",
+      "variant": "V0",
+      "scenario": "refusing_bidder",
+      "requested": "1",
+      "accepted": "0",
+      "completed": "0",
+      "complete": false
+    },
+    {
+      "file": "auction.sol",
+      "variant": "PULL",
+      "scenario": "ordinary_bidder",
+      "requested": "1",
+      "accepted": "1",
+      "completed": "1",
+      "complete": true
+    },
+    {
+      "file": "auction.sol",
+      "variant": "PULL",
+      "scenario": "refusing_bidder",
+      "requested": "1",
+      "accepted": "1",
+      "completed": "1",
+      "complete": true
+    },
+    {
+      "file": "auction.sol",
+      "variant": "FALLBACK",
+      "scenario": "ordinary_bidder",
+      "requested": "1",
+      "accepted": "1",
+      "completed": "1",
+      "complete": true
+    },
+    {
+      "file": "auction.sol",
+      "variant": "FALLBACK",
+      "scenario": "refusing_bidder",
+      "requested": "1",
+      "accepted": "1",
+      "completed": "1",
+      "complete": true
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V0",
+      "scenario": "load_1750",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 1,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V0",
+      "scenario": "load_5950",
+      "requested": "5950",
+      "accepted": "5950",
+      "completed": "0",
+      "complete": false,
+      "cleanup_steps": 1,
+      "reason": "infrastructure_error",
+      "error": "nonexecuted_or_infrastructure_status"
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V1",
+      "scenario": "load_1750",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 5,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V1",
+      "scenario": "load_5950",
+      "requested": "5950",
+      "accepted": "5950",
+      "completed": "5950",
+      "complete": true,
+      "cleanup_steps": 17,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V2",
+      "scenario": "load_1750",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 1,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V2",
+      "scenario": "load_5950",
+      "requested": "5950",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": false,
+      "cleanup_steps": 1,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V3",
+      "scenario": "load_1750",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 5,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_address.sol",
+      "variant": "V3",
+      "scenario": "load_5950",
+      "requested": "5950",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": false,
+      "cleanup_steps": 5,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V0",
+      "scenario": "load_1750",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 1,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V0",
+      "scenario": "load_5950",
+      "requested": "5950",
+      "accepted": "5950",
+      "completed": "0",
+      "complete": false,
+      "cleanup_steps": 1,
+      "reason": "infrastructure_error",
+      "error": "nonexecuted_or_infrastructure_status"
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V0",
+      "scenario": "logical_clear_reuse",
+      "requested": "2100",
+      "accepted": "2100",
+      "completed": null,
+      "complete": true
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V0",
+      "scenario": "oversize_insert",
+      "requested": "5000",
+      "accepted": null,
+      "completed": null,
+      "complete": false
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V1",
+      "scenario": "load_1750",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 5,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V1",
+      "scenario": "load_5950",
+      "requested": "5950",
+      "accepted": "5950",
+      "completed": "5950",
+      "complete": true,
+      "cleanup_steps": 17,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V1",
+      "scenario": "logical_clear_reuse",
+      "requested": "2100",
+      "accepted": "2100",
+      "completed": null,
+      "complete": true
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V1",
+      "scenario": "oversize_insert",
+      "requested": "5000",
+      "accepted": null,
+      "completed": null,
+      "complete": false
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V2",
+      "scenario": "load_1750",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 1,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V2",
+      "scenario": "load_5950",
+      "requested": "5950",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": false,
+      "cleanup_steps": 1,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V2",
+      "scenario": "logical_clear_reuse",
+      "requested": "2100",
+      "accepted": "2100",
+      "completed": null,
+      "complete": true
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V2",
+      "scenario": "oversize_insert",
+      "requested": "5000",
+      "accepted": "0",
+      "completed": "0",
+      "complete": false
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V3",
+      "scenario": "load_1750",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 5,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V3",
+      "scenario": "load_5950",
+      "requested": "5950",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": false,
+      "cleanup_steps": 5,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V3",
+      "scenario": "logical_clear_reuse",
+      "requested": "2100",
+      "accepted": "2100",
+      "completed": null,
+      "complete": true
+    },
+    {
+      "file": "dos_number.sol",
+      "variant": "V3",
+      "scenario": "oversize_insert",
+      "requested": "5000",
+      "accepted": "0",
+      "completed": "0",
+      "complete": false
+    },
+    {
+      "file": "dos_simple.sol",
+      "variant": "V0",
+      "scenario": "natural_cycle",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 1,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_simple.sol",
+      "variant": "V0",
+      "scenario": "mining_status",
+      "requested": "1400",
+      "accepted": "1400",
+      "completed": "1400",
+      "complete": true
+    },
+    {
+      "file": "dos_simple.sol",
+      "variant": "F1",
+      "scenario": "natural_cycle",
+      "requested": "1750",
+      "accepted": "1750",
+      "completed": "1750",
+      "complete": true,
+      "cleanup_steps": 5,
+      "reason": "completed",
+      "error": null
+    },
+    {
+      "file": "dos_simple.sol",
+      "variant": "F1",
+      "scenario": "mining_status",
+      "requested": "1400",
+      "accepted": "1400",
+      "completed": "1400",
+      "complete": true
+    }
+  ]
+}

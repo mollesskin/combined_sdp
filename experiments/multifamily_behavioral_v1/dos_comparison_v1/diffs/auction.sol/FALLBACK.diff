@@ -1,0 +1,30 @@
+--- V0/auction.sol
++++ FALLBACK/auction.sol
+@@ -8,6 +8,12 @@
+ 
+ //Auction susceptible to DoS attack
+ contract DosAuction {
++  // AI-assisted refund workflow; account-specific claim, CEI with atomic revert.
++  function withdrawRefund(address recipient) public {
++    uint amount = refunds[msg.sender];
++    refunds[msg.sender] = 0;
++    recipient.transfer(amount);
++  }
+   address currentFrontrunner;
+   uint currentBid;
+ 
+@@ -20,10 +26,13 @@
+     if (currentFrontrunner != 0) {
+       //E.g. if recipients fallback function is just revert()
+       // <yes> <report> DENIAL_OF_SERVICE
+-      require(currentFrontrunner.send(currentBid));
++      if (!currentFrontrunner.send(currentBid)) {
++        refunds[currentFrontrunner] += currentBid;
++      }
+     }
+ 
+     currentFrontrunner = msg.sender;
+     currentBid         = msg.value;
+   }
++  mapping(address => uint) public refunds;
+ }

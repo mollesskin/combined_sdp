@@ -1,0 +1,1333 @@
+{
+  "review_type": "source_and_test_review_with_proposals_not_new_experimental_results",
+  "review_date": "2026-10-23",
+  "approved_RQ_unchanged": true,
+  "archive_sha256": "04f0ca90b97979df08b1c8708961661b075dc56841d77f44a96cfa95dd1e4909",
+  "user_report_sha256": "76a114de232d9e51f3c436a20ee8ffd7191196e2b1e4ba676252dc539ec99765",
+  "source_count": 33,
+  "category_counts": {
+    "access_control": 16,
+    "arithmetic": 13,
+    "denial_of_service": 4
+  },
+  "new_EVM_trials": 0,
+  "new_Solidity_compilations": 0,
+  "new_protection_scores": 0,
+  "source_results_provenance": "Пользовательский test-results.json; не независимый перезапуск",
+  "clone_review_scope": "Две подтверждённые нормализованные группы; не исчерпывающая дедупликация",
+  "clone_groups": [
+    {
+      "id": "AC_INIT_CLONE",
+      "files": [
+        "access_control/incorrect_constructor_name1.sol",
+        "access_control/incorrect_constructor_name2.sol",
+        "access_control/incorrect_constructor_name3.sol"
+      ],
+      "basis": "Полное совпадение после удаления комментариев/pragma/пробелов и замены только имени initializer.",
+      "interpretation": "Близкие варианты одного исходного примера, не три независимых дизайна."
+    },
+    {
+      "id": "AR_ADDER_CLONE",
+      "files": [
+        "arithmetic/integer_overflow_add.sol",
+        "arithmetic/overflow_simple_add.sol"
+      ],
+      "basis": "Полное совпадение после удаления комментариев/pragma/пробелов и нормализации имён contract/state/function/argument.",
+      "interpretation": "Простая одинаковая схема сложения. Compiler pins остаются отдельным измерением, не доказательством разнообразия кода."
+    }
+  ],
+  "contracts": [
+    {
+      "source_path": "contracts/dataset/access_control/FibonacciBalance.sol",
+      "test_path": "test/access_control/FibonacciBalance_test.js",
+      "source_sha256": "784009c0758940079bd3a7402a3acdf60e3a9a659012e19b0aa21dbc9c0a35ab",
+      "test_sha256": "2fa3f84fedbdd23cc1fc88c9af514a9f45af08dcf64a88e17c1ab99f185ff35d",
+      "benchmark_category": "access_control",
+      "file": "FibonacciBalance.sol",
+      "pragma": "^0.4.22",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Delegatecall с несогласованным storage layout и изменяемым адресом библиотеки",
+      "proposed_track": "architecture_pair_requires_explicit_model",
+      "proposed_A": "Замена записи через delegatecall на изолированное вычисление с явным результатом и локальным обновлением состояния",
+      "proposed_B": "Ограничение доступных операций библиотеки / неизменность доверенного target по согласованной модели",
+      "comparability_caveat": "Это изменение архитектуры и интерфейсных ожиданий, не минимальный onlyOwner patch. Перед фиксацией A/B определить допустимость setStart и требуемую последовательность Fibonacci.",
+      "proposed_measurements": [
+        "соответствие выплаты математическому эталону",
+        "изменение доверенного адреса",
+        "неразрешённый отток, wei",
+        "функциональность последовательности"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/FibonacciBalance.sol",
+          "start": 10,
+          "end": 60
+        }
+      ],
+      "required_test_changes": [
+        "В текущем functional check проверяется calculatedFibNumber > 0, но не точное правильное значение.",
+        "Добавить эталон вычисления вне EVM и требуемую модель библиотечных операций."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/arbitrary_location_write_simple.sol",
+      "test_path": "test/access_control/arbitrary_location_write_simple_test.js",
+      "source_sha256": "bbbdb5367463fd3d1e11b2c569695d8b4734e3f88fcf937a34469a23121b01ab",
+      "test_sha256": "4d74fdfe9a440c368d91a76e4985b8542edd4e52dbe323ef06039db1825f5d96",
+      "benchmark_category": "access_control",
+      "file": "arbitrary_location_write_simple.sol",
+      "pragma": "^0.4.25",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Уменьшение длины пустого массива и последующая порча чужого storage",
+      "proposed_track": "overlapping_bounds_pair_candidate",
+      "proposed_A": "Guard Check: до уменьшения длины проверить непустой массив",
+      "proposed_B": "Checked arithmetic при уменьшении длины массива",
+      "comparability_caveat": "Два механизма могут обеспечивать одно и то же свойство; ожидаемое равенство допустимо. Категория benchmark остаётся access_control, непосредственная причина — арифметика/границы storage.",
+      "proposed_measurements": [
+        "изменение owner",
+        "целостность длины массива",
+        "успешность разрешённых push/pop/update",
+        "газ разрешённого pop"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/arbitrary_location_write_simple.sol",
+          "start": 21,
+          "end": 38
+        }
+      ],
+      "required_test_changes": [
+        "Проверить пустой pop, непустой pop, допустимый update и неизменность owner; не считать разные assertions отдельными дефектами."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/incorrect_constructor_name1.sol",
+      "test_path": "test/access_control/incorrect_constructor_name1_test.js",
+      "source_sha256": "d918731cebddf34ad385dd799691237e0ec1aab09f34ce7eb6bbe83ec86cd8c8",
+      "test_sha256": "10c20d149803dd0b19b6df269222fd732a5c594bef1f43699f2a57c0531e501e",
+      "benchmark_category": "access_control",
+      "file": "incorrect_constructor_name1.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Публичная функция инициализации может изменить владельца/creator",
+      "proposed_track": "initialization_pair_candidate_requires_declared_policy",
+      "proposed_A": "Ограничение доступа к исходному initializer заранее определённой deployment authority",
+      "proposed_B": "Однократная инициализация посредством отдельного флага состояния",
+      "comparability_caveat": "Сначала явно принять модель отдельной post-deployment инициализации. Не выдавать guard за onlyOwner до задания owner. Правильный constructor — важный дополнительный ориентир. Повторная запись того же владельца сама по себе не обязательно вред. Три Missing-файла — одна нормализованная семья.",
+      "proposed_measurements": [
+        "изменился ли owner/creator после запрещённого вызова",
+        "неразрешённый отток, wei",
+        "успешность разрешённых действий",
+        "газ успешной разрешённой операции"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/incorrect_constructor_name1.sol",
+          "start": 20,
+          "end": 25
+        }
+      ],
+      "required_test_changes": [
+        "Разделить первый вызов постороннего, первый разрешённый вызов и повторную инициализацию; правила не зависят от варианта.",
+        "Проверять состояние владельца и обычные действия, а не только факт revert.",
+        "Не называть жизненный цикл отдельным опубликованным паттерном без подтверждения в источнике."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/incorrect_constructor_name2.sol",
+      "test_path": "test/access_control/incorrect_constructor_name2_test.js",
+      "source_sha256": "d210fc21c6fdf273cfe2af52408b09ec82df89ebdea554b0c6356ad8b5d8796d",
+      "test_sha256": "8effcfbbf0039bf53154ee7d990440588255d8b5c4c8834bd9cb05cfea63a720",
+      "benchmark_category": "access_control",
+      "file": "incorrect_constructor_name2.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Публичная функция инициализации может изменить владельца/creator",
+      "proposed_track": "initialization_pair_candidate_requires_declared_policy",
+      "proposed_A": "Ограничение доступа к исходному initializer заранее определённой deployment authority",
+      "proposed_B": "Однократная инициализация посредством отдельного флага состояния",
+      "comparability_caveat": "Сначала явно принять модель отдельной post-deployment инициализации. Не выдавать guard за onlyOwner до задания owner. Правильный constructor — важный дополнительный ориентир. Повторная запись того же владельца сама по себе не обязательно вред. Три Missing-файла — одна нормализованная семья.",
+      "proposed_measurements": [
+        "изменился ли owner/creator после запрещённого вызова",
+        "неразрешённый отток, wei",
+        "успешность разрешённых действий",
+        "газ успешной разрешённой операции"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/incorrect_constructor_name2.sol",
+          "start": 18,
+          "end": 23
+        }
+      ],
+      "required_test_changes": [
+        "Разделить первый вызов постороннего, первый разрешённый вызов и повторную инициализацию; правила не зависят от варианта.",
+        "Проверять состояние владельца и обычные действия, а не только факт revert.",
+        "Не называть жизненный цикл отдельным опубликованным паттерном без подтверждения в источнике."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/incorrect_constructor_name3.sol",
+      "test_path": "test/access_control/incorrect_constructor_name3_test.js",
+      "source_sha256": "a1a505f4d25449a4a566b9a84b8c51ecdc2cbe768f9d1f041900d90a530807a6",
+      "test_sha256": "24e0e4cc4d276722dfbf34b75270bbb0c6f6f702a6e9f6cb0521bd9b9706f557",
+      "benchmark_category": "access_control",
+      "file": "incorrect_constructor_name3.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Публичная функция инициализации может изменить владельца/creator",
+      "proposed_track": "initialization_pair_candidate_requires_declared_policy",
+      "proposed_A": "Ограничение доступа к исходному initializer заранее определённой deployment authority",
+      "proposed_B": "Однократная инициализация посредством отдельного флага состояния",
+      "comparability_caveat": "Сначала явно принять модель отдельной post-deployment инициализации. Не выдавать guard за onlyOwner до задания owner. Правильный constructor — важный дополнительный ориентир. Повторная запись того же владельца сама по себе не обязательно вред. Три Missing-файла — одна нормализованная семья.",
+      "proposed_measurements": [
+        "изменился ли owner/creator после запрещённого вызова",
+        "неразрешённый отток, wei",
+        "успешность разрешённых действий",
+        "газ успешной разрешённой операции"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/incorrect_constructor_name3.sol",
+          "start": 17,
+          "end": 22
+        }
+      ],
+      "required_test_changes": [
+        "Разделить первый вызов постороннего, первый разрешённый вызов и повторную инициализацию; правила не зависят от варианта.",
+        "Проверять состояние владельца и обычные действия, а не только факт revert.",
+        "Не называть жизненный цикл отдельным опубликованным паттерном без подтверждения в источнике."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/mapping_write.sol",
+      "test_path": "test/access_control/mapping_write_test.js",
+      "source_sha256": "a4c6ab0924feb97c929511f65e9f86a82ca5efa307aa29dcae69a21d2fc0fbd6",
+      "test_sha256": "c17acfe593a715a3fd401cebb12a77ebec606dd89a60ba38618fd1e47b79aeb8",
+      "benchmark_category": "access_control",
+      "file": "mapping_write.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Индексируемый динамический массив используется как map; произвольная длина и порча storage",
+      "proposed_track": "single_fix_or_separate_architecture_comparison",
+      "proposed_A": "Представление произвольных ключей настоящим mapping вместо динамического массива",
+      "proposed_B": null,
+      "comparability_caveat": "Без требований к допустимым ключам нельзя придумать arbitrary key cap или owner-only политику. owner не инициализируется; исправление этого отдельно меняет задачу. Второй обоснованный паттерн по текущим материалам не установлен.",
+      "proposed_measurements": [
+        "неизменность owner при set",
+        "set/get для легитимных ключей",
+        "записанное значение",
+        "неразрешённый отток, wei"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/mapping_write.sol",
+          "start": 11,
+          "end": 29
+        }
+      ],
+      "required_test_changes": [
+        "Зафиксировать artificial funding через hardhat_setBalance из авторского теста.",
+        "Не исправлять owner/init вместе с storage representation незаметно."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/multiowned_vulnerable.sol",
+      "test_path": "test/access_control/multiowned_vulnerable_test.js",
+      "source_sha256": "ee0df823e630dd8fc538222bfb82ad97fd563b9f1185e3eba3d02dfefd812fc6",
+      "test_sha256": "8d572966c695bbb53fbf0131879d970e21e6cba095dbaefa83ef6e20cecaea54",
+      "benchmark_category": "access_control",
+      "file": "multiowned_vulnerable.sol",
+      "pragma": "^0.4.23",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "newOwner не ограничивает вызывающего существующим владельцем",
+      "proposed_track": "single_fix_plus_optional_workflow_extension",
+      "proposed_A": "Применить существующую авторизацию onlyOwner к выдаче прав",
+      "proposed_B": "Возможная отдельная модель двухэтапной выдачи/принятия прав; требует определения требований",
+      "comparability_caveat": "Нельзя назвать второе такое же сравнение адреса RBAC и считать независимой защитой. Двухэтапное принятие прав меняет workflow и не заменяет проверку инициатора.",
+      "proposed_measurements": [
+        "выданные посторонним права",
+        "изменение дерева owners",
+        "разрешённая выдача/отзыв",
+        "неразрешённый отток, wei"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/multiowned_vulnerable.sol",
+          "start": 20,
+          "end": 58
+        }
+      ],
+      "required_test_changes": [
+        "Проверять роли до и после, а не только итоговую выплату.",
+        "Сохранить предусмотренную модель делегирования владельцами."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/mycontract.sol",
+      "test_path": "test/access_control/mycontract_test.js",
+      "source_sha256": "5bdf79f5c7565c26dfe7437e94c354a6d6b2d353101f6d4dbe0ce8a36c4e1df1",
+      "test_sha256": "a32b85ac018d32201ada5a63794f2de02938d36e4cf76d89eb324061f9ef8638",
+      "benchmark_category": "access_control",
+      "file": "mycontract.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Авторизация через tx.origin",
+      "proposed_track": "single_fix_or_explicit_authorization_workflow_extension",
+      "proposed_A": "Проверка непосредственного вызывающего по msg.sender с исходным owner",
+      "proposed_B": "Подписанное разрешение на конкретную операцию — только отдельная обоснованная модель, не автоматически готовая пара",
+      "comparability_caveat": "Подписанный протокол, nonces и новые параметры не содержатся в данном исходнике. Не добавлять получателю allowlist без требования. Не представлять две одинаковые owner-проверки как два паттерна.",
+      "proposed_measurements": [
+        "неразрешённый отток, wei",
+        "выполнение владельцем допустимого перевода",
+        "корректность получателя"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/mycontract.sol",
+          "start": 9,
+          "end": 24
+        }
+      ],
+      "required_test_changes": [
+        "Сохранить и раскрыть способ пополнения; mycontract финансируется до создания по заранее вычисленному адресу.",
+        "Сравнение нескольких паттернов требует отдельного обоснования второго, а не нового названия того же require."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/parity_wallet_bug_2.sol",
+      "test_path": "test/access_control/parity_wallet_bug_2_test.js",
+      "source_sha256": "3026bd9ff80d0a4b7d166c0d4d2aad07063d05a67e3df9267d9580933d1a529e",
+      "test_sha256": "a0a0edeed08623408d61027135be62155a42ac2c80651c400675c9dfde3cabb1",
+      "benchmark_category": "access_control",
+      "file": "parity_wallet_bug_2.sol",
+      "pragma": "^0.4.9",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Первый initializer доступен постороннему; only_uninitialized уже существует",
+      "proposed_track": "existing_combination_plus_missing_authorization_case",
+      "proposed_A": "Ограничить инициирование исходных открытых init entrypoints определённой authority",
+      "proposed_B": "only_uninitialized уже присутствует в baseline — не добавлять его как якобы отсутствующую защиту",
+      "comparability_caveat": "Для полного 2×2 ablation удаления существующих guards потребовалась бы отдельно обозначенная модифицированная база. Не удалять их из V0. Прямое развертывание WalletLibrary не равно всей реальной proxy-архитектуре.",
+      "proposed_measurements": [
+        "кто стал владельцем",
+        "разрешённая инициализация",
+        "несанкционированное уничтожение/отток, wei",
+        "сохранение обычных кошельковых действий"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/parity_wallet_bug_2.sol",
+          "start": 111,
+          "end": 122
+        },
+        {
+          "path": "contracts/dataset/access_control/parity_wallet_bug_2.sol",
+          "start": 206,
+          "end": 235
+        }
+      ],
+      "required_test_changes": [
+        "Учесть initMultiowned и initDaylimit, а не закрывать только initWallet.",
+        "Сохранить Shanghai для исторической семантики теста selfdestruct; не делать вывод про современные сети."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/phishable.sol",
+      "test_path": "test/access_control/phishable_test.js",
+      "source_sha256": "8525b9c841c6378acc4771ef8e5139aee074c1b508b68f1129120b4d19b79e8a",
+      "test_sha256": "bd880064bbc7ddb88c547b9cddec5e789899b2e6a8064c9bb7fad69891c51989",
+      "benchmark_category": "access_control",
+      "file": "phishable.sol",
+      "pragma": "^0.4.22",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Авторизация через tx.origin",
+      "proposed_track": "single_fix_or_explicit_authorization_workflow_extension",
+      "proposed_A": "Проверка непосредственного вызывающего по msg.sender с исходным owner",
+      "proposed_B": "Подписанное разрешение на конкретную операцию — только отдельная обоснованная модель, не автоматически готовая пара",
+      "comparability_caveat": "Подписанный протокол, nonces и новые параметры не содержатся в данном исходнике. Не добавлять получателю allowlist без требования. Не представлять две одинаковые owner-проверки как два паттерна.",
+      "proposed_measurements": [
+        "неразрешённый отток, wei",
+        "выполнение владельцем допустимого перевода",
+        "корректность получателя"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/phishable.sol",
+          "start": 9,
+          "end": 23
+        }
+      ],
+      "required_test_changes": [
+        "Сохранить и раскрыть способ пополнения; mycontract финансируется до создания по заранее вычисленному адресу.",
+        "Сравнение нескольких паттернов требует отдельного обоснования второго, а не нового названия того же require."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/proxy.sol",
+      "test_path": "test/access_control/proxy_test.js",
+      "source_sha256": "3016dcfca8050200ae9e64d9bfced9bfb6cb106268c10d714aa13d386c1d1e11",
+      "test_sha256": "b713b88e9dd1b580bdeb33d1f1ef806d18bc6f4b436982a5e072a7dcf8b4805b",
+      "benchmark_category": "access_control",
+      "file": "proxy.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Публичный forward допускает arbitrary delegatecall target",
+      "proposed_track": "policy_explicit_pair_candidate",
+      "proposed_A": "Авторизация вызывающего forward",
+      "proposed_B": "Ограничение доверенных целей delegatecall",
+      "comparability_caveat": "Пара ограничивает разные условия, но исходник не определяет допустимый набор целей. Список доверенных библиотек и разрешённые пользователи — явные требования нового протокола, не факт из benchmark.",
+      "proposed_measurements": [
+        "выполнение запрещённого forward",
+        "целостность owner/storage",
+        "неразрешённый отток, wei",
+        "выполнение доверенного forwarding"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/proxy.sol",
+          "start": 9,
+          "end": 20
+        }
+      ],
+      "required_test_changes": [
+        "В существующем functional check используется benign-функция того же вспомогательного контракта; нужен определённый безопасный fixture target.",
+        "Не менять delegatecall на call и утверждать полную эквивалентность."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/simple_suicide.sol",
+      "test_path": "test/access_control/simple_suicide_test.js",
+      "source_sha256": "07ab4f0b502c4d91859f2446f4dd3edf8330000c9e21ddb9940bb70580526300",
+      "test_sha256": "ec931a733abd5e3e4d9956e86132baa12354a8db0cae2a37006d012035f6ca72",
+      "benchmark_category": "access_control",
+      "file": "simple_suicide.sol",
+      "pragma": "^0.4.0",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Неограниченное завершение контракта",
+      "proposed_track": "single_fix_or_explicit_lifecycle_extension",
+      "proposed_A": "Ограничение критической операции определённой authority",
+      "proposed_B": "Многошаговое подтверждение/задержка — только после определения политики завершения",
+      "comparability_caveat": "В исходнике нет owner и нет требования multisig/delay. Новая authority вводится как требование эксперимента. Не заявлять наличие готовой пары по одному имени категории.",
+      "proposed_measurements": [
+        "сохранение кода в зафиксированном fork",
+        "сохранение баланса",
+        "разрешённое завершение"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/simple_suicide.sol",
+          "start": 8,
+          "end": 14
+        }
+      ],
+      "required_test_changes": [
+        "Проверить функциональную сигнатуру: исходный метод без параметров, авторский JS передаёт owner.",
+        "Обязательно фиксировать EVM fork, так как проверяется удаление кода."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/unprotected0.sol",
+      "test_path": "test/access_control/unprotected0_test.js",
+      "source_sha256": "8cfc8702a1a0afe407c2ea83e0c48e97909f66af1955ee5e1321f1dc2818a045",
+      "test_sha256": "02d3cca3ff048286f5c068378a2cb019fb705b283bd6c26ad4588a8cf29233b2",
+      "benchmark_category": "access_control",
+      "file": "unprotected0.sol",
+      "pragma": "^0.4.15",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Публичный changeOwner без существующего onlyowner",
+      "proposed_track": "ownership_pair_requires_workflow_adaptation",
+      "proposed_A": "Применить существующий onlyowner при передаче владения",
+      "proposed_B": "Двухэтапная передача/принятие владения при отдельно описанном workflow",
+      "comparability_caveat": "B защищает подтверждение новым владельцем, но не заменяет A. Новая фаза и API должны быть явно разрешены; baseline остается неизменным.",
+      "proposed_measurements": [
+        "owner до/после",
+        "несанкционированная смена",
+        "разрешённая передача",
+        "завершённость workflow"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/unprotected0.sol",
+          "start": 9,
+          "end": 29
+        }
+      ],
+      "required_test_changes": [
+        "Авторский negative test проверяет только отсутствие revert; добавить чтение состояния/проверку полномочий.",
+        "Сравнивать разрешённое действие, а не одинаковое число транзакций при изменении workflow."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/wallet_02_refund_nosub.sol",
+      "test_path": "test/access_control/wallet_02_refund_nosub_test.js",
+      "source_sha256": "3bf849eea5a234dcf2755aa526f934b3edfa560ee7eac3d70385887e3bc6ff79",
+      "test_sha256": "f373e96740e6649f304d7c33f029b353e56e5c9e53a97a208d53eae125bbbe35",
+      "benchmark_category": "access_control",
+      "file": "wallet_02_refund_nosub.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Повторная выплата из-за отсутствия списания credit",
+      "proposed_track": "accounting_fix_case_not_generic_owner_only",
+      "proposed_A": "Погашение требования пользователя перед выплатой (учёт/CEI)",
+      "proposed_B": null,
+      "comparability_caveat": "Пользователь вправе вернуть собственный депозит. onlyOwner заблокирует нормальное право и не является корректной универсальной защитой. Mutex не запрещает последовательные повторные выплаты при неизменном credit.",
+      "proposed_measurements": [
+        "избыточная выплата относительно credit, wei",
+        "credit до/после",
+        "возможность нового депозита и законного возврата"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/wallet_02_refund_nosub.sol",
+          "start": 23,
+          "end": 37
+        }
+      ],
+      "required_test_changes": [
+        "Обычная functional check использует withdraw, а проблема в refund; добавить правильный однократный refund и новый цикл deposit/refund.",
+        "Не переписывать benchmark category; добавить столбец actual subtype."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/wallet_03_wrong_constructor.sol",
+      "test_path": "test/access_control/wallet_03_wrong_constructor_test.js",
+      "source_sha256": "6f5e18f2dbfb404c4bece60b475d17bd49d66ad3da34cffee8a47f7326ae0aa9",
+      "test_sha256": "a8ef0e2878f74b181c9c7a91732d828d62fcf4796259cebe46be0870aa8e1329",
+      "benchmark_category": "access_control",
+      "file": "wallet_03_wrong_constructor.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Публичная функция инициализации может изменить владельца/creator",
+      "proposed_track": "initialization_pair_candidate_requires_declared_policy",
+      "proposed_A": "Ограничение доступа к исходному initializer заранее определённой deployment authority",
+      "proposed_B": "Однократная инициализация посредством отдельного флага состояния",
+      "comparability_caveat": "Сначала явно принять модель отдельной post-deployment инициализации. Не выдавать guard за onlyOwner до задания owner. Правильный constructor — важный дополнительный ориентир. Повторная запись того же владельца сама по себе не обязательно вред. Три Missing-файла — одна нормализованная семья.",
+      "proposed_measurements": [
+        "изменился ли owner/creator после запрещённого вызова",
+        "неразрешённый отток, wei",
+        "успешность разрешённых действий",
+        "газ успешной разрешённой операции"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/wallet_03_wrong_constructor.sol",
+          "start": 19,
+          "end": 24
+        }
+      ],
+      "required_test_changes": [
+        "Разделить первый вызов постороннего, первый разрешённый вызов и повторную инициализацию; правила не зависят от варианта.",
+        "Проверять состояние владельца и обычные действия, а не только факт revert.",
+        "Не называть жизненный цикл отдельным опубликованным паттерном без подтверждения в источнике."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/access_control/wallet_04_confused_sign.sol",
+      "test_path": "test/access_control/wallet_04_confused_sign_test.js",
+      "source_sha256": "5ec3d85c76b1f1a15ec1295085087f1d969742bdc2aaf9c6fb1a79bfffa8735d",
+      "test_sha256": "8f3b1d195761d9cd0bc8040fc4d55bea4b2b1f9e9409bb430b3843874bf16d24",
+      "benchmark_category": "access_control",
+      "file": "wallet_04_confused_sign.sol",
+      "pragma": "^0.4.24",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Неправильное направление проверки entitlement и возможный underflow",
+      "proposed_track": "bounds_and_safe_arithmetic_candidate_with_functional_caveat",
+      "proposed_A": "Правильная проверка amount <= credit",
+      "proposed_B": "Checked subtraction для дебета credit",
+      "comparability_caveat": "B без A сохраняет ошибочный >= и может отвергать законное частичное снятие. Это функциональный дефект baseline: отдельно определить общую допустимую область и не исправлять A незаметно в B.",
+      "proposed_measurements": [
+        "избыточная выплата, wei",
+        "credit inconsistency",
+        "частичное/полное разрешённое снятие",
+        "газ"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/access_control/wallet_04_confused_sign.sol",
+          "start": 28,
+          "end": 33
+        }
+      ],
+      "required_test_changes": [
+        "Авторский functional check снимает весь credit, что не проверяет частичное снятие.",
+        "Нужны проверки состояния после revert, точные BigInt и отдельная отметка inherited baseline defect."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/BECToken.sol",
+      "test_path": "test/arithmetic/BECToken_test.js",
+      "source_sha256": "5765dccd66c76ce39da689c314364dc380e0b6a984ad351c5f81eb8e35e749b9",
+      "test_sha256": "48bbde3b3c9357cf411ecf99b250472c0e139ffb2d73f032b3940687c7e0a0ff",
+      "benchmark_category": "arithmetic",
+      "file": "BECToken.sol",
+      "pragma": "^0.4.16",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Умножение количества получателей на сумму до проверок",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Использовать уже имеющийся SafeMath.mul именно в raw multiplication; существующие другие SafeMath/paused guards не удалять. Учитывать повторяющихся и self-получателей. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/BECToken.sol",
+          "start": 263,
+          "end": 265
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_1.sol",
+      "test_path": "test/arithmetic/integer_overflow_1_test.js",
+      "source_sha256": "0ca34ef4d8e14c6ce859a5fe0a9f1fce3a66ad687a13774945066ed56a6dc34e",
+      "test_sha256": "139076ca8bae73ddad99a6028d8f29330d532aa571a624c8c70018eba0494fb3",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_1.sol",
+      "pragma": "^0.4.15",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Сложение private sellerBalance",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Измерять private storage как BigInt; исходный bool return фактически не задаётся — не менять несвязанную семантику. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_1.sol",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_add.sol",
+      "test_path": "test/arithmetic/integer_overflow_add_test.js",
+      "source_sha256": "a552367197068e110bdad903a28cb28b7762f8f68ffafde02a58286b89650466",
+      "test_sha256": "c2d51eb019f9039747f6ec584ddf32fac8222cf5b4a107ce0bc0f3e5c7c2ba3b",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_add.sol",
+      "pragma": "^0.4.19",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Сложение публичного count",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Одна нормализованная схема с overflow_simple_add; отмечать зависимость примеров. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_add.sol",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_mapping_sym_1.sol",
+      "test_path": "test/arithmetic/integer_overflow_mapping_sym_1_test.js",
+      "source_sha256": "abecfbc6b745841cfa4d27227dca7dbd0967e0a7198880c1fc3f30f92f2abe3b",
+      "test_sha256": "b7c1511057e633cc342b096807943e1f892e2975d670dfaa5e304e073a359c8a",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_mapping_sym_1.sol",
+      "pragma": "^0.4.11",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Вычитание из private map[k]",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Отрицательная математическая величина — underflow, несмотря на название overflow. Все записи начинаются с нуля и нет funding/increment: положительное вычитание не имеет допустимого обычного случая без изменения модели. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_mapping_sym_1.sol",
+          "start": 15,
+          "end": 17
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_minimal.sol",
+      "test_path": "test/arithmetic/integer_overflow_minimal_test.js",
+      "source_sha256": "ca539303822841840452b2aa1bf8607dc7b46d32de7261e11861da1bc9c6e915",
+      "test_sha256": "9876d9935cdf6f3f071c321ac9fa81f1ecfde9f796e5ab69ef152979236f0c70",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_minimal.sol",
+      "pragma": "^0.4.19",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Вычитание count",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Исправить только ссылку в названии functional test в новой копии; проверять ноль и полное допустимое списание. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_minimal.sol",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_mul.sol",
+      "test_path": "test/arithmetic/integer_overflow_mul_test.js",
+      "source_sha256": "487adeb218dc1ef816c31808b81e31d4b4d4b2154ba6560d96140999a139f241",
+      "test_sha256": "05452868c94e51747ca604323220aee26f150b0ea93dc2c42f60887206e71e9b",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_mul.sol",
+      "pragma": "^0.4.19",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Умножение count",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Проверять нулевой множитель; range guard не должен делить на ноль. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_mul.sol",
+          "start": 16,
+          "end": 18
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_multitx_multifunc_feasible.sol",
+      "test_path": "test/arithmetic/integer_overflow_multitx_multifunc_feasible_test.js",
+      "source_sha256": "b4751ff85a668932e084d03b08992f62b85f3a62dea2224d7f93eafe5628188f",
+      "test_sha256": "b2d127c8b5781653b026d5586fd2fe2b7da70282258a7d729a99ec31535d29c8",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_multitx_multifunc_feasible.sol",
+      "pragma": "^0.4.23",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Вычитание после отдельной init()",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Сохранить порядок разрешённых init/run, initial early return и состояние initialized. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_multitx_multifunc_feasible.sol",
+          "start": 24,
+          "end": 26
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/integer_overflow_multitx_onefunc_feasible.sol",
+      "test_path": "test/arithmetic/integer_overflow_multitx_onefunc_feasible_test.js",
+      "source_sha256": "2467c66a24f705b43c93495ffe8c065659507d2f2ff00d6affb9a72344606869",
+      "test_sha256": "2a4690aa6eddebb204ead2c2ad585d9e8ed7c9015e37d2033c84c269e8dfc57d",
+      "benchmark_category": "arithmetic",
+      "file": "integer_overflow_multitx_onefunc_feasible.sol",
+      "pragma": "^0.4.23",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Вычитание после первого run()",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Первый run только устанавливает initialized; не добавлять арифметическую проверку до этой ветки. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/integer_overflow_multitx_onefunc_feasible.sol",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/overflow_simple_add.sol",
+      "test_path": "test/arithmetic/overflow_simple_add_test.js",
+      "source_sha256": "641f6d9e0a4ff8f91c6340a38af72f4ab48749635f5ebb9815123c8ae2e0a46e",
+      "test_sha256": "f00ea8dbedfb81b135317e0d3439c594d01d20b97b35c6480a50f64dee2f8519",
+      "benchmark_category": "arithmetic",
+      "file": "overflow_simple_add.sol",
+      "pragma": "0.4.25",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Сложение balance",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Семантически тот же прямой adder, что integer_overflow_add, при нормализации имён и pragma. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/overflow_simple_add.sol",
+          "start": 13,
+          "end": 15
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+      "test_path": "test/arithmetic/overflow_single_tx_test.js",
+      "source_sha256": "ebeff1cc498b96abded07057158ec078e8eb1abe610eefdcbc7d6dbcaa497d63",
+      "test_sha256": "9b34a81de3fc6bec16f9133f0cc52f23e6b179c33f7a9d2b61ce919420928d15",
+      "benchmark_category": "arithmetic",
+      "file": "overflow_single_tx.sol",
+      "pragma": "^0.4.23",
+      "declared_test_count": 6,
+      "declared_functional_test_count": 3,
+      "declared_nonfunctional_test_count": 3,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Три сохраняемые операции и три local-only операции",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Авторские тесты охватывают только три state-changing функции. Local-only операции отдельно указывать как непокрытые, а не объявлять все шесть проверенными. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 17,
+          "end": 19
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 23,
+          "end": 25
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 29,
+          "end": 31
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 35,
+          "end": 37
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 41,
+          "end": 43
+        },
+        {
+          "path": "contracts/dataset/arithmetic/overflow_single_tx.sol",
+          "start": 47,
+          "end": 49
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/timelock.sol",
+      "test_path": "test/arithmetic/timelock_test.js",
+      "source_sha256": "1f079a3b8bb6ce973d62d93e1872f96bc3be4db53a9102230fa8c59b70ab0bb4",
+      "test_sha256": "37c3565b1c3aa6bddc44e58cb7ef4864366ed5124ceb3005a8d75502911f744e",
+      "benchmark_category": "arithmetic",
+      "file": "timelock.sol",
+      "pragma": "^0.4.10",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Переполнение lockTime при продлении",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Первичный target — increaseLockTime. Не расширять незаметно treatment на deposit или другие арифметические места. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/timelock.sol",
+          "start": 21,
+          "end": 23
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/token.sol",
+      "test_path": "test/arithmetic/token_test.js",
+      "source_sha256": "3de6aef9e9108cf274a94dc7472e2ad5b05fa391804eb2343db87b67236b3922",
+      "test_sha256": "01cdb8c6be496c2c5582f1cba4d5c92ae021df4b21af64b212693fc64c306675",
+      "benchmark_category": "arithmetic",
+      "file": "token.sol",
+      "pragma": "^0.4.18",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Проверка/списание credit и увеличение receiver balance",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "SafeMath должна применяться и к арифметике в предусловии/дебете согласно заранее заданному target set. Проверять self-transfer, zero transfer и сохранение supply; bounds учитывать актуальный промежуточный state. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/token.sol",
+          "start": 19,
+          "end": 21
+        },
+        {
+          "path": "contracts/dataset/arithmetic/token.sol",
+          "start": 21,
+          "end": 23
+        },
+        {
+          "path": "contracts/dataset/arithmetic/token.sol",
+          "start": 22,
+          "end": 24
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+      "test_path": "test/arithmetic/tokensalechallenge_test.js",
+      "source_sha256": "2d5ef1bfd7cb877614fa2c00656fc7a9a536e25081bdec494b09ae6be6e6bd58",
+      "test_sha256": "c510ef0ca3da132662db9876a5681489c75df41b6412fc3b6b92a76f62847d41",
+      "benchmark_category": "arithmetic",
+      "file": "tokensalechallenge.sol",
+      "pragma": "^0.4.21",
+      "declared_test_count": 3,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 2,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Стоимость покупки/продажи и credit",
+      "proposed_track": "arithmetic_pair_candidate_overlapping_by_design",
+      "proposed_A": "SafeMath/checked arithmetic helpers в зафиксированных целевых операциях",
+      "proposed_B": "Guard Check: точные условия допустимых операндов перед теми же операциями",
+      "comparability_caveat": "Обе стороны buy/sell и последовательность обновлений должны иметь определённый общий target set. Нельзя сравнивать A на всех операциях, а B только в buy. A и B перекрывают одно no-wrap свойство: это допустимая проверка избыточности, но не обещание разных классов защиты. Реализации не ослаблять.",
+      "proposed_measurements": [
+        "нарушение эталонной арифметики/состояния",
+        "точное целочисленное расхождение, не денежный ущерб",
+        "корректное отклонение небезопасных операций",
+        "сохранение допустимых операций",
+        "gasUsed для сопоставимых успешных операций"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+          "start": 22,
+          "end": 24
+        },
+        {
+          "path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+          "start": 24,
+          "end": 26
+        },
+        {
+          "path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+          "start": 30,
+          "end": 32
+        },
+        {
+          "path": "contracts/dataset/arithmetic/tokensalechallenge.sol",
+          "start": 32,
+          "end": 34
+        }
+      ],
+      "required_test_changes": [
+        "Использовать BigInt для uint256, wei и математического эталона; экспортировать decimal strings.",
+        "Задать общий target set и одинаковые входы для V0/A/B/A+B; одинаковые compiler/optimizer/fork.",
+        "Revert при недопустимой операции означает безопасное отклонение, а ошибка инфраструктуры — missing, не pass.",
+        "Не исключать пару только потому, что обе защиты могут дать одинаковый результат."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/denial_of_service/auction.sol",
+      "test_path": "test/denial_of_service/auction_test.js",
+      "source_sha256": "85952d4855d88d2870b14816dddd238c13f5b70bea0950564c1563e1a80f2438",
+      "test_sha256": "f4216156023bcfff0b7fb3f943f04741c17d9dc0ac0f03a0ebab5c3abd36cef0",
+      "benchmark_category": "denial_of_service",
+      "file": "auction.sol",
+      "pragma": "^0.4.15",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Отказ предыдущего получателя блокирует новую ставку",
+      "proposed_track": "refund_workflow_comparison_not_forced_independent_pair",
+      "proposed_A": "Pull Payment: выплата возврата отдельным требованием получателя",
+      "proposed_B": "Отдельный кандидат: попытка возврата с изоляцией отказа и сохранением долга для последующего получения",
+      "comparability_caveat": "Это два конкурирующих workflow с общим deferred-refund механизмом; A+B может быть тождественным A или B. Не объявлять их автоматически двумя независимыми паттернами. Нет массивного цикла — batching здесь не нужен.",
+      "proposed_measurements": [
+        "принята ли допустимая новая ставка",
+        "учтённый долг предыдущему получателю, wei",
+        "возможность получить долг",
+        "число транзакций до завершения",
+        "gasUsed"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/denial_of_service/auction.sol",
+          "start": 14,
+          "end": 28
+        }
+      ],
+      "required_test_changes": [
+        "Функциональный тест ожидает немедленный возврат, а pull меняет время выплаты: в новой версии проверить eventual entitlement и выдачу долга.",
+        "Нельзя удалять failed refund без записи обязательства.",
+        "При отсутствии недублирующей пары оставить сравнение отдельных решений, не считать его комбинационным."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/denial_of_service/dos_address.sol",
+      "test_path": "test/denial_of_service/dos_address_test.js",
+      "source_sha256": "4f6960a84c3da5f791faf0111033b1d6a425e2575fb03b31acd248210497794e",
+      "test_sha256": "46e4901f85442c782e3004d5e6d1aea94cb694007350cdcc48bed73d4dd506cf",
+      "benchmark_category": "denial_of_service",
+      "file": "dos_address.sol",
+      "pragma": "^0.4.25",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Массовое обнуление массива creditorAddresses",
+      "proposed_track": "resource_management_pair_requires_workflow_specification",
+      "proposed_A": "Ограниченная пошаговая очистка с монотонным прогрессом",
+      "proposed_B": "Ограничение объёма накопленного состояния/входной работы по заранее обоснованной политике",
+      "comparability_caveat": "Лимит меняет ёмкость/принимаемую нагрузку; это отдельный trade-off, не бесплатная безопасность. Пошаговость меняет атомарность/число вызовов. Порог >1500 в исходнике должен оставаться достижимым. Для dos_number обе цели insert/clear нельзя смешивать без общего scope.",
+      "proposed_measurements": [
+        "доля завершённой допустимой работы при фиксированном бюджете",
+        "объём отклонённой нагрузки/ёмкость",
+        "шаги до завершения",
+        "gasUsed по шагам",
+        "состояние после завершения"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/denial_of_service/dos_address.sol",
+          "start": 10,
+          "end": 36
+        }
+      ],
+      "required_test_changes": [
+        "Зафиксировать одинаковый лимит газа транзакции/блока и общую нагрузку до сравнения.",
+        "Различать mined/reverted/pending; отсутствие receipt за один блок не означает execution failure.",
+        "Сохранить публикационные baseline-тесты; расширенные рабочие проверки — отдельно, с фиксированными правильными свойствами.",
+        "Для pending/test-mining использовать cleanup в finally."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/denial_of_service/dos_number.sol",
+      "test_path": "test/denial_of_service/dos_number_test.js",
+      "source_sha256": "3ea414a7d2826634670730c75f983ee8cefc26a6a34fdda57844c0e897d362b0",
+      "test_sha256": "335f98dfca35efe5ac78b35c111e4b1f7693428086127cac58285fd8ad3fe883",
+      "benchmark_category": "denial_of_service",
+      "file": "dos_number.sol",
+      "pragma": "^0.4.25",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Массовое обнуление array в clearDOS; отдельно неограниченная вставка",
+      "proposed_track": "resource_management_pair_requires_workflow_specification",
+      "proposed_A": "Ограниченная пошаговая очистка с монотонным прогрессом",
+      "proposed_B": "Ограничение объёма накопленного состояния/входной работы по заранее обоснованной политике",
+      "comparability_caveat": "Лимит меняет ёмкость/принимаемую нагрузку; это отдельный trade-off, не бесплатная безопасность. Пошаговость меняет атомарность/число вызовов. Порог >1500 в исходнике должен оставаться достижимым. Для dos_number обе цели insert/clear нельзя смешивать без общего scope.",
+      "proposed_measurements": [
+        "доля завершённой допустимой работы при фиксированном бюджете",
+        "объём отклонённой нагрузки/ёмкость",
+        "шаги до завершения",
+        "gasUsed по шагам",
+        "состояние после завершения"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/denial_of_service/dos_number.sol",
+          "start": 10,
+          "end": 38
+        }
+      ],
+      "required_test_changes": [
+        "Зафиксировать одинаковый лимит газа транзакции/блока и общую нагрузку до сравнения.",
+        "Различать mined/reverted/pending; отсутствие receipt за один блок не означает execution failure.",
+        "Сохранить публикационные baseline-тесты; расширенные рабочие проверки — отдельно, с фиксированными правильными свойствами.",
+        "Для pending/test-mining использовать cleanup в finally."
+      ]
+    },
+    {
+      "source_path": "contracts/dataset/denial_of_service/dos_simple.sol",
+      "test_path": "test/denial_of_service/dos_simple_test.js",
+      "source_sha256": "53dcfd96beb66caaefc66373d6cef836a0b1f0320d3e4421426cb26590fc2c0c",
+      "test_sha256": "2259e34ac713a03e9980eb909ed14f73c6015843f1a0b34b78ddf0698f84853e",
+      "benchmark_category": "denial_of_service",
+      "file": "dos_simple.sol",
+      "pragma": "^0.4.25",
+      "declared_test_count": 2,
+      "declared_functional_test_count": 1,
+      "declared_nonfunctional_test_count": 1,
+      "reported_baseline_test_status": "passed_in_uploaded_test_results_json",
+      "new_variant_execution_status": "not_created_or_executed_in_this_review",
+      "observed_subtype": "Заполнение/очистка массива; авторский тест наблюдает отсутствие включения tx",
+      "proposed_track": "resource_management_pair_requires_workflow_specification",
+      "proposed_A": "Ограниченная пошаговая очистка с монотонным прогрессом",
+      "proposed_B": "Ограничение объёма накопленного состояния/входной работы по заранее обоснованной политике",
+      "comparability_caveat": "Лимит меняет ёмкость/принимаемую нагрузку; это отдельный trade-off, не бесплатная безопасность. Пошаговость меняет атомарность/число вызовов. Порог >1500 в исходнике должен оставаться достижимым. Для dos_number обе цели insert/clear нельзя смешивать без общего scope.",
+      "proposed_measurements": [
+        "доля завершённой допустимой работы при фиксированном бюджете",
+        "объём отклонённой нагрузки/ёмкость",
+        "шаги до завершения",
+        "gasUsed по шагам",
+        "состояние после завершения"
+      ],
+      "source_evidence": [
+        {
+          "path": "contracts/dataset/denial_of_service/dos_simple.sol",
+          "start": 10,
+          "end": 27
+        }
+      ],
+      "required_test_changes": [
+        "Зафиксировать одинаковый лимит газа транзакции/блока и общую нагрузку до сравнения.",
+        "Различать mined/reverted/pending; отсутствие receipt за один блок не означает execution failure.",
+        "Сохранить публикационные baseline-тесты; расширенные рабочие проверки — отдельно, с фиксированными правильными свойствами.",
+        "Для pending/test-mining использовать cleanup в finally."
+      ]
+    }
+  ]
+}

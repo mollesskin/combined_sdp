@@ -1,0 +1,109 @@
+[
+  {
+    "file": "auction.sol",
+    "variant": "V0",
+    "equal_V0": true,
+    "added": [],
+    "removed": []
+  },
+  {
+    "file": "auction.sol",
+    "variant": "PULL",
+    "equal_V0": false,
+    "added": [
+      "function:refunds(address)",
+      "function:withdrawRefund(address)"
+    ],
+    "removed": []
+  },
+  {
+    "file": "auction.sol",
+    "variant": "FALLBACK",
+    "equal_V0": false,
+    "added": [
+      "function:refunds(address)",
+      "function:withdrawRefund(address)"
+    ],
+    "removed": []
+  },
+  {
+    "file": "dos_address.sol",
+    "variant": "V0",
+    "equal_V0": true,
+    "added": [],
+    "removed": []
+  },
+  {
+    "file": "dos_address.sol",
+    "variant": "V1",
+    "equal_V0": false,
+    "added": [
+      "function:clearing()"
+    ],
+    "removed": []
+  },
+  {
+    "file": "dos_address.sol",
+    "variant": "V2",
+    "equal_V0": true,
+    "added": [],
+    "removed": []
+  },
+  {
+    "file": "dos_address.sol",
+    "variant": "V3",
+    "equal_V0": false,
+    "added": [
+      "function:clearing()"
+    ],
+    "removed": []
+  },
+  {
+    "file": "dos_number.sol",
+    "variant": "V0",
+    "equal_V0": true,
+    "added": [],
+    "removed": []
+  },
+  {
+    "file": "dos_number.sol",
+    "variant": "V1",
+    "equal_V0": false,
+    "added": [
+      "function:clearing()"
+    ],
+    "removed": []
+  },
+  {
+    "file": "dos_number.sol",
+    "variant": "V2",
+    "equal_V0": true,
+    "added": [],
+    "removed": []
+  },
+  {
+    "file": "dos_number.sol",
+    "variant": "V3",
+    "equal_V0": false,
+    "added": [
+      "function:clearing()"
+    ],
+    "removed": []
+  },
+  {
+    "file": "dos_simple.sol",
+    "variant": "V0",
+    "equal_V0": true,
+    "added": [],
+    "removed": []
+  },
+  {
+    "file": "dos_simple.sol",
+    "variant": "F1",
+    "equal_V0": false,
+    "added": [
+      "function:clearing()"
+    ],
+    "removed": []
+  }
+]

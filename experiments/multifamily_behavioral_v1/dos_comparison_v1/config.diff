@@ -1,0 +1,17 @@
+--- baseline/config
++++ dos/config
+@@ -30,12 +30,8 @@
+     hardhat: {
+       initialDate: "2018-12-31 11:59:00 PM",
+       hardfork: "shanghai",
++      blockGasLimit: 30000000,
+     },
+   },
+-  mocha: {
+-    reporter: "./scripts/CustomReporter.js",
+-    reporterOptions: {
+-      json: true, // Export test results to JSON
+-    },
+-  },
++  mocha: { reporter: "spec" },
+ };

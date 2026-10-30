@@ -1,0 +1,7 @@
+file,variant,scenario,higher_bid_accepted,refund_entitlement_after_outbid_wei,refund_paid_before_claim_wei,refund_owed_after_outbid_wei,eventual_refund_paid_wei,baseline_uncompleted_live_bid_wei,claim_failure_rollback,recovery_correct,repeat_claim_no_extra_payout,full_requested_task_complete,workflow_transactions,total_workflow_gas_used,transactions_until_first_completion_in_trace,gas_until_first_completion_in_trace,bid_and_claim_phase_transactions,gas_bid_and_claim_phases,verification_phase_gas
+auction.sol,V0,ordinary_bidder,True,10,10,0,10,,,,,True,3,129778,2,106490,2,106490,23288
+auction.sol,V0,refusing_bidder,False,,0,,,10,,,,False,3,148178,,,2,113120,35058
+auction.sol,PULL,ordinary_bidder,True,10,0,10,10,,,True,True,True,5,195453,4,171363,3,148075,47378
+auction.sol,PULL,refusing_bidder,True,10,0,10,10,,True,True,True,True,6,259635,5,229533,3,166603,93032
+auction.sol,FALLBACK,ordinary_bidder,True,10,10,0,10,,,,,True,3,129778,2,106490,2,106490,23288
+auction.sol,FALLBACK,refusing_bidder,True,10,0,10,10,,True,True,True,True,6,269279,5,239177,3,176247,93032

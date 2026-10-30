@@ -1,0 +1,1 @@
+OUTPUT_DIR=../runs/evaluation_v2_1_20261023T053001Z ./node_modules/.bin/hardhat run --no-compile measure.js

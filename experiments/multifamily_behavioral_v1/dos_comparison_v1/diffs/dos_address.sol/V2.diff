@@ -1,0 +1,10 @@
+--- V0/dos_address.sol
++++ V2/dos_address.sol
+@@ -20,6 +20,7 @@
+     }
+ 
+     function addCreditors() public returns (bool) {
++        require(creditorAddresses.length <= 1750 - 350);
+         for(uint i=0;i<350;i++) {
+           creditorAddresses.push(msg.sender);
+         }

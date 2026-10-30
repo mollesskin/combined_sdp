@@ -1,0 +1,9 @@
+{
+  "primary_observations_identical_except_output_paths": true,
+  "operation_outcomes_identical_except_output_paths": true,
+  "raw_status_history_identical": true,
+  "observation_differences": [],
+  "operation_differences": [],
+  "status_history_run1": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/dos_comparison_v1/runs/evaluation_v2_1_20261023T053001Z/status_history.json",
+  "status_history_run2": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/dos_comparison_v1/runs/evaluation_v2_2_20261023T053111Z/status_history.json"
+}

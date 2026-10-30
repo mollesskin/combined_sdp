@@ -1,0 +1,95 @@
+{
+  "original_files_evaluated": 4,
+  "full_factorial_files": 2,
+  "single_fix_files": 1,
+  "alternative_workflow_files": 1,
+  "source_variants": 13,
+  "groups_by_existing_review": 4,
+  "groups_independence_claimed": false,
+  "scenario_definitions": 10,
+  "variant_scenario_instances_per_run": 34,
+  "measured_transaction_observations_per_run": 338,
+  "diagnostic_submitted_txs_per_run": 8,
+  "diagnostic_admission_probes_per_run": 2,
+  "primary_repeats": 2,
+  "measured_statuses": {
+    "success": 275,
+    "reverted": 63
+  },
+  "repeat": {
+    "primary_observations_identical_except_output_paths": true,
+    "operation_outcomes_identical_except_output_paths": true,
+    "raw_status_history_identical": true,
+    "status_history_run1": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/dos_comparison_v1/runs/evaluation_v2_1_20261023T053001Z/status_history.json",
+    "status_history_run2": "/Users/moldir_2024icloud.com/smartbugs-curated/experiments/multifamily_behavioral_v1/dos_comparison_v1/runs/evaluation_v2_2_20261023T053111Z/status_history.json"
+  },
+  "V3_vs_V1": {
+    "tie": 4,
+    "worsening": 2
+  },
+  "V3_vs_V2": {
+    "tie": 6
+  },
+  "comparison_note": "Relations are observations across scenarios, not counts of independent vulnerabilities; no security/gas composite score.",
+  "unresolved_cases": [],
+  "file_summary": [
+    {
+      "file": "auction.sol",
+      "group": "auction.sol",
+      "track": "alternatives",
+      "variants": [
+        "V0",
+        "PULL",
+        "FALLBACK"
+      ],
+      "operations_per_run": 6,
+      "observations_per_run": 26,
+      "comparison_status": "executed_twice",
+      "blocker": null
+    },
+    {
+      "file": "dos_address.sol",
+      "group": "dos_address.sol",
+      "track": "factorial",
+      "variants": [
+        "V0",
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "operations_per_run": 8,
+      "observations_per_run": 131,
+      "comparison_status": "executed_twice",
+      "blocker": null
+    },
+    {
+      "file": "dos_number.sol",
+      "group": "dos_number.sol",
+      "track": "factorial",
+      "variants": [
+        "V0",
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "operations_per_run": 16,
+      "observations_per_run": 163,
+      "comparison_status": "executed_twice",
+      "blocker": null
+    },
+    {
+      "file": "dos_simple.sol",
+      "group": "dos_simple.sol",
+      "track": "single",
+      "variants": [
+        "V0",
+        "F1"
+      ],
+      "operations_per_run": 4,
+      "observations_per_run": 18,
+      "comparison_status": "executed_twice",
+      "blocker": null
+    }
+  ],
+  "evidence_checks_passed": 638
+}

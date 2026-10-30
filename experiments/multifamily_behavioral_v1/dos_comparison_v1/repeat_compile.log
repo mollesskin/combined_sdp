@@ -1,0 +1,13 @@
+contracts/V0/auction.sol:15:3: Warning: No visibility specified. Defaulting to "public". 
+  function bid() payable {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/PULL/auction.sol:21:3: Warning: No visibility specified. Defaulting to "public". 
+  function bid() payable {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+contracts/FALLBACK/auction.sol:21:3: Warning: No visibility specified. Defaulting to "public". 
+  function bid() payable {
+  ^ (Relevant source part starts here and spans across multiple lines).
+
+Compiled 14 Solidity files successfully (evm target: unknown evm version for solc version 0.4.25).

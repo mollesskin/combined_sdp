@@ -1,0 +1,10 @@
+--- V0/dos_number.sol
++++ V2/dos_number.sol
+@@ -13,6 +13,7 @@
+ 
+     function insertNnumbers(uint value,uint numbers) public {
+ 
++        require(numElements <= 1750 && numbers <= 1750 - numElements);
+         // Gas DOS if number > 382 more or less, it depends on actual gas limit
+         // <yes> <report> DENIAL_OF_SERVICE
+         for(uint i=0;i<numbers;i++) {
