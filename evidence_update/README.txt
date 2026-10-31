@@ -1,0 +1,18 @@
+EVIDENCE AUDIT — 31 October 2026
+Repository snapshot: 6d3ae097a850e1683c6bff5fd3e7c8a0c51135b2
+
+Survey: 3 responses, 14 original columns. Name replaced by respondent_id in worksheet order. The processed copy preserves all source answers and adds two analysis columns. No answers were imputed, removed or silently recoded. Exact dates and free-text answers remain; these files are de-identified rather than a guarantee against re-identification. Do not publish a name-to-code key. The numeric scale is 1–5; this export does not establish its original verbal labels.
+
+Run register: all 36 indexed source files were matched by SHA-256 to the repository snapshot, including 9 files inside the public DoS runs.zip archive. All 5220 indexed observation rows reconcile with their source counts. These are heterogeneous records, NOT 5220 independent trials. The archive_member column identifies the exact file inside an archive. Publication-pending wording for these DoS sources is outdated.
+
+The run_inventory_comparison.csv additionally lists candidate run-level result files found in the snapshot. All candidate files found by the documented filename rule are included; there are no exclusions in that inventory. The rule covers run-level CSVs named measurements, behavioral_results, invariant_results, results, compilation, operations or status_history. This audit confirms the indexed evidence, not unrecorded runs or every claim in the latest Word report.
+
+Failure definitions: technical_failure_summary.csv counts explicit false values among explicit true/false values, separately for each instrument field, run and variant. technical_failure_records.csv identifies each corresponding source record. A false result can describe an insecure baseline, a functionality failure or a workload shortfall; it is not automatically an instrumentation error. Different checks may overlap on the same observation. Do not sum these counts as independent failures or contracts. For arithmetic, correct covers both allowed and adversarial observations; allowed_operation_passed is a separate, potentially overlapping field. For DoS, full_requested_task_complete measures requested-work completion and does not alone distinguish protective rejection from execution failure.
+
+SimpleDAO uses explicit derived rules: nested payout must not exceed the 1 ETH entitlement; the rejected-payment scenario must preserve 1 ETH recipient credit. The underlying original numeric fields remain in the observation register. Other scenarios are not assigned invented pass/fail values.
+
+technical_status_counts.csv reports recorded execution/compilation/setup statuses for all indexed sources, including development and static-tool runs. A reverted transaction is NOT automatically an error: intended rejection can be a successful security outcome. Missing status fields are unavailable, not zero errors. Invariant-detail rows and status-history rows are retained as supporting observations, not added again to scenario-level failure counts.
+
+Reproduction: build_evidence.py reads the supplied Excel, existing Appendix A CSVs and the locally fetched repository snapshot. Source paths are relative to the task workspace. No new experiment was executed.
+
+Publication: these newly generated files have not been committed or pushed to GitHub. Suggested repository folder: docs/en/evidence_update/. Table 2 should link survey_processed.csv and survey_cleaning_log.csv after upload. Appendix A should use the verified source index and observation register; Table 6 should link the failure summary, individual records and status counts. The current inventory has no exclusions. Coverage remains bounded to the repository snapshot and documented filename rule.

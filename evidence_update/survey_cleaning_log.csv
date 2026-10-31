@@ -1,0 +1,6 @@
+﻿date,operation,rule,records_affected
+2026-10-31,Replace direct identifiers,Replace Name with P1–P3 in original worksheet row order; no public name-to-code key,3
+2026-10-31,Serialize dates,Excel date/datetime values exported in ISO format; submission timestamp and self-entered date remain separate; no timezone inferred,3
+2026-10-31,Add analysis fields,Preserve original responses; add role_group and integer effectiveness_rating_numeric,3
+2026-10-31,Retain ambiguous experience and pattern answers,Do not infer experience units or silently split the combined pattern answer,0
+2026-10-31,Missing values and duplicates,No imputation or deletion; counts in survey_quality.csv,0

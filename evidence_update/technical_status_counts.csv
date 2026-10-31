@@ -1,0 +1,158 @@
+﻿source_id,classification,field,recorded_value,count
+S01,primary behavioral,compilation_status,compiled,24
+S01,primary behavioral,deployment_status,deployed,24
+S01,primary behavioral,setup_status,passed,24
+S01,primary behavioral,execution_status,completed,24
+S03,primary behavioral,compilation_status,compiled,24
+S03,primary behavioral,deployment_status,deployed,24
+S03,primary behavioral,setup_status,passed,24
+S03,primary behavioral,execution_status,completed,24
+S05,developmental / instrumentation,compilation_status,success,266
+S05,developmental / instrumentation,setup_status,success,266
+S05,developmental / instrumentation,execution_status,success,192
+S05,developmental / instrumentation,execution_status,reverted,66
+S05,developmental / instrumentation,execution_status,observation,8
+S06,additional reproduction,compilation_status,success,266
+S06,additional reproduction,setup_status,success,266
+S06,additional reproduction,execution_status,success,192
+S06,additional reproduction,execution_status,reverted,66
+S06,additional reproduction,execution_status,observation,8
+S07,additional reproduction,compilation_status,success,266
+S07,additional reproduction,setup_status,success,266
+S07,additional reproduction,execution_status,success,192
+S07,additional reproduction,execution_status,reverted,66
+S07,additional reproduction,execution_status,observation,8
+S08,primary behavioral,compilation_status,success,266
+S08,primary behavioral,setup_status,success,266
+S08,primary behavioral,execution_status,success,192
+S08,primary behavioral,execution_status,reverted,66
+S08,primary behavioral,execution_status,observation,8
+S09,primary behavioral,compilation_status,success,266
+S09,primary behavioral,setup_status,success,266
+S09,primary behavioral,execution_status,success,192
+S09,primary behavioral,execution_status,reverted,66
+S09,primary behavioral,execution_status,observation,8
+S10,developmental / instrumentation,compilation_status,success,244
+S10,developmental / instrumentation,setup_status,success,244
+S10,developmental / instrumentation,execution_status,success,188
+S10,developmental / instrumentation,execution_status,reverted,56
+S11,additional reproduction,compilation_status,success,244
+S11,additional reproduction,setup_status,success,244
+S11,additional reproduction,execution_status,success,188
+S11,additional reproduction,execution_status,reverted,56
+S12,additional reproduction,compilation_status,success,244
+S12,additional reproduction,setup_status,success,244
+S12,additional reproduction,execution_status,success,188
+S12,additional reproduction,execution_status,reverted,56
+S13,primary behavioral,compilation_status,success,244
+S13,primary behavioral,setup_status,success,244
+S13,primary behavioral,execution_status,success,188
+S13,primary behavioral,execution_status,reverted,56
+S14,primary behavioral,compilation_status,success,244
+S14,primary behavioral,setup_status,success,244
+S14,primary behavioral,execution_status,success,188
+S14,primary behavioral,execution_status,reverted,56
+S15,developmental / instrumentation,compilation_status,success,338
+S15,developmental / instrumentation,setup_status,success,338
+S15,developmental / instrumentation,execution_status,success,275
+S15,developmental / instrumentation,execution_status,reverted,59
+S15,developmental / instrumentation,execution_status,infrastructure_error,4
+S16,developmental / instrumentation,execution_status,,30
+S16,developmental / instrumentation,execution_status,infrastructure_error,2
+S16,developmental / instrumentation,execution_status,reverted,2
+S17,developmental / instrumentation,execution_status,success,14
+S17,developmental / instrumentation,execution_status,pending,2
+S17,developmental / instrumentation,execution_status,rejected_before_inclusion,2
+S18,primary behavioral,compilation_status,success,338
+S18,primary behavioral,setup_status,success,338
+S18,primary behavioral,execution_status,success,275
+S18,primary behavioral,execution_status,reverted,63
+S19,primary behavioral,execution_status,,30
+S19,primary behavioral,execution_status,reverted,4
+S20,primary behavioral,execution_status,success,14
+S20,primary behavioral,execution_status,pending,2
+S20,primary behavioral,execution_status,rejected_before_inclusion,2
+S21,primary behavioral,compilation_status,success,338
+S21,primary behavioral,setup_status,success,338
+S21,primary behavioral,execution_status,success,275
+S21,primary behavioral,execution_status,reverted,63
+S22,primary behavioral,execution_status,,30
+S22,primary behavioral,execution_status,reverted,4
+S23,primary behavioral,execution_status,success,14
+S23,primary behavioral,execution_status,pending,2
+S23,primary behavioral,execution_status,rejected_before_inclusion,2
+S24,primary behavioral,compilation_status,compiled,60
+S24,primary behavioral,deployment_status,deployed,60
+S24,primary behavioral,setup_status,passed,60
+S24,primary behavioral,execution_status,completed,60
+S26,primary behavioral,compilation_status,compiled,60
+S26,primary behavioral,deployment_status,deployed,60
+S26,primary behavioral,setup_status,passed,60
+S26,primary behavioral,execution_status,completed,60
+S28,static analysis / compilation,compilation_status,success,24
+S28,static analysis / compilation,execution_status,completed,12
+S28,static analysis / compilation,error_timeout_status,,12
+S28,static analysis / compilation,execution_status,analysis_error,4
+S28,static analysis / compilation,error_timeout_status,"Traceback (most recent call last):
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 975, in parse_args_and_execute
+    address = load_code(disassembler, args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 726, in load_code
+    address, _ = disassembler.load_from_solidity(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 282, in load_from_solidity
+    self.sigs.import_solidity_file(
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/support/signatures.py"", line 245, in import_solidity_file
+    solc_json = get_solc_json(file_path, solc_binary, solc_settings_json)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 102, in get_solc_json
+    raise e
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 99, in get_solc_json
+    result = json.loads(out)
+             ^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py"", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/decoder.py"", line 355, in raw_decode
+    raise JSONDecodeError(""Expecting value"", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+",4
+S28,static analysis / compilation,execution_status,completed_budget_limited,8
+S28,static analysis / compilation,error_timeout_status,internal_timeout_not_distinguishable_from_exhaustion,8
+S29,static analysis / compilation,compilation_status,success,12
+S30,static analysis / compilation,compilation_status,success,24
+S30,static analysis / compilation,execution_status,completed,12
+S30,static analysis / compilation,error_timeout_status,,12
+S30,static analysis / compilation,execution_status,analysis_error,4
+S30,static analysis / compilation,error_timeout_status,"Traceback (most recent call last):
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/interfaces/cli.py"", line 967, in parse_args_and_execute
+    disassembler = MythrilDisassembler(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 61, in __init__
+    self.solc_binary = self._init_solc_binary(solc_version)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/mythril/mythril_disassembler.py"", line 93, in _init_solc_binary
+    solc_binary = util.solc_exists(version)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/mythril/ethereum/util.py"", line 140, in solc_exists
+    solcx.install_solc(""v"" + version)
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 430, in install_solc
+    version = _convert_and_validate_version(version)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""[local_project]/experiments/reentrancy/toolchain/mythril-venv/lib/python3.12/site-packages/solcx/install.py"", line 69, in _convert_and_validate_version
+    raise UnsupportedVersionError(""py-solc-x does not support solc versions <0.4.11"")
+solcx.exceptions.UnsupportedVersionError: py-solc-x does not support solc versions <0.4.11
+",4
+S30,static analysis / compilation,execution_status,completed_budget_limited,8
+S30,static analysis / compilation,error_timeout_status,internal_timeout_not_distinguishable_from_exhaustion,8
+S31,primary behavioral,compilation_status,compiled,12
+S31,primary behavioral,deployment_status,deployed,12
+S31,primary behavioral,setup_status,passed,12
+S31,primary behavioral,execution_status,completed,12
+S33,primary behavioral,compilation_status,compiled,12
+S33,primary behavioral,deployment_status,deployed,12
+S33,primary behavioral,setup_status,passed,12
+S33,primary behavioral,execution_status,completed,12
